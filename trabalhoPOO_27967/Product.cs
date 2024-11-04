@@ -36,9 +36,39 @@ namespace trabalhoPOO_27967
         {
         }
 
+        /// <summary>
+        /// Constructor for when the reference and price are given.
+        /// </summary>
+        /// <param name="reff"></param>
+        /// <param name="pri"></param>
+        public Product(string reff, double pri)
+        {
+            reference = reff;
+            price = pri;
+        }
+
         #endregion
 
         #region Properties
+
+        /// <summary>
+        /// Property to set and get the value of the reference.
+        /// </summary>
+        public string Reference
+        {
+            get { return reference; }
+            set { reference = value; }
+            
+        }
+
+        /// <summary>
+        /// Property to get and set the value of the price of a product.
+        /// </summary>
+        public double Price
+        {
+            get { return price; }
+            set {  price = value; }
+        }
 
         #endregion
 
