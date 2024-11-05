@@ -52,7 +52,7 @@ namespace trabalhoPOO_27967
         #region Properties
 
         /// <summary>
-        /// Property to set and get the value of the reference.
+        /// Property to set and get the reference of a product.
         /// </summary>
         public string Reference
         {
