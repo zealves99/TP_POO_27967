@@ -20,9 +20,11 @@ namespace trabalhoPOO_27967
     public class Product
     {
         #region Attributes
-        string reference;
-        double price;
-        static int stock;
+        string _reference;
+        decimal _price;
+        Make _make;
+        Category _category;
+        static int _stock;
         #endregion
 
         #region Methods
@@ -41,10 +43,12 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="reff"></param>
         /// <param name="pri"></param>
-        public Product(string reff, double pri)
+        public Product(string reff, decimal pri, Make ma, Category cat)
         {
-            reference = reff;
-            price = pri;
+            _reference = reff;
+            _price = pri;
+            _make = ma;
+            _category = cat;
         }
 
         #endregion
@@ -56,18 +60,46 @@ namespace trabalhoPOO_27967
         /// </summary>
         public string Reference
         {
-            get { return reference; }
-            set { reference = value; }
+            get { return _reference; }
+            set { _reference = value; }
             
         }
 
         /// <summary>
-        /// Property to get and set the value of the price of a product.
+        /// Property to get and set the price of a product.
         /// </summary>
-        public double Price
+        public decimal Price
         {
-            get { return price; }
-            set {  price = value; }
+            get { return _price; }
+            set {  _price = value; }
+        }
+
+        /// <summary>
+        /// Property to set and get the Make of a product.
+        /// </summary>
+        public Make Make
+        {
+            get { return _make; }
+            set { _make = value; }
+
+        }
+
+        /// <summary>
+        /// Property to set and get the Category of a product.
+        /// </summary>
+        public Category Category
+        {
+            get { return _category; }
+            set { _category = value; }
+        }
+
+        /// <summary>
+        /// Property to get and set the existing stock of a product.
+        /// </summary>
+        public static int Stock
+        {
+            get { return _stock; }
+            set { _stock = value; }
         }
 
         #endregion
