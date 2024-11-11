@@ -2,7 +2,7 @@
 *	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
-* 	<author>zecun</author>
+* 	<author>Jose Alves a27967</author>
 *   <date>11/6/2024 11:22:09 AM</date>
 *	<description></description>
 **/
@@ -12,8 +12,8 @@ using System.Runtime.Remoting.Messaging;
 namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: zecun
+    /// Purpose: Definition of Make and methods to deal with Make operations.
+    /// Created by: Jose Alves a27967
     /// Created on: 11/6/2024 11:22:09 AM
     /// </summary>
     /// <remarks></remarks>

@@ -14,7 +14,7 @@ namespace trabalhoPOO_27967
             Client clientTest = new Client("Jose Alves","962310421");
             Client clientTest1 = new Client();
 
-            Product product1 = new Product()
+            Product product1 = new Product();
 
         }
     }

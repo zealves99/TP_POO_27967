@@ -2,7 +2,7 @@
 *	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
-* 	<author>zecun</author>
+* 	<author>Jose Alves a27967</author>
 *   <date>10/29/2024 4:23:56 PM</date>
 *	<description></description>
 **/
@@ -12,8 +12,8 @@ using System.Text.RegularExpressions;
 namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: zecun
+    /// Purpose: Definition of Client and methods to deal with Client operations.
+    /// Created by: Jose Alves a27967
     /// Created on: 10/29/2024 4:23:56 PM
     /// </summary>
     /// <remarks></remarks>
@@ -21,10 +21,10 @@ namespace trabalhoPOO_27967
     public class Client
     {
         #region Attributes
-        int clientID;
-        string name;
-        string contact;
-        static int clientCount=0;
+        int _clientID;
+        string _name;
+        string _contact;
+        static int _clientCount=0;
         #endregion
 
         #region Methods
@@ -36,16 +36,21 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Client()
         {
-            clientID = ++clientCount ;
-            name = "No Name";
-            contact = "999999999";
+            _clientID = ++_clientCount ;
+            _name = "No Name";
+            _contact = "999999999";
         }
 
+        /// <summary>
+        /// Constructor to use when a name and a contact are given.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="c"></param>
         public Client(string n, string c)
         {
-            clientID = ++clientCount;
-            name = n;
-            contact = c;
+            _clientID = ++_clientCount;
+            _name = n;
+            _contact = c;
             //COMO POSSO FAZER PARA TESTAR SE A STRING PODE SER CONTATCO? DEVO FAZE-LO NO CONSTRUTOR OU FORA?
         }
 
@@ -57,8 +62,8 @@ namespace trabalhoPOO_27967
         /// </summary>
         public int ClientID
         {
-            get { return clientID; }
-            set { clientID = value; }
+            get { return _clientID; }
+            set { _clientID = value; }
         }
 
         /// <summary>
@@ -66,8 +71,8 @@ namespace trabalhoPOO_27967
         /// </summary>
         public string Name
         {
-            get { return name; }
-            set { name = value; }
+            get { return _name; }
+            set { _name = value; }
         }
 
         /// <summary>
@@ -75,13 +80,13 @@ namespace trabalhoPOO_27967
         /// </summary>
         public string Contact
         {
-            get { return contact; }
+            get { return _contact; }
             set
             {
                 string pattern = @"^(2|9)\d{8}$"; //Defines the pattern to be a number starting by 9 or 2 with 8 more numbers after (as a portuguese mobile or landline number).
                 bool isGood = Regex.IsMatch(value, pattern); //Verifies if the value meets the criteria.
 
-                if (isGood) contact = value;
+                if (isGood) _contact = value;
 
                 //COMO POSSO RETORNAR UM ERRO CASO A STRING NAO CORRESPONDA?
             }
@@ -92,9 +97,9 @@ namespace trabalhoPOO_27967
         /// </summary>
         public static int ClientCount
         {
-            get { return ClientCount; }
+            get { return _clientCount; }
 
-            set { ClientCount = value; }
+            set { _clientCount = value; }
         }
         #endregion
 

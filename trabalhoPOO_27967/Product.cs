@@ -2,7 +2,7 @@
 *	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
-* 	<author>zecun</author>
+* 	<author>Jose Alves a27967</author>
 *   <date>11/2/2024 4:40:12 PM</date>
 *	<description></description>
 **/
@@ -11,8 +11,8 @@ using System;
 namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: zecun
+    /// Purpose: Definition of product and methods to deal with product operations.
+    /// Created by: Jose Alves a27967
     /// Created on: 11/2/2024 4:40:12 PM
     /// </summary>
     /// <remarks></remarks>
@@ -24,7 +24,7 @@ namespace trabalhoPOO_27967
         decimal _price;
         Make _make;
         Category _category;
-        static int _stock;
+        int _stock;
         #endregion
 
         #region Methods
@@ -96,12 +96,11 @@ namespace trabalhoPOO_27967
         /// <summary>
         /// Property to get and set the existing stock of a product.
         /// </summary>
-        public static int Stock
+        public int Stock
         {
             get { return _stock; }
             set { _stock = value; }
         }
-
         #endregion
 
 

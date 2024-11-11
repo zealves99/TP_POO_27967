@@ -46,6 +46,8 @@
     <Compile Include="Campaign.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Category.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="Sales.cs" />
     <Compile Include="Warranty.cs" />
     <Compile Include="Make.cs" />
     <Compile Include="Product.cs" />

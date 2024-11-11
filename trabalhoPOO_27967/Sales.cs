@@ -3,7 +3,7 @@
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
-*   <date>11/6/2024 11:20:47 AM</date>
+*   <date>11/10/2024 7:42:03 PM</date>
 *	<description></description>
 **/
 using System;
@@ -11,18 +11,18 @@ using System;
 namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose: Definition of Category and methods to deal with Category operations.
+    /// Purpose:
     /// Created by: Jose Alves a27967
-    /// Created on: 11/6/2024 11:20:47 AM
+    /// Created on: 11/10/2024 7:42:03 PM
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Category
+    public class Sales
     {
         #region Attributes
-        int _id;
-        string _name;
-        static int _catCount=0;
+        const int MAX_SALES = 10;
+
+        Sale[] _salesStored;
         #endregion
 
         #region Methods
@@ -32,39 +32,31 @@ namespace trabalhoPOO_27967
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        public Category()
+        public Sales()
         {
         }
 
         /// <summary>
-        /// The constructor to use when the name of a category is given.
+        /// The constructor to use when the sales' array is given.
         /// </summary>
-        /// <param name="name"></param>
-        public Category(string name)
+        /// <param name="sales"></param>
+        public Sales(Sale[] sales)
         {
-            _id = ++_catCount;
-            _name = name;
+            _salesStored = sales;
         }
+
+
         #endregion
 
         #region Properties
 
-        /// <summary>
-        /// The property to get and set the ID of a category.
-        /// </summary>
-        public int Id
+        public Sale GetSale(int idSale)
         {
-            get { return _id; }
-            set { _id = value; }
-        }
-
-        /// <summary>
-        /// The property to get and set the name of a Category.
-        /// </summary>
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
+            for(int i = 0; i < MAX_SALES; i++)
+            {
+                if (this._salesStored[i].Id==idSale) return this._salesStored[i];
+            }
+            return null;
         }
         #endregion
 
@@ -80,7 +72,7 @@ namespace trabalhoPOO_27967
         /// <summary>
         /// The destructor.
         /// </summary>
-        ~Category()
+        ~Sales()
         {
         }
         #endregion

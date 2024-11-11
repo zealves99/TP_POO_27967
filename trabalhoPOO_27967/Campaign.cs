@@ -2,7 +2,7 @@
 *	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
-* 	<author>zecun</author>
+* 	<author>Jose Alves a27967</author>
 *   <date>11/6/2024 11:21:43 AM</date>
 *	<description></description>
 **/
@@ -11,8 +11,8 @@ using System;
 namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose:
-    /// Created by: zecun
+    /// Purpose: Definition of Campaign and methods to deal with Campaign operations.
+    /// Created by: Jose Alves a27967
     /// Created on: 11/6/2024 11:21:43 AM
     /// </summary>
     /// <remarks></remarks>
