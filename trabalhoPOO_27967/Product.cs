@@ -7,6 +7,11 @@
 *	<description></description>
 **/
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.Contracts;
+using System.Text;
+using System.Xml.Linq;
 
 namespace trabalhoPOO_27967
 {
@@ -17,13 +22,14 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Product
+    public class Product 
     {
         #region Attributes
         string _reference;
         decimal _price;
         Make _make;
         Category _category;
+        Warranty _warranty; //in Years
         int _stock;
         #endregion
 
@@ -39,16 +45,18 @@ namespace trabalhoPOO_27967
         }
 
         /// <summary>
-        /// Constructor for when the reference and price are given.
+        /// Constructor for when the reference, price and warranty duration are given.
         /// </summary>
         /// <param name="reff"></param>
         /// <param name="pri"></param>
-        public Product(string reff, decimal pri, Make ma, Category cat)
+        public Product(string reff, decimal pri, Warranty war, Make ma, Category cat)
         {
             _reference = reff;
             _price = pri;
             _make = ma;
             _category = cat;
+            _warranty = war;
+
         }
 
         #endregion
@@ -62,7 +70,7 @@ namespace trabalhoPOO_27967
         {
             get { return _reference; }
             set { _reference = value; }
-            
+
         }
 
         /// <summary>
@@ -71,7 +79,7 @@ namespace trabalhoPOO_27967
         public decimal Price
         {
             get { return _price; }
-            set {  _price = value; }
+            set { _price = value; }
         }
 
         /// <summary>
@@ -101,11 +109,67 @@ namespace trabalhoPOO_27967
             get { return _stock; }
             set { _stock = value; }
         }
+
+        public Warranty Warranty
+        {
+            get { return _warranty; }
+            set { _warranty = value; }
+        }
         #endregion
 
 
 
         #region Overrides
+        /// <summary>
+        /// Redefinition of the method to compare two products.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {   
+            if (obj == null) return false;
+            Product product = obj as Product;
+            if (product.Reference == _reference) return true;
+            return false;
+        }
+
+        /// <summary>
+        /// Redefinition of the equal operator.
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
+        public static bool operator ==(Product p1, Product p2)
+        {
+            return (p1.Equals(p2));
+        }
+
+        /// <summary>
+        /// Redefinition of the different operator.
+        /// </summary>
+        /// <param name="p1"></param>
+        /// <param name="p2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Product p1, Product p2)
+        {
+            return !(p1.Equals(p2));
+        }
+
+        /// <summary>
+        /// Override of the ToString() Method to convert the data of a product into a string.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Product ID: {_reference}");
+            sb.AppendLine($"Price: {_price}€");
+            sb.AppendLine(_make.ToString());
+            sb.AppendLine(_warranty.ToString());
+
+            return sb.ToString();
+        }
+
         #endregion
 
         #region OtherMethods

@@ -132,6 +132,7 @@ namespace trabalhoPOO_27967
         /// <returns></returns>
         static public bool VerifyApplicability(Campaign camp)
         {
+            /// Verifies if the actual date is in between the start and end dates of the campaign.
             if (camp.StartDate <= DateTime.Now && camp.EndDate >= DateTime.Now)
             {
                 return true;

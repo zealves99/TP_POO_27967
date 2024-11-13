@@ -8,6 +8,8 @@
 **/
 using System;
 using System.CodeDom;
+using System.Linq;
+using System.Text;
 
 namespace trabalhoPOO_27967
 {
@@ -26,12 +28,12 @@ namespace trabalhoPOO_27967
         int _id;
         Client _client;
         Products _products;
-        decimal _totalPrice;
+        decimal _totPrice;
         DateTime _saleDate;
         static int _numSales;
+        Campaign _campaigns;
         #endregion
 
-        const int MAX_PRODUCTS = 10;
 
         #region Methods
 
@@ -42,6 +44,9 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Sale()
         {
+            _products= new Products();
+            _client= new Client();
+            _campaigns= new Campaign();
         }
 
         /// <summary>
@@ -55,7 +60,7 @@ namespace trabalhoPOO_27967
             _id = ++_numSales;
             _client = client;
             _products = products;
-            _totalPrice = TotalPrice(products, camp);
+            _totPrice = TotalPrice();
             _saleDate = DateTime.Now;
         }
 
@@ -64,58 +69,151 @@ namespace trabalhoPOO_27967
         #endregion
 
         #region Properties
+        /// <summary>
+        /// Property used to get and set the ID of a Sale.
+        /// </summary>
         public int Id
         {
             get { return _id; }
             set { _id = value; }
         }
 
+        /// <summary>
+        /// Property used to get and set the information of the Client who made the purchase.
+        /// </summary>
         public Client Client
         {
             get { return (_client); }
             set { _client = value; }
         }
 
+        /// <summary>
+        /// Property used to get and set the list of products in a Sale.
+        /// </summary>
         public Products Products
         {
             get { return _products; }
             set { _products = value; }
         }
-            
 
-        public decimal TotalPrice
+        /// <summary>
+        /// Property used to get and set the total price of a Sale.
+        /// </summary>
+        public decimal TotPrice
         {
-            get { return _totalPrice; }
-            set { _totalPrice = value; }
+            get { return _totPrice; }
+            set { _totPrice = value; }
         }
 
+        /// <summary>
+        /// Property used to get and set the Date of a Sale.
+        /// </summary>
         public DateTime SaleDate
         {
             get { return _saleDate; }
             set { _saleDate = value; }
+        }
+
+        /// <summary>
+        /// Property used to get and set the Campaigns applicable to a Sale.
+        /// </summary>
+        public Campaign Campaigns
+        {
+            get { return _campaigns; }
+            set { _campaigns = value; }
         }
         #endregion
 
 
 
         #region Overrides
+        /// <summary>
+        /// Redefinition of the Equals method to compare two sales.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            Sale sale = obj as Sale;
+            return (sale.Id==this.Id);
+        }
+
+        /// <summary>
+        /// Redefiniiton of the equal operator.
+        /// </summary>
+        /// <param name="s1"></param>
+        /// <param name="s2"></param>
+        /// <returns></returns>
+        public static bool operator ==(Sale s1, Sale s2)
+        {
+            return(s1.Equals(s2));
+        }
+
+        /// <summary>
+        /// Redefinition of the different operator.
+        /// </summary>
+        /// <param name="s1"></param>
+        /// <param name="s2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Sale s1, Sale s2)
+        {
+            return !(s1.Equals(s2));
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(_products.ToString());
+            sb.AppendLine("Total " + this.TotalPrice().ToString() + "\u20AC"); ///\u20AC é o unicode para o símbolo de euro.
+            return sb.ToString();
+
+        }
         #endregion
 
         #region OtherMethods
-        public decimal TotalPrice(Products products, Campaign camp)
+
+        /// <summary>
+        /// Method to calculate the total price of a sale, given the products list and a campaign code.
+        /// </summary>
+        /// <param name="products"></param>
+        /// <param name="camp"></param>
+        /// <returns></returns>
+        public decimal TotalPrice()
         {
             decimal total = 0;
-            for(int i=0; i < MAX_PRODUCTS; i++)
-            {
-                total += products.ValueInPosition(i);
-            }
 
-            if (Campaign.VerifyApplicability(camp))
+            total=_products.TotalPrice();
+
+            if (Campaign.VerifyApplicability(this.Campaigns))
             {
-                total *= (1-camp.Discount);
+                total *= (1-this.Campaigns.Discount);
             }
 
             return total;
+        }
+
+        /// <summary>
+        /// Method used to insert a product on a sale's list.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public bool InsertProductOnSale(Product p)
+        {
+            return _products.InsertProduct(p);
+        }
+
+        /// <summary>
+        /// Method to calculate when a warranty is due to expire.
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="reff"></param>
+        /// <returns></returns>
+        public DateTime WarrantyExpirationDate()
+        {
+            foreach (Product p in _products)
+            {
+                return (this.SaleDate.AddYears(p.Warranty.DurationInYears));
+            }
         }
         #endregion
 

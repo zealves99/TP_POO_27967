@@ -7,7 +7,9 @@
 *	<description></description>
 **/
 using System;
+using System.Text;
 using System.Text.RegularExpressions;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace trabalhoPOO_27967
 {
@@ -106,7 +108,62 @@ namespace trabalhoPOO_27967
 
 
         #region Overrides
+
+        /// <summary>
+        /// Redefine the ToString Function to show a client's info.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"Client ID: {_clientID}");
+            sb.AppendLine($"Name: {_name}");
+            sb.AppendLine($"Contact: {_contact}");
+
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Redefine the Equals operator to verify if a client matches the other.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            /// Veriffies if the object given is null.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            ///Casts the object to be Client.
+            Client client = obj as Client;
+            return (this._clientID == client._clientID && _name == client._name);
+        }
+
+        /// <summary>
+        /// Redefinition of the == operator.
+        /// </summary>
+        /// <param name="cli1"></param>
+        /// <param name="cli2"></param>
+        /// <returns></returns>
+        public static bool operator == (Client cli1, Client cli2)
+        {
+            return( cli1.Equals(cli2) );
+        }
+
+        /// <summary>
+        /// Redefinition of the != operator.
+        /// </summary>
+        /// <param name="cli1"></param>
+        /// <param name="cli2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Client cli1, Client cli2)
+        {
+            return !(cli1.Equals(cli2));
+        }
         #endregion
+
 
         #region OtherMethods
         #endregion

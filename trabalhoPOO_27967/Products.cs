@@ -7,6 +7,11 @@
 *	<description></description>
 **/
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace trabalhoPOO_27967
 {
@@ -19,9 +24,8 @@ namespace trabalhoPOO_27967
     /// <example></example>
     public class Products
     {
-        const int MAX_PRODS = 10;
         #region Attributes
-        Product[] _prods; //como faço uma propriedade para isto? Não consigo dar return do array, certo?
+        List<Product> _prods; //como faço uma propriedade para isto? Não consigo dar return do array, certo?
         #endregion
 
         #region Methods
@@ -33,13 +37,14 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Products()
         {
+            _prods = new List<Product>();
         }
 
         /// <summary>
-        /// The constructor to use when an array of Product is given.
+        /// The constructor to use when list of Product is given.
         /// </summary>
         /// <param name="products"></param>
-        public Products(Product[] products)
+        public Products(List<Product> products)
         {
             _prods = products;
         }
@@ -49,7 +54,10 @@ namespace trabalhoPOO_27967
         #endregion
 
         #region Properties
-        public Product[] Prods
+        /// <summary>
+        /// Property used to get and set the list of products.
+        /// </summary>
+        public List<Product> Prods
         {
             get { return _prods; }
             set { _prods = value; }
@@ -59,6 +67,20 @@ namespace trabalhoPOO_27967
 
 
         #region Overrides
+
+        /// <summary>
+        /// Override of the ToString() Method to convert the data of a list fo products to a string.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var product in _prods)
+            {
+                sb.AppendLine(product.ToString());
+            }
+            return sb.ToString();
+        }
         #endregion
 
         #region OtherMethods
@@ -74,21 +96,15 @@ namespace trabalhoPOO_27967
         }
 
         /// <summary>
-        /// This method inserts a product in an array of products, in the first available position.
+        /// This method inserts a product in a list of products.
         /// </summary>
         /// <param name="p"></param>
-        /// <returns>Returns true or False, depending on whether or not it succeeded in inserting the product into the array. </returns>
+        /// <returns>Returns true or False, depending on whether or not it succeeded in inserting the product into the list. </returns>
         public bool InsertProduct(Product p)
         {
-            for (int i = 0; i < MAX_PRODS; i++)
-            {
-                if (this.Prods[i] == null)
-                {
-                    this.Prods[i] = p;
-                    return true;
-                }
-            }
-            return false;
+            if (p == null) return false;
+            _prods.Add(p);
+            return true;
         }
 
         /// <summary>
@@ -98,11 +114,21 @@ namespace trabalhoPOO_27967
         /// <returns>Returns the product if found</returns>
         public Product SearchProduct(string reff)
         {
-            for (int i = 0; i < MAX_PRODS; i++)
+            foreach (Product p in _prods)
             {
-                if(this.Prods[i].Reference == reff) return this.Prods[i];
+                if(p.Reference==reff) return p;
             }
             return null;
+        }
+
+        /// <summary>
+        /// Method used to calculate the total price of products in a list of products.
+        /// </summary>
+        /// <returns></returns>
+        public decimal TotalPrice()
+        {
+            return _prods.Sum(p => p.Price);
+
         }
         #endregion
 

@@ -7,7 +7,9 @@
 *	<description></description>
 **/
 using System;
+using System.Diagnostics.Contracts;
 using System.Runtime.Remoting.Messaging;
+using System.Text;
 
 namespace trabalhoPOO_27967
 {
@@ -77,6 +79,14 @@ namespace trabalhoPOO_27967
 
 
         #region Overrides
+        /// <summary>
+        /// Override of the ToString() method to convert the data of a Make to a string.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return ("Make : " + _name);
+        }
         #endregion
 
         #region OtherMethods

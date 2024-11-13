@@ -7,11 +7,12 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 
 namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose:
+    /// Purpose: Class with the agregation of sales of a store.
     /// Created by: Jose Alves a27967
     /// Created on: 11/10/2024 7:42:03 PM
     /// </summary>
@@ -20,9 +21,7 @@ namespace trabalhoPOO_27967
     public class Sales
     {
         #region Attributes
-        const int MAX_SALES = 10;
-
-        Sale[] _salesStored;
+        static List<Sale> _salesStored;
         #endregion
 
         #region Methods
@@ -37,10 +36,10 @@ namespace trabalhoPOO_27967
         }
 
         /// <summary>
-        /// The constructor to use when the sales' array is given.
+        /// The constructor to use when the sales' List is given.
         /// </summary>
         /// <param name="sales"></param>
-        public Sales(Sale[] sales)
+        public Sales(List<Sale> sales)
         {
             _salesStored = sales;
         }
@@ -50,11 +49,16 @@ namespace trabalhoPOO_27967
 
         #region Properties
 
+        /// <summary>
+        /// Method to find a sale in a list of sales, given its ID.
+        /// </summary>
+        /// <param name="idSale"></param>
+        /// <returns></returns>
         public Sale GetSale(int idSale)
         {
-            for(int i = 0; i < MAX_SALES; i++)
+            foreach(Sale s in _salesStored)
             {
-                if (this._salesStored[i].Id==idSale) return this._salesStored[i];
+                if (s.Id==idSale)return s;
             }
             return null;
         }
