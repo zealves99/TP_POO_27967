@@ -208,12 +208,9 @@ namespace trabalhoPOO_27967
         /// <param name="s"></param>
         /// <param name="reff"></param>
         /// <returns></returns>
-        public DateTime WarrantyExpirationDate()
+        public DateTime WarrantyExpirationDate(string reff)
         {
-            foreach (Product p in _products)
-            {
-                return (this.SaleDate.AddYears(p.Warranty.DurationInYears));
-            }
+            return (_products.WarratyExpirationDateForProduct(this.SaleDate, reff));
         }
         #endregion
 

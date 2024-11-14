@@ -130,6 +130,14 @@ namespace trabalhoPOO_27967
             return _prods.Sum(p => p.Price);
 
         }
+
+        public DateTime WarratyExpirationDateForProduct(DateTime date, string reff)
+        {
+            Product p = SearchProduct(reff);
+            {
+                return (date.AddYears(p.Warranty.DurationInYears));
+            }
+        }
         #endregion
 
         #region Destructor
