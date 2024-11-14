@@ -108,6 +108,36 @@ namespace trabalhoPOO_27967
         }
 
         /// <summary>
+        /// Method used to verify if a product is on a products' list.
+        /// </summary>
+        /// <param name="reff"></param>
+        /// <returns></returns>
+        public bool ExistProduct(string reff)
+        {
+            foreach (Product p in _prods)
+            {
+                if (p.Reference == reff) return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Method used to remove a product from a Products' list.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public bool RemoveProduct(Product p)
+        {
+            if (p == null) return false;
+            if (ExistProduct(p.Reference))
+            {
+                _prods.Remove(p);
+                return true; ///Product removed successfully
+            }
+            return false; ///Product was not removed.
+        }
+
+        /// <summary>
         /// This method searches for a product in an array, given its refference.
         /// </summary>
         /// <param name="reff"></param>
@@ -131,6 +161,12 @@ namespace trabalhoPOO_27967
 
         }
 
+        /// <summary>
+        /// Method used to calculate the warranty's expiration date of a product on a list of products.
+        /// </summary>
+        /// <param name="date"></param>
+        /// <param name="reff"></param>
+        /// <returns></returns>
         public DateTime WarratyExpirationDateForProduct(DateTime date, string reff)
         {
             Product p = SearchProduct(reff);

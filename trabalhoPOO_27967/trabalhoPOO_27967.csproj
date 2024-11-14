@@ -43,22 +43,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Campaign.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Category.cs" />
-    <Compile Include="Clients.cs" />
-    <Compile Include="Products.cs" />
-    <Compile Include="Sales.cs" />
-    <Compile Include="Make.cs" />
-    <Compile Include="Product.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Campaign\Campaign.cs" />
+    <Compile Include="Campaign\Campaigns.cs" />
+    <Compile Include="Category\Categories.cs" />
+    <Compile Include="Make\Makes.cs" />
+    <Compile Include="Store\Store.cs" />
+    <Compile Include="Warranty\Warranties.cs" />
+    <Compile Include="Client\Client.cs" />
+    <Compile Include="Category\Category.cs" />
+    <Compile Include="Client\Clients.cs" />
+    <Compile Include="Product\Products.cs" />
+    <Compile Include="Sale\Sales.cs" />
+    <Compile Include="Make\Make.cs" />
+    <Compile Include="Product\Product.cs" />
+    <Compile Include="BestSale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sale.cs" />
-    <Compile Include="Warranty.cs" />
+    <Compile Include="Sale\Sale.cs" />
+    <Compile Include="Warranty\Warranty.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

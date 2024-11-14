@@ -33,6 +33,7 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Sales()
         {
+            _salesStored = new List<Sale>();
         }
 
         /// <summary>
@@ -48,20 +49,15 @@ namespace trabalhoPOO_27967
         #endregion
 
         #region Properties
-
         /// <summary>
-        /// Method to find a sale in a list of sales, given its ID.
+        /// Property used to get and set a list of sales.
         /// </summary>
-        /// <param name="idSale"></param>
-        /// <returns></returns>
-        public Sale GetSale(int idSale)
+        public List<Sale> SalesStored
         {
-            foreach(Sale s in _salesStored)
-            {
-                if (s.Id==idSale)return s;
-            }
-            return null;
+            get { return _salesStored; }
+            set { _salesStored = value; }
         }
+
         #endregion
 
 
@@ -70,6 +66,31 @@ namespace trabalhoPOO_27967
         #endregion
 
         #region OtherMethods
+        /// <summary>
+        /// Method to find a sale in a list of sales, given its ID.
+        /// </summary>
+        /// <param name="idSale"></param>
+        /// <returns></returns>
+        public Sale GetSale(int idSale)
+        {
+            foreach (Sale s in _salesStored)
+            {
+                if (s.Id == idSale) return s;
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Method used to add a sale to a sales' list.
+        /// </summary>
+        /// <param name="sale"></param>
+        /// <returns></returns>
+        public bool AddSale(Sale sale)
+        {
+            if (_salesStored == null) return false;
+            _salesStored.Add(sale);
+            return true;
+        }
         #endregion
 
         #region Destructor

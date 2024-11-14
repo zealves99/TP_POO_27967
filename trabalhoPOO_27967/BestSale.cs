@@ -7,7 +7,7 @@ using System.Text.RegularExpressions; //Used to verify if a string meets certain
 
 namespace trabalhoPOO_27967
 {
-    class Program
+    class BestSale
     {
         static void Main(string[] args)
         {

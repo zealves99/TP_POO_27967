@@ -37,6 +37,11 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Campaign()
         {
+            _id = ++_campaignCount;
+            _name = string.Empty;
+            _discount = 0m;
+            _startDate = DateTime.MinValue;
+            _endDate = DateTime.MaxValue;
         }
 
         /// <summary>
@@ -121,6 +126,45 @@ namespace trabalhoPOO_27967
 
 
         #region Overrides
+        /// <summary>
+        /// Redefine the Equals operator to verify if a campaign matches the other.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            /// Veriffies if the object given is null.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            ///Casts the object to be Campaign.
+            Campaign camp = obj as Campaign;
+            return (this.Id == camp.Id && _name == camp.Name);
+        }
+
+        /// <summary>
+        /// Redefinition of the == operator.
+        /// </summary>
+        /// <param name="cli1"></param>
+        /// <param name="cli2"></param>
+        /// <returns></returns>
+        public static bool operator ==(Campaign camp1, Campaign camp2)
+        {
+            return (camp1.Equals(camp2));
+        }
+
+        /// <summary>
+        /// Redefinition of the != operator.
+        /// </summary>
+        /// <param name="cli1"></param>
+        /// <param name="cli2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Campaign camp1, Campaign camp2)
+        {
+            return !(camp1.Equals(camp2));
+        }
         #endregion
 
         #region OtherMethods

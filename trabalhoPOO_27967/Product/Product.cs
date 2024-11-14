@@ -42,6 +42,11 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Product()
         {
+            _reference = string.Empty;
+            _price = -1;
+            _make = new Make();
+            _category = new Category();
+            _stock = 0;
         }
 
         /// <summary>

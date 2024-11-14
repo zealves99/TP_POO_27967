@@ -203,6 +203,26 @@ namespace trabalhoPOO_27967
         }
 
         /// <summary>
+        /// Method used to remove a product from a sale.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public bool RemoveProductFromSale(Product p)
+        {
+            return _products.RemoveProduct(p);
+        }
+
+        /// <summary>
+        /// Method used to verify if a product is on a sale.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
+        public bool ExistProductOnSale(Product p)
+        {
+            return _products.ExistProduct(p.Reference);
+        }
+
+        /// <summary>
         /// Method to calculate when a warranty is due to expire.
         /// </summary>
         /// <param name="s"></param>

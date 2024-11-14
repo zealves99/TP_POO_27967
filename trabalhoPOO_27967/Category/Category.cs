@@ -34,6 +34,8 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Category()
         {
+            _id = ++_catCount;
+            _name = string.Empty;
         }
 
         /// <summary>
@@ -71,6 +73,45 @@ namespace trabalhoPOO_27967
 
 
         #region Overrides
+        /// <summary>
+        /// Method that overrides Equals() and verifies if a categry matches another one.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            /// Veriffies if the object given is null.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            ///Casts the object to be Category.
+            Category cat = obj as Category;
+            return (this.Id == cat.Id || _name == cat.Name);
+        }
+
+        /// <summary>
+        /// Redefinition of the Equal operator.
+        /// </summary>
+        /// <param name="cat1"></param>
+        /// <param name="cat2"></param>
+        /// <returns></returns>
+        public static bool operator ==(Category cat1, Category cat2)
+        {
+            return (cat1.Equals(cat2));
+        }
+
+        /// <summary>
+        /// Redefinition of the Not Equal Operator.
+        /// </summary>
+        /// <param name="cat1"></param>
+        /// <param name="cat2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Category cat1, Category cat2)
+        {
+            return !(cat1.Equals(cat2));
+        }
         #endregion
 
         #region OtherMethods

@@ -37,6 +37,8 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Make()
         {
+            _id = ++_makeCount;
+            _name = string.Empty;
         }
 
         /// <summary>
@@ -86,6 +88,46 @@ namespace trabalhoPOO_27967
         public override string ToString()
         {
             return ("Make : " + _name);
+        }
+
+        /// <summary>
+        /// The redefinition of the Equals() Method, to verify if a make matches another one.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            /// Veriffies if the object given is null.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            ///Casts the object to be Make.
+            Make make = obj as Make;
+            return (this.ID == make.ID || this.Name == make.Name);
+        }
+
+        /// <summary>
+        /// The redefinition of the Equal operator.
+        /// </summary>
+        /// <param name="m1"></param>
+        /// <param name="m2"></param>
+        /// <returns></returns>
+        public static bool operator ==(Make m1, Make m2)
+        {
+            return (m1.Equals(m2));
+        }
+
+        /// <summary>
+        /// The redefinition of the NOt Equal operator.
+        /// </summary>
+        /// <param name="m1"></param>
+        /// <param name="m2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Make m1, Make m2)
+        {
+            return !(m1.Equals(m2));
         }
         #endregion
 

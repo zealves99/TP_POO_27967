@@ -37,6 +37,9 @@ namespace trabalhoPOO_27967
         /// </summary>
         public Warranty()
         {
+            _prodID = string.Empty;
+            _durationInYears = -1;
+            _conditions = string.Empty;
         }
 
         /// <summary>
@@ -101,6 +104,46 @@ namespace trabalhoPOO_27967
             sb.AppendLine($"Terms: {_conditions}");
 
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// Redefine the Equals operator to verify if a warranty matches the other.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            /// Veriffies if the object given is null.
+            if (obj == null)
+            {
+                return false;
+            }
+
+            ///Casts the object to be Warranty.
+            Warranty war = obj as Warranty;
+            return (this.ProdID == war.ProdID && this.Conditions == war.Conditions);
+        }
+
+        /// <summary>
+        /// Redefinition of the == operator.
+        /// </summary>
+        /// <param name="w1"></param>
+        /// <param name="w2"></param>
+        /// <returns></returns>
+        public static bool operator ==(Warranty w1, Warranty w2)
+        {
+            return (w1.Equals(w2));
+        }
+
+        /// <summary>
+        /// Redefinition of the != operator.
+        /// </summary>
+        /// <param name="w1"></param>
+        /// <param name="w2"></param>
+        /// <returns></returns>
+        public static bool operator !=(Warranty w1, Warranty w2)
+        {
+            return !(w1.Equals(w2));
         }
         #endregion
 

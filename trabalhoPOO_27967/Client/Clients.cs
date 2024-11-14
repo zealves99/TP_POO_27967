@@ -86,6 +86,40 @@ namespace trabalhoPOO_27967
             }
             return false;
         }
+
+        /// <summary>
+        /// Method to check if a client is listed on a clients' list
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public bool ExistClient(int id)
+        {
+            foreach (Client client in _clientList)
+            {
+                if (client.ClientID == id)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Method used to get a client from a clients' list.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public Client GetClient(int id)
+        {
+            foreach (Client client in _clientList)
+            {
+                if (client.ClientID == id)
+                {
+                    return client;
+                }
+            }
+            return null;
+        }
         #endregion
 
         #region Destructor
