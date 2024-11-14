@@ -1,0 +1,135 @@
+\doxysection{Client.\+cs}
+\hypertarget{_client_8cs_source}{}\label{_client_8cs_source}\index{Client/Client.cs@{Client/Client.cs}}
+\mbox{\hyperlink{_client_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}trabalhoPOO\_27967.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>10/29/2024\ 4:23:56\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description></description>}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }System.Text.RegularExpressions;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00012}00012\ \textcolor{keyword}{using\ }static\ System.Net.Mime.MediaTypeNames;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00014}00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967}{trabalhoPOO\_27967}}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00023}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_clientID;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \_name;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \_contact;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \_clientCount=0;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00030}00030\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00032}00032\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00034}00034\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00039}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_ae79131a1d8ab126a6c6ee819383be73f}{00039}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_ae79131a1d8ab126a6c6ee819383be73f}{Client}}()}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \_clientID\ =\ ++\_clientCount\ ;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \_name\ =\ \textcolor{stringliteral}{"{}No\ Name"{}};}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \_contact\ =\ \textcolor{stringliteral}{"{}999999999"{}};}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00051}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a1bb92d1181e9a8a7ef8e2c1f27a16504}{00051}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a1bb92d1181e9a8a7ef8e2c1f27a16504}{Client}}(\textcolor{keywordtype}{string}\ n,\ \textcolor{keywordtype}{string}\ c)}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \_clientID\ =\ ++\_clientCount;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \_name\ =\ n;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \_contact\ =\ c;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//COMO\ POSSO\ FAZER\ PARA\ TESTAR\ SE\ A\ STRING\ PODE\ SER\ CONTATCO?\ DEVO\ FAZE-\/LO\ NO\ CONSTRUTOR\ OU\ FORA?}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00059}00059\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00061}00061\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00065}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a7908fcdc8cac6ac46540d4af2e5ec5aa}{00065}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a7908fcdc8cac6ac46540d4af2e5ec5aa}{ClientID}}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_clientID;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_clientID\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00074}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a36b2d494ac70b9cb9ecc11bd9b5c7939}{00074}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a36b2d494ac70b9cb9ecc11bd9b5c7939}{Name}}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_name;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_name\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00083}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a8b129e2b56c2842dd70dc96999f6a829}{00083}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a8b129e2b56c2842dd70dc96999f6a829}{Contact}}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_contact;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ pattern\ =\ \textcolor{stringliteral}{@"{}\string^(2|9)\(\backslash\)d\{8\}\$"{}};\ \textcolor{comment}{//Defines\ the\ pattern\ to\ be\ a\ number\ starting\ by\ 9\ or\ 2\ with\ 8\ more\ numbers\ after\ (as\ a\ portuguese\ mobile\ or\ landline\ number).}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isGood\ =\ Regex.IsMatch(value,\ pattern);\ \textcolor{comment}{//Verifies\ if\ the\ value\ meets\ the\ criteria.}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isGood)\ \_contact\ =\ value;}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//COMO\ POSSO\ RETORNAR\ UM\ ERRO\ CASO\ A\ STRING\ NAO\ CORRESPONDA?}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00100}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a52cde588e9e07b50cd8eb5d0e163f41a}{00100}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a52cde588e9e07b50cd8eb5d0e163f41a}{ClientCount}}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_clientCount;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_clientCount\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00106}00106\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00110}00110\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00116}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_ae5038206d2255374c562b45d83937d5e}{00116}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_ae5038206d2255374c562b45d83937d5e}{ToString}}()}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ StringBuilder\ sb\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(\$\textcolor{stringliteral}{"{}Client\ ID:\ \{\_clientID\}"{}});}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(\$\textcolor{stringliteral}{"{}Name:\ \{\_name\}"{}});}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(\$\textcolor{stringliteral}{"{}Contact:\ \{\_contact\}"{}});}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sb.ToString();}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00131}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_abc82a940efddbba52ae1098d597343d5}{00131}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_abc82a940efddbba52ae1098d597343d5}{Equals}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00138}00138\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ client\ =\ obj\ as\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_ae79131a1d8ab126a6c6ee819383be73f}{Client}};}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this.\_clientID\ ==\ client.\_clientID\ \&\&\ \_name\ ==\ client.\_name);}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00150}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_abbc13a71f7d76f66e155342af2dd98b4}{00150}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_abbc13a71f7d76f66e155342af2dd98b4}{operator\ ==\ }}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ cli1,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ cli2)}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}(\ cli1.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_abc82a940efddbba52ae1098d597343d5}{Equals}}(cli2)\ );}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00153}00153\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00161}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a7bef95edc671c26aa91b8d45de9f6c1c}{00161}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_a7bef95edc671c26aa91b8d45de9f6c1c}{operator\ !=}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ cli1,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ cli2)}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00162}00162\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(cli1.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_abc82a940efddbba52ae1098d597343d5}{Equals}}(cli2));}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00164}00164\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00165}00165\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00166}00166\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00168}00168\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00169}00169\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00170}00170\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00171}00171\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00175}00175\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{\string~Client}}()}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00176}00176\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00177}00177\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00178}00178\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00179}00179\ }
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00180}00180\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00181}00181\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_8cs_source_l00182}00182\ \}}
+
+\end{DoxyCode}

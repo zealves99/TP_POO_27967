@@ -1,0 +1,208 @@
+.TH "trabalhoPOO_27967.Product" 3 "Version v 1.0" "LESI_TP_POO_27967" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+trabalhoPOO_27967.Product \- Purpose: Definition of product and methods to deal with product operations\&. Created by: Jose Alves a27967 Created on: 11/2/2024 4:40:12 PM\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProduct\fP ()"
+.br
+.RI "The default Constructor\&. "
+.ti -1c
+.RI "\fBProduct\fP (string reff, decimal pri, \fBWarranty\fP war, \fBMake\fP ma, \fBCategory\fP cat)"
+.br
+.RI "Constructor for when the reference, price and warranty duration are given\&. "
+.ti -1c
+.RI "override bool \fBEquals\fP (object obj)"
+.br
+.RI "Redefinition of the method to compare two products\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Override of the ToString() Method to convert the data of a product into a string\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBoperator==\fP (\fBProduct\fP p1, \fBProduct\fP p2)"
+.br
+.RI "Redefinition of the equal operator\&. "
+.ti -1c
+.RI "static bool \fBoperator!=\fP (\fBProduct\fP p1, \fBProduct\fP p2)"
+.br
+.RI "Redefinition of the different operator\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBReference\fP\fC [get, set]\fP"
+.br
+.RI "Property to set and get the reference of a product\&. "
+.ti -1c
+.RI "decimal \fBPrice\fP\fC [get, set]\fP"
+.br
+.RI "Property to get and set the price of a product\&. "
+.ti -1c
+.RI "\fBMake\fP \fBMake\fP\fC [get, set]\fP"
+.br
+.RI "Property to set and get the Make of a product\&. "
+.ti -1c
+.RI "\fBCategory\fP \fBCategory\fP\fC [get, set]\fP"
+.br
+.RI "Property to set and get the Category of a product\&. "
+.ti -1c
+.RI "int \fBStock\fP\fC [get, set]\fP"
+.br
+.RI "Property to get and set the existing stock of a product\&. "
+.ti -1c
+.RI "\fBWarranty\fP \fBWarranty\fP\fC [get, set]\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Purpose: Definition of product and methods to deal with product operations\&. Created by: Jose Alves a27967 Created on: 11/2/2024 4:40:12 PM\&. 
+
+
+.PP
+Definition at line \fB25\fP of file \fBProduct\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "trabalhoPOO_27967\&.Product\&.Product ()"
+
+.PP
+The default Constructor\&. 
+.PP
+Definition at line \fB43\fP of file \fBProduct\&.cs\fP\&.
+.SS "trabalhoPOO_27967\&.Product\&.Product (string reff, decimal pri, \fBWarranty\fP war, \fBMake\fP ma, \fBCategory\fP cat)"
+
+.PP
+Constructor for when the reference, price and warranty duration are given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreff\fP 
+.br
+\fIpri\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB57\fP of file \fBProduct\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool trabalhoPOO_27967\&.Product\&.Equals (object obj)"
+
+.PP
+Redefinition of the method to compare two products\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB133\fP of file \fBProduct\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Product\&.operator!= (\fBProduct\fP p1, \fBProduct\fP p2)\fC [static]\fP"
+
+.PP
+Redefinition of the different operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp1\fP 
+.br
+\fIp2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB158\fP of file \fBProduct\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Product\&.operator== (\fBProduct\fP p1, \fBProduct\fP p2)\fC [static]\fP"
+
+.PP
+Redefinition of the equal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp1\fP 
+.br
+\fIp2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB147\fP of file \fBProduct\&.cs\fP\&.
+.SS "override string trabalhoPOO_27967\&.Product\&.ToString ()"
+
+.PP
+Override of the ToString() Method to convert the data of a product into a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line \fB167\fP of file \fBProduct\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "\fBCategory\fP trabalhoPOO_27967\&.Product\&.Category\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to set and get the Category of a product\&. 
+.PP
+Definition at line \fB103\fP of file \fBProduct\&.cs\fP\&.
+.SS "\fBMake\fP trabalhoPOO_27967\&.Product\&.Make\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to set and get the Make of a product\&. 
+.PP
+Definition at line \fB93\fP of file \fBProduct\&.cs\fP\&.
+.SS "decimal trabalhoPOO_27967\&.Product\&.Price\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to get and set the price of a product\&. 
+.PP
+Definition at line \fB84\fP of file \fBProduct\&.cs\fP\&.
+.SS "string trabalhoPOO_27967\&.Product\&.Reference\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to set and get the reference of a product\&. 
+.PP
+Definition at line \fB74\fP of file \fBProduct\&.cs\fP\&.
+.SS "int trabalhoPOO_27967\&.Product\&.Stock\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to get and set the existing stock of a product\&. 
+.PP
+Definition at line \fB112\fP of file \fBProduct\&.cs\fP\&.
+.SS "\fBWarranty\fP trabalhoPOO_27967\&.Product\&.Warranty\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Definition at line \fB118\fP of file \fBProduct\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LESI_TP_POO_27967 from the source code\&.

@@ -1,0 +1,112 @@
+\doxysection{Store.\+cs}
+\hypertarget{_store_8cs_source}{}\label{_store_8cs_source}\index{Store/Store.cs@{Store/Store.cs}}
+\mbox{\hyperlink{_store_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}trabalhoPOO\_27967.Store.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/14/2024\ 5:01:23\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description></description>}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00011}\mbox{\hyperlink{namespacetrabalho_p_o_o__27967_1_1_store}{00011}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967_1_1_store}{trabalhoPOO\_27967.Store}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00020}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store}{00020}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store}{Store}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00021}00021\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00022}00022\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients}{Clients}}\ \_clientList;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products}{Products}}\ \_prodList;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales}{Sales}}\ \_saleList;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{Makes}}\ \_makeList;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories}{Categories}}\ \_catList;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties}{Warranties}}\ \_warrantList;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00033}00033\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00038}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_af4455e9b746e573819f13be16c1b0721}{00038}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_af4455e9b746e573819f13be16c1b0721}{Store}}()}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \_clientList\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients}{Clients}}();}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \_prodList\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products}{Products}}();}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \_saleList\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales}{Sales}}();}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \_makeList\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{Makes}}();}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \_catList\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories}{Categories}}();}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \_warrantList\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties}{Warranties}}();}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00057}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a79907e1a87b112f18b749fb4b1fafdd6}{00057}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a79907e1a87b112f18b749fb4b1fafdd6}{Store}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients}{Clients}}\ cl,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products}{Products}}\ p,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales}{Sales}}\ s,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{Makes}}\ m,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories}{Categories}}\ c,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties}{Warranties}}\ w)}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \_clientList=cl;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \_prodList=p;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \_saleList=s;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \_makeList=m;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \_catList=c;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \_warrantList=w;}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00067}00067\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00069}00069\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00073}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_aca697b091757878b46d74486f97eb251}{00073}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients}{Clients}}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_aca697b091757878b46d74486f97eb251}{ClientLIst}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_clientList;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_clientList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00082}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a313dac175b4457f762d028fb161f99e3}{00082}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products}{Products}}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a313dac175b4457f762d028fb161f99e3}{ProdList}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_prodList;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_prodList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00091}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_af70bdc8006dc38f10a7f2a3862a613c4}{00091}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales}{Sales}}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_af70bdc8006dc38f10a7f2a3862a613c4}{SaleList}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_saleList;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_saleList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00100}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_ac51ef239341d4915272049f26ab30069}{00100}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{Makes}}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_ac51ef239341d4915272049f26ab30069}{MakeList}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_makeList;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_makeList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00109}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a19ae6819a1416bfa370fb1a32eef5218}{00109}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories}{Categories}}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a19ae6819a1416bfa370fb1a32eef5218}{CatList}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_catList;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_catList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00118}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a3fc987ecddc3d25244ffc5054579e7ee}{00118}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties}{Warranties}}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store_a3fc987ecddc3d25244ffc5054579e7ee}{WarrantList}}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_warrantList;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_warrantList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00125}00125\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00129}00129\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00130}00130\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00132}00132\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00133}00133\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00135}00135\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_store_1_1_store}{\string~Store}}()}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00142}00142\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00144}00144\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00145}00145\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_store_8cs_source_l00146}00146\ \}}
+
+\end{DoxyCode}

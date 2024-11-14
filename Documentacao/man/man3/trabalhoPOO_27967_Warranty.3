@@ -1,0 +1,208 @@
+.TH "trabalhoPOO_27967.Warranty" 3 "Version v 1.0" "LESI_TP_POO_27967" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+trabalhoPOO_27967.Warranty \- Purpose: This class contains the definition and methods to manage warranties\&. Created by: Jose Alves a27967 Created on: 11/13/2024 4:17:18 PM\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWarranty\fP ()"
+.br
+.RI "The default Constructor\&. "
+.ti -1c
+.RI "\fBWarranty\fP (string prodID, int durationInYears, string conditions)"
+.br
+.RI "The constructor to use when the ID of the product, duration (in years) and the conditions are given\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Method to show the information of a Warranty\&. "
+.ti -1c
+.RI "override bool \fBEquals\fP (object obj)"
+.br
+.RI "Redefine the Equals operator to verify if a warranty matches the other\&. "
+.ti -1c
+.RI "DateTime \fBExpirationDate\fP (\fBSale\fP s, string reff)"
+.br
+.RI "Method to calculate when a warranty is due to expire\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBoperator==\fP (\fBWarranty\fP w1, \fBWarranty\fP w2)"
+.br
+.RI "Redefinition of the == operator\&. "
+.ti -1c
+.RI "static bool \fBoperator!=\fP (\fBWarranty\fP w1, \fBWarranty\fP w2)"
+.br
+.RI "Redefinition of the != operator\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "string \fBProdID\fP\fC [get, set]\fP"
+.br
+.RI "Property to get and set the ID of the product to which the warranty is about\&. "
+.ti -1c
+.RI "int \fBDurationInYears\fP\fC [get, set]\fP"
+.br
+.RI "The property to set and get the duration of a warranty (in years)\&. "
+.ti -1c
+.RI "string \fBConditions\fP\fC [get, set]\fP"
+.br
+.RI "The property to get and set the terms of a warranty\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Purpose: This class contains the definition and methods to manage warranties\&. Created by: Jose Alves a27967 Created on: 11/13/2024 4:17:18 PM\&. 
+
+
+.PP
+Definition at line \fB23\fP of file \fBWarranty\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "trabalhoPOO_27967\&.Warranty\&.Warranty ()"
+
+.PP
+The default Constructor\&. 
+.PP
+Definition at line \fB38\fP of file \fBWarranty\&.cs\fP\&.
+.SS "trabalhoPOO_27967\&.Warranty\&.Warranty (string prodID, int durationInYears, string conditions)"
+
+.PP
+The constructor to use when the ID of the product, duration (in years) and the conditions are given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIprodID\fP 
+.br
+\fIdurationInYears\fP 
+.br
+\fIconditions\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB51\fP of file \fBWarranty\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool trabalhoPOO_27967\&.Warranty\&.Equals (object obj)"
+
+.PP
+Redefine the Equals operator to verify if a warranty matches the other\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+Veriffies if the object given is null\&.
+.PP
+Casts the object to be Warranty\&.
+.PP
+Definition at line \fB114\fP of file \fBWarranty\&.cs\fP\&.
+.SS "DateTime trabalhoPOO_27967\&.Warranty\&.ExpirationDate (\fBSale\fP s, string reff)"
+
+.PP
+Method to calculate when a warranty is due to expire\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs\fP 
+.br
+\fIreff\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB157\fP of file \fBWarranty\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Warranty\&.operator!= (\fBWarranty\fP w1, \fBWarranty\fP w2)\fC [static]\fP"
+
+.PP
+Redefinition of the != operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIw1\fP 
+.br
+\fIw2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB144\fP of file \fBWarranty\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Warranty\&.operator== (\fBWarranty\fP w1, \fBWarranty\fP w2)\fC [static]\fP"
+
+.PP
+Redefinition of the == operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIw1\fP 
+.br
+\fIw2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB133\fP of file \fBWarranty\&.cs\fP\&.
+.SS "override string trabalhoPOO_27967\&.Warranty\&.ToString ()"
+
+.PP
+Method to show the information of a Warranty\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line \fB99\fP of file \fBWarranty\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "string trabalhoPOO_27967\&.Warranty\&.Conditions\fC [get]\fP, \fC [set]\fP"
+
+.PP
+The property to get and set the terms of a warranty\&. 
+.PP
+Definition at line \fB85\fP of file \fBWarranty\&.cs\fP\&.
+.SS "int trabalhoPOO_27967\&.Warranty\&.DurationInYears\fC [get]\fP, \fC [set]\fP"
+
+.PP
+The property to set and get the duration of a warranty (in years)\&. 
+.PP
+Definition at line \fB76\fP of file \fBWarranty\&.cs\fP\&.
+.SS "string trabalhoPOO_27967\&.Warranty\&.ProdID\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to get and set the ID of the product to which the warranty is about\&. 
+.PP
+Definition at line \fB67\fP of file \fBWarranty\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LESI_TP_POO_27967 from the source code\&.

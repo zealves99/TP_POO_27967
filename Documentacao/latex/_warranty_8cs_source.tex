@@ -1,0 +1,124 @@
+\doxysection{Warranty.\+cs}
+\hypertarget{_warranty_8cs_source}{}\label{_warranty_8cs_source}\index{Warranty/Warranty.cs@{Warranty/Warranty.cs}}
+\mbox{\hyperlink{_warranty_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}trabalhoPOO\_27967.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/13/2024\ 4:17:18\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description></description>}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System.Diagnostics.Contracts;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00012}00012\ \textcolor{keyword}{using\ }System.Xml.Linq;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00014}00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967}{trabalhoPOO\_27967}}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00023}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \_prodID;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_durationInYears;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \_conditions;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00033}00033\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00038}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3c79ee575f3d82a435a9e880a6335948}{00038}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3c79ee575f3d82a435a9e880a6335948}{Warranty}}()}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \_prodID\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \_durationInYears\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \_conditions\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00051}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_ae6f2af18d3aa15eb373a803445def9de}{00051}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_ae6f2af18d3aa15eb373a803445def9de}{Warranty}}(\textcolor{keywordtype}{string}\ prodID,\ \textcolor{keywordtype}{int}\ durationInYears,\ \textcolor{keywordtype}{string}\ conditions)}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \_prodID\ =\ prodID;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \_durationInYears\ =\ durationInYears;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \_conditions\ =\ conditions;}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00060}00060\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00062}00062\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00067}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2}{00067}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2}{ProdID}}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \ \textcolor{keywordflow}{return}\ \_prodID;\ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_prodID\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00076}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_ae44cb41795d598448c6493c3b5ac649d}{00076}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_ae44cb41795d598448c6493c3b5ac649d}{DurationInYears}}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_durationInYears;\ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_durationInYears\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00085}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a0aa6a3f6894f14c96ceb454e99f5c564}{00085}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a0aa6a3f6894f14c96ceb454e99f5c564}{Conditions}}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_conditions;\ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_conditions\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00090}00090\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00094}00094\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00099}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a9bdc0d7ecd8ccfa272efee0b7ca9609b}{00099}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a9bdc0d7ecd8ccfa272efee0b7ca9609b}{ToString}}()}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ StringBuilder\ sb\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(\$\textcolor{stringliteral}{"{}Warranty\ Data:\ "{}});}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(\$\textcolor{stringliteral}{"{}Duration:\ \{\_durationInYears\}\ years"{}});}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(\$\textcolor{stringliteral}{"{}Terms:\ \{\_conditions\}"{}});}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sb.ToString();}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00114}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5}{00114}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5}{Equals}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00121}00121\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}\ war\ =\ obj\ as\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3c79ee575f3d82a435a9e880a6335948}{Warranty}};}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2}{ProdID}}\ ==\ war.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2}{ProdID}}\ \&\&\ \textcolor{keyword}{this}.Conditions\ ==\ war.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a0aa6a3f6894f14c96ceb454e99f5c564}{Conditions}});}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00133}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a4632de1409f2400ccea4fdbdf2612fb1}{00133}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a4632de1409f2400ccea4fdbdf2612fb1}{operator\ ==}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}\ w1,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}\ w2)}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (w1.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5}{Equals}}(w2));}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00144}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a45ab8f5ebe4e524b2014e8819aca9fc7}{00144}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a45ab8f5ebe4e524b2014e8819aca9fc7}{operator\ !=}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}\ w1,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}\ w2)}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(w1.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5}{Equals}}(w2));}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00147}00147\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00148}00148\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00150}00150\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00157}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3d3f4927f2c0642a2db4af58d323566e}{00157}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3d3f4927f2c0642a2db4af58d323566e}{ExpirationDate}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}}\ s,\ \textcolor{keywordtype}{string}\ reff)}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00158}00158\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}}\ p\ =\ s.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale_a974f7167b2226b03aad5f6689b5a1786}{Products}}.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a6c4b0721b9ee7386ecf2f3ca7816d299}{SearchProduct}}(reff);}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (s.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale_a54f048c0abf036d49fb4b152290f2e01}{SaleDate}}.AddYears(\_durationInYears));}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00162}00162\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00164}00164\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00168}00168\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{\string~Warranty}}()}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00170}00170\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00171}00171\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00173}00173\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00174}00174\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_warranty_8cs_source_l00175}00175\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,237 @@
+.TH "trabalhoPOO_27967.Products" 3 "Version v 1.0" "LESI_TP_POO_27967" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+trabalhoPOO_27967.Products \- Purpose: Class to manage a group of more than one product\&. Created by: Jose Alves a27967 Created on: 11/9/2024 6:34:19 PM\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProducts\fP ()"
+.br
+.RI "The default Constructor\&. "
+.ti -1c
+.RI "\fBProducts\fP (List< \fBProduct\fP > products)"
+.br
+.RI "The constructor to use when list of Product is given\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Override of the ToString() Method to convert the data of a list fo products to a string\&. "
+.ti -1c
+.RI "decimal \fBValueInPosition\fP (int p)"
+.br
+.RI "This method returns the price of a product, given a certain array position\&. "
+.ti -1c
+.RI "bool \fBInsertProduct\fP (\fBProduct\fP p)"
+.br
+.RI "This method inserts a product in a list of products\&. "
+.ti -1c
+.RI "bool \fBExistProduct\fP (string reff)"
+.br
+.RI "Method used to verify if a product is on a products' list\&. "
+.ti -1c
+.RI "bool \fBRemoveProduct\fP (\fBProduct\fP p)"
+.br
+.RI "Method used to remove a product from a Products' list\&. "
+.ti -1c
+.RI "\fBProduct\fP \fBSearchProduct\fP (string reff)"
+.br
+.RI "This method searches for a product in an array, given its refference\&. "
+.ti -1c
+.RI "decimal \fBTotalPrice\fP ()"
+.br
+.RI "Method used to calculate the total price of products in a list of products\&. "
+.ti -1c
+.RI "DateTime \fBWarratyExpirationDateForProduct\fP (DateTime date, string reff)"
+.br
+.RI "Method used to calculate the warranty's expiration date of a product on a list of products\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "List< \fBProduct\fP > \fBProds\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the list of products\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Purpose: Class to manage a group of more than one product\&. Created by: Jose Alves a27967 Created on: 11/9/2024 6:34:19 PM\&. 
+
+
+.PP
+Definition at line \fB25\fP of file \fBProducts\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "trabalhoPOO_27967\&.Products\&.Products ()"
+
+.PP
+The default Constructor\&. 
+.PP
+Definition at line \fB38\fP of file \fBProducts\&.cs\fP\&.
+.SS "trabalhoPOO_27967\&.Products\&.Products (List< \fBProduct\fP > products)"
+
+.PP
+The constructor to use when list of Product is given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproducts\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB47\fP of file \fBProducts\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool trabalhoPOO_27967\&.Products\&.ExistProduct (string reff)"
+
+.PP
+Method used to verify if a product is on a products' list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreff\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB115\fP of file \fBProducts\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Products\&.InsertProduct (\fBProduct\fP p)"
+
+.PP
+This method inserts a product in a list of products\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns true or False, depending on whether or not it succeeded in inserting the product into the list\&. 
+.RE
+.PP
+
+.PP
+Definition at line \fB103\fP of file \fBProducts\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Products\&.RemoveProduct (\fBProduct\fP p)"
+
+.PP
+Method used to remove a product from a Products' list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+Product removed successfully
+.PP
+Product was not removed\&.
+.PP
+Definition at line \fB129\fP of file \fBProducts\&.cs\fP\&.
+.SS "\fBProduct\fP trabalhoPOO_27967\&.Products\&.SearchProduct (string reff)"
+
+.PP
+This method searches for a product in an array, given its refference\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreff\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Returns the product if found
+.RE
+.PP
+
+.PP
+Definition at line \fB145\fP of file \fBProducts\&.cs\fP\&.
+.SS "override string trabalhoPOO_27967\&.Products\&.ToString ()"
+
+.PP
+Override of the ToString() Method to convert the data of a list fo products to a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line \fB75\fP of file \fBProducts\&.cs\fP\&.
+.SS "decimal trabalhoPOO_27967\&.Products\&.TotalPrice ()"
+
+.PP
+Method used to calculate the total price of products in a list of products\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line \fB158\fP of file \fBProducts\&.cs\fP\&.
+.SS "decimal trabalhoPOO_27967\&.Products\&.ValueInPosition (int p)"
+
+.PP
+This method returns the price of a product, given a certain array position\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP Position in array\&.
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB93\fP of file \fBProducts\&.cs\fP\&.
+.SS "DateTime trabalhoPOO_27967\&.Products\&.WarratyExpirationDateForProduct (DateTime date, string reff)"
+
+.PP
+Method used to calculate the warranty's expiration date of a product on a list of products\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdate\fP 
+.br
+\fIreff\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB170\fP of file \fBProducts\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "List<\fBProduct\fP> trabalhoPOO_27967\&.Products\&.Prods\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the list of products\&. 
+.PP
+Definition at line \fB60\fP of file \fBProducts\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LESI_TP_POO_27967 from the source code\&.

@@ -1,0 +1,398 @@
+\begin{theindex}
+
+  \item {AddCampaign}
+    \subitem {trabalhoPOO\_27967.Campaigns}, \hyperpage{16}
+  \item {AddCategory}
+    \subitem {trabalhoPOO\_27967.Categories}, \hyperpage{18}
+  \item {AddClient}
+    \subitem {trabalhoPOO\_27967.Clients}, \hyperpage{27}
+  \item {AddMake}
+    \subitem {trabalhoPOO\_27967.Makes}, \hyperpage{34}
+  \item {AddSale}
+    \subitem {trabalhoPOO\_27967.Sales}, \hyperpage{51}
+  \item {AddWarranty}
+    \subitem {trabalhoPOO\_27967.Warranties}, \hyperpage{55}
+
+  \indexspace
+
+  \item {BestSale.cs}, \hyperpage{61}
+
+  \indexspace
+
+  \item {Campaign}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{10}
+  \item {Campaign/Campaign.cs}, \hyperpage{62}
+  \item {Campaign/Campaigns.cs}, \hyperpage{64}
+  \item {CampaignCount}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{13}
+  \item {Campaigns}
+    \subitem {trabalhoPOO\_27967.Campaigns}, \hyperpage{15}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{48}
+  \item {Camps}
+    \subitem {trabalhoPOO\_27967.Campaigns}, \hyperpage{17}
+  \item {Categories}
+    \subitem {trabalhoPOO\_27967.Categories}, \hyperpage{18}
+  \item {Category}
+    \subitem {trabalhoPOO\_27967.Category}, \hyperpage{21}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{38}
+  \item {Category/Categories.cs}, \hyperpage{65}
+  \item {Category/Category.cs}, \hyperpage{67}
+  \item {CatList}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{53}
+  \item {Cats}
+    \subitem {trabalhoPOO\_27967.Categories}, \hyperpage{20}
+  \item {Client}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{24}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{48}
+  \item {Client/Client.cs}, \hyperpage{68}
+  \item {Client/Clients.cs}, \hyperpage{70}
+  \item {ClientCount}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{26}
+  \item {ClientID}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{26}
+  \item {ClientLIst}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{53}
+  \item {ClientList}
+    \subitem {trabalhoPOO\_27967.Clients}, \hyperpage{29}
+  \item {Clients}
+    \subitem {trabalhoPOO\_27967.Clients}, \hyperpage{27}
+  \item {Conditions}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{60}
+  \item {Contact}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Discount}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{13}
+  \item {DurationInYears}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{60}
+
+  \indexspace
+
+  \item {EndDate}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{13}
+  \item {Equals}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{11}
+    \subitem {trabalhoPOO\_27967.Category}, \hyperpage{21}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{24}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{30}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{37}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{45}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{58}
+  \item {ExistCampaign}
+    \subitem {trabalhoPOO\_27967.Campaigns}, \hyperpage{16}
+  \item {ExistCategory}
+    \subitem {trabalhoPOO\_27967.Categories}, \hyperpage{18, 19}
+  \item {ExistClient}
+    \subitem {trabalhoPOO\_27967.Clients}, \hyperpage{28}
+  \item {ExistMake}
+    \subitem {trabalhoPOO\_27967.Makes}, \hyperpage{34}
+  \item {ExistProduct}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{41}
+  \item {ExistProductOnSale}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{46}
+  \item {ExistWarranty}
+    \subitem {trabalhoPOO\_27967.Warranties}, \hyperpage{55}
+  \item {ExpirationDate}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{58}
+
+  \indexspace
+
+  \item {GetClient}
+    \subitem {trabalhoPOO\_27967.Clients}, \hyperpage{28}
+  \item {GetSale}
+    \subitem {trabalhoPOO\_27967.Sales}, \hyperpage{51}
+
+  \indexspace
+
+  \item {ID}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{32}
+  \item {Id}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{14}
+    \subitem {trabalhoPOO\_27967.Category}, \hyperpage{22}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{49}
+  \item {InsertProduct}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{41}
+  \item {InsertProductOnSale}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{46}
+
+  \indexspace
+
+  \item {Make}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{30}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{38}
+  \item {Make/Make.cs}, \hyperpage{72}
+  \item {Make/Makes.cs}, \hyperpage{73}
+  \item {MakeList}
+    \subitem {trabalhoPOO\_27967.Makes}, \hyperpage{35}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{53}
+  \item {Makes}
+    \subitem {trabalhoPOO\_27967.Makes}, \hyperpage{33}
+
+  \indexspace
+
+  \item {Name}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{14}
+    \subitem {trabalhoPOO\_27967.Category}, \hyperpage{22}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{26}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{32}
+
+  \indexspace
+
+  \item {obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs}, 
+		\hyperpage{75}
+  \item {operator!=}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{11}
+    \subitem {trabalhoPOO\_27967.Category}, \hyperpage{22}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{25}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{31}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{37}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{46}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{58}
+  \item {operator==}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{11}
+    \subitem {trabalhoPOO\_27967.Category}, \hyperpage{22}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{25}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{31}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{37}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{47}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{59}
+
+  \indexspace
+
+  \item {Price}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{38}
+  \item {ProdID}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{60}
+  \item {ProdList}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{53}
+  \item {Prods}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{43}
+  \item {Product}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{36}
+  \item {Product/Product.cs}, \hyperpage{75}
+  \item {Product/Products.cs}, \hyperpage{77}
+  \item {Products}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{40}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{49}
+  \item {Properties/AssemblyInfo.cs}, \hyperpage{79}
+
+  \indexspace
+
+  \item {Reference}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{39}
+  \item {RemoveCampaign}
+    \subitem {trabalhoPOO\_27967.Campaigns}, \hyperpage{16}
+  \item {RemoveCategory}
+    \subitem {trabalhoPOO\_27967.Categories}, \hyperpage{19}
+  \item {RemoveClient}
+    \subitem {trabalhoPOO\_27967.Clients}, \hyperpage{28}
+  \item {RemoveMake}
+    \subitem {trabalhoPOO\_27967.Makes}, \hyperpage{35}
+  \item {RemoveProduct}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{41}
+  \item {RemoveProductFromSale}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{47}
+  \item {RemoveWarranty}
+    \subitem {trabalhoPOO\_27967.Warranties}, \hyperpage{56}
+
+  \indexspace
+
+  \item {Sale}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{45}
+  \item {Sale/Sale.cs}, \hyperpage{79, 80}
+  \item {Sale/Sales.cs}, \hyperpage{82}
+  \item {SaleDate}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{49}
+  \item {SaleList}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{53}
+  \item {Sales}
+    \subitem {trabalhoPOO\_27967.Sales}, \hyperpage{50}
+  \item {SalesStored}
+    \subitem {trabalhoPOO\_27967.Sales}, \hyperpage{51}
+  \item {SearchProduct}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{42}
+  \item {StartDate}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{14}
+  \item {Stock}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{39}
+  \item {Store}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{52}
+  \item {Store/Store.cs}, \hyperpage{83}
+
+  \indexspace
+
+  \item {ToString}
+    \subitem {trabalhoPOO\_27967.Client}, \hyperpage{25}
+    \subitem {trabalhoPOO\_27967.Make}, \hyperpage{32}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{38}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{42}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{47}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{59}
+  \item {TotalPrice}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{42}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{48}
+  \item {TotPrice}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{49}
+  \item {trabalhoPOO\_27967}, \hyperpage{7}
+  \item {trabalhoPOO\_27967.BestSale}, \hyperpage{9}
+  \item {trabalhoPOO\_27967.Campaign}, \hyperpage{9}
+    \subitem {Campaign}, \hyperpage{10}
+    \subitem {CampaignCount}, \hyperpage{13}
+    \subitem {Discount}, \hyperpage{13}
+    \subitem {EndDate}, \hyperpage{13}
+    \subitem {Equals}, \hyperpage{11}
+    \subitem {Id}, \hyperpage{14}
+    \subitem {Name}, \hyperpage{14}
+    \subitem {operator!=}, \hyperpage{11}
+    \subitem {operator==}, \hyperpage{11}
+    \subitem {StartDate}, \hyperpage{14}
+    \subitem {VerifyApplicability}, \hyperpage{13}
+  \item {trabalhoPOO\_27967.Campaigns}, \hyperpage{14}
+    \subitem {AddCampaign}, \hyperpage{16}
+    \subitem {Campaigns}, \hyperpage{15}
+    \subitem {Camps}, \hyperpage{17}
+    \subitem {ExistCampaign}, \hyperpage{16}
+    \subitem {RemoveCampaign}, \hyperpage{16}
+  \item {trabalhoPOO\_27967.Categories}, \hyperpage{17}
+    \subitem {AddCategory}, \hyperpage{18}
+    \subitem {Categories}, \hyperpage{18}
+    \subitem {Cats}, \hyperpage{20}
+    \subitem {ExistCategory}, \hyperpage{18, 19}
+    \subitem {RemoveCategory}, \hyperpage{19}
+  \item {trabalhoPOO\_27967.Category}, \hyperpage{20}
+    \subitem {Category}, \hyperpage{21}
+    \subitem {Equals}, \hyperpage{21}
+    \subitem {Id}, \hyperpage{22}
+    \subitem {Name}, \hyperpage{22}
+    \subitem {operator!=}, \hyperpage{22}
+    \subitem {operator==}, \hyperpage{22}
+  \item {trabalhoPOO\_27967.Client}, \hyperpage{23}
+    \subitem {Client}, \hyperpage{24}
+    \subitem {ClientCount}, \hyperpage{26}
+    \subitem {ClientID}, \hyperpage{26}
+    \subitem {Contact}, \hyperpage{26}
+    \subitem {Equals}, \hyperpage{24}
+    \subitem {Name}, \hyperpage{26}
+    \subitem {operator!=}, \hyperpage{25}
+    \subitem {operator==}, \hyperpage{25}
+    \subitem {ToString}, \hyperpage{25}
+  \item {trabalhoPOO\_27967.Clients}, \hyperpage{27}
+    \subitem {AddClient}, \hyperpage{27}
+    \subitem {ClientList}, \hyperpage{29}
+    \subitem {Clients}, \hyperpage{27}
+    \subitem {ExistClient}, \hyperpage{28}
+    \subitem {GetClient}, \hyperpage{28}
+    \subitem {RemoveClient}, \hyperpage{28}
+  \item {trabalhoPOO\_27967.Make}, \hyperpage{29}
+    \subitem {Equals}, \hyperpage{30}
+    \subitem {ID}, \hyperpage{32}
+    \subitem {Make}, \hyperpage{30}
+    \subitem {Name}, \hyperpage{32}
+    \subitem {operator!=}, \hyperpage{31}
+    \subitem {operator==}, \hyperpage{31}
+    \subitem {ToString}, \hyperpage{32}
+  \item {trabalhoPOO\_27967.Makes}, \hyperpage{32}
+    \subitem {AddMake}, \hyperpage{34}
+    \subitem {ExistMake}, \hyperpage{34}
+    \subitem {MakeList}, \hyperpage{35}
+    \subitem {Makes}, \hyperpage{33}
+    \subitem {RemoveMake}, \hyperpage{35}
+  \item {trabalhoPOO\_27967.Product}, \hyperpage{35}
+    \subitem {Category}, \hyperpage{38}
+    \subitem {Equals}, \hyperpage{37}
+    \subitem {Make}, \hyperpage{38}
+    \subitem {operator!=}, \hyperpage{37}
+    \subitem {operator==}, \hyperpage{37}
+    \subitem {Price}, \hyperpage{38}
+    \subitem {Product}, \hyperpage{36}
+    \subitem {Reference}, \hyperpage{39}
+    \subitem {Stock}, \hyperpage{39}
+    \subitem {ToString}, \hyperpage{38}
+    \subitem {Warranty}, \hyperpage{39}
+  \item {trabalhoPOO\_27967.Products}, \hyperpage{39}
+    \subitem {ExistProduct}, \hyperpage{41}
+    \subitem {InsertProduct}, \hyperpage{41}
+    \subitem {Prods}, \hyperpage{43}
+    \subitem {Products}, \hyperpage{40}
+    \subitem {RemoveProduct}, \hyperpage{41}
+    \subitem {SearchProduct}, \hyperpage{42}
+    \subitem {ToString}, \hyperpage{42}
+    \subitem {TotalPrice}, \hyperpage{42}
+    \subitem {ValueInPosition}, \hyperpage{42}
+    \subitem {WarratyExpirationDateForProduct}, \hyperpage{43}
+  \item {trabalhoPOO\_27967.Sale}, \hyperpage{44}
+    \subitem {Campaigns}, \hyperpage{48}
+    \subitem {Client}, \hyperpage{48}
+    \subitem {Equals}, \hyperpage{45}
+    \subitem {ExistProductOnSale}, \hyperpage{46}
+    \subitem {Id}, \hyperpage{49}
+    \subitem {InsertProductOnSale}, \hyperpage{46}
+    \subitem {operator!=}, \hyperpage{46}
+    \subitem {operator==}, \hyperpage{47}
+    \subitem {Products}, \hyperpage{49}
+    \subitem {RemoveProductFromSale}, \hyperpage{47}
+    \subitem {Sale}, \hyperpage{45}
+    \subitem {SaleDate}, \hyperpage{49}
+    \subitem {ToString}, \hyperpage{47}
+    \subitem {TotalPrice}, \hyperpage{48}
+    \subitem {TotPrice}, \hyperpage{49}
+    \subitem {WarrantyExpirationDate}, \hyperpage{48}
+  \item {trabalhoPOO\_27967.Sales}, \hyperpage{49}
+    \subitem {AddSale}, \hyperpage{51}
+    \subitem {GetSale}, \hyperpage{51}
+    \subitem {Sales}, \hyperpage{50}
+    \subitem {SalesStored}, \hyperpage{51}
+  \item {trabalhoPOO\_27967.Store}, \hyperpage{8}
+  \item {trabalhoPOO\_27967.Store.Store}, \hyperpage{52}
+    \subitem {CatList}, \hyperpage{53}
+    \subitem {ClientLIst}, \hyperpage{53}
+    \subitem {MakeList}, \hyperpage{53}
+    \subitem {ProdList}, \hyperpage{53}
+    \subitem {SaleList}, \hyperpage{53}
+    \subitem {Store}, \hyperpage{52}
+    \subitem {WarrantList}, \hyperpage{54}
+  \item {trabalhoPOO\_27967.Warranties}, \hyperpage{54}
+    \subitem {AddWarranty}, \hyperpage{55}
+    \subitem {ExistWarranty}, \hyperpage{55}
+    \subitem {RemoveWarranty}, \hyperpage{56}
+    \subitem {Warranties}, \hyperpage{55}
+    \subitem {Warrants}, \hyperpage{56}
+  \item {trabalhoPOO\_27967.Warranty}, \hyperpage{56}
+    \subitem {Conditions}, \hyperpage{60}
+    \subitem {DurationInYears}, \hyperpage{60}
+    \subitem {Equals}, \hyperpage{58}
+    \subitem {ExpirationDate}, \hyperpage{58}
+    \subitem {operator!=}, \hyperpage{58}
+    \subitem {operator==}, \hyperpage{59}
+    \subitem {ProdID}, \hyperpage{60}
+    \subitem {ToString}, \hyperpage{59}
+    \subitem {Warranty}, \hyperpage{57}
+
+  \indexspace
+
+  \item {ValueInPosition}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{42}
+  \item {VerifyApplicability}
+    \subitem {trabalhoPOO\_27967.Campaign}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Warranties}
+    \subitem {trabalhoPOO\_27967.Warranties}, \hyperpage{55}
+  \item {WarrantList}
+    \subitem {trabalhoPOO\_27967.Store.Store}, \hyperpage{54}
+  \item {Warrants}
+    \subitem {trabalhoPOO\_27967.Warranties}, \hyperpage{56}
+  \item {Warranty}
+    \subitem {trabalhoPOO\_27967.Product}, \hyperpage{39}
+    \subitem {trabalhoPOO\_27967.Warranty}, \hyperpage{57}
+  \item {Warranty/Warranties.cs}, \hyperpage{85}
+  \item {Warranty/Warranty.cs}, \hyperpage{86}
+  \item {WarrantyExpirationDate}
+    \subitem {trabalhoPOO\_27967.Sale}, \hyperpage{48}
+  \item {WarratyExpirationDateForProduct}
+    \subitem {trabalhoPOO\_27967.Products}, \hyperpage{43}
+
+\end{theindex}

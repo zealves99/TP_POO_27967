@@ -1,0 +1,223 @@
+.TH "trabalhoPOO_27967.Campaign" 3 "Version v 1.0" "LESI_TP_POO_27967" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+trabalhoPOO_27967.Campaign \- Purpose: Definition of Campaign and methods to deal with Campaign operations\&. Created by: Jose Alves a27967 Created on: 11/6/2024 11:21:43 AM\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCampaign\fP ()"
+.br
+.RI "The default Constructor\&. "
+.ti -1c
+.RI "\fBCampaign\fP (string name, decimal discount, DateTime startDate, DateTime endDate)"
+.br
+.RI "Constructor used to create a campaign when a name, a decimal value of discount, start and ending dates are given\&. "
+.ti -1c
+.RI "override bool \fBEquals\fP (object obj)"
+.br
+.RI "Redefine the Equals operator to verify if a campaign matches the other\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBoperator==\fP (\fBCampaign\fP camp1, \fBCampaign\fP camp2)"
+.br
+.RI "Redefinition of the == operator\&. "
+.ti -1c
+.RI "static bool \fBoperator!=\fP (\fBCampaign\fP camp1, \fBCampaign\fP camp2)"
+.br
+.RI "Redefinition of the != operator\&. "
+.ti -1c
+.RI "static bool \fBVerifyApplicability\fP (\fBCampaign\fP camp)"
+.br
+.RI "Method to verify if a certaign campaign is applicable, according to its start and end dates\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBId\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the ID of a Campaign\&. "
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the Name of a Campaign\&. "
+.ti -1c
+.RI "decimal \fBDiscount\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the Decimal Discount of a Campaign\&. "
+.ti -1c
+.RI "DateTime \fBStartDate\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the Start Date of a Campaign\&. "
+.ti -1c
+.RI "DateTime \fBEndDate\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the End Date of a Campaign\&. "
+.ti -1c
+.RI "int \fBCampaignCount\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the Campaign Counter\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Purpose: Definition of Campaign and methods to deal with Campaign operations\&. Created by: Jose Alves a27967 Created on: 11/6/2024 11:21:43 AM\&. 
+
+
+.PP
+Definition at line \fB20\fP of file \fBCampaign\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "trabalhoPOO_27967\&.Campaign\&.Campaign ()"
+
+.PP
+The default Constructor\&. 
+.PP
+Definition at line \fB38\fP of file \fBCampaign\&.cs\fP\&.
+.SS "trabalhoPOO_27967\&.Campaign\&.Campaign (string name, decimal discount, DateTime startDate, DateTime endDate)"
+
+.PP
+Constructor used to create a campaign when a name, a decimal value of discount, start and ending dates are given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.br
+\fIname\fP 
+.br
+\fIdiscount\fP 
+.br
+\fIstartDate\fP 
+.br
+\fIendDate\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB55\fP of file \fBCampaign\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool trabalhoPOO_27967\&.Campaign\&.Equals (object obj)"
+
+.PP
+Redefine the Equals operator to verify if a campaign matches the other\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+Veriffies if the object given is null\&.
+.PP
+Casts the object to be Campaign\&.
+.PP
+Definition at line \fB134\fP of file \fBCampaign\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Campaign\&.operator!= (\fBCampaign\fP camp1, \fBCampaign\fP camp2)\fC [static]\fP"
+
+.PP
+Redefinition of the != operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcli1\fP 
+.br
+\fIcli2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB164\fP of file \fBCampaign\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Campaign\&.operator== (\fBCampaign\fP camp1, \fBCampaign\fP camp2)\fC [static]\fP"
+
+.PP
+Redefinition of the == operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcli1\fP 
+.br
+\fIcli2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB153\fP of file \fBCampaign\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Campaign\&.VerifyApplicability (\fBCampaign\fP camp)\fC [static]\fP"
+
+.PP
+Method to verify if a certaign campaign is applicable, according to its start and end dates\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcamp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+Verifies if the actual date is in between the start and end dates of the campaign\&.
+.PP
+Definition at line \fB177\fP of file \fBCampaign\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "int trabalhoPOO_27967\&.Campaign\&.CampaignCount\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the Campaign Counter\&. 
+.PP
+Definition at line \fB119\fP of file \fBCampaign\&.cs\fP\&.
+.SS "decimal trabalhoPOO_27967\&.Campaign\&.Discount\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the Decimal Discount of a Campaign\&. 
+.PP
+Definition at line \fB92\fP of file \fBCampaign\&.cs\fP\&.
+.SS "DateTime trabalhoPOO_27967\&.Campaign\&.EndDate\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the End Date of a Campaign\&. 
+.PP
+Definition at line \fB110\fP of file \fBCampaign\&.cs\fP\&.
+.SS "int trabalhoPOO_27967\&.Campaign\&.Id\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the ID of a Campaign\&. 
+.PP
+Definition at line \fB75\fP of file \fBCampaign\&.cs\fP\&.
+.SS "string trabalhoPOO_27967\&.Campaign\&.Name\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the Name of a Campaign\&. 
+.PP
+Definition at line \fB83\fP of file \fBCampaign\&.cs\fP\&.
+.SS "DateTime trabalhoPOO_27967\&.Campaign\&.StartDate\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the Start Date of a Campaign\&. 
+.PP
+Definition at line \fB101\fP of file \fBCampaign\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LESI_TP_POO_27967 from the source code\&.

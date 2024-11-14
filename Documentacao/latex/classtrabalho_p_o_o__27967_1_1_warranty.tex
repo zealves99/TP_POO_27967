@@ -1,0 +1,251 @@
+\doxysection{trabalho\+POO\+\_\+27967.\+Warranty Class Reference}
+\hypertarget{classtrabalho_p_o_o__27967_1_1_warranty}{}\label{classtrabalho_p_o_o__27967_1_1_warranty}\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+
+
+Purpose\+: This class contains the definition and methods to manage warranties. Created by\+: Jose Alves a27967 Created on\+: 11/13/2024 4\+:17\+:18 PM.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3c79ee575f3d82a435a9e880a6335948}{Warranty}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_ae6f2af18d3aa15eb373a803445def9de}{Warranty}} (string prod\+ID, int duration\+In\+Years, string conditions)
+\begin{DoxyCompactList}\small\item\em The constructor to use when the ID of the product, duration (in years) and the conditions are given. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a9bdc0d7ecd8ccfa272efee0b7ca9609b}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Method to show the information of a Warranty. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Redefine the Equals operator to verify if a warranty matches the other. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a3d3f4927f2c0642a2db4af58d323566e}{Expiration\+Date}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}} s, string reff)
+\begin{DoxyCompactList}\small\item\em Method to calculate when a warranty is due to expire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a4632de1409f2400ccea4fdbdf2612fb1}{operator==}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} w1, \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} w2)
+\begin{DoxyCompactList}\small\item\em Redefinition of the == operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a45ab8f5ebe4e524b2014e8819aca9fc7}{operator!=}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} w1, \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} w2)
+\begin{DoxyCompactList}\small\item\em Redefinition of the != operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2}{Prod\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property to get and set the ID of the product to which the warranty is about. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_ae44cb41795d598448c6493c3b5ac649d}{Duration\+In\+Years}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property to set and get the duration of a warranty (in years). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty_a0aa6a3f6894f14c96ceb454e99f5c564}{Conditions}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property to get and set the terms of a warranty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: This class contains the definition and methods to manage warranties. Created by\+: Jose Alves a27967 Created on\+: 11/13/2024 4\+:17\+:18 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00023}{23}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_a3c79ee575f3d82a435a9e880a6335948}\label{classtrabalho_p_o_o__27967_1_1_warranty_a3c79ee575f3d82a435a9e880a6335948} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!Warranty@{Warranty}}
+\index{Warranty@{Warranty}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{Warranty()}{Warranty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily trabalho\+POO\+\_\+27967.\+Warranty.\+Warranty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00038}{38}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_ae6f2af18d3aa15eb373a803445def9de}\label{classtrabalho_p_o_o__27967_1_1_warranty_ae6f2af18d3aa15eb373a803445def9de} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!Warranty@{Warranty}}
+\index{Warranty@{Warranty}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{Warranty()}{Warranty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily trabalho\+POO\+\_\+27967.\+Warranty.\+Warranty (\begin{DoxyParamCaption}\item[{string}]{prod\+ID,  }\item[{int}]{duration\+In\+Years,  }\item[{string}]{conditions }\end{DoxyParamCaption})}
+
+
+
+The constructor to use when the ID of the product, duration (in years) and the conditions are given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prod\+ID} & \\
+\hline
+{\em duration\+In\+Years} & \\
+\hline
+{\em conditions} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00051}{51}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5}\label{classtrabalho_p_o_o__27967_1_1_warranty_aa664a215594a1313da4e46d5770f84b5} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!Equals@{Equals}}
+\index{Equals@{Equals}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily override bool trabalho\+POO\+\_\+27967.\+Warranty.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Redefine the Equals operator to verify if a warranty matches the other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Veriffies if the object given is null.
+
+Casts the object to be Warranty.
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00114}{114}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_a3d3f4927f2c0642a2db4af58d323566e}\label{classtrabalho_p_o_o__27967_1_1_warranty_a3d3f4927f2c0642a2db4af58d323566e} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!ExpirationDate@{ExpirationDate}}
+\index{ExpirationDate@{ExpirationDate}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{ExpirationDate()}{ExpirationDate()}}
+{\footnotesize\ttfamily Date\+Time trabalho\+POO\+\_\+27967.\+Warranty.\+Expiration\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}}}]{s,  }\item[{string}]{reff }\end{DoxyParamCaption})}
+
+
+
+Method to calculate when a warranty is due to expire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00157}{157}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_a45ab8f5ebe4e524b2014e8819aca9fc7}\label{classtrabalho_p_o_o__27967_1_1_warranty_a45ab8f5ebe4e524b2014e8819aca9fc7} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool trabalho\+POO\+\_\+27967.\+Warranty.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}]{w1,  }\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}]{w2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Redefinition of the != operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w1} & \\
+\hline
+{\em w2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00144}{144}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_a4632de1409f2400ccea4fdbdf2612fb1}\label{classtrabalho_p_o_o__27967_1_1_warranty_a4632de1409f2400ccea4fdbdf2612fb1} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!operator==@{operator==}}
+\index{operator==@{operator==}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool trabalho\+POO\+\_\+27967.\+Warranty.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}]{w1,  }\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}]{w2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Redefinition of the == operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w1} & \\
+\hline
+{\em w2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00133}{133}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_a9bdc0d7ecd8ccfa272efee0b7ca9609b}\label{classtrabalho_p_o_o__27967_1_1_warranty_a9bdc0d7ecd8ccfa272efee0b7ca9609b} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!ToString@{ToString}}
+\index{ToString@{ToString}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string trabalho\+POO\+\_\+27967.\+Warranty.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Method to show the information of a Warranty. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00099}{99}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_a0aa6a3f6894f14c96ceb454e99f5c564}\label{classtrabalho_p_o_o__27967_1_1_warranty_a0aa6a3f6894f14c96ceb454e99f5c564} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!Conditions@{Conditions}}
+\index{Conditions@{Conditions}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{Conditions}{Conditions}}
+{\footnotesize\ttfamily string trabalho\+POO\+\_\+27967.\+Warranty.\+Conditions\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property to get and set the terms of a warranty. 
+
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00085}{85}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_ae44cb41795d598448c6493c3b5ac649d}\label{classtrabalho_p_o_o__27967_1_1_warranty_ae44cb41795d598448c6493c3b5ac649d} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!DurationInYears@{DurationInYears}}
+\index{DurationInYears@{DurationInYears}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{DurationInYears}{DurationInYears}}
+{\footnotesize\ttfamily int trabalho\+POO\+\_\+27967.\+Warranty.\+Duration\+In\+Years\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property to set and get the duration of a warranty (in years). 
+
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00076}{76}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2}\label{classtrabalho_p_o_o__27967_1_1_warranty_aa7d0cab51a67400c01951ad7b29f60c2} 
+\index{trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}!ProdID@{ProdID}}
+\index{ProdID@{ProdID}!trabalhoPOO\_27967.Warranty@{trabalhoPOO\_27967.Warranty}}
+\doxysubsubsection{\texorpdfstring{ProdID}{ProdID}}
+{\footnotesize\ttfamily string trabalho\+POO\+\_\+27967.\+Warranty.\+Prod\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property to get and set the ID of the product to which the warranty is about. 
+
+
+
+Definition at line \mbox{\hyperlink{_warranty_8cs_source_l00067}{67}} of file \mbox{\hyperlink{_warranty_8cs_source}{Warranty.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Warranty/\mbox{\hyperlink{_warranty_8cs}{Warranty.\+cs}}\end{DoxyCompactItemize}

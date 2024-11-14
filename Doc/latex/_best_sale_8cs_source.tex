@@ -1,0 +1,52 @@
+\doxysection{Best\+Sale.\+cs}
+\hypertarget{_best_sale_8cs_source}{}\label{_best_sale_8cs_source}\index{D:/Aulas/POO/TP\_POO\_27967/trabalhoPOO\_27967/BestSale.cs@{D:/Aulas/POO/TP\_POO\_27967/trabalhoPOO\_27967/BestSale.cs}}
+\mbox{\hyperlink{_best_sale_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }System.Text.RegularExpressions;\ \textcolor{comment}{//Used\ to\ verify\ if\ a\ string\ meets\ certain\ criteria.}}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00008}\mbox{\hyperlink{namespacetrabalho_p_o_o__27967}{00008}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967}{trabalhoPOO\_27967}}}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00010}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_best_sale}{00010}}\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_best_sale}{BestSale}}}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Main(\textcolor{keywordtype}{string}[]\ args)}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ Console.OutputEncoding\ =\ System.Text.Encoding.UTF8;}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ clientTest\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}(\textcolor{stringliteral}{"{}Jose\ Alves"{}},\textcolor{stringliteral}{"{}962310421"{}});}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ clientTest2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}(\textcolor{stringliteral}{"{}Rui\ Jordao"{}},\ \textcolor{stringliteral}{"{}931250420"{}});}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ clientTest1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}();}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}}\ benfica\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}}(\textcolor{stringliteral}{"{}Benfica"{}});}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}}\ futebol\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}}(\textcolor{stringliteral}{"{}Futebol"{}});}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}}\ product1\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}}(\textcolor{stringliteral}{"{}1A34"{}},\ 23.9m,\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}(\textcolor{stringliteral}{"{}1A34"{}},3,\ \textcolor{stringliteral}{"{}Nao\ gostar\ de\ batatas."{}}),\ benfica,\ futebol\ );}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}}\ braga\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}}(\textcolor{stringliteral}{"{}Braga"{}});}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}}\ product2\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}}(\textcolor{stringliteral}{"{}2V45"{}},\ 15.9m,\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}(\textcolor{stringliteral}{"{}2V45"{}},\ 3,\ \textcolor{stringliteral}{"{}Nao\ gostar\ de\ peixe."{}}),\ braga,\ futebol);}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}}\ sale\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}}();}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ sale.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale_a490a170d965d4db25233bb14b7cd9df1}{InsertProductOnSale}}(product1);}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ sale.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale_a490a170d965d4db25233bb14b7cd9df1}{InsertProductOnSale}}(product2);}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(sale.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale_aaa94e8e685b46538f39c9350c52efc40}{ToString}}());}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients}{Clients}}\ clientes\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients}{Clients}}();}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ clientes.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients_a192ac8011e5fdb989d85ab0ea4c05c02}{AddClient}}(clientTest);}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ clientes.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_clients_a192ac8011e5fdb989d85ab0ea4c05c02}{AddClient}}(clientTest2);}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client}{Client}}\ client\ \textcolor{keywordflow}{in}\ clientes.ClientList)}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(client.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_client_ae5038206d2255374c562b45d83937d5e}{ToString}}());}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_best_sale_8cs_source_l00046}00046\ \}}
+
+\end{DoxyCode}

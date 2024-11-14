@@ -1,0 +1,312 @@
+.TH "trabalhoPOO_27967.Sale" 3 "Version v 1.0" "LESI_TP_POO_27967" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+trabalhoPOO_27967.Sale \- Purpose: Definition of Sale and methods to deal with Sale operations\&. Created by: Jose Alves a27967 Created on: 11/6/2024 11:21:53 AM\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSale\fP ()"
+.br
+.RI "The default Constructor\&. "
+.ti -1c
+.RI "\fBSale\fP (\fBClient\fP client, \fBProducts\fP products, \fBCampaign\fP camp)"
+.br
+.RI "Constructor used when a client, a product array and a campaign to be used are given\&. "
+.ti -1c
+.RI "override bool \fBEquals\fP (object obj)"
+.br
+.RI "Redefinition of the Equals method to compare two sales\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.ti -1c
+.RI "decimal \fBTotalPrice\fP ()"
+.br
+.RI "Method to calculate the total price of a sale, given the products list and a campaign code\&. "
+.ti -1c
+.RI "bool \fBInsertProductOnSale\fP (\fBProduct\fP p)"
+.br
+.RI "Method used to insert a product on a sale's list\&. "
+.ti -1c
+.RI "bool \fBRemoveProductFromSale\fP (\fBProduct\fP p)"
+.br
+.RI "Method used to remove a product from a sale\&. "
+.ti -1c
+.RI "bool \fBExistProductOnSale\fP (\fBProduct\fP p)"
+.br
+.RI "Method used to verify if a product is on a sale\&. "
+.ti -1c
+.RI "DateTime \fBWarrantyExpirationDate\fP (string reff)"
+.br
+.RI "Method to calculate when a warranty is due to expire\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBoperator==\fP (\fBSale\fP s1, \fBSale\fP s2)"
+.br
+.RI "Redefiniiton of the equal operator\&. "
+.ti -1c
+.RI "static bool \fBoperator!=\fP (\fBSale\fP s1, \fBSale\fP s2)"
+.br
+.RI "Redefinition of the different operator\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBId\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the ID of a Sale\&. "
+.ti -1c
+.RI "\fBClient\fP \fBClient\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the information of the Client who made the purchase\&. "
+.ti -1c
+.RI "\fBProducts\fP \fBProducts\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the list of products in a Sale\&. "
+.ti -1c
+.RI "decimal \fBTotPrice\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the total price of a Sale\&. "
+.ti -1c
+.RI "DateTime \fBSaleDate\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the Date of a Sale\&. "
+.ti -1c
+.RI "\fBCampaign\fP \fBCampaigns\fP\fC [get, set]\fP"
+.br
+.RI "Property used to get and set the Campaigns applicable to a Sale\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Purpose: Definition of Sale and methods to deal with Sale operations\&. Created by: Jose Alves a27967 Created on: 11/6/2024 11:21:53 AM\&. 
+
+
+.PP
+Definition at line \fB25\fP of file \fBSale\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "trabalhoPOO_27967\&.Sale\&.Sale ()"
+
+.PP
+The default Constructor\&. 
+.PP
+Definition at line \fB45\fP of file \fBSale\&.cs\fP\&.
+.SS "trabalhoPOO_27967\&.Sale\&.Sale (\fBClient\fP client, \fBProducts\fP products, \fBCampaign\fP camp)"
+
+.PP
+Constructor used when a client, a product array and a campaign to be used are given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIclient\fP 
+.br
+\fIproducts\fP 
+.br
+\fIcamp\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB58\fP of file \fBSale\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool trabalhoPOO_27967\&.Sale\&.Equals (object obj)"
+
+.PP
+Redefinition of the Equals method to compare two sales\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB135\fP of file \fBSale\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Sale\&.ExistProductOnSale (\fBProduct\fP p)"
+
+.PP
+Method used to verify if a product is on a sale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB220\fP of file \fBSale\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Sale\&.InsertProductOnSale (\fBProduct\fP p)"
+
+.PP
+Method used to insert a product on a sale's list\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB200\fP of file \fBSale\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Sale\&.operator!= (\fBSale\fP s1, \fBSale\fP s2)\fC [static]\fP"
+
+.PP
+Redefinition of the different operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs1\fP 
+.br
+\fIs2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB158\fP of file \fBSale\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Sale\&.operator== (\fBSale\fP s1, \fBSale\fP s2)\fC [static]\fP"
+
+.PP
+Redefiniiton of the equal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs1\fP 
+.br
+\fIs2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB147\fP of file \fBSale\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Sale\&.RemoveProductFromSale (\fBProduct\fP p)"
+
+.PP
+Method used to remove a product from a sale\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB210\fP of file \fBSale\&.cs\fP\&.
+.SS "override string trabalhoPOO_27967\&.Sale\&.ToString ()"
+\\u20AC é o unicode para o símbolo de euro\&.
+.PP
+Definition at line \fB163\fP of file \fBSale\&.cs\fP\&.
+.SS "decimal trabalhoPOO_27967\&.Sale\&.TotalPrice ()"
+
+.PP
+Method to calculate the total price of a sale, given the products list and a campaign code\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIproducts\fP 
+.br
+\fIcamp\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB181\fP of file \fBSale\&.cs\fP\&.
+.SS "DateTime trabalhoPOO_27967\&.Sale\&.WarrantyExpirationDate (string reff)"
+
+.PP
+Method to calculate when a warranty is due to expire\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIs\fP 
+.br
+\fIreff\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB231\fP of file \fBSale\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "\fBCampaign\fP trabalhoPOO_27967\&.Sale\&.Campaigns\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the Campaigns applicable to a Sale\&. 
+.PP
+Definition at line \fB120\fP of file \fBSale\&.cs\fP\&.
+.SS "\fBClient\fP trabalhoPOO_27967\&.Sale\&.Client\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the information of the Client who made the purchase\&. 
+.PP
+Definition at line \fB84\fP of file \fBSale\&.cs\fP\&.
+.SS "int trabalhoPOO_27967\&.Sale\&.Id\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the ID of a Sale\&. 
+.PP
+Definition at line \fB75\fP of file \fBSale\&.cs\fP\&.
+.SS "\fBProducts\fP trabalhoPOO_27967\&.Sale\&.Products\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the list of products in a Sale\&. 
+.PP
+Definition at line \fB93\fP of file \fBSale\&.cs\fP\&.
+.SS "DateTime trabalhoPOO_27967\&.Sale\&.SaleDate\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the Date of a Sale\&. 
+.PP
+Definition at line \fB111\fP of file \fBSale\&.cs\fP\&.
+.SS "decimal trabalhoPOO_27967\&.Sale\&.TotPrice\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property used to get and set the total price of a Sale\&. 
+.PP
+Definition at line \fB102\fP of file \fBSale\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LESI_TP_POO_27967 from the source code\&.

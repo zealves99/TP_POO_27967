@@ -1,0 +1,173 @@
+.TH "trabalhoPOO_27967.Make" 3 "Version v 1.0" "LESI_TP_POO_27967" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+trabalhoPOO_27967.Make \- Purpose: Definition of Make and methods to deal with Make operations\&. Created by: Jose Alves a27967 Created on: 11/6/2024 11:22:09 AM\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMake\fP ()"
+.br
+.RI "The default Constructor\&. "
+.ti -1c
+.RI "\fBMake\fP (string name)"
+.br
+.RI "Constructor when the name of the make is given\&. "
+.ti -1c
+.RI "override string \fBToString\fP ()"
+.br
+.RI "Override of the ToString() method to convert the data of a Make to a string\&. "
+.ti -1c
+.RI "override bool \fBEquals\fP (object obj)"
+.br
+.RI "The redefinition of the Equals() Method, to verify if a make matches another one\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static bool \fBoperator==\fP (\fBMake\fP m1, \fBMake\fP m2)"
+.br
+.RI "The redefinition of the Equal operator\&. "
+.ti -1c
+.RI "static bool \fBoperator!=\fP (\fBMake\fP m1, \fBMake\fP m2)"
+.br
+.RI "The redefinition of the NOt Equal operator\&. "
+.in -1c
+.SS "Properties"
+
+.in +1c
+.ti -1c
+.RI "int \fBID\fP\fC [get, set]\fP"
+.br
+.RI "Property to set and get the ID of a Make\&. "
+.ti -1c
+.RI "string \fBName\fP\fC [get, set]\fP"
+.br
+.RI "Property to get and set the Name of a Make\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Purpose: Definition of Make and methods to deal with Make operations\&. Created by: Jose Alves a27967 Created on: 11/6/2024 11:22:09 AM\&. 
+
+
+.PP
+Definition at line \fB23\fP of file \fBMake\&.cs\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "trabalhoPOO_27967\&.Make\&.Make ()"
+
+.PP
+The default Constructor\&. 
+.PP
+Definition at line \fB38\fP of file \fBMake\&.cs\fP\&.
+.SS "trabalhoPOO_27967\&.Make\&.Make (string name)"
+
+.PP
+Constructor when the name of the make is given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIid\fP 
+.br
+\fIname\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB49\fP of file \fBMake\&.cs\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "override bool trabalhoPOO_27967\&.Make\&.Equals (object obj)"
+
+.PP
+The redefinition of the Equals() Method, to verify if a make matches another one\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+Veriffies if the object given is null\&.
+.PP
+Casts the object to be Make\&.
+.PP
+Definition at line \fB98\fP of file \fBMake\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Make\&.operator!= (\fBMake\fP m1, \fBMake\fP m2)\fC [static]\fP"
+
+.PP
+The redefinition of the NOt Equal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm1\fP 
+.br
+\fIm2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB128\fP of file \fBMake\&.cs\fP\&.
+.SS "static bool trabalhoPOO_27967\&.Make\&.operator== (\fBMake\fP m1, \fBMake\fP m2)\fC [static]\fP"
+
+.PP
+The redefinition of the Equal operator\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIm1\fP 
+.br
+\fIm2\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Definition at line \fB117\fP of file \fBMake\&.cs\fP\&.
+.SS "override string trabalhoPOO_27967\&.Make\&.ToString ()"
+
+.PP
+Override of the ToString() method to convert the data of a Make to a string\&. 
+.PP
+\fBReturns\fP
+.RS 4
+
+.RE
+.PP
+
+.PP
+Definition at line \fB88\fP of file \fBMake\&.cs\fP\&.
+.SH "Property Documentation"
+.PP 
+.SS "int trabalhoPOO_27967\&.Make\&.ID\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to set and get the ID of a Make\&. 
+.PP
+Definition at line \fB64\fP of file \fBMake\&.cs\fP\&.
+.SS "string trabalhoPOO_27967\&.Make\&.Name\fC [get]\fP, \fC [set]\fP"
+
+.PP
+Property to get and set the Name of a Make\&. 
+.PP
+Definition at line \fB73\fP of file \fBMake\&.cs\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for LESI_TP_POO_27967 from the source code\&.

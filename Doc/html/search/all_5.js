@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['enddate_0',['EndDate',['../classtrabalho_p_o_o__27967_1_1_campaign.html#a3e6630bde22b7acd3fc92b7e639440dc',1,'trabalhoPOO_27967::Campaign']]],
+  ['equals_1',['equals',['../classtrabalho_p_o_o__27967_1_1_campaign.html#ac5c0122cf1a33776aab9f916a82a98e4',1,'trabalhoPOO_27967.Campaign.Equals()'],['../classtrabalho_p_o_o__27967_1_1_category.html#a281418febd9d5f834c9802be2c57a60f',1,'trabalhoPOO_27967.Category.Equals()'],['../classtrabalho_p_o_o__27967_1_1_client.html#abc82a940efddbba52ae1098d597343d5',1,'trabalhoPOO_27967.Client.Equals()'],['../classtrabalho_p_o_o__27967_1_1_make.html#a558322c9057c0cc85d399fcb10019ac5',1,'trabalhoPOO_27967.Make.Equals()'],['../classtrabalho_p_o_o__27967_1_1_product.html#a027d297845f1f1bc45a4fabb07924205',1,'trabalhoPOO_27967.Product.Equals()'],['../classtrabalho_p_o_o__27967_1_1_sale.html#ac2a3312e994cc30e1febd7cf8f0b7e75',1,'trabalhoPOO_27967.Sale.Equals()'],['../classtrabalho_p_o_o__27967_1_1_warranty.html#aa664a215594a1313da4e46d5770f84b5',1,'trabalhoPOO_27967.Warranty.Equals()']]],
+  ['existcampaign_2',['ExistCampaign',['../classtrabalho_p_o_o__27967_1_1_campaigns.html#a268c2599ed7b7b5063b129bb1f513a10',1,'trabalhoPOO_27967::Campaigns']]],
+  ['existcategory_3',['existcategory',['../classtrabalho_p_o_o__27967_1_1_categories.html#a23c686079c78daf535e3dd1588cb7f77',1,'trabalhoPOO_27967.Categories.ExistCategory(int id)'],['../classtrabalho_p_o_o__27967_1_1_categories.html#a5cd0bac39a6b5e387b02da622ffb27bd',1,'trabalhoPOO_27967.Categories.ExistCategory(string name)']]],
+  ['existclient_4',['ExistClient',['../classtrabalho_p_o_o__27967_1_1_clients.html#a860928a690c0d4c36238068744461fa7',1,'trabalhoPOO_27967::Clients']]],
+  ['existmake_5',['existmake',['../classtrabalho_p_o_o__27967_1_1_makes.html#a7d562b23eab5124e271a4ca55d9fb7d9',1,'trabalhoPOO_27967.Makes.ExistMake(int id)'],['../classtrabalho_p_o_o__27967_1_1_makes.html#a375d6d8d02a18e555efcfd9cf221a2a0',1,'trabalhoPOO_27967.Makes.ExistMake(string name)']]],
+  ['existproduct_6',['ExistProduct',['../classtrabalho_p_o_o__27967_1_1_products.html#a90a7f5f03c2ccd97c2be7f56d720e55a',1,'trabalhoPOO_27967::Products']]],
+  ['existproductonsale_7',['ExistProductOnSale',['../classtrabalho_p_o_o__27967_1_1_sale.html#a3dd56154f8bee5eb6f74b12308829269',1,'trabalhoPOO_27967::Sale']]],
+  ['existwarranty_8',['ExistWarranty',['../classtrabalho_p_o_o__27967_1_1_warranties.html#ab830b8533a9605bb06723e2a79452a96',1,'trabalhoPOO_27967::Warranties']]],
+  ['expirationdate_9',['ExpirationDate',['../classtrabalho_p_o_o__27967_1_1_warranty.html#a3d3f4927f2c0642a2db4af58d323566e',1,'trabalhoPOO_27967::Warranty']]]
+];

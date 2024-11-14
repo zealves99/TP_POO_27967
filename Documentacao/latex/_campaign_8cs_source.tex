@@ -1,0 +1,142 @@
+\doxysection{Campaign.\+cs}
+\hypertarget{_campaign_8cs_source}{}\label{_campaign_8cs_source}\index{Campaign/Campaign.cs@{Campaign/Campaign.cs}}
+\mbox{\hyperlink{_campaign_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}trabalhoPOO\_27967.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/6/2024\ 11:21:43\ AM</date>}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description></description>}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00011}00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967}{trabalhoPOO\_27967}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00020}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{00020}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00021}00021\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00022}00022\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_id;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \_name;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ decimal\ \_discount;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ DateTime\ \_startDate;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ DateTime\ \_endDate;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \_campaignCount;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00033}00033\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00038}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a7aabf9addefbdd81a4b0aa925d72c3f8}{00038}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a7aabf9addefbdd81a4b0aa925d72c3f8}{Campaign}}()}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \_id\ =\ ++\_campaignCount;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \_name\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \_discount\ =\ 0m;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \_startDate\ =\ DateTime.MinValue;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \_endDate\ =\ DateTime.MaxValue;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00055}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ad8dc5c4c4f1d83a19d51d39e7f04e183}{00055}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ad8dc5c4c4f1d83a19d51d39e7f04e183}{Campaign}}(\textcolor{keywordtype}{string}\ name,\ decimal\ discount,\ DateTime\ startDate,\ DateTime\ endDate)}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \_id\ =\ ++\_campaignCount;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \_name\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \_discount\ =\ discount;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \_startDate\ =\ startDate;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \_endDate\ =\ endDate;}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00068}00068\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00070}00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00075}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a35d061bb738341b9cc8be5e1303f07d0}{00075}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a35d061bb738341b9cc8be5e1303f07d0}{Id}}\{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_id;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_id\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00083}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a6e74263525e33a178054d320d5ee1e33}{00083}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a6e74263525e33a178054d320d5ee1e33}{Name}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_name;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_name\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00092}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a5003da7c2b0875d4da86b494df362854}{00092}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ decimal\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a5003da7c2b0875d4da86b494df362854}{Discount}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_discount;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_discount\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00101}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a9581bc6e20941b81d9511f21233b5513}{00101}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a9581bc6e20941b81d9511f21233b5513}{StartDate}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_startDate;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_startDate\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00110}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a3e6630bde22b7acd3fc92b7e639440dc}{00110}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a3e6630bde22b7acd3fc92b7e639440dc}{EndDate}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_endDate;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_endDate\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00119}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ac843de804b9d01730c636081d0aee5ef}{00119}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ac843de804b9d01730c636081d0aee5ef}{CampaignCount}}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_campaignCount;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_campaignCount\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00124}00124\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00128}00128\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00134}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ac5c0122cf1a33776aab9f916a82a98e4}{00134}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ac5c0122cf1a33776aab9f916a82a98e4}{Equals}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}\ camp\ =\ obj\ as\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a7aabf9addefbdd81a4b0aa925d72c3f8}{Campaign}};}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a35d061bb738341b9cc8be5e1303f07d0}{Id}}\ ==\ camp.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a35d061bb738341b9cc8be5e1303f07d0}{Id}}\ \&\&\ \_name\ ==\ camp.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a6e74263525e33a178054d320d5ee1e33}{Name}});}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00153}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a28c7e66e4ba283fa4941de8ab753932c}{00153}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a28c7e66e4ba283fa4941de8ab753932c}{operator\ ==}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}\ camp1,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}\ camp2)}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (camp1.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ac5c0122cf1a33776aab9f916a82a98e4}{Equals}}(camp2));}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00156}00156\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00157}00157\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00164}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a37d25d4f11dcee2ef0649cb08f781320}{00164}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a37d25d4f11dcee2ef0649cb08f781320}{operator\ !=}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}\ camp1,\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}\ camp2)}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(camp1.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ac5c0122cf1a33776aab9f916a82a98e4}{Equals}}(camp2));}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00168}00168\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00170}00170\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00177}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ab53a832c0be2a8573c6ea3734d6e18ba}{00177}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_ab53a832c0be2a8573c6ea3734d6e18ba}{VerifyApplicability}}(\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{Campaign}}\ camp)}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00178}00178\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (camp.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a9581bc6e20941b81d9511f21233b5513}{StartDate}}\ <=\ DateTime.Now\ \&\&\ camp.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign_a3e6630bde22b7acd3fc92b7e639440dc}{EndDate}}\ >=\ DateTime.Now)}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00181}00181\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00183}00183\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00184}00184\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00185}00185\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00186}00186\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00187}00187\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00189}00189\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00193}00193\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_campaign}{\string~Campaign}}()}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00194}00194\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00195}00195\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00196}00196\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00198}00198\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00199}00199\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_campaign_8cs_source_l00200}00200\ \}}
+
+\end{DoxyCode}
