@@ -175,9 +175,7 @@ namespace trabalhoPOO_27967
         /// <summary>
         /// Method to calculate the total price of a sale, given the products list and a campaign code.
         /// </summary>
-        /// <param name="products"></param>
-        /// <param name="camp"></param>
-        /// <returns></returns>
+        /// <returns>The total price to pay.</returns>
         public decimal TotalPrice()
         {
             decimal total = 0;
@@ -199,7 +197,7 @@ namespace trabalhoPOO_27967
         /// <returns></returns>
         public bool InsertProductOnSale(Product p)
         {
-            return _products.InsertProduct(p);
+            return _products.Add(p);
         }
 
         /// <summary>
@@ -209,7 +207,7 @@ namespace trabalhoPOO_27967
         /// <returns></returns>
         public bool RemoveProductFromSale(Product p)
         {
-            return _products.RemoveProduct(p);
+            return _products.Remove(p);
         }
 
         /// <summary>
@@ -219,7 +217,7 @@ namespace trabalhoPOO_27967
         /// <returns></returns>
         public bool ExistProductOnSale(Product p)
         {
-            return _products.ExistProduct(p.Reference);
+            return _products.Exist(p.Reference);
         }
 
         /// <summary>

@@ -7,6 +7,8 @@ trabalhoPOO_27967.Campaigns \- Purpose:This file has the definition and methods 
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -19,15 +21,15 @@ trabalhoPOO_27967.Campaigns \- Purpose:This file has the definition and methods 
 .br
 .RI "The constructor to use when a list of Campaigns is given\&. "
 .ti -1c
-.RI "bool \fBAddCampaign\fP (\fBCampaign\fP c)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .RI "Method used to add a campaign to a list of campaigns\&. "
 .ti -1c
-.RI "bool \fBRemoveCampaign\fP (\fBCampaign\fP camp)"
+.RI "bool \fBRemove\fP (object obj)"
 .br
 .RI "Method used to remove a campaign from a list of campaigns\&. "
 .ti -1c
-.RI "bool \fBExistCampaign\fP (int id)"
+.RI "bool \fBExist\fP (object obj)"
 .br
 .RI "Method used to confirm if a campaign exists on a list of campaigns\&. "
 .in -1c
@@ -45,7 +47,7 @@ Purpose:This file has the definition and methods to work with the plurality of C
 
 
 .PP
-Definition at line \fB22\fP of file \fBCampaigns\&.cs\fP\&.
+Definition at line \fB23\fP of file \fBCampaigns\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Campaigns\&.Campaigns ()"
@@ -53,7 +55,7 @@ Definition at line \fB22\fP of file \fBCampaigns\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB35\fP of file \fBCampaigns\&.cs\fP\&.
+Definition at line \fB36\fP of file \fBCampaigns\&.cs\fP\&.
 .SS "trabalhoPOO_27967\&.Campaigns\&.Campaigns (List< \fBCampaign\fP > p)"
 
 .PP
@@ -66,10 +68,10 @@ The constructor to use when a list of Campaigns is given\&.
 .PP
 
 .PP
-Definition at line \fB44\fP of file \fBCampaigns\&.cs\fP\&.
+Definition at line \fB45\fP of file \fBCampaigns\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Campaigns\&.AddCampaign (\fBCampaign\fP c)"
+.SS "bool trabalhoPOO_27967\&.Campaigns\&.Add (object obj)"
 
 .PP
 Method used to add a campaign to a list of campaigns\&. 
@@ -85,8 +87,10 @@ Method used to add a campaign to a list of campaigns\&.
 .PP
 
 .PP
-Definition at line \fB73\fP of file \fBCampaigns\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Campaigns\&.ExistCampaign (int id)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB74\fP of file \fBCampaigns\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Campaigns\&.Exist (object obj)"
 
 .PP
 Method used to confirm if a campaign exists on a list of campaigns\&. 
@@ -102,8 +106,10 @@ Method used to confirm if a campaign exists on a list of campaigns\&.
 .PP
 
 .PP
-Definition at line \fB103\fP of file \fBCampaigns\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Campaigns\&.RemoveCampaign (\fBCampaign\fP camp)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB109\fP of file \fBCampaigns\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Campaigns\&.Remove (object obj)"
 
 .PP
 Method used to remove a campaign from a list of campaigns\&. 
@@ -119,7 +125,9 @@ Method used to remove a campaign from a list of campaigns\&.
 .PP
 
 .PP
-Definition at line \fB85\fP of file \fBCampaigns\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB90\fP of file \fBCampaigns\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBCampaign\fP> trabalhoPOO_27967\&.Campaigns\&.Camps\fC [get]\fP, \fC [set]\fP"
@@ -127,7 +135,7 @@ Definition at line \fB85\fP of file \fBCampaigns\&.cs\fP\&.
 .PP
 Property used to get and set a Campaign list\&. 
 .PP
-Definition at line \fB54\fP of file \fBCampaigns\&.cs\fP\&.
+Definition at line \fB55\fP of file \fBCampaigns\&.cs\fP\&.
 
 .SH "Author"
 .PP 

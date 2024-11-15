@@ -7,6 +7,8 @@ trabalhoPOO_27967.Clients \- Purpose: Class with the definition and methods to m
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -15,15 +17,15 @@ trabalhoPOO_27967.Clients \- Purpose: Class with the definition and methods to m
 .br
 .RI "The default Constructor\&. "
 .ti -1c
-.RI "bool \fBAddClient\fP (\fBClient\fP cli)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .RI "Method to add a client to the store's client list\&. "
 .ti -1c
-.RI "bool \fBRemoveClient\fP (\fBClient\fP cli)"
+.RI "bool \fBRemove\fP (object obj)"
 .br
 .RI "Method to remove a client from the store's client list\&. "
 .ti -1c
-.RI "bool \fBExistClient\fP (int id)"
+.RI "bool \fBExist\fP (object obj)"
 .br
 .RI "Method to check if a client is listed on a clients' list\&. "
 .ti -1c
@@ -45,7 +47,7 @@ Purpose: Class with the definition and methods to manage a list of clients\&. Cr
 
 
 .PP
-Definition at line \fB21\fP of file \fBClients\&.cs\fP\&.
+Definition at line \fB22\fP of file \fBClients\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Clients\&.Clients ()"
@@ -53,10 +55,10 @@ Definition at line \fB21\fP of file \fBClients\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB34\fP of file \fBClients\&.cs\fP\&.
+Definition at line \fB35\fP of file \fBClients\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Clients\&.AddClient (\fBClient\fP cli)"
+.SS "bool trabalhoPOO_27967\&.Clients\&.Add (object obj)"
 
 .PP
 Method to add a client to the store's client list\&. 
@@ -72,8 +74,10 @@ Method to add a client to the store's client list\&.
 .PP
 
 .PP
-Definition at line \fB65\fP of file \fBClients\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Clients\&.ExistClient (int id)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB66\fP of file \fBClients\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Clients\&.Exist (object obj)"
 
 .PP
 Method to check if a client is listed on a clients' list\&. 
@@ -89,7 +93,9 @@ Method to check if a client is listed on a clients' list\&.
 .PP
 
 .PP
-Definition at line \fB95\fP of file \fBClients\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB99\fP of file \fBClients\&.cs\fP\&.
 .SS "\fBClient\fP trabalhoPOO_27967\&.Clients\&.GetClient (int id)"
 
 .PP
@@ -106,8 +112,8 @@ Method used to get a client from a clients' list\&.
 .PP
 
 .PP
-Definition at line \fB112\fP of file \fBClients\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Clients\&.RemoveClient (\fBClient\fP cli)"
+Definition at line \fB119\fP of file \fBClients\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Clients\&.Remove (object obj)"
 
 .PP
 Method to remove a client from the store's client list\&. 
@@ -123,7 +129,9 @@ Method to remove a client from the store's client list\&.
 .PP
 
 .PP
-Definition at line \fB77\fP of file \fBClients\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB82\fP of file \fBClients\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBClient\fP> trabalhoPOO_27967\&.Clients\&.ClientList\fC [get]\fP, \fC [set]\fP"
@@ -131,7 +139,7 @@ Definition at line \fB77\fP of file \fBClients\&.cs\fP\&.
 .PP
 Property used to get and set the client list\&. 
 .PP
-Definition at line \fB47\fP of file \fBClients\&.cs\fP\&.
+Definition at line \fB48\fP of file \fBClients\&.cs\fP\&.
 
 .SH "Author"
 .PP 

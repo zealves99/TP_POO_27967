@@ -7,6 +7,8 @@ trabalhoPOO_27967.Warranties \- Purpose:This file has the definition and methods
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -19,16 +21,16 @@ trabalhoPOO_27967.Warranties \- Purpose:This file has the definition and methods
 .br
 .RI "The constructor to use when a list of Warranties is given\&. "
 .ti -1c
-.RI "bool \fBAddWarranty\fP (\fBWarranty\fP w)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .ti -1c
-.RI "bool \fBRemoveWarranty\fP (\fBWarranty\fP w)"
+.RI "bool \fBRemove\fP (object obj)"
 .br
 .RI "Method used to remove a warranty from a list of warranties\&. "
 .ti -1c
-.RI "bool \fBExistWarranty\fP (string id)"
+.RI "bool \fBExist\fP (object obj)"
 .br
-.RI "Method used to confirm if a campaign exists on a list of campaigns\&. "
+.RI "Method used to confirm if a warranty exists on a list of warranties, given the product ID\&. "
 .in -1c
 .SS "Properties"
 
@@ -44,7 +46,7 @@ Purpose:This file has the definition and methods to work with the plurality of W
 
 
 .PP
-Definition at line \fB21\fP of file \fBWarranties\&.cs\fP\&.
+Definition at line \fB22\fP of file \fBWarranties\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Warranties\&.Warranties ()"
@@ -52,7 +54,7 @@ Definition at line \fB21\fP of file \fBWarranties\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB34\fP of file \fBWarranties\&.cs\fP\&.
+Definition at line \fB35\fP of file \fBWarranties\&.cs\fP\&.
 .SS "trabalhoPOO_27967\&.Warranties\&.Warranties (List< \fBWarranty\fP > warrants)"
 
 .PP
@@ -65,10 +67,10 @@ The constructor to use when a list of Warranties is given\&.
 .PP
 
 .PP
-Definition at line \fB43\fP of file \fBWarranties\&.cs\fP\&.
+Definition at line \fB44\fP of file \fBWarranties\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Warranties\&.AddWarranty (\fBWarranty\fP w)"
+.SS "bool trabalhoPOO_27967\&.Warranties\&.Add (object obj)"
 Method used to add a warranty to a list of warranties\&.
 .PP
 \fBParameters\fP
@@ -82,11 +84,13 @@ Method used to add a warranty to a list of warranties\&.
 .PP
 
 .PP
-Definition at line \fB74\fP of file \fBWarranties\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Warranties\&.ExistWarranty (string id)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB75\fP of file \fBWarranties\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Warranties\&.Exist (object obj)"
 
 .PP
-Method used to confirm if a campaign exists on a list of campaigns\&. 
+Method used to confirm if a warranty exists on a list of warranties, given the product ID\&. 
 .PP
 \fBParameters\fP
 .RS 4
@@ -99,8 +103,10 @@ Method used to confirm if a campaign exists on a list of campaigns\&.
 .PP
 
 .PP
-Definition at line \fB104\fP of file \fBWarranties\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Warranties\&.RemoveWarranty (\fBWarranty\fP w)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB111\fP of file \fBWarranties\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Warranties\&.Remove (object obj)"
 
 .PP
 Method used to remove a warranty from a list of warranties\&. 
@@ -116,7 +122,9 @@ Method used to remove a warranty from a list of warranties\&.
 .PP
 
 .PP
-Definition at line \fB86\fP of file \fBWarranties\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB91\fP of file \fBWarranties\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBWarranty\fP> trabalhoPOO_27967\&.Warranties\&.Warrants\fC [get]\fP, \fC [set]\fP"
@@ -124,7 +132,7 @@ Definition at line \fB86\fP of file \fBWarranties\&.cs\fP\&.
 .PP
 Property used to get and set the list of warranties\&. 
 .PP
-Definition at line \fB56\fP of file \fBWarranties\&.cs\fP\&.
+Definition at line \fB57\fP of file \fBWarranties\&.cs\fP\&.
 
 .SH "Author"
 .PP 

@@ -8,6 +8,8 @@
 **/
 using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
+using trabalhoPOO_27967.Interface;
 
 namespace trabalhoPOO_27967
 {
@@ -18,7 +20,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Makes
+    public class Makes : IListManagement
     {
         #region Attributes
         List<Make> _makeList;
@@ -68,11 +70,14 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="m"></param>
         /// <returns></returns>
-        public bool AddMake(Make m)
+        public bool Add(object obj)
         {
-            if (m == null) return false;
-            _makeList.Add(m);
-            return true;
+            if (obj == null) return false;
+            if (obj is Make) {
+                _makeList.Add((Make)obj);
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -80,52 +85,49 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="m"></param>
         /// <returns></returns>
-        public bool RemoveMake(Make m)
+        public bool Remove(object obj)
         {
-            foreach (Make make in _makeList)
+            if (obj == null) return false;
+            var aux = obj as Make;
+            if (Exist(aux.ID))
             {
-                if (make == m)
-                {
-                    _makeList.Remove(make);
-                    return true;
-                }
+                _makeList.Remove((Make)obj);
+                return true;
             }
             return false;
         }
 
         /// <summary>
-        /// Method used to verify if a make exists on a list of makes, given its ID.
+        /// Method used to verify if a make exists on a list of makes, given its ID or name.
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public bool ExistMake(int id)
+        public bool Exist(object obj)
         {
-            foreach (Make make in _makeList)
+            if (obj == null) return false;
+            if (obj is int)
             {
-                if(make.ID == id)
+                foreach (Make make in _makeList)
                 {
-                    return true;
+                    if (make.ID == (int)obj)
+                    {
+                        return true;
+                    }
+                }
+            }
+            if(obj is string)
+            {
+                foreach (Make make in _makeList)
+                {
+                    if (make.Name == (string)obj)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
         }
 
-        /// <summary>
-        /// Method used to verify if a make exists on a list of makes, given its name.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public bool ExistMake(string name)
-        {
-            foreach (Make make in _makeList)
-            {
-                if (make.Name == name)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
         #endregion
 
         #region Destructor

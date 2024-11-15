@@ -5,6 +5,14 @@
 Purpose\+:This file has the definition and methods to work with the plurality of Warranty. Created by\+: Jose Alves a27967 Created on\+: 11/14/2024 4\+:20\+:11 PM.  
 
 
+
+
+Inheritance diagram for trabalho\+POO\+\_\+27967.\+Warranties\+:
+% FIG 0
+
+
+Collaboration diagram for trabalho\+POO\+\_\+27967.\+Warranties\+:
+% FIG 1
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,12 +20,12 @@ Purpose\+:This file has the definition and methods to work with the plurality of
 \begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_abdbdf0faffe66a55799e1cd9bd079e7c}{Warranties}} (List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} $>$ warrants)
 \begin{DoxyCompactList}\small\item\em The constructor to use when a list of Warranties is given. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_a049dccfca0ad3cd59a15f0f33f300322}{Add\+Warranty}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} w)
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_a3a30806f1e02d67b09db00dc4953dff3}{Add}} (object obj)
 \item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_a72985ccfa11684f82769282a10ec76b8}{Remove\+Warranty}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}} w)
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_aea014069639917a19477cffebd5dfaa1}{Remove}} (object obj)
 \begin{DoxyCompactList}\small\item\em Method used to remove a warranty from a list of warranties. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_ab830b8533a9605bb06723e2a79452a96}{Exist\+Warranty}} (string id)
-\begin{DoxyCompactList}\small\item\em Method used to confirm if a campaign exists on a list of campaigns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranties_a2bf4a7516200b4a1b656950a73fdaeb6}{Exist}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to confirm if a warranty exists on a list of warranties, given the product ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -30,7 +38,7 @@ Purpose\+:This file has the definition and methods to work with the plurality of
 
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00022}{22}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
 
 
 
@@ -47,7 +55,7 @@ The default Constructor.
 
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00034}{34}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00035}{35}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
 
 \Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_abdbdf0faffe66a55799e1cd9bd079e7c}\label{classtrabalho_p_o_o__27967_1_1_warranties_abdbdf0faffe66a55799e1cd9bd079e7c} 
 \index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!Warranties@{Warranties}}
@@ -66,16 +74,16 @@ The constructor to use when a list of Warranties is given.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00043}{43}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00044}{44}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_a049dccfca0ad3cd59a15f0f33f300322}\label{classtrabalho_p_o_o__27967_1_1_warranties_a049dccfca0ad3cd59a15f0f33f300322} 
-\index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!AddWarranty@{AddWarranty}}
-\index{AddWarranty@{AddWarranty}!trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}}
-\doxysubsubsection{\texorpdfstring{AddWarranty()}{AddWarranty()}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Warranties.\+Add\+Warranty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}]{w }\end{DoxyParamCaption})}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_a3a30806f1e02d67b09db00dc4953dff3}\label{classtrabalho_p_o_o__27967_1_1_warranties_a3a30806f1e02d67b09db00dc4953dff3} 
+\index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!Add@{Add}}
+\index{Add@{Add}!trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Warranties.\+Add (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
 
 Method used to add a warranty to a list of warranties.
 
@@ -89,17 +97,21 @@ Method used to add a warranty to a list of warranties.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00074}{74}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
-
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_ab830b8533a9605bb06723e2a79452a96}\label{classtrabalho_p_o_o__27967_1_1_warranties_ab830b8533a9605bb06723e2a79452a96} 
-\index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!ExistWarranty@{ExistWarranty}}
-\index{ExistWarranty@{ExistWarranty}!trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}}
-\doxysubsubsection{\texorpdfstring{ExistWarranty()}{ExistWarranty()}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Warranties.\+Exist\+Warranty (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management_ab42dacc3ccfa608fd4fee1f9883149c9}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
 
 
 
-Method used to confirm if a campaign exists on a list of campaigns. 
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00075}{75}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_a2bf4a7516200b4a1b656950a73fdaeb6}\label{classtrabalho_p_o_o__27967_1_1_warranties_a2bf4a7516200b4a1b656950a73fdaeb6} 
+\index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!Exist@{Exist}}
+\index{Exist@{Exist}!trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}}
+\doxysubsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Warranties.\+Exist (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Method used to confirm if a warranty exists on a list of warranties, given the product ID. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -111,13 +123,17 @@ Method used to confirm if a campaign exists on a list of campaigns.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00104}{104}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management_ae6a36e9d3990a49abbf56519864aefa5}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
 
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_a72985ccfa11684f82769282a10ec76b8}\label{classtrabalho_p_o_o__27967_1_1_warranties_a72985ccfa11684f82769282a10ec76b8} 
-\index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!RemoveWarranty@{RemoveWarranty}}
-\index{RemoveWarranty@{RemoveWarranty}!trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}}
-\doxysubsubsection{\texorpdfstring{RemoveWarranty()}{RemoveWarranty()}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Warranties.\+Remove\+Warranty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_warranty}{Warranty}}}]{w }\end{DoxyParamCaption})}
+
+
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00111}{111}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_warranties_aea014069639917a19477cffebd5dfaa1}\label{classtrabalho_p_o_o__27967_1_1_warranties_aea014069639917a19477cffebd5dfaa1} 
+\index{trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}!Remove@{Remove}}
+\index{Remove@{Remove}!trabalhoPOO\_27967.Warranties@{trabalhoPOO\_27967.Warranties}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Warranties.\+Remove (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
 
 
 
@@ -133,7 +149,11 @@ Method used to remove a warranty from a list of warranties.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00086}{86}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management_a08db8db0c2163d359a6c0d1ebd74770c}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00091}{91}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
 
 
 
@@ -150,7 +170,7 @@ Property used to get and set the list of warranties.
 
 
 
-Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00056}{56}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
+Definition at line \mbox{\hyperlink{_warranties_8cs_source_l00057}{57}} of file \mbox{\hyperlink{_warranties_8cs_source}{Warranties.\+cs}}.
 
 
 

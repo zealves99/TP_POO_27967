@@ -8,6 +8,8 @@
 **/
 using System;
 using System.Collections.Generic;
+using System.Xml.Linq;
+using trabalhoPOO_27967.Interface;
 
 namespace trabalhoPOO_27967
 {
@@ -18,7 +20,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Categories
+    public class Categories : IListManagement
     {
         #region Attributes
         List<Category> _cats;
@@ -70,11 +72,15 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public bool AddCategory(Category c)
+        public bool Add(object obj)
         {
-            if (c == null) return false;
-            _cats.Add(c);
-            return true;
+            if (obj == null) return false;
+            if (obj is Category)
+            {
+                _cats.Add((Category)obj);
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -82,52 +88,55 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public bool RemoveCategory(Category c)
+        public bool Remove(object obj)
         {
-            foreach (Category cate in _cats)
+            if (obj == null) return false;
+            var aux = obj as Category;
+            if (Exist(aux.Id) || Exist(aux.Name))
             {
-                if (cate == c)
-                {
-                    _cats.Remove(cate);
-                    return true;
-                }
+                _cats.Remove((Category)obj);
+                return true;
+
             }
             return false;
         }
 
         /// <summary>
-        /// Method used to verify if a category exists on a list of makes, given its ID.
+        /// Method used to verify if a category exists on a list of makes, given its ID or name.
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public bool ExistCategory(int id)
+        public bool Exist(object obj)
         {
-            foreach (Category cate in _cats)
+            if (obj == null) return false;
+            var aux=obj as Category;
+            
+            ///If the ID is given
+            if (obj is int)
             {
-                if (cate.Id == id)
+                foreach (Category cate in _cats)
                 {
-                    return true;
+                    if (cate.Id == aux.Id)
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            ///The Name is given
+            if(obj is string)
+            {
+                foreach (Category cate in _cats)
+                {
+                    if (cate.Name == aux.Name)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;
         }
 
-        /// <summary>
-        /// Method used to verify if a Category exists on a list of categories, given its name.
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
-        public bool ExistCategory(string name)
-        {
-            foreach (Category cate in _cats)
-            {
-                if (cate.Name == name)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
 
         #endregion
 

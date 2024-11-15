@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['addcampaign_0',['AddCampaign',['../classtrabalho_p_o_o__27967_1_1_campaigns.html#abc56cd10c8fe28594d6d24d7bbdcdb24',1,'trabalhoPOO_27967::Campaigns']]],
-  ['addcategory_1',['AddCategory',['../classtrabalho_p_o_o__27967_1_1_categories.html#a9441faf97fc5931cc9c837bfcb4dfe6b',1,'trabalhoPOO_27967::Categories']]],
-  ['addclient_2',['AddClient',['../classtrabalho_p_o_o__27967_1_1_clients.html#a192ac8011e5fdb989d85ab0ea4c05c02',1,'trabalhoPOO_27967::Clients']]],
-  ['addmake_3',['AddMake',['../classtrabalho_p_o_o__27967_1_1_makes.html#ab3f4c61b00a96e32d213587c83b24b99',1,'trabalhoPOO_27967::Makes']]],
-  ['addsale_4',['AddSale',['../classtrabalho_p_o_o__27967_1_1_sales.html#a561cda4287e8151ba1e39b888ef92102',1,'trabalhoPOO_27967::Sales']]],
-  ['addwarranty_5',['AddWarranty',['../classtrabalho_p_o_o__27967_1_1_warranties.html#a049dccfca0ad3cd59a15f0f33f300322',1,'trabalhoPOO_27967::Warranties']]],
-  ['assemblyinfo_2ecs_6',['AssemblyInfo.cs',['../_assembly_info_8cs.html',1,'']]]
+  ['add_0',['add',['../classtrabalho_p_o_o__27967_1_1_campaigns.html#a160b21ef64450077b0dce7583ade6629',1,'trabalhoPOO_27967.Campaigns.Add()'],['../classtrabalho_p_o_o__27967_1_1_categories.html#a3c3e06e65eea6de871239dc0304e0975',1,'trabalhoPOO_27967.Categories.Add()'],['../classtrabalho_p_o_o__27967_1_1_clients.html#a013314110936901e914f07ea22523667',1,'trabalhoPOO_27967.Clients.Add()'],['../interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management.html#ab42dacc3ccfa608fd4fee1f9883149c9',1,'trabalhoPOO_27967.Interface.IListManagement.Add()'],['../classtrabalho_p_o_o__27967_1_1_makes.html#a96174f7b4cbb878d9b7b5ef6d6d0104e',1,'trabalhoPOO_27967.Makes.Add()'],['../classtrabalho_p_o_o__27967_1_1_products.html#aa88f9e573377d1d38646662e632d4a4f',1,'trabalhoPOO_27967.Products.Add()'],['../classtrabalho_p_o_o__27967_1_1_sales.html#a472d8cb3f41ed335eb2d47e76b2924d5',1,'trabalhoPOO_27967.Sales.Add()'],['../classtrabalho_p_o_o__27967_1_1_warranties.html#a3a30806f1e02d67b09db00dc4953dff3',1,'trabalhoPOO_27967.Warranties.Add()']]],
+  ['assemblyinfo_2ecs_1',['AssemblyInfo.cs',['../_assembly_info_8cs.html',1,'']]]
 ];

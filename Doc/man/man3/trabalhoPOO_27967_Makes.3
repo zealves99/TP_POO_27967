@@ -7,6 +7,8 @@ trabalhoPOO_27967.Makes \- Purpose:This file has the definition and methods to w
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -19,21 +21,17 @@ trabalhoPOO_27967.Makes \- Purpose:This file has the definition and methods to w
 .br
 .RI "The constructor to use when a list of Make is given\&. "
 .ti -1c
-.RI "bool \fBAddMake\fP (\fBMake\fP m)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .RI "Method used to add a make to a list of makes\&. "
 .ti -1c
-.RI "bool \fBRemoveMake\fP (\fBMake\fP m)"
+.RI "bool \fBRemove\fP (object obj)"
 .br
 .RI "Method used to remove a make from a list of makes\&. "
 .ti -1c
-.RI "bool \fBExistMake\fP (int id)"
+.RI "bool \fBExist\fP (object obj)"
 .br
-.RI "Method used to verify if a make exists on a list of makes, given its ID\&. "
-.ti -1c
-.RI "bool \fBExistMake\fP (string name)"
-.br
-.RI "Method used to verify if a make exists on a list of makes, given its name\&. "
+.RI "Method used to verify if a make exists on a list of makes, given its ID or name\&. "
 .in -1c
 .SS "Properties"
 
@@ -49,7 +47,7 @@ Purpose:This file has the definition and methods to work with the plurality of M
 
 
 .PP
-Definition at line \fB21\fP of file \fBMakes\&.cs\fP\&.
+Definition at line \fB23\fP of file \fBMakes\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Makes\&.Makes ()"
@@ -57,7 +55,7 @@ Definition at line \fB21\fP of file \fBMakes\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB34\fP of file \fBMakes\&.cs\fP\&.
+Definition at line \fB36\fP of file \fBMakes\&.cs\fP\&.
 .SS "trabalhoPOO_27967\&.Makes\&.Makes (List< \fBMake\fP > m)"
 
 .PP
@@ -70,10 +68,10 @@ The constructor to use when a list of Make is given\&.
 .PP
 
 .PP
-Definition at line \fB43\fP of file \fBMakes\&.cs\fP\&.
+Definition at line \fB45\fP of file \fBMakes\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Makes\&.AddMake (\fBMake\fP m)"
+.SS "bool trabalhoPOO_27967\&.Makes\&.Add (object obj)"
 
 .PP
 Method used to add a make to a list of makes\&. 
@@ -89,11 +87,13 @@ Method used to add a make to a list of makes\&.
 .PP
 
 .PP
-Definition at line \fB71\fP of file \fBMakes\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Makes\&.ExistMake (int id)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB73\fP of file \fBMakes\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Makes\&.Exist (object obj)"
 
 .PP
-Method used to verify if a make exists on a list of makes, given its ID\&. 
+Method used to verify if a make exists on a list of makes, given its ID or name\&. 
 .PP
 \fBParameters\fP
 .RS 4
@@ -106,25 +106,10 @@ Method used to verify if a make exists on a list of makes, given its ID\&.
 .PP
 
 .PP
-Definition at line \fB101\fP of file \fBMakes\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Makes\&.ExistMake (string name)"
-
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .PP
-Method used to verify if a make exists on a list of makes, given its name\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIname\fP 
-.RE
-.PP
-\fBReturns\fP
-.RS 4
-.RE
-.PP
-
-.PP
-Definition at line \fB118\fP of file \fBMakes\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Makes\&.RemoveMake (\fBMake\fP m)"
+Definition at line \fB105\fP of file \fBMakes\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Makes\&.Remove (object obj)"
 
 .PP
 Method used to remove a make from a list of makes\&. 
@@ -140,7 +125,9 @@ Method used to remove a make from a list of makes\&.
 .PP
 
 .PP
-Definition at line \fB83\fP of file \fBMakes\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB88\fP of file \fBMakes\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBMake\fP> trabalhoPOO_27967\&.Makes\&.MakeList\fC [get]\fP, \fC [set]\fP"
@@ -148,7 +135,7 @@ Definition at line \fB83\fP of file \fBMakes\&.cs\fP\&.
 .PP
 The property to get and set a list of Make\&. 
 .PP
-Definition at line \fB53\fP of file \fBMakes\&.cs\fP\&.
+Definition at line \fB55\fP of file \fBMakes\&.cs\fP\&.
 
 .SH "Author"
 .PP 

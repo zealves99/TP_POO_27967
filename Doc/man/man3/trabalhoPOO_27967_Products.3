@@ -7,6 +7,8 @@ trabalhoPOO_27967.Products \- Purpose: Class to manage a group of more than one 
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -27,15 +29,15 @@ trabalhoPOO_27967.Products \- Purpose: Class to manage a group of more than one 
 .br
 .RI "This method returns the price of a product, given a certain array position\&. "
 .ti -1c
-.RI "bool \fBInsertProduct\fP (\fBProduct\fP p)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .RI "This method inserts a product in a list of products\&. "
 .ti -1c
-.RI "bool \fBExistProduct\fP (string reff)"
+.RI "bool \fBExist\fP (object obj)"
 .br
-.RI "Method used to verify if a product is on a products' list\&. "
+.RI "Method used to verify if a product is on a products' list, given its Refference\&. "
 .ti -1c
-.RI "bool \fBRemoveProduct\fP (\fBProduct\fP p)"
+.RI "bool \fBRemove\fP (object obj)"
 .br
 .RI "Method used to remove a product from a Products' list\&. "
 .ti -1c
@@ -65,7 +67,7 @@ Purpose: Class to manage a group of more than one product\&. Created by: Jose Al
 
 
 .PP
-Definition at line \fB25\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB26\fP of file \fBProducts\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Products\&.Products ()"
@@ -73,7 +75,7 @@ Definition at line \fB25\fP of file \fBProducts\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB38\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB39\fP of file \fBProducts\&.cs\fP\&.
 .SS "trabalhoPOO_27967\&.Products\&.Products (List< \fBProduct\fP > products)"
 
 .PP
@@ -86,27 +88,10 @@ The constructor to use when list of Product is given\&.
 .PP
 
 .PP
-Definition at line \fB47\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB48\fP of file \fBProducts\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Products\&.ExistProduct (string reff)"
-
-.PP
-Method used to verify if a product is on a products' list\&. 
-.PP
-\fBParameters\fP
-.RS 4
-\fIreff\fP 
-.RE
-.PP
-\fBReturns\fP
-.RS 4
-.RE
-.PP
-
-.PP
-Definition at line \fB115\fP of file \fBProducts\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Products\&.InsertProduct (\fBProduct\fP p)"
+.SS "bool trabalhoPOO_27967\&.Products\&.Add (object obj)"
 
 .PP
 This method inserts a product in a list of products\&. 
@@ -123,8 +108,29 @@ Returns true or False, depending on whether or not it succeeded in inserting the
 .PP
 
 .PP
-Definition at line \fB103\fP of file \fBProducts\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Products\&.RemoveProduct (\fBProduct\fP p)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB104\fP of file \fBProducts\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Products\&.Exist (object obj)"
+
+.PP
+Method used to verify if a product is on a products' list, given its Refference\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIreff\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB124\fP of file \fBProducts\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Products\&.Remove (object obj)"
 
 .PP
 Method used to remove a product from a Products' list\&. 
@@ -142,7 +148,9 @@ Product removed successfully
 .PP
 Product was not removed\&.
 .PP
-Definition at line \fB129\fP of file \fBProducts\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB142\fP of file \fBProducts\&.cs\fP\&.
 .SS "\fBProduct\fP trabalhoPOO_27967\&.Products\&.SearchProduct (string reff)"
 
 .PP
@@ -160,7 +168,7 @@ Returns the product if found
 .PP
 
 .PP
-Definition at line \fB145\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB159\fP of file \fBProducts\&.cs\fP\&.
 .SS "override string trabalhoPOO_27967\&.Products\&.ToString ()"
 
 .PP
@@ -173,7 +181,7 @@ Override of the ToString() Method to convert the data of a list fo products to a
 .PP
 
 .PP
-Definition at line \fB75\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB76\fP of file \fBProducts\&.cs\fP\&.
 .SS "decimal trabalhoPOO_27967\&.Products\&.TotalPrice ()"
 
 .PP
@@ -186,7 +194,7 @@ Method used to calculate the total price of products in a list of products\&.
 .PP
 
 .PP
-Definition at line \fB158\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB172\fP of file \fBProducts\&.cs\fP\&.
 .SS "decimal trabalhoPOO_27967\&.Products\&.ValueInPosition (int p)"
 
 .PP
@@ -203,7 +211,7 @@ This method returns the price of a product, given a certain array position\&.
 .PP
 
 .PP
-Definition at line \fB93\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB94\fP of file \fBProducts\&.cs\fP\&.
 .SS "DateTime trabalhoPOO_27967\&.Products\&.WarratyExpirationDateForProduct (DateTime date, string reff)"
 
 .PP
@@ -222,7 +230,7 @@ Method used to calculate the warranty's expiration date of a product on a list o
 .PP
 
 .PP
-Definition at line \fB170\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB184\fP of file \fBProducts\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBProduct\fP> trabalhoPOO_27967\&.Products\&.Prods\fC [get]\fP, \fC [set]\fP"
@@ -230,7 +238,7 @@ Definition at line \fB170\fP of file \fBProducts\&.cs\fP\&.
 .PP
 Property used to get and set the list of products\&. 
 .PP
-Definition at line \fB60\fP of file \fBProducts\&.cs\fP\&.
+Definition at line \fB61\fP of file \fBProducts\&.cs\fP\&.
 
 .SH "Author"
 .PP 

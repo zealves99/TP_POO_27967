@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classtrabalho_p_o_o__27967_1_1_sales.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetrabalho_p_o_o__27967.html">trabalhoPOO_27967</a></li><li class="navelem"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html">Sales</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -84,6 +100,16 @@ $(function() {
 
 <p>Purpose: Class with the agregation of sales of a store. Created by: Jose Alves a27967 Created on: 11/10/2024 7:42:03 PM.  
  <a href="classtrabalho_p_o_o__27967_1_1_sales.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for trabalhoPOO_27967.Sales:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtrabalho_p_o_o__27967_1_1_sales__inherit__graph.png" border="0" usemap="#atrabalho_p_o_o__27967_8_sales_inherit__map" alt="Inheritance graph"/></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for trabalhoPOO_27967.Sales:</div>
+<div class="dyncontent">
+<div class="center"><img src="classtrabalho_p_o_o__27967_1_1_sales__coll__graph.png" border="0" usemap="#atrabalho_p_o_o__27967_8_sales_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -96,9 +122,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a07c8656840c891411c07d7f27537b966" id="r_a07c8656840c891411c07d7f27537b966"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sale.html">Sale</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html#a07c8656840c891411c07d7f27537b966">GetSale</a> (int idSale)</td></tr>
 <tr class="memdesc:a07c8656840c891411c07d7f27537b966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to find a sale in a list of sales, given its ID.  <br /></td></tr>
 <tr class="separator:a07c8656840c891411c07d7f27537b966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a561cda4287e8151ba1e39b888ef92102" id="r_a561cda4287e8151ba1e39b888ef92102"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html#a561cda4287e8151ba1e39b888ef92102">AddSale</a> (<a class="el" href="classtrabalho_p_o_o__27967_1_1_sale.html">Sale</a> sale)</td></tr>
-<tr class="memdesc:a561cda4287e8151ba1e39b888ef92102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to add a sale to a sales' list.  <br /></td></tr>
-<tr class="separator:a561cda4287e8151ba1e39b888ef92102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472d8cb3f41ed335eb2d47e76b2924d5" id="r_a472d8cb3f41ed335eb2d47e76b2924d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html#a472d8cb3f41ed335eb2d47e76b2924d5">Add</a> (object obj)</td></tr>
+<tr class="memdesc:a472d8cb3f41ed335eb2d47e76b2924d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to add a sale to a sales' list.  <br /></td></tr>
+<tr class="separator:a472d8cb3f41ed335eb2d47e76b2924d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4a44c00fee7e8b0412b87f4dda4e22" id="r_afb4a44c00fee7e8b0412b87f4dda4e22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html#afb4a44c00fee7e8b0412b87f4dda4e22">Remove</a> (object obj)</td></tr>
+<tr class="memdesc:afb4a44c00fee7e8b0412b87f4dda4e22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to remove a sale from a list of sales.  <br /></td></tr>
+<tr class="separator:afb4a44c00fee7e8b0412b87f4dda4e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa73c7a13ac6e3ffe286d1b4017817551" id="r_aa73c7a13ac6e3ffe286d1b4017817551"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html#aa73c7a13ac6e3ffe286d1b4017817551">Exist</a> (object obj)</td></tr>
+<tr class="memdesc:aa73c7a13ac6e3ffe286d1b4017817551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to check if a sale exists in a list of sales.  <br /></td></tr>
+<tr class="separator:aa73c7a13ac6e3ffe286d1b4017817551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -109,7 +141,7 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Purpose: Class with the agregation of sales of a store. Created by: Jose Alves a27967 Created on: 11/10/2024 7:42:03 PM. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00021">21</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00022">22</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4d69d5be085f7c544c1954cc5e0484ec" name="a4d69d5be085f7c544c1954cc5e0484ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d69d5be085f7c544c1954cc5e0484ec">&#9670;&#160;</a></span>Sales() <span class="overload">[1/2]</span></h2>
@@ -128,7 +160,7 @@ Properties</h2></td></tr>
 
 <p>The default Constructor. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00034">34</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00035">35</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
 
 </div>
 </div>
@@ -156,22 +188,22 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00043">43</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00044">44</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a561cda4287e8151ba1e39b888ef92102" name="a561cda4287e8151ba1e39b888ef92102"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a561cda4287e8151ba1e39b888ef92102">&#9670;&#160;</a></span>AddSale()</h2>
+<a id="a472d8cb3f41ed335eb2d47e76b2924d5" name="a472d8cb3f41ed335eb2d47e76b2924d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472d8cb3f41ed335eb2d47e76b2924d5">&#9670;&#160;</a></span>Add()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool trabalhoPOO_27967.Sales.AddSale </td>
+          <td class="memname">bool trabalhoPOO_27967.Sales.Add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sale.html">Sale</a>&#160;</td>
-          <td class="paramname"><em>sale</em></td><td>)</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -186,7 +218,40 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00088">88</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+<p>Implements <a class="el" href="interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management.html#ab42dacc3ccfa608fd4fee1f9883149c9">trabalhoPOO_27967.Interface.IListManagement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00089">89</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+
+</div>
+</div>
+<a id="aa73c7a13ac6e3ffe286d1b4017817551" name="aa73c7a13ac6e3ffe286d1b4017817551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa73c7a13ac6e3ffe286d1b4017817551">&#9670;&#160;</a></span>Exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool trabalhoPOO_27967.Sales.Exist </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method used to check if a sale exists in a list of sales. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implements <a class="el" href="interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management.html#ae6a36e9d3990a49abbf56519864aefa5">trabalhoPOO_27967.Interface.IListManagement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00125">125</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
 
 </div>
 </div>
@@ -215,7 +280,38 @@ Properties</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00074">74</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00075">75</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+
+</div>
+</div>
+<a id="afb4a44c00fee7e8b0412b87f4dda4e22" name="afb4a44c00fee7e8b0412b87f4dda4e22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb4a44c00fee7e8b0412b87f4dda4e22">&#9670;&#160;</a></span>Remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool trabalhoPOO_27967.Sales.Remove </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Method used to remove a sale from a list of sales. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Implements <a class="el" href="interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management.html#a08db8db0c2163d359a6c0d1ebd74770c">trabalhoPOO_27967.Interface.IListManagement</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00105">105</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
 
 </div>
 </div>
@@ -242,7 +338,7 @@ Properties</h2></td></tr>
 
 <p>Property used to get and set a list of sales. </p>
 
-<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00055">55</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sales_8cs_source.html#l00056">56</a> of file <a class="el" href="_sales_8cs_source.html">Sales.cs</a>.</p>
 
 </div>
 </div>
@@ -250,9 +346,13 @@ Properties</h2></td></tr>
 <li>D:/Aulas/POO/TP_POO_27967/trabalhoPOO_27967/Sale/<a class="el" href="_sales_8cs_source.html">Sales.cs</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacetrabalho_p_o_o__27967.html">trabalhoPOO_27967</a></li><li class="navelem"><a class="el" href="classtrabalho_p_o_o__27967_1_1_sales.html">Sales</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

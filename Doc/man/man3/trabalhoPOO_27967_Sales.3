@@ -7,6 +7,8 @@ trabalhoPOO_27967.Sales \- Purpose: Class with the agregation of sales of a stor
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -23,9 +25,17 @@ trabalhoPOO_27967.Sales \- Purpose: Class with the agregation of sales of a stor
 .br
 .RI "Method to find a sale in a list of sales, given its ID\&. "
 .ti -1c
-.RI "bool \fBAddSale\fP (\fBSale\fP sale)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .RI "Method used to add a sale to a sales' list\&. "
+.ti -1c
+.RI "bool \fBRemove\fP (object obj)"
+.br
+.RI "Method used to remove a sale from a list of sales\&. "
+.ti -1c
+.RI "bool \fBExist\fP (object obj)"
+.br
+.RI "Method used to check if a sale exists in a list of sales\&. "
 .in -1c
 .SS "Properties"
 
@@ -41,7 +51,7 @@ Purpose: Class with the agregation of sales of a store\&. Created by: Jose Alves
 
 
 .PP
-Definition at line \fB21\fP of file \fBSales\&.cs\fP\&.
+Definition at line \fB22\fP of file \fBSales\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Sales\&.Sales ()"
@@ -49,7 +59,7 @@ Definition at line \fB21\fP of file \fBSales\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB34\fP of file \fBSales\&.cs\fP\&.
+Definition at line \fB35\fP of file \fBSales\&.cs\fP\&.
 .SS "trabalhoPOO_27967\&.Sales\&.Sales (List< \fBSale\fP > sales)"
 
 .PP
@@ -62,10 +72,10 @@ The constructor to use when the sales' List is given\&.
 .PP
 
 .PP
-Definition at line \fB43\fP of file \fBSales\&.cs\fP\&.
+Definition at line \fB44\fP of file \fBSales\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Sales\&.AddSale (\fBSale\fP sale)"
+.SS "bool trabalhoPOO_27967\&.Sales\&.Add (object obj)"
 
 .PP
 Method used to add a sale to a sales' list\&. 
@@ -81,7 +91,28 @@ Method used to add a sale to a sales' list\&.
 .PP
 
 .PP
-Definition at line \fB88\fP of file \fBSales\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB89\fP of file \fBSales\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Sales\&.Exist (object obj)"
+
+.PP
+Method used to check if a sale exists in a list of sales\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB125\fP of file \fBSales\&.cs\fP\&.
 .SS "\fBSale\fP trabalhoPOO_27967\&.Sales\&.GetSale (int idSale)"
 
 .PP
@@ -98,7 +129,26 @@ Method to find a sale in a list of sales, given its ID\&.
 .PP
 
 .PP
-Definition at line \fB74\fP of file \fBSales\&.cs\fP\&.
+Definition at line \fB75\fP of file \fBSales\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Sales\&.Remove (object obj)"
+
+.PP
+Method used to remove a sale from a list of sales\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIobj\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.PP
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB105\fP of file \fBSales\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBSale\fP> trabalhoPOO_27967\&.Sales\&.SalesStored\fC [get]\fP, \fC [set]\fP"
@@ -106,7 +156,7 @@ Definition at line \fB74\fP of file \fBSales\&.cs\fP\&.
 .PP
 Property used to get and set a list of sales\&. 
 .PP
-Definition at line \fB55\fP of file \fBSales\&.cs\fP\&.
+Definition at line \fB56\fP of file \fBSales\&.cs\fP\&.
 
 .SH "Author"
 .PP 

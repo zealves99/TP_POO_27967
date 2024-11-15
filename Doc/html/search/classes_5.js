@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['warranties_0',['Warranties',['../classtrabalho_p_o_o__27967_1_1_warranties.html',1,'trabalhoPOO_27967']]],
-  ['warranty_1',['Warranty',['../classtrabalho_p_o_o__27967_1_1_warranty.html',1,'trabalhoPOO_27967']]]
+  ['sale_0',['Sale',['../classtrabalho_p_o_o__27967_1_1_sale.html',1,'trabalhoPOO_27967']]],
+  ['sales_1',['Sales',['../classtrabalho_p_o_o__27967_1_1_sales.html',1,'trabalhoPOO_27967']]],
+  ['store_2',['Store',['../classtrabalho_p_o_o__27967_1_1_store_1_1_store.html',1,'trabalhoPOO_27967::Store']]]
 ];

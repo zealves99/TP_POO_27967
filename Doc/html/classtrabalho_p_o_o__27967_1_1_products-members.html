@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classtrabalho_p_o_o__27967_1_1_products.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -68,11 +89,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespacetrabalho_p_o_o__27967.html">trabalhoPOO_27967</a></li><li class="navelem"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">Products</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">trabalhoPOO_27967.Products Member List</div></div>
 </div><!--header-->
@@ -80,21 +96,24 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a90a7f5f03c2ccd97c2be7f56d720e55a">ExistProduct</a>(string reff)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a5f821611ade4e15c7d1deb244b2ac0e7">InsertProduct</a>(Product p)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#aa88f9e573377d1d38646662e632d4a4f">Add</a>(object obj)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a04a80cffcff1220ff623fa142d7696dd">Exist</a>(object obj)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#ab3b97b22d2afc9f517939c55ee7da816">Prods</a></td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a1fffd88356d5d671738b9360d066bcba">Products</a>()</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a474679b02593808209ecd7bd827f2259">Products</a>(List&lt; Product &gt; products)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#adee538a9c9c07356aad44a9b488ba994">RemoveProduct</a>(Product p)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a70cc373ea371ce5338c6f2b8034040ee">Remove</a>(object obj)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a6c4b0721b9ee7386ecf2f3ca7816d299">SearchProduct</a>(string reff)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a1d5ad4db24efaa06591ca5f348945396">ToString</a>()</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#ad24e9aee05588a3dfca00c0cf7cf78cc">TotalPrice</a>()</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#aaecad6a42d48c6a76d32fda436a2cc12">ValueInPosition</a>(int p)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html#a7ec91ea123a0aecc75e0bde122d4901a">WarratyExpirationDateForProduct</a>(DateTime date, string reff)</td><td class="entry"><a class="el" href="classtrabalho_p_o_o__27967_1_1_products.html">trabalhoPOO_27967.Products</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

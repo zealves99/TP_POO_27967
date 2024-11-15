@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['removecampaign_0',['RemoveCampaign',['../classtrabalho_p_o_o__27967_1_1_campaigns.html#a813a0f7c31132e028d4960fc60046046',1,'trabalhoPOO_27967::Campaigns']]],
-  ['removecategory_1',['RemoveCategory',['../classtrabalho_p_o_o__27967_1_1_categories.html#a09fad0f3276c4a78d3d93c081f2acfdc',1,'trabalhoPOO_27967::Categories']]],
-  ['removeclient_2',['RemoveClient',['../classtrabalho_p_o_o__27967_1_1_clients.html#a988177e6acacfa0f16a3cdc3f4273b25',1,'trabalhoPOO_27967::Clients']]],
-  ['removemake_3',['RemoveMake',['../classtrabalho_p_o_o__27967_1_1_makes.html#a19db311e10cc1fea347f5aaf1d094a3b',1,'trabalhoPOO_27967::Makes']]],
-  ['removeproduct_4',['RemoveProduct',['../classtrabalho_p_o_o__27967_1_1_products.html#adee538a9c9c07356aad44a9b488ba994',1,'trabalhoPOO_27967::Products']]],
-  ['removeproductfromsale_5',['RemoveProductFromSale',['../classtrabalho_p_o_o__27967_1_1_sale.html#a8ea1f0e768ba785fe4cb671bf5fa7bb9',1,'trabalhoPOO_27967::Sale']]],
-  ['removewarranty_6',['RemoveWarranty',['../classtrabalho_p_o_o__27967_1_1_warranties.html#a72985ccfa11684f82769282a10ec76b8',1,'trabalhoPOO_27967::Warranties']]]
+  ['remove_0',['remove',['../classtrabalho_p_o_o__27967_1_1_campaigns.html#a6e8052eaf5987adbdd21971d8294c1d6',1,'trabalhoPOO_27967.Campaigns.Remove()'],['../classtrabalho_p_o_o__27967_1_1_categories.html#a9b3d18e9efa088cb63cea6857e23cb19',1,'trabalhoPOO_27967.Categories.Remove()'],['../classtrabalho_p_o_o__27967_1_1_clients.html#a63e3db1ed71a4f889f6ba8ea7771dd90',1,'trabalhoPOO_27967.Clients.Remove()'],['../interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management.html#a08db8db0c2163d359a6c0d1ebd74770c',1,'trabalhoPOO_27967.Interface.IListManagement.Remove()'],['../classtrabalho_p_o_o__27967_1_1_makes.html#af54f015d0a80277ec3e24d14212a8d5c',1,'trabalhoPOO_27967.Makes.Remove()'],['../classtrabalho_p_o_o__27967_1_1_products.html#a70cc373ea371ce5338c6f2b8034040ee',1,'trabalhoPOO_27967.Products.Remove()'],['../classtrabalho_p_o_o__27967_1_1_sales.html#afb4a44c00fee7e8b0412b87f4dda4e22',1,'trabalhoPOO_27967.Sales.Remove()'],['../classtrabalho_p_o_o__27967_1_1_warranties.html#aea014069639917a19477cffebd5dfaa1',1,'trabalhoPOO_27967.Warranties.Remove()']]],
+  ['removeproductfromsale_1',['RemoveProductFromSale',['../classtrabalho_p_o_o__27967_1_1_sale.html#a8ea1f0e768ba785fe4cb671bf5fa7bb9',1,'trabalhoPOO_27967::Sale']]]
 ];

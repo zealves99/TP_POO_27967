@@ -8,6 +8,7 @@
 **/
 using System;
 using System.Collections.Generic;
+using trabalhoPOO_27967.Interface;
 
 namespace trabalhoPOO_27967
 {
@@ -18,7 +19,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Clients
+    public class Clients : IListManagement
     {
         #region Attributes
         static List<Client> _clientList;
@@ -62,11 +63,15 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="cli"></param>
         /// <returns></returns>
-        public bool AddClient(Client cli)
+        public bool Add(object obj)
         {
-            if (cli == null) return false;
-            this.ClientList.Add(cli);
-            return true;
+            if (obj == null) return false;
+            if (obj is Client)
+            {
+                this.ClientList.Add((Client)obj);
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -74,15 +79,14 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="cli"></param>
         /// <returns></returns>
-        public bool RemoveClient(Client cli)
+        public bool Remove(object obj)
         {
-            foreach(Client client in _clientList)
+            if (obj == null) return false;
+            var aux = (Client) obj;
+            if (Exist(aux.ClientID))
             {
-                if (client == cli)
-                {
-                    _clientList.Remove(cli);
-                    return true;
-                }
+                _clientList.Remove((Client)obj);
+                return true;
             }
             return false;
         }
@@ -92,13 +96,16 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public bool ExistClient(int id)
+        public bool Exist(object obj)
         {
-            foreach (Client client in _clientList)
+            if (obj is int)
             {
-                if (client.ClientID == id)
+                foreach (Client client in _clientList)
                 {
-                    return true;
+                    if (client.ClientID == (int)obj)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;

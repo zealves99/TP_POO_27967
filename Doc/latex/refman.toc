@@ -1,0 +1,258 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Package List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967 Namespace Reference}{9}{section.5.1}%
+\contentsline {section}{\numberline {5.2}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface Namespace Reference}{10}{section.5.2}%
+\contentsline {section}{\numberline {5.3}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Store Namespace Reference}{10}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}%
+\contentsline {section}{\numberline {6.1}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Best\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale Class Reference}{11}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{11}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Campaign Class Reference}{11}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{12}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Constructor \& Destructor Documentation}{12}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}Campaign()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{12}{subsubsection.6.2.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2.2}Campaign()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{12}{subsubsection.6.2.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Member Function Documentation}{13}{subsection.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.1}Equals()}{13}{subsubsection.6.2.3.1}%
+\contentsline {subsubsection}{\numberline {6.2.3.2}operator"!=()}{13}{subsubsection.6.2.3.2}%
+\contentsline {subsubsection}{\numberline {6.2.3.3}operator==()}{13}{subsubsection.6.2.3.3}%
+\contentsline {subsubsection}{\numberline {6.2.3.4}VerifyApplicability()}{15}{subsubsection.6.2.3.4}%
+\contentsline {subsection}{\numberline {6.2.4}Property Documentation}{15}{subsection.6.2.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.1}CampaignCount}{15}{subsubsection.6.2.4.1}%
+\contentsline {subsubsection}{\numberline {6.2.4.2}Discount}{15}{subsubsection.6.2.4.2}%
+\contentsline {subsubsection}{\numberline {6.2.4.3}EndDate}{16}{subsubsection.6.2.4.3}%
+\contentsline {subsubsection}{\numberline {6.2.4.4}Id}{16}{subsubsection.6.2.4.4}%
+\contentsline {subsubsection}{\numberline {6.2.4.5}Name}{16}{subsubsection.6.2.4.5}%
+\contentsline {subsubsection}{\numberline {6.2.4.6}StartDate}{16}{subsubsection.6.2.4.6}%
+\contentsline {section}{\numberline {6.3}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Campaigns Class Reference}{16}{section.6.3}%
+\contentsline {section}{\numberline {6.4}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Categories Class Reference}{17}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{17}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{17}{subsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.2.1}Categories()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{17}{subsubsection.6.4.2.1}%
+\contentsline {subsubsection}{\numberline {6.4.2.2}Categories()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{17}{subsubsection.6.4.2.2}%
+\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{18}{subsection.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.4.3.1}Add()}{18}{subsubsection.6.4.3.1}%
+\contentsline {subsubsection}{\numberline {6.4.3.2}Exist()}{18}{subsubsection.6.4.3.2}%
+\contentsline {subsubsection}{\numberline {6.4.3.3}Remove()}{19}{subsubsection.6.4.3.3}%
+\contentsline {subsection}{\numberline {6.4.4}Property Documentation}{19}{subsection.6.4.4}%
+\contentsline {subsubsection}{\numberline {6.4.4.1}Cats}{19}{subsubsection.6.4.4.1}%
+\contentsline {section}{\numberline {6.5}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category Class Reference}{19}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Detailed Description}{20}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Constructor \& Destructor Documentation}{20}{subsection.6.5.2}%
+\contentsline {subsubsection}{\numberline {6.5.2.1}Category()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{20}{subsubsection.6.5.2.1}%
+\contentsline {subsubsection}{\numberline {6.5.2.2}Category()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{20}{subsubsection.6.5.2.2}%
+\contentsline {subsection}{\numberline {6.5.3}Member Function Documentation}{21}{subsection.6.5.3}%
+\contentsline {subsubsection}{\numberline {6.5.3.1}Equals()}{21}{subsubsection.6.5.3.1}%
+\contentsline {subsubsection}{\numberline {6.5.3.2}operator"!=()}{21}{subsubsection.6.5.3.2}%
+\contentsline {subsubsection}{\numberline {6.5.3.3}operator==()}{21}{subsubsection.6.5.3.3}%
+\contentsline {subsection}{\numberline {6.5.4}Property Documentation}{22}{subsection.6.5.4}%
+\contentsline {subsubsection}{\numberline {6.5.4.1}Id}{22}{subsubsection.6.5.4.1}%
+\contentsline {subsubsection}{\numberline {6.5.4.2}Name}{22}{subsubsection.6.5.4.2}%
+\contentsline {section}{\numberline {6.6}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Client Class Reference}{22}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{23}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Constructor \& Destructor Documentation}{23}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}Client()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{23}{subsubsection.6.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}Client()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{23}{subsubsection.6.6.2.2}%
+\contentsline {subsection}{\numberline {6.6.3}Member Function Documentation}{24}{subsection.6.6.3}%
+\contentsline {subsubsection}{\numberline {6.6.3.1}Equals()}{24}{subsubsection.6.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.6.3.2}operator"!=()}{24}{subsubsection.6.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.6.3.3}operator==()}{24}{subsubsection.6.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.6.3.4}ToString()}{26}{subsubsection.6.6.3.4}%
+\contentsline {subsection}{\numberline {6.6.4}Property Documentation}{26}{subsection.6.6.4}%
+\contentsline {subsubsection}{\numberline {6.6.4.1}ClientCount}{26}{subsubsection.6.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.6.4.2}ClientID}{26}{subsubsection.6.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.6.4.3}Contact}{26}{subsubsection.6.6.4.3}%
+\contentsline {subsubsection}{\numberline {6.6.4.4}Name}{27}{subsubsection.6.6.4.4}%
+\contentsline {section}{\numberline {6.7}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Clients Class Reference}{27}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{27}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Constructor \& Destructor Documentation}{28}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}Clients()}{28}{subsubsection.6.7.2.1}%
+\contentsline {subsection}{\numberline {6.7.3}Member Function Documentation}{28}{subsection.6.7.3}%
+\contentsline {subsubsection}{\numberline {6.7.3.1}Add()}{28}{subsubsection.6.7.3.1}%
+\contentsline {subsubsection}{\numberline {6.7.3.2}Exist()}{28}{subsubsection.6.7.3.2}%
+\contentsline {subsubsection}{\numberline {6.7.3.3}GetClient()}{29}{subsubsection.6.7.3.3}%
+\contentsline {subsubsection}{\numberline {6.7.3.4}Remove()}{29}{subsubsection.6.7.3.4}%
+\contentsline {subsection}{\numberline {6.7.4}Property Documentation}{29}{subsection.6.7.4}%
+\contentsline {subsubsection}{\numberline {6.7.4.1}ClientList}{29}{subsubsection.6.7.4.1}%
+\contentsline {section}{\numberline {6.8}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IList\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Management Interface Reference}{30}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Detailed Description}{30}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Member Function Documentation}{30}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}Add()}{30}{subsubsection.6.8.2.1}%
+\contentsline {subsubsection}{\numberline {6.8.2.2}Exist()}{30}{subsubsection.6.8.2.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.3}Remove()}{30}{subsubsection.6.8.2.3}%
+\contentsline {section}{\numberline {6.9}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Make Class Reference}{31}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{31}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Constructor \& Destructor Documentation}{31}{subsection.6.9.2}%
+\contentsline {subsubsection}{\numberline {6.9.2.1}Make()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{31}{subsubsection.6.9.2.1}%
+\contentsline {subsubsection}{\numberline {6.9.2.2}Make()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{31}{subsubsection.6.9.2.2}%
+\contentsline {subsection}{\numberline {6.9.3}Member Function Documentation}{32}{subsection.6.9.3}%
+\contentsline {subsubsection}{\numberline {6.9.3.1}Equals()}{32}{subsubsection.6.9.3.1}%
+\contentsline {subsubsection}{\numberline {6.9.3.2}operator"!=()}{32}{subsubsection.6.9.3.2}%
+\contentsline {subsubsection}{\numberline {6.9.3.3}operator==()}{33}{subsubsection.6.9.3.3}%
+\contentsline {subsubsection}{\numberline {6.9.3.4}ToString()}{33}{subsubsection.6.9.3.4}%
+\contentsline {subsection}{\numberline {6.9.4}Property Documentation}{33}{subsection.6.9.4}%
+\contentsline {subsubsection}{\numberline {6.9.4.1}ID}{33}{subsubsection.6.9.4.1}%
+\contentsline {subsubsection}{\numberline {6.9.4.2}Name}{33}{subsubsection.6.9.4.2}%
+\contentsline {section}{\numberline {6.10}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Makes Class Reference}{34}{section.6.10}%
+\contentsline {subsection}{\numberline {6.10.1}Detailed Description}{34}{subsection.6.10.1}%
+\contentsline {subsection}{\numberline {6.10.2}Constructor \& Destructor Documentation}{34}{subsection.6.10.2}%
+\contentsline {subsubsection}{\numberline {6.10.2.1}Makes()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{34}{subsubsection.6.10.2.1}%
+\contentsline {subsubsection}{\numberline {6.10.2.2}Makes()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{34}{subsubsection.6.10.2.2}%
+\contentsline {subsection}{\numberline {6.10.3}Member Function Documentation}{35}{subsection.6.10.3}%
+\contentsline {subsubsection}{\numberline {6.10.3.1}Add()}{35}{subsubsection.6.10.3.1}%
+\contentsline {subsubsection}{\numberline {6.10.3.2}Exist()}{35}{subsubsection.6.10.3.2}%
+\contentsline {subsubsection}{\numberline {6.10.3.3}Remove()}{36}{subsubsection.6.10.3.3}%
+\contentsline {subsection}{\numberline {6.10.4}Property Documentation}{36}{subsection.6.10.4}%
+\contentsline {subsubsection}{\numberline {6.10.4.1}MakeList}{36}{subsubsection.6.10.4.1}%
+\contentsline {section}{\numberline {6.11}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product Class Reference}{36}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{37}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Constructor \& Destructor Documentation}{37}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}Product()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{37}{subsubsection.6.11.2.1}%
+\contentsline {subsubsection}{\numberline {6.11.2.2}Product()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{37}{subsubsection.6.11.2.2}%
+\contentsline {subsection}{\numberline {6.11.3}Member Function Documentation}{38}{subsection.6.11.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.1}Equals()}{38}{subsubsection.6.11.3.1}%
+\contentsline {subsubsection}{\numberline {6.11.3.2}operator"!=()}{38}{subsubsection.6.11.3.2}%
+\contentsline {subsubsection}{\numberline {6.11.3.3}operator==()}{39}{subsubsection.6.11.3.3}%
+\contentsline {subsubsection}{\numberline {6.11.3.4}ToString()}{39}{subsubsection.6.11.3.4}%
+\contentsline {subsection}{\numberline {6.11.4}Property Documentation}{39}{subsection.6.11.4}%
+\contentsline {subsubsection}{\numberline {6.11.4.1}Category}{39}{subsubsection.6.11.4.1}%
+\contentsline {subsubsection}{\numberline {6.11.4.2}Make}{39}{subsubsection.6.11.4.2}%
+\contentsline {subsubsection}{\numberline {6.11.4.3}Price}{40}{subsubsection.6.11.4.3}%
+\contentsline {subsubsection}{\numberline {6.11.4.4}Reference}{40}{subsubsection.6.11.4.4}%
+\contentsline {subsubsection}{\numberline {6.11.4.5}Stock}{40}{subsubsection.6.11.4.5}%
+\contentsline {subsubsection}{\numberline {6.11.4.6}Warranty}{40}{subsubsection.6.11.4.6}%
+\contentsline {section}{\numberline {6.12}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Products Class Reference}{40}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{41}{subsection.6.12.1}%
+\contentsline {subsection}{\numberline {6.12.2}Constructor \& Destructor Documentation}{41}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}Products()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{41}{subsubsection.6.12.2.1}%
+\contentsline {subsubsection}{\numberline {6.12.2.2}Products()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{41}{subsubsection.6.12.2.2}%
+\contentsline {subsection}{\numberline {6.12.3}Member Function Documentation}{42}{subsection.6.12.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.1}Add()}{42}{subsubsection.6.12.3.1}%
+\contentsline {subsubsection}{\numberline {6.12.3.2}Exist()}{42}{subsubsection.6.12.3.2}%
+\contentsline {subsubsection}{\numberline {6.12.3.3}Remove()}{43}{subsubsection.6.12.3.3}%
+\contentsline {subsubsection}{\numberline {6.12.3.4}SearchProduct()}{43}{subsubsection.6.12.3.4}%
+\contentsline {subsubsection}{\numberline {6.12.3.5}ToString()}{43}{subsubsection.6.12.3.5}%
+\contentsline {subsubsection}{\numberline {6.12.3.6}TotalPrice()}{44}{subsubsection.6.12.3.6}%
+\contentsline {subsubsection}{\numberline {6.12.3.7}ValueInPosition()}{44}{subsubsection.6.12.3.7}%
+\contentsline {subsubsection}{\numberline {6.12.3.8}WarratyExpirationDateForProduct()}{44}{subsubsection.6.12.3.8}%
+\contentsline {subsection}{\numberline {6.12.4}Property Documentation}{45}{subsection.6.12.4}%
+\contentsline {subsubsection}{\numberline {6.12.4.1}Prods}{45}{subsubsection.6.12.4.1}%
+\contentsline {section}{\numberline {6.13}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale Class Reference}{45}{section.6.13}%
+\contentsline {subsection}{\numberline {6.13.1}Detailed Description}{46}{subsection.6.13.1}%
+\contentsline {subsection}{\numberline {6.13.2}Constructor \& Destructor Documentation}{46}{subsection.6.13.2}%
+\contentsline {subsubsection}{\numberline {6.13.2.1}Sale()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{46}{subsubsection.6.13.2.1}%
+\contentsline {subsubsection}{\numberline {6.13.2.2}Sale()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{46}{subsubsection.6.13.2.2}%
+\contentsline {subsection}{\numberline {6.13.3}Member Function Documentation}{47}{subsection.6.13.3}%
+\contentsline {subsubsection}{\numberline {6.13.3.1}Equals()}{47}{subsubsection.6.13.3.1}%
+\contentsline {subsubsection}{\numberline {6.13.3.2}ExistProductOnSale()}{47}{subsubsection.6.13.3.2}%
+\contentsline {subsubsection}{\numberline {6.13.3.3}InsertProductOnSale()}{47}{subsubsection.6.13.3.3}%
+\contentsline {subsubsection}{\numberline {6.13.3.4}operator"!=()}{48}{subsubsection.6.13.3.4}%
+\contentsline {subsubsection}{\numberline {6.13.3.5}operator==()}{48}{subsubsection.6.13.3.5}%
+\contentsline {subsubsection}{\numberline {6.13.3.6}RemoveProductFromSale()}{48}{subsubsection.6.13.3.6}%
+\contentsline {subsubsection}{\numberline {6.13.3.7}ToString()}{49}{subsubsection.6.13.3.7}%
+\contentsline {subsubsection}{\numberline {6.13.3.8}TotalPrice()}{49}{subsubsection.6.13.3.8}%
+\contentsline {subsubsection}{\numberline {6.13.3.9}WarrantyExpirationDate()}{49}{subsubsection.6.13.3.9}%
+\contentsline {subsection}{\numberline {6.13.4}Property Documentation}{50}{subsection.6.13.4}%
+\contentsline {subsubsection}{\numberline {6.13.4.1}Campaigns}{50}{subsubsection.6.13.4.1}%
+\contentsline {subsubsection}{\numberline {6.13.4.2}Client}{50}{subsubsection.6.13.4.2}%
+\contentsline {subsubsection}{\numberline {6.13.4.3}Id}{50}{subsubsection.6.13.4.3}%
+\contentsline {subsubsection}{\numberline {6.13.4.4}Products}{50}{subsubsection.6.13.4.4}%
+\contentsline {subsubsection}{\numberline {6.13.4.5}SaleDate}{50}{subsubsection.6.13.4.5}%
+\contentsline {subsubsection}{\numberline {6.13.4.6}TotPrice}{50}{subsubsection.6.13.4.6}%
+\contentsline {section}{\numberline {6.14}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sales Class Reference}{51}{section.6.14}%
+\contentsline {subsection}{\numberline {6.14.1}Detailed Description}{51}{subsection.6.14.1}%
+\contentsline {subsection}{\numberline {6.14.2}Constructor \& Destructor Documentation}{51}{subsection.6.14.2}%
+\contentsline {subsubsection}{\numberline {6.14.2.1}Sales()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{51}{subsubsection.6.14.2.1}%
+\contentsline {subsubsection}{\numberline {6.14.2.2}Sales()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{51}{subsubsection.6.14.2.2}%
+\contentsline {subsection}{\numberline {6.14.3}Member Function Documentation}{52}{subsection.6.14.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.1}Add()}{52}{subsubsection.6.14.3.1}%
+\contentsline {subsubsection}{\numberline {6.14.3.2}Exist()}{52}{subsubsection.6.14.3.2}%
+\contentsline {subsubsection}{\numberline {6.14.3.3}GetSale()}{53}{subsubsection.6.14.3.3}%
+\contentsline {subsubsection}{\numberline {6.14.3.4}Remove()}{53}{subsubsection.6.14.3.4}%
+\contentsline {subsection}{\numberline {6.14.4}Property Documentation}{53}{subsection.6.14.4}%
+\contentsline {subsubsection}{\numberline {6.14.4.1}SalesStored}{53}{subsubsection.6.14.4.1}%
+\contentsline {section}{\numberline {6.15}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Store.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Store Class Reference}{54}{section.6.15}%
+\contentsline {subsection}{\numberline {6.15.1}Detailed Description}{54}{subsection.6.15.1}%
+\contentsline {subsection}{\numberline {6.15.2}Constructor \& Destructor Documentation}{54}{subsection.6.15.2}%
+\contentsline {subsubsection}{\numberline {6.15.2.1}Store()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{54}{subsubsection.6.15.2.1}%
+\contentsline {subsubsection}{\numberline {6.15.2.2}Store()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{54}{subsubsection.6.15.2.2}%
+\contentsline {subsection}{\numberline {6.15.3}Property Documentation}{55}{subsection.6.15.3}%
+\contentsline {subsubsection}{\numberline {6.15.3.1}CatList}{55}{subsubsection.6.15.3.1}%
+\contentsline {subsubsection}{\numberline {6.15.3.2}ClientLIst}{55}{subsubsection.6.15.3.2}%
+\contentsline {subsubsection}{\numberline {6.15.3.3}MakeList}{55}{subsubsection.6.15.3.3}%
+\contentsline {subsubsection}{\numberline {6.15.3.4}ProdList}{55}{subsubsection.6.15.3.4}%
+\contentsline {subsubsection}{\numberline {6.15.3.5}SaleList}{56}{subsubsection.6.15.3.5}%
+\contentsline {subsubsection}{\numberline {6.15.3.6}WarrantList}{56}{subsubsection.6.15.3.6}%
+\contentsline {section}{\numberline {6.16}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Warranties Class Reference}{56}{section.6.16}%
+\contentsline {subsection}{\numberline {6.16.1}Detailed Description}{57}{subsection.6.16.1}%
+\contentsline {subsection}{\numberline {6.16.2}Constructor \& Destructor Documentation}{57}{subsection.6.16.2}%
+\contentsline {subsubsection}{\numberline {6.16.2.1}Warranties()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{57}{subsubsection.6.16.2.1}%
+\contentsline {subsubsection}{\numberline {6.16.2.2}Warranties()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{57}{subsubsection.6.16.2.2}%
+\contentsline {subsection}{\numberline {6.16.3}Member Function Documentation}{57}{subsection.6.16.3}%
+\contentsline {subsubsection}{\numberline {6.16.3.1}Add()}{57}{subsubsection.6.16.3.1}%
+\contentsline {subsubsection}{\numberline {6.16.3.2}Exist()}{58}{subsubsection.6.16.3.2}%
+\contentsline {subsubsection}{\numberline {6.16.3.3}Remove()}{58}{subsubsection.6.16.3.3}%
+\contentsline {subsection}{\numberline {6.16.4}Property Documentation}{58}{subsection.6.16.4}%
+\contentsline {subsubsection}{\numberline {6.16.4.1}Warrants}{58}{subsubsection.6.16.4.1}%
+\contentsline {section}{\numberline {6.17}trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Warranty Class Reference}{59}{section.6.17}%
+\contentsline {subsection}{\numberline {6.17.1}Detailed Description}{59}{subsection.6.17.1}%
+\contentsline {subsection}{\numberline {6.17.2}Constructor \& Destructor Documentation}{59}{subsection.6.17.2}%
+\contentsline {subsubsection}{\numberline {6.17.2.1}Warranty()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{59}{subsubsection.6.17.2.1}%
+\contentsline {subsubsection}{\numberline {6.17.2.2}Warranty()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{60}{subsubsection.6.17.2.2}%
+\contentsline {subsection}{\numberline {6.17.3}Member Function Documentation}{60}{subsection.6.17.3}%
+\contentsline {subsubsection}{\numberline {6.17.3.1}Equals()}{60}{subsubsection.6.17.3.1}%
+\contentsline {subsubsection}{\numberline {6.17.3.2}ExpirationDate()}{60}{subsubsection.6.17.3.2}%
+\contentsline {subsubsection}{\numberline {6.17.3.3}operator"!=()}{61}{subsubsection.6.17.3.3}%
+\contentsline {subsubsection}{\numberline {6.17.3.4}operator==()}{61}{subsubsection.6.17.3.4}%
+\contentsline {subsubsection}{\numberline {6.17.3.5}ToString()}{62}{subsubsection.6.17.3.5}%
+\contentsline {subsection}{\numberline {6.17.4}Property Documentation}{62}{subsection.6.17.4}%
+\contentsline {subsubsection}{\numberline {6.17.4.1}Conditions}{62}{subsubsection.6.17.4.1}%
+\contentsline {subsubsection}{\numberline {6.17.4.2}DurationInYears}{62}{subsubsection.6.17.4.2}%
+\contentsline {subsubsection}{\numberline {6.17.4.3}ProdID}{62}{subsubsection.6.17.4.3}%
+\contentsline {chapter}{\numberline {7}File Documentation}{63}{chapter.7}%
+\contentsline {section}{\numberline {7.1}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Best\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale.cs File Reference}{63}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Best\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{63}{section.7.2}%
+\contentsline {section}{\numberline {7.3}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Campaign/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Campaign.cs File Reference}{64}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Campaign.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{64}{section.7.4}%
+\contentsline {section}{\numberline {7.5}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Campaign/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Campaigns.cs File Reference}{66}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Campaigns.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{66}{section.7.6}%
+\contentsline {section}{\numberline {7.7}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Categories.cs File Reference}{67}{section.7.7}%
+\contentsline {section}{\numberline {7.8}Categories.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{68}{section.7.8}%
+\contentsline {section}{\numberline {7.9}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Category.cs File Reference}{69}{section.7.9}%
+\contentsline {section}{\numberline {7.10}Category.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{69}{section.7.10}%
+\contentsline {section}{\numberline {7.11}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Client/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Client.cs File Reference}{70}{section.7.11}%
+\contentsline {section}{\numberline {7.12}Client.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{71}{section.7.12}%
+\contentsline {section}{\numberline {7.13}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Client/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Clients.cs File Reference}{72}{section.7.13}%
+\contentsline {section}{\numberline {7.14}Clients.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{73}{section.7.14}%
+\contentsline {section}{\numberline {7.15}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Interface/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}IList\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Management.cs File Reference}{74}{section.7.15}%
+\contentsline {section}{\numberline {7.16}IList\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Management.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{74}{section.7.16}%
+\contentsline {section}{\numberline {7.17}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Make/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Make.cs File Reference}{75}{section.7.17}%
+\contentsline {section}{\numberline {7.18}Make.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{75}{section.7.18}%
+\contentsline {section}{\numberline {7.19}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Make/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Makes.cs File Reference}{76}{section.7.19}%
+\contentsline {section}{\numberline {7.20}Makes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{76}{section.7.20}%
+\contentsline {section}{\numberline {7.21}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/obj/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Debug/.NETFramework,Version=v4.7.2.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs File Reference}{78}{section.7.21}%
+\contentsline {section}{\numberline {7.22}.NETFramework,Version=v4.7.2.Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Attributes.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{78}{section.7.22}%
+\contentsline {section}{\numberline {7.23}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product.cs File Reference}{78}{section.7.23}%
+\contentsline {section}{\numberline {7.24}Product.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{78}{section.7.24}%
+\contentsline {section}{\numberline {7.25}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Product/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Products.cs File Reference}{80}{section.7.25}%
+\contentsline {section}{\numberline {7.26}Products.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{80}{section.7.26}%
+\contentsline {section}{\numberline {7.27}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Properties/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.cs File Reference}{82}{section.7.27}%
+\contentsline {section}{\numberline {7.28}Assembly\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{82}{section.7.28}%
+\contentsline {section}{\numberline {7.29}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale.cs File Reference}{83}{section.7.29}%
+\contentsline {section}{\numberline {7.30}Sale.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{83}{section.7.30}%
+\contentsline {section}{\numberline {7.31}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sale/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sales.cs File Reference}{85}{section.7.31}%
+\contentsline {section}{\numberline {7.32}Sales.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{85}{section.7.32}%
+\contentsline {section}{\numberline {7.33}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Store/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Store.cs File Reference}{87}{section.7.33}%
+\contentsline {section}{\numberline {7.34}Store.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{87}{section.7.34}%
+\contentsline {section}{\numberline {7.35}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Warranty/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Warranties.cs File Reference}{89}{section.7.35}%
+\contentsline {section}{\numberline {7.36}Warranties.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{89}{section.7.36}%
+\contentsline {section}{\numberline {7.37}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Aulas/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}TP\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/trabalho\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}POO\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}27967/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Warranty/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Warranty.cs File Reference}{90}{section.7.37}%
+\contentsline {section}{\numberline {7.38}Warranty.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cs}{90}{section.7.38}%
+\contentsline {chapter}{Index}{93}{section*.75}%

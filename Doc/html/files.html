@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -48,6 +52,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('files.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -85,32 +105,37 @@ $(function() {
 <tr id="row_0_2_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_2_" class="arrow" onclick="toggleFolder('0_2_')">&#9660;</span><span id="img_0_2_" class="iconfopen" onclick="toggleFolder('0_2_')">&#160;</span><a class="el" href="dir_bc2040cc2efaed7dc5a522603f9f4f2a.html" target="_self">Client</a></td><td class="desc"></td></tr>
 <tr id="row_0_2_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_client_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_client_8cs.html" target="_self">Client.cs</a></td><td class="desc"></td></tr>
 <tr id="row_0_2_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_clients_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_clients_8cs.html" target="_self">Clients.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_3_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_3_" class="arrow" onclick="toggleFolder('0_3_')">&#9660;</span><span id="img_0_3_" class="iconfopen" onclick="toggleFolder('0_3_')">&#160;</span><a class="el" href="dir_f0ef98ec13f4ac7be5aa4acc9b78c933.html" target="_self">Make</a></td><td class="desc"></td></tr>
-<tr id="row_0_3_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_make_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_make_8cs.html" target="_self">Make.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_3_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_makes_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_makes_8cs.html" target="_self">Makes.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_4_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_4_" class="arrow" onclick="toggleFolder('0_4_')">&#9660;</span><span id="img_0_4_" class="iconfopen" onclick="toggleFolder('0_4_')">&#160;</span><a class="el" href="dir_21def539f1d69d8ce34d1109b21bae1f.html" target="_self">obj</a></td><td class="desc"></td></tr>
-<tr id="row_0_4_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_4_0_" class="arrow" onclick="toggleFolder('0_4_0_')">&#9660;</span><span id="img_0_4_0_" class="iconfopen" onclick="toggleFolder('0_4_0_')">&#160;</span><a class="el" href="dir_f86347ca1850f8625640a75b49ddda5a.html" target="_self">Debug</a></td><td class="desc"></td></tr>
-<tr id="row_0_4_0_0_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs.html" target="_self">.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_5_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_5_" class="arrow" onclick="toggleFolder('0_5_')">&#9660;</span><span id="img_0_5_" class="iconfopen" onclick="toggleFolder('0_5_')">&#160;</span><a class="el" href="dir_066ad889b8403b1e5905d944e6b9ecf3.html" target="_self">Product</a></td><td class="desc"></td></tr>
-<tr id="row_0_5_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_product_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_product_8cs.html" target="_self">Product.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_5_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_products_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_products_8cs.html" target="_self">Products.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_6_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_6_" class="arrow" onclick="toggleFolder('0_6_')">&#9660;</span><span id="img_0_6_" class="iconfopen" onclick="toggleFolder('0_6_')">&#160;</span><a class="el" href="dir_42a2b74406edc9527991b889ab6139d5.html" target="_self">Properties</a></td><td class="desc"></td></tr>
-<tr id="row_0_6_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_assembly_info_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_assembly_info_8cs.html" target="_self">AssemblyInfo.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_7_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_7_" class="arrow" onclick="toggleFolder('0_7_')">&#9660;</span><span id="img_0_7_" class="iconfopen" onclick="toggleFolder('0_7_')">&#160;</span><a class="el" href="dir_80ee2cc77e2300f9414356f29b1d5e0f.html" target="_self">Sale</a></td><td class="desc"></td></tr>
-<tr id="row_0_7_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_sale_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_sale_8cs.html" target="_self">Sale.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_7_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_sales_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_sales_8cs.html" target="_self">Sales.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_8_" class="arrow" onclick="toggleFolder('0_8_')">&#9660;</span><span id="img_0_8_" class="iconfopen" onclick="toggleFolder('0_8_')">&#160;</span><a class="el" href="dir_b2286b1e04d92cf71f1aebfb7de29548.html" target="_self">Store</a></td><td class="desc"></td></tr>
-<tr id="row_0_8_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_store_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_store_8cs.html" target="_self">Store.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_9_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_9_" class="arrow" onclick="toggleFolder('0_9_')">&#9660;</span><span id="img_0_9_" class="iconfopen" onclick="toggleFolder('0_9_')">&#160;</span><a class="el" href="dir_7e7b624bc0ee9e0983cf144ab435bbed.html" target="_self">Warranty</a></td><td class="desc"></td></tr>
-<tr id="row_0_9_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_warranties_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_warranties_8cs.html" target="_self">Warranties.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_9_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_warranty_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_warranty_8cs.html" target="_self">Warranty.cs</a></td><td class="desc"></td></tr>
-<tr id="row_0_10_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="_best_sale_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_best_sale_8cs.html" target="_self">BestSale.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_3_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_3_" class="arrow" onclick="toggleFolder('0_3_')">&#9660;</span><span id="img_0_3_" class="iconfopen" onclick="toggleFolder('0_3_')">&#160;</span><a class="el" href="dir_f84f82304bc49da86f24897bd622b49f.html" target="_self">Interface</a></td><td class="desc"></td></tr>
+<tr id="row_0_3_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_i_list_management_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_i_list_management_8cs.html" target="_self">IListManagement.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_4_" class="arrow" onclick="toggleFolder('0_4_')">&#9660;</span><span id="img_0_4_" class="iconfopen" onclick="toggleFolder('0_4_')">&#160;</span><a class="el" href="dir_f0ef98ec13f4ac7be5aa4acc9b78c933.html" target="_self">Make</a></td><td class="desc"></td></tr>
+<tr id="row_0_4_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_make_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_make_8cs.html" target="_self">Make.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_4_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_makes_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_makes_8cs.html" target="_self">Makes.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_5_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_5_" class="arrow" onclick="toggleFolder('0_5_')">&#9660;</span><span id="img_0_5_" class="iconfopen" onclick="toggleFolder('0_5_')">&#160;</span><a class="el" href="dir_21def539f1d69d8ce34d1109b21bae1f.html" target="_self">obj</a></td><td class="desc"></td></tr>
+<tr id="row_0_5_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_5_0_" class="arrow" onclick="toggleFolder('0_5_0_')">&#9660;</span><span id="img_0_5_0_" class="iconfopen" onclick="toggleFolder('0_5_0_')">&#160;</span><a class="el" href="dir_f86347ca1850f8625640a75b49ddda5a.html" target="_self">Debug</a></td><td class="desc"></td></tr>
+<tr id="row_0_5_0_0_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><a href="_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs.html" target="_self">.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_6_" class="arrow" onclick="toggleFolder('0_6_')">&#9660;</span><span id="img_0_6_" class="iconfopen" onclick="toggleFolder('0_6_')">&#160;</span><a class="el" href="dir_066ad889b8403b1e5905d944e6b9ecf3.html" target="_self">Product</a></td><td class="desc"></td></tr>
+<tr id="row_0_6_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_product_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_product_8cs.html" target="_self">Product.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_6_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_products_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_products_8cs.html" target="_self">Products.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_7_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_7_" class="arrow" onclick="toggleFolder('0_7_')">&#9660;</span><span id="img_0_7_" class="iconfopen" onclick="toggleFolder('0_7_')">&#160;</span><a class="el" href="dir_42a2b74406edc9527991b889ab6139d5.html" target="_self">Properties</a></td><td class="desc"></td></tr>
+<tr id="row_0_7_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_assembly_info_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_assembly_info_8cs.html" target="_self">AssemblyInfo.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_8_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_8_" class="arrow" onclick="toggleFolder('0_8_')">&#9660;</span><span id="img_0_8_" class="iconfopen" onclick="toggleFolder('0_8_')">&#160;</span><a class="el" href="dir_80ee2cc77e2300f9414356f29b1d5e0f.html" target="_self">Sale</a></td><td class="desc"></td></tr>
+<tr id="row_0_8_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_sale_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_sale_8cs.html" target="_self">Sale.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_8_1_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_sales_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_sales_8cs.html" target="_self">Sales.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_9_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_9_" class="arrow" onclick="toggleFolder('0_9_')">&#9660;</span><span id="img_0_9_" class="iconfopen" onclick="toggleFolder('0_9_')">&#160;</span><a class="el" href="dir_b2286b1e04d92cf71f1aebfb7de29548.html" target="_self">Store</a></td><td class="desc"></td></tr>
+<tr id="row_0_9_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_store_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_store_8cs.html" target="_self">Store.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_10_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_10_" class="arrow" onclick="toggleFolder('0_10_')">&#9660;</span><span id="img_0_10_" class="iconfopen" onclick="toggleFolder('0_10_')">&#160;</span><a class="el" href="dir_7e7b624bc0ee9e0983cf144ab435bbed.html" target="_self">Warranty</a></td><td class="desc"></td></tr>
+<tr id="row_0_10_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_warranties_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_warranties_8cs.html" target="_self">Warranties.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_10_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a href="_warranty_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_warranty_8cs.html" target="_self">Warranty.cs</a></td><td class="desc"></td></tr>
+<tr id="row_0_11_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a href="_best_sale_8cs_source.html"><span class="icondoc"></span></a><a class="el" href="_best_sale_8cs.html" target="_self">BestSale.cs</a></td><td class="desc"></td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

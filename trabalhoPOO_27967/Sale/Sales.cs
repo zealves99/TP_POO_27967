@@ -8,6 +8,7 @@
 **/
 using System;
 using System.Collections.Generic;
+using trabalhoPOO_27967.Interface;
 
 namespace trabalhoPOO_27967
 {
@@ -18,7 +19,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Sales
+    public class Sales : IListManagement
     {
         #region Attributes
         static List<Sale> _salesStored;
@@ -85,11 +86,56 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="sale"></param>
         /// <returns></returns>
-        public bool AddSale(Sale sale)
+        public bool Add(object obj)
         {
-            if (_salesStored == null) return false;
-            _salesStored.Add(sale);
-            return true;
+            if (obj == null) return false;
+            if (obj is Sale)
+            {
+                _salesStored.Add((Sale)obj);
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Method used to remove a sale from a list of sales.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public bool Remove(object obj)
+        {
+            if (obj == null) return false;
+            Sale aux = (Sale)obj;
+            if (Exist(aux.Id))
+            {
+                if (obj is Sale)
+                {
+                    _salesStored.Remove(aux);
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Method used to check if a sale exists in a list of sales.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public bool Exist(object obj)
+        {
+            if (obj == null) return false;
+            if(obj is int)
+            {
+                foreach (Sale s in _salesStored)
+                {
+                    if (s.Id == (int)obj)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
         #endregion
 

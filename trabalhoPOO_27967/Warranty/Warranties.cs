@@ -8,6 +8,7 @@
 **/
 using System;
 using System.Collections.Generic;
+using trabalhoPOO_27967.Interface;
 
 namespace trabalhoPOO_27967
 {
@@ -18,7 +19,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Warranties
+    public class Warranties: IListManagement
     {
         #region Attributes
         List<Warranty> _warrants;
@@ -71,11 +72,15 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public bool AddWarranty(Warranty w)
+        public bool Add(object obj)
         {
-            if (w == null) return false;
-            _warrants.Add(w);
-            return true;
+            if (obj == null) return false;
+            if(obj is Warranty)
+            {
+                _warrants.Add((Warranty)obj);
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -83,13 +88,15 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="camp"></param>
         /// <returns></returns>
-        public bool RemoveWarranty(Warranty w)
+        public bool Remove(object obj)
         {
-            foreach (Warranty war in _warrants)
+            if (obj == null) return false;
+            var aux = obj as Warranty;
+            if (Exist(aux.ProdID))
             {
-                if (war==w)
+                if (obj is Warranty)
                 {
-                    _warrants.Remove(war);
+                    _warrants.Remove((Warranty)obj);
                     return true;
                 }
             }
@@ -97,17 +104,21 @@ namespace trabalhoPOO_27967
         }
 
         /// <summary>
-        /// Method used to confirm if a campaign exists on a list of campaigns.
+        /// Method used to confirm if a warranty exists on a list of warranties, given the product ID.
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public bool ExistWarranty(string id)
+        public bool Exist(object obj)
         {
-            foreach (Warranty w in _warrants)
+            if (obj == null) return false;
+            if (obj is string)
             {
-                if (w.ProdID == id)
+                foreach (Warranty w in _warrants)
                 {
-                    return true;
+                    if (w.ProdID == (string)obj)
+                    {
+                        return true;
+                    }
                 }
             }
             return false;

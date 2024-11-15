@@ -5,6 +5,14 @@
 Purpose\+:This file has the definition and methods to work with the plurality of Category. Created by\+: Jose Alves a27967 Created on\+: 11/14/2024 4\+:45\+:58 PM.  
 
 
+
+
+Inheritance diagram for trabalho\+POO\+\_\+27967.\+Categories\+:
+% FIG 0
+
+
+Collaboration diagram for trabalho\+POO\+\_\+27967.\+Categories\+:
+% FIG 1
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -12,14 +20,12 @@ Purpose\+:This file has the definition and methods to work with the plurality of
 \begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a3a07eaa5ba822d834ff0de7ceaea055a}{Categories}} (List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}} $>$ cats)
 \begin{DoxyCompactList}\small\item\em The constructor to use when a list of categories is given. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a9441faf97fc5931cc9c837bfcb4dfe6b}{Add\+Category}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}} c)
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a3c3e06e65eea6de871239dc0304e0975}{Add}} (object obj)
 \begin{DoxyCompactList}\small\item\em Method used to add a category to a list of categories. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a09fad0f3276c4a78d3d93c081f2acfdc}{Remove\+Category}} (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}} c)
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a9b3d18e9efa088cb63cea6857e23cb19}{Remove}} (object obj)
 \begin{DoxyCompactList}\small\item\em Method used to remove a category from a list of categories. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a23c686079c78daf535e3dd1588cb7f77}{Exist\+Category}} (int id)
-\begin{DoxyCompactList}\small\item\em Method used to verify if a category exists on a list of makes, given its ID. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a5cd0bac39a6b5e387b02da622ffb27bd}{Exist\+Category}} (string name)
-\begin{DoxyCompactList}\small\item\em Method used to verify if a Category exists on a list of categories, given its name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_categories_a82f06c789bd595e41f7cabeac48fa7d3}{Exist}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to verify if a category exists on a list of makes, given its ID or name. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,7 +38,7 @@ Purpose\+:This file has the definition and methods to work with the plurality of
 
 
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00023}{23}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
 
 
 
@@ -49,7 +55,7 @@ The default Constructor.
 
 
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00034}{34}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00036}{36}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
 
 \Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a3a07eaa5ba822d834ff0de7ceaea055a}\label{classtrabalho_p_o_o__27967_1_1_categories_a3a07eaa5ba822d834ff0de7ceaea055a} 
 \index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!Categories@{Categories}}
@@ -68,16 +74,16 @@ The constructor to use when a list of categories is given.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00043}{43}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00045}{45}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
 
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a9441faf97fc5931cc9c837bfcb4dfe6b}\label{classtrabalho_p_o_o__27967_1_1_categories_a9441faf97fc5931cc9c837bfcb4dfe6b} 
-\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!AddCategory@{AddCategory}}
-\index{AddCategory@{AddCategory}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
-\doxysubsubsection{\texorpdfstring{AddCategory()}{AddCategory()}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Add\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}}}]{c }\end{DoxyParamCaption})}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a3c3e06e65eea6de871239dc0304e0975}\label{classtrabalho_p_o_o__27967_1_1_categories_a3c3e06e65eea6de871239dc0304e0975} 
+\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!Add@{Add}}
+\index{Add@{Add}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Add (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
 
 
 
@@ -93,17 +99,21 @@ Method used to add a category to a list of categories.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00073}{73}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
-
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a23c686079c78daf535e3dd1588cb7f77}\label{classtrabalho_p_o_o__27967_1_1_categories_a23c686079c78daf535e3dd1588cb7f77} 
-\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!ExistCategory@{ExistCategory}}
-\index{ExistCategory@{ExistCategory}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
-\doxysubsubsection{\texorpdfstring{ExistCategory()}{ExistCategory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Exist\+Category (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management_ab42dacc3ccfa608fd4fee1f9883149c9}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
 
 
 
-Method used to verify if a category exists on a list of makes, given its ID. 
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00075}{75}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a82f06c789bd595e41f7cabeac48fa7d3}\label{classtrabalho_p_o_o__27967_1_1_categories_a82f06c789bd595e41f7cabeac48fa7d3} 
+\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!Exist@{Exist}}
+\index{Exist@{Exist}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
+\doxysubsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Exist (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Method used to verify if a category exists on a list of makes, given its ID or name. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -113,37 +123,21 @@ Method used to verify if a category exists on a list of makes, given its ID.
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
+If the ID is given
 
+The Name is given
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00103}{103}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
-
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a5cd0bac39a6b5e387b02da622ffb27bd}\label{classtrabalho_p_o_o__27967_1_1_categories_a5cd0bac39a6b5e387b02da622ffb27bd} 
-\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!ExistCategory@{ExistCategory}}
-\index{ExistCategory@{ExistCategory}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
-\doxysubsubsection{\texorpdfstring{ExistCategory()}{ExistCategory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Exist\+Category (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management_ae6a36e9d3990a49abbf56519864aefa5}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
 
 
 
-Method used to verify if a Category exists on a list of categories, given its name. 
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00109}{109}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
 
-
-\begin{DoxyParams}{Parameters}
-{\em name} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00120}{120}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
-
-\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a09fad0f3276c4a78d3d93c081f2acfdc}\label{classtrabalho_p_o_o__27967_1_1_categories_a09fad0f3276c4a78d3d93c081f2acfdc} 
-\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!RemoveCategory@{RemoveCategory}}
-\index{RemoveCategory@{RemoveCategory}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
-\doxysubsubsection{\texorpdfstring{RemoveCategory()}{RemoveCategory()}}
-{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Remove\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_category}{Category}}}]{c }\end{DoxyParamCaption})}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_categories_a9b3d18e9efa088cb63cea6857e23cb19}\label{classtrabalho_p_o_o__27967_1_1_categories_a9b3d18e9efa088cb63cea6857e23cb19} 
+\index{trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}!Remove@{Remove}}
+\index{Remove@{Remove}!trabalhoPOO\_27967.Categories@{trabalhoPOO\_27967.Categories}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily bool trabalho\+POO\+\_\+27967.\+Categories.\+Remove (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
 
 
 
@@ -159,7 +153,11 @@ Method used to remove a category from a list of categories.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00085}{85}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management_a08db8db0c2163d359a6c0d1ebd74770c}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00091}{91}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
 
 
 
@@ -176,7 +174,7 @@ The property used to get and set the list of categories.
 
 
 
-Definition at line \mbox{\hyperlink{_categories_8cs_source_l00055}{55}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
+Definition at line \mbox{\hyperlink{_categories_8cs_source_l00057}{57}} of file \mbox{\hyperlink{_categories_8cs_source}{Categories.\+cs}}.
 
 
 

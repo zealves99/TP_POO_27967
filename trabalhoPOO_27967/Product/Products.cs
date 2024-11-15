@@ -11,6 +11,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using trabalhoPOO_27967.Interface;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace trabalhoPOO_27967
@@ -22,7 +23,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Products
+    public class Products : IListManagement
     {
         #region Attributes
         List<Product> _prods; //como faço uma propriedade para isto? Não consigo dar return do array, certo?
@@ -100,23 +101,35 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="p"></param>
         /// <returns>Returns true or False, depending on whether or not it succeeded in inserting the product into the list. </returns>
-        public bool InsertProduct(Product p)
+        public bool Add(object obj)
         {
-            if (p == null) return false;
-            _prods.Add(p);
-            return true;
+            if (obj == null) return false;
+            var aux=obj as Product;
+            if (Exist(aux.Reference))
+            {
+                if (obj is Product)
+                {
+                    _prods.Add((Product)obj);
+                    return true;
+                }
+            }
+            return false;
         }
 
         /// <summary>
-        /// Method used to verify if a product is on a products' list.
+        /// Method used to verify if a product is on a products' list, given its Refference.
         /// </summary>
         /// <param name="reff"></param>
         /// <returns></returns>
-        public bool ExistProduct(string reff)
+        public bool Exist(object obj)
         {
-            foreach (Product p in _prods)
+            if (obj == null) return false;
+            if (obj is string)
             {
-                if (p.Reference == reff) return true;
+                foreach (Product p in _prods)
+                {
+                    if (p.Reference == (string)obj) return true;
+                }
             }
             return false;
         }
@@ -126,10 +139,11 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
-        public bool RemoveProduct(Product p)
+        public bool Remove(object obj)
         {
-            if (p == null) return false;
-            if (ExistProduct(p.Reference))
+            if (obj == null) return false;
+            Product p = (Product)obj;
+            if (Exist(p.Reference))
             {
                 _prods.Remove(p);
                 return true; ///Product removed successfully

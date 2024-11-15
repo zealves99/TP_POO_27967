@@ -7,6 +7,8 @@ trabalhoPOO_27967.Categories \- Purpose:This file has the definition and methods
 .SH SYNOPSIS
 .br
 .PP
+.PP
+Inherits \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .SS "Public Member Functions"
 
 .in +1c
@@ -19,21 +21,17 @@ trabalhoPOO_27967.Categories \- Purpose:This file has the definition and methods
 .br
 .RI "The constructor to use when a list of categories is given\&. "
 .ti -1c
-.RI "bool \fBAddCategory\fP (\fBCategory\fP c)"
+.RI "bool \fBAdd\fP (object obj)"
 .br
 .RI "Method used to add a category to a list of categories\&. "
 .ti -1c
-.RI "bool \fBRemoveCategory\fP (\fBCategory\fP c)"
+.RI "bool \fBRemove\fP (object obj)"
 .br
 .RI "Method used to remove a category from a list of categories\&. "
 .ti -1c
-.RI "bool \fBExistCategory\fP (int id)"
+.RI "bool \fBExist\fP (object obj)"
 .br
-.RI "Method used to verify if a category exists on a list of makes, given its ID\&. "
-.ti -1c
-.RI "bool \fBExistCategory\fP (string name)"
-.br
-.RI "Method used to verify if a Category exists on a list of categories, given its name\&. "
+.RI "Method used to verify if a category exists on a list of makes, given its ID or name\&. "
 .in -1c
 .SS "Properties"
 
@@ -49,7 +47,7 @@ Purpose:This file has the definition and methods to work with the plurality of C
 
 
 .PP
-Definition at line \fB21\fP of file \fBCategories\&.cs\fP\&.
+Definition at line \fB23\fP of file \fBCategories\&.cs\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "trabalhoPOO_27967\&.Categories\&.Categories ()"
@@ -57,7 +55,7 @@ Definition at line \fB21\fP of file \fBCategories\&.cs\fP\&.
 .PP
 The default Constructor\&. 
 .PP
-Definition at line \fB34\fP of file \fBCategories\&.cs\fP\&.
+Definition at line \fB36\fP of file \fBCategories\&.cs\fP\&.
 .SS "trabalhoPOO_27967\&.Categories\&.Categories (List< \fBCategory\fP > cats)"
 
 .PP
@@ -70,10 +68,10 @@ The constructor to use when a list of categories is given\&.
 .PP
 
 .PP
-Definition at line \fB43\fP of file \fBCategories\&.cs\fP\&.
+Definition at line \fB45\fP of file \fBCategories\&.cs\fP\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "bool trabalhoPOO_27967\&.Categories\&.AddCategory (\fBCategory\fP c)"
+.SS "bool trabalhoPOO_27967\&.Categories\&.Add (object obj)"
 
 .PP
 Method used to add a category to a list of categories\&. 
@@ -89,11 +87,13 @@ Method used to add a category to a list of categories\&.
 .PP
 
 .PP
-Definition at line \fB73\fP of file \fBCategories\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Categories\&.ExistCategory (int id)"
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB75\fP of file \fBCategories\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Categories\&.Exist (object obj)"
 
 .PP
-Method used to verify if a category exists on a list of makes, given its ID\&. 
+Method used to verify if a category exists on a list of makes, given its ID or name\&. 
 .PP
 \fBParameters\fP
 .RS 4
@@ -104,27 +104,14 @@ Method used to verify if a category exists on a list of makes, given its ID\&.
 .RS 4
 .RE
 .PP
-
+If the ID is given
 .PP
-Definition at line \fB103\fP of file \fBCategories\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Categories\&.ExistCategory (string name)"
-
+The Name is given
 .PP
-Method used to verify if a Category exists on a list of categories, given its name\&. 
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
 .PP
-\fBParameters\fP
-.RS 4
-\fIname\fP 
-.RE
-.PP
-\fBReturns\fP
-.RS 4
-.RE
-.PP
-
-.PP
-Definition at line \fB120\fP of file \fBCategories\&.cs\fP\&.
-.SS "bool trabalhoPOO_27967\&.Categories\&.RemoveCategory (\fBCategory\fP c)"
+Definition at line \fB109\fP of file \fBCategories\&.cs\fP\&.
+.SS "bool trabalhoPOO_27967\&.Categories\&.Remove (object obj)"
 
 .PP
 Method used to remove a category from a list of categories\&. 
@@ -140,7 +127,9 @@ Method used to remove a category from a list of categories\&.
 .PP
 
 .PP
-Definition at line \fB85\fP of file \fBCategories\&.cs\fP\&.
+Implements \fBtrabalhoPOO_27967\&.Interface\&.IListManagement\fP\&.
+.PP
+Definition at line \fB91\fP of file \fBCategories\&.cs\fP\&.
 .SH "Property Documentation"
 .PP 
 .SS "List<\fBCategory\fP> trabalhoPOO_27967\&.Categories\&.Cats\fC [get]\fP, \fC [set]\fP"
@@ -148,7 +137,7 @@ Definition at line \fB85\fP of file \fBCategories\&.cs\fP\&.
 .PP
 The property used to get and set the list of categories\&. 
 .PP
-Definition at line \fB55\fP of file \fBCategories\&.cs\fP\&.
+Definition at line \fB57\fP of file \fBCategories\&.cs\fP\&.
 
 .SH "Author"
 .PP 

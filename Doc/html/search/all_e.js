@@ -4,5 +4,6 @@ var searchData=
   ['totalprice_1',['totalprice',['../classtrabalho_p_o_o__27967_1_1_products.html#ad24e9aee05588a3dfca00c0cf7cf78cc',1,'trabalhoPOO_27967.Products.TotalPrice()'],['../classtrabalho_p_o_o__27967_1_1_sale.html#a23c67b9b3c7153f6a0640e3d766f74ba',1,'trabalhoPOO_27967.Sale.TotalPrice()']]],
   ['totprice_2',['TotPrice',['../classtrabalho_p_o_o__27967_1_1_sale.html#af5aeaaf4c41d838dd897a53408bdcbd3',1,'trabalhoPOO_27967::Sale']]],
   ['trabalhopoo_5f27967_3',['trabalhoPOO_27967',['../namespacetrabalho_p_o_o__27967.html',1,'']]],
-  ['trabalhopoo_5f27967_3a_3astore_4',['Store',['../namespacetrabalho_p_o_o__27967_1_1_store.html',1,'trabalhoPOO_27967']]]
+  ['trabalhopoo_5f27967_3a_3ainterface_4',['Interface',['../namespacetrabalho_p_o_o__27967_1_1_interface.html',1,'trabalhoPOO_27967']]],
+  ['trabalhopoo_5f27967_3a_3astore_5',['Store',['../namespacetrabalho_p_o_o__27967_1_1_store.html',1,'trabalhoPOO_27967']]]
 ];

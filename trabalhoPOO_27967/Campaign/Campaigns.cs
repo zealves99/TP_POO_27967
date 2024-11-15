@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using System.Xml.Linq;
+using trabalhoPOO_27967.Interface;
 
 namespace trabalhoPOO_27967
 {
@@ -19,7 +20,7 @@ namespace trabalhoPOO_27967
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Campaigns
+    public class Campaigns : IListManagement
     {
         #region Attributes
         List<Campaign> _camps;
@@ -70,11 +71,15 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="c"></param>
         /// <returns></returns>
-        public bool AddCampaign(Campaign c)
+        public bool Add(object obj)
         {
-            if(c==null)return false;
-            _camps.Add(c);
-            return true;
+            if(obj==null)return false;
+            if (obj is Campaign)
+            {
+                _camps.Add((Campaign)obj);
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
@@ -82,15 +87,16 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="camp"></param>
         /// <returns></returns>
-        public bool RemoveCampaign(Campaign camp)
+        public bool Remove(object obj)
         {
-            foreach (Campaign c in _camps)
+            if(obj==null) return false;
+            var aux=obj as Campaign;
+            if (Exist(aux.Id) || Exist(aux.Name))
             {
-                if (c == camp)
-                {
-                    _camps.Remove(camp);
-                    return true;
-                }
+
+                _camps.Remove((Campaign)obj);
+                return true;
+
             }
             return false;
         }
@@ -100,11 +106,13 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public bool ExistCampaign(int id)
+        public bool Exist(object obj)
         {
+            if (obj == null) return false;
+            var aux=obj as Campaign;
             foreach (Campaign c in _camps)
             {
-                if (c.Id == id)
+                if (c.Id == aux.Id || c.Name==aux.Name)
                 {
                     return true;
                 }

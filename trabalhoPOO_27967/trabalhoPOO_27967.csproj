@@ -46,6 +46,7 @@
     <Compile Include="Campaign\Campaign.cs" />
     <Compile Include="Campaign\Campaigns.cs" />
     <Compile Include="Category\Categories.cs" />
+    <Compile Include="Interface\IListManagement.cs" />
     <Compile Include="Make\Makes.cs" />
     <Compile Include="Store\Store.cs" />
     <Compile Include="Warranty\Warranties.cs" />
