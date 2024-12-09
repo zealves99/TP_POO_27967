@@ -13,7 +13,7 @@ using System.Diagnostics.Contracts;
 using System.Text;
 using System.Xml.Linq;
 
-namespace trabalhoPOO_27967
+namespace Business_Object
 {
     /// <summary>
     /// Purpose: Definition of product and methods to deal with product operations.
@@ -169,8 +169,8 @@ namespace trabalhoPOO_27967
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Product ID: {_reference}");
             sb.AppendLine($"Price: {_price}€");
-            sb.AppendLine(_make.ToString());
-            sb.AppendLine(_warranty.ToString());
+            //sb.AppendLine(.ToString());
+            //sb.AppendLine(_warranty.ToString());
 
             return sb.ToString();
         }
@@ -178,6 +178,10 @@ namespace trabalhoPOO_27967
         #endregion
 
         #region OtherMethods
+        //public string GetMakeNameProduct(int makeID)
+        //{
+        //    return  
+        //}
         #endregion
 
         #region Destructor

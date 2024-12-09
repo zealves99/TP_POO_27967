@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.Store.cs" company="IPCA">
+*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -8,7 +8,8 @@
 **/
 using System;
 
-namespace trabalhoPOO_27967.Store
+
+namespace Data_BestSale
 {
     /// <summary>
     /// Purpose: This class has the definition and properties to manage a store.
