@@ -11,7 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Business_Object
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Definition of Client and methods to deal with Client operations.

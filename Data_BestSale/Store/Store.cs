@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="trabalhoPOO_27967.Store.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -8,8 +8,7 @@
 **/
 using System;
 
-
-namespace Data_BestSale
+namespace trabalhoPOO_27967.Store
 {
     /// <summary>
     /// Purpose: This class has the definition and properties to manage a store.
@@ -26,7 +25,6 @@ namespace Data_BestSale
         static Sales _saleList;
         static Makes _makeList;
         static Categories _catList;
-        static Warranties _warrantList;
         #endregion
 
         #region Methods
@@ -43,7 +41,6 @@ namespace Data_BestSale
             _saleList = new Sales();
             _makeList = new Makes();
             _catList = new Categories();
-            _warrantList = new Warranties();
         }
 
         /// <summary>
@@ -54,15 +51,13 @@ namespace Data_BestSale
         /// <param name="s"></param>
         /// <param name="m"></param>
         /// <param name="c"></param>
-        /// <param name="w"></param>
-        public Store(Clients cl, Products p, Sales s, Makes m, Categories c, Warranties w)
+        public Store(Clients cl, Products p, Sales s, Makes m, Categories c)
         {
             _clientList=cl;
             _prodList=p;
             _saleList=s;
             _makeList=m;
             _catList=c;
-            _warrantList=w;
         }
 
         #endregion
@@ -111,15 +106,6 @@ namespace Data_BestSale
         {
             get { return _catList; }
             set { _catList = value; }
-        }
-
-        /// <summary>
-        /// The property to get and set de warranties' list.
-        /// </summary>
-        public Warranties WarrantList
-        {
-            get { return _warrantList; }
-            set { _warrantList = value; }
         }
 
 

@@ -8,9 +8,9 @@
 **/
 using System;
 using System.Collections.Generic;
-using Data_BestSale.Interface;
+using trabalhoPOO_27967.Interface;
 
-namespace Data_BestSale
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose:This file has the definition and methods to work with the plurality of Warranty.

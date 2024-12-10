@@ -11,7 +11,7 @@ using System.CodeDom;
 using System.Linq;
 using System.Text;
 
-namespace Business_Object
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Definition of Sale and methods to deal with Sale operations.

@@ -1,9 +1,9 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.Category.cs" company="IPCA">
+*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
-*   <date>11/14/2024 4:45:58 PM</date>
+*   <date>11/14/2024 4:33:51 PM</date>
 *	<description></description>
 **/
 using System;
@@ -11,19 +11,19 @@ using System.Collections.Generic;
 using System.Xml.Linq;
 using trabalhoPOO_27967.Interface;
 
-namespace Data_BestSale
+namespace trabalhoPOO_27967
 {
     /// <summary>
-    /// Purpose:This file has the definition and methods to work with the plurality of Category.
+    /// Purpose:This file has the definition and methods to work with the plurality of Make.
     /// Created by: Jose Alves a27967
-    /// Created on: 11/14/2024 4:45:58 PM
+    /// Created on: 11/14/2024 4:33:51 PM
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class Categories : IListManagement
+    public class Makes : IListManagement
     {
         #region Attributes
-        List<Category> _cats;
+        List<Make> _makeList;
         #endregion
 
         #region Methods
@@ -33,31 +33,29 @@ namespace Data_BestSale
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        public Categories()
+        public Makes()
         {
-            _cats = new List<Category>();
+            _makeList = new List<Make>();
         }
 
         /// <summary>
-        /// The constructor to use when a list of categories is given.
+        /// The constructor to use when a list of Make is given.
         /// </summary>
-        /// <param name="cats"></param>
-        public Categories(List<Category> cats)
+        /// <param name="m"></param>
+        public Makes(List<Make> m)
         {
-            _cats = cats;
+            _makeList = m;
         }
-
-
         #endregion
 
         #region Properties
         /// <summary>
-        /// The property used to get and set the list of categories.
+        /// The property to get and set a list of Make.
         /// </summary>
-        public List<Category> Cats
+        public List<Make> MakeList
         {
-            get { return _cats; }
-            set { _cats = value; }
+            get { return _makeList; }
+            set { _makeList = value; }
         }
         #endregion
 
@@ -68,67 +66,60 @@ namespace Data_BestSale
 
         #region OtherMethods
         /// <summary>
-        ///Method used to add a category to a list of categories. 
+        ///Method used to add a make to a list of makes. 
         /// </summary>
-        /// <param name="c"></param>
+        /// <param name="m"></param>
         /// <returns></returns>
         public bool Add(object obj)
         {
             if (obj == null) return false;
-            if (obj is Category)
-            {
-                _cats.Add((Category)obj);
+            if (obj is Make) {
+                _makeList.Add((Make)obj);
                 return true;
             }
             return false;
         }
 
         /// <summary>
-        /// Method used to remove a category from a list of categories.
+        /// Method used to remove a make from a list of makes.
         /// </summary>
-        /// <param name="c"></param>
+        /// <param name="m"></param>
         /// <returns></returns>
         public bool Remove(object obj)
         {
             if (obj == null) return false;
-            var aux = obj as Category;
-            if (Exist(aux.Id) || Exist(aux.Name))
+            var aux = obj as Make;
+            if (Exist(aux.ID))
             {
-                _cats.Remove((Category)obj);
+                _makeList.Remove((Make)obj);
                 return true;
-
             }
             return false;
         }
 
         /// <summary>
-        /// Method used to verify if a category exists on a list of makes, given its ID or name.
+        /// Method used to verify if a make exists on a list of makes, given its ID or name.
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         public bool Exist(object obj)
         {
             if (obj == null) return false;
-            var aux=obj as Category;
-            
-            ///If the ID is given
             if (obj is int)
             {
-                foreach (Category cate in _cats)
+                foreach (Make make in _makeList)
                 {
-                    if (cate.Id == aux.Id)
+                    if (make.ID == (int)obj)
                     {
                         return true;
                     }
                 }
             }
-
-            ///The Name is given
             if(obj is string)
             {
-                foreach (Category cate in _cats)
+                foreach (Make make in _makeList)
                 {
-                    if (cate.Name == aux.Name)
+                    if (make.Name == (string)obj)
                     {
                         return true;
                     }
@@ -136,7 +127,6 @@ namespace Data_BestSale
             }
             return false;
         }
-
 
         #endregion
 
@@ -144,7 +134,7 @@ namespace Data_BestSale
         /// <summary>
         /// The destructor.
         /// </summary>
-        ~Categories()
+        ~Makes()
         {
         }
         #endregion

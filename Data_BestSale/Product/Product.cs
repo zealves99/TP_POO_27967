@@ -13,7 +13,7 @@ using System.Diagnostics.Contracts;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Business_Object
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Definition of product and methods to deal with product operations.
@@ -29,7 +29,7 @@ namespace Business_Object
         decimal _price;
         int _makeID;
         int _categoryID;
-        int _warrantyID; //in Years
+        Warranty _warranty; //in Years
         int _stock;
         #endregion
 
@@ -54,13 +54,13 @@ namespace Business_Object
         /// </summary>
         /// <param name="reff"></param>
         /// <param name="pri"></param>
-        public Product(string reff, decimal price, int warranty, int make, int category)
+        public Product(string reff, decimal price, Warranty warranty, int make, int category)
         {
             _reference = reff;
             _price = price;
             _makeID = make;
             _categoryID = category;
-            _warrantyID = warranty;
+            _warranty = warranty;
 
         }
 
@@ -169,8 +169,8 @@ namespace Business_Object
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Product ID: {_reference}");
             sb.AppendLine($"Price: {_price}€");
-            //sb.AppendLine(.ToString());
-            //sb.AppendLine(_warranty.ToString());
+            sb.AppendLine(_makeID.ToString());
+            sb.AppendLine(_warranty.ToString());
 
             return sb.ToString();
         }
@@ -178,10 +178,6 @@ namespace Business_Object
         #endregion
 
         #region OtherMethods
-        //public string GetMakeNameProduct(int makeID)
-        //{
-        //    return  
-        //}
         #endregion
 
         #region Destructor

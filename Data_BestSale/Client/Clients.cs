@@ -8,9 +8,9 @@
 **/
 using System;
 using System.Collections.Generic;
+using trabalhoPOO_27967.Interface;
 
-
-namespace Data_BestSale
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Class with the definition and methods to manage a list of clients.
@@ -68,7 +68,6 @@ namespace Data_BestSale
             if (obj == null) return false;
             if (obj is Client)
             {
-                if(this.ClientList.Contains((Client)obj)
                 this.ClientList.Add((Client)obj);
                 return true;
             }

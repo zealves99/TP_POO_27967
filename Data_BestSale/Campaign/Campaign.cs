@@ -8,7 +8,7 @@
 **/
 using System;
 
-namespace Business_Object
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Definition of Campaign and methods to deal with Campaign operations.

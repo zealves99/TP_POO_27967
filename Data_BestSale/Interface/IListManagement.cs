@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_BestSale
+namespace trabalhoPOO_27967.Interface
 {
     public interface IListManagement
     {

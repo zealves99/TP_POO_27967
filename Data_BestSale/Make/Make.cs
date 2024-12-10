@@ -11,7 +11,7 @@ using System.Diagnostics.Contracts;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 
-namespace Business_Object
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Definition of Make and methods to deal with Make operations.

@@ -8,9 +8,9 @@
 **/
 using System;
 using System.Collections.Generic;
+using trabalhoPOO_27967.Interface;
 
-
-namespace Data_BestSale
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: Class with the agregation of sales of a store.

@@ -11,7 +11,7 @@ using System.Diagnostics.Contracts;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Business_Object
+namespace trabalhoPOO_27967
 {
     /// <summary>
     /// Purpose: This class contains the definition and methods to manage warranties.
@@ -159,6 +159,8 @@ namespace Business_Object
             Product p = s.Products.SearchProduct(reff);
             return (s.SaleDate.AddYears(_durationInYears));
         }
+
+
         #endregion
 
         #region Destructor

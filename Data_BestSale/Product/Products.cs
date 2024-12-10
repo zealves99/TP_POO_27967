@@ -14,8 +14,9 @@ using System.Text;
 using trabalhoPOO_27967.Interface;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace Data_BestSale
+namespace trabalhoPOO_27967
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Class to manage a group of more than one product.
     /// Created by: Jose Alves a27967
