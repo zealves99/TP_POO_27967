@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.Category.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -8,9 +8,9 @@
 **/
 using System;
 using System.Collections.Generic;
-using trabalhoPOO_27967.Interface;
 
-namespace trabalhoPOO_27967
+
+namespace Data_BestSale
 {
     /// <summary>
     /// Purpose:This file has the definition and methods to work with the plurality of Warranty.
@@ -96,15 +96,16 @@ namespace trabalhoPOO_27967
             //ACRESCENTAR NAS OUTRAS CLASSES DE AGREGACAO!!!!
             if (obj is Warranty){
                 aux = obj as Warranty;
-            }
-            if (Exist(aux.ProdID))
-            {
-                if (obj is Warranty)
+                if (Exist(aux.ProdID))
                 {
-                    _warrants.Remove((Warranty)obj);
-                    return true;
+                    if (obj is Warranty)
+                    {
+                        _warrants.Remove((Warranty)obj);
+                        return true;
+                    }
                 }
             }
+            
             return false;
         }
 
@@ -112,7 +113,8 @@ namespace trabalhoPOO_27967
         /// Method used to confirm if a warranty exists on a list of warranties, given the product ID.
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>True - If Warranty exists in the list of Warranties</returns>
+        /// <returns>False - If Warranty does not exist in the list of Warranties</returns>
         public bool Exist(object obj)
         {
             if (obj == null) return false;
@@ -127,6 +129,14 @@ namespace trabalhoPOO_27967
                 }
             }
             return false;
+        }
+
+        /// <summary>
+        /// Method used to Clear a list of Warranties.
+        /// </summary>
+        public void ClearWarranties()
+        {
+            _warrants.Clear();
         }
         #endregion
 

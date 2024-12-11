@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -10,11 +10,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml.Linq;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Definition of product and methods to deal with product operations.
     /// Created by: Jose Alves a27967
@@ -90,7 +93,7 @@ namespace trabalhoPOO_27967
         /// <summary>
         /// Property to set and get the Make of a product.
         /// </summary>
-        public int Make
+        public int MakeID
         {
             get { return _makeID; }
             set { _makeID = value; }
@@ -100,7 +103,7 @@ namespace trabalhoPOO_27967
         /// <summary>
         /// Property to set and get the Category of a product.
         /// </summary>
-        public int Category
+        public int CategoryID
         {
             get { return _categoryID; }
             set { _categoryID = value; }
@@ -115,10 +118,10 @@ namespace trabalhoPOO_27967
             set { _stock = value; }
         }
 
-        public int Warranty
+        public Warranty Warranty
         {
-            get { return _warrantyID; }
-            set { _warrantyID = value; }
+            get { return _warranty; }
+            set { _warranty = value; }
         }
         #endregion
 
@@ -178,6 +181,8 @@ namespace trabalhoPOO_27967
         #endregion
 
         #region OtherMethods
+
+
         #endregion
 
         #region Destructor

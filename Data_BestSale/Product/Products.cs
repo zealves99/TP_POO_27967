@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -11,10 +11,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using trabalhoPOO_27967.Interface;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
     [Serializable]
     /// <summary>
@@ -188,6 +187,14 @@ namespace trabalhoPOO_27967
             {
                 return (date.AddYears(p.Warranty.DurationInYears));
             }
+        }
+
+        /// <summary>
+        /// Method used to Clear a list of Products.
+        /// </summary>
+        public void ClearProducts()
+        {
+            _prods.Clear();
         }
         #endregion
 

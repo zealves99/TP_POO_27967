@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -8,8 +8,9 @@
 **/
 using System;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Definition of Category and methods to deal with Category operations.
     /// Created by: Jose Alves a27967

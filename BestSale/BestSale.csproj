@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93769237-722C-4488-8157-9B0F2F568BAB}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Data_BestSale</RootNamespace>
-    <AssemblyName>Data_BestSale</AssemblyName>
+    <ProjectGuid>{E2C10845-2973-4A05-9FDB-FCD73E9C1FC9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BestSale</RootNamespace>
+    <AssemblyName>BestSale</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -31,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Business_Object">
-      <HintPath>..\Business_Object\bin\Debug\Business_Object.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,23 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Campaign\Campaign.cs" />
-    <Compile Include="Campaign\Campaigns.cs" />
-    <Compile Include="Category\Categories.cs" />
-    <Compile Include="Category\Category.cs" />
-    <Compile Include="Client\Client.cs" />
-    <Compile Include="Client\Clients.cs" />
-    <Compile Include="Interface\IListManagement.cs" />
-    <Compile Include="Make\Make.cs" />
-    <Compile Include="Make\Makes.cs" />
-    <Compile Include="Product\Product.cs" />
-    <Compile Include="Product\Products.cs" />
+    <Compile Include="BestSale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sale\Sale.cs" />
-    <Compile Include="Sale\Sales.cs" />
-    <Compile Include="Store\Store.cs" />
-    <Compile Include="Warranty\Warranties.cs" />
-    <Compile Include="Warranty\Warranty.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.Category.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -9,9 +9,8 @@
 using System;
 using System.Collections.Generic;
 using System.Xml.Linq;
-using trabalhoPOO_27967.Interface;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
     /// <summary>
     /// Purpose:This file has the definition and methods to work with the plurality of Category.
@@ -137,6 +136,13 @@ namespace trabalhoPOO_27967
             return false;
         }
 
+        /// <summary>
+        /// Method used to Clear a list of Categories.
+        /// </summary>
+        public void ClearCategories()
+        {
+            _cats.Clear();
+        }
 
         #endregion
 

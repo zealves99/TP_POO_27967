@@ -5,9 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions; //Used to verify if a string meets certain criteria.
 
-
-
-namespace BestSale
+namespace trabalhoPOO_27967
 {
     class BestSale
     {

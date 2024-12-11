@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -8,9 +8,8 @@
 **/
 using System;
 using System.Collections.Generic;
-using trabalhoPOO_27967.Interface;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
     /// <summary>
     /// Purpose: Class with the agregation of sales of a store.
@@ -136,6 +135,14 @@ namespace trabalhoPOO_27967
                 }
             }
             return false;
+        }
+
+        /// <summary>
+        /// Method used to Clear a list of Sales.
+        /// </summary>
+        public void ClearSales()
+        {
+            _salesStored.Clear();
         }
         #endregion
 

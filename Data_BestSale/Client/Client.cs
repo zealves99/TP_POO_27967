@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -10,9 +10,11 @@ using System;
 using System.Text;
 using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
+using Business_Object;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Definition of Client and methods to deal with Client operations.
     /// Created by: Jose Alves a27967
@@ -54,6 +56,16 @@ namespace trabalhoPOO_27967
             _name = n;
             _contact = c;
             //COMO POSSO FAZER PARA TESTAR SE A STRING PODE SER CONTATCO? DEVO FAZE-LO NO CONSTRUTOR OU FORA?
+        }
+
+        /// <summary>
+        /// The constructor to use when a SimpleClient object is given.
+        /// </summary>
+        /// <param name="sc"></param>
+        public Client(SimpleClient sc) {
+            this.ClientID += ClientCount;
+            this.Name = sc.Name;
+            this.Contact = "999999999";
         }
 
         #endregion

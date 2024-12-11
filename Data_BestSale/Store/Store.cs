@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.Store.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -7,8 +7,11 @@
 *	<description></description>
 **/
 using System;
+using System.Diagnostics;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
-namespace trabalhoPOO_27967.Store
+namespace Data_BestSale
 {
     /// <summary>
     /// Purpose: This class has the definition and properties to manage a store.
@@ -131,6 +134,50 @@ namespace trabalhoPOO_27967.Store
 
             return ("Not Found");
         }
+
+        #region Files
+        /// <summary>
+        /// Save a Store to a file.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
+        public static bool SaveStoreBin(string fileName)
+        {
+            try
+            {
+                FileStream stream = File.Open(fileName, FileMode.OpenOrCreate);
+                BinaryFormatter bin = new BinaryFormatter();
+                bin.Serialize(stream, _clientList);
+                bin.Serialize(stream, _prodList);
+                bin.Serialize(stream, _saleList);
+                bin.Serialize(stream, _makeList);
+                bin.Serialize(stream, _catList);
+                stream.Close();
+                return true;
+            }
+            catch (IOException ioExep)
+            {
+
+                throw ioExep;
+            }
+            catch (Exception excep)
+            {
+                throw excep;
+            }
+        }
+
+        /// <summary>
+        /// Method used to clear the data of a stroe from memory.
+        /// </summary>
+        public static void ClearStore()
+        {
+            _clientList.ClearClients();
+            _catList.ClearCategories();
+            _makeList.ClearMakes();
+            _prodList.ClearProducts();
+            _saleList.ClearSales();
+        }
+        #endregion
         #endregion
 
         #region Destructor

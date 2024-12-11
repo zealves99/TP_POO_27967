@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -11,8 +11,9 @@ using System.Diagnostics.Contracts;
 using System.Text;
 using System.Xml.Linq;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: This class contains the definition and methods to manage warranties.
     /// Created by: Jose Alves a27967

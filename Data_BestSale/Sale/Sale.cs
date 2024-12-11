@@ -1,5 +1,5 @@
 ﻿/*
-*	<copyright file="trabalhoPOO_27967.cs" company="IPCA">
+*	<copyright file="Data_BestSale.cs" company="IPCA">
 *		Copyright (c) 2024 All Rights Reserved
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
@@ -11,8 +11,9 @@ using System.CodeDom;
 using System.Linq;
 using System.Text;
 
-namespace trabalhoPOO_27967
+namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Definition of Sale and methods to deal with Sale operations.
     /// Created by: Jose Alves a27967
