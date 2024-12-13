@@ -155,10 +155,10 @@ namespace Data_BestSale
                 stream.Close();
                 return true;
             }
-            catch (IOException ioExep)
+            catch (IOException ioExcep)
             {
 
-                throw ioExep;
+                throw ioExcep;
             }
             catch (Exception excep)
             {
@@ -167,7 +167,7 @@ namespace Data_BestSale
         }
 
         /// <summary>
-        /// Method used to clear the data of a stroe from memory.
+        /// Method used to clear the data of a store from memory.
         /// </summary>
         public static void ClearStore()
         {
