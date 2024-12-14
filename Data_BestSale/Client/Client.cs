@@ -178,6 +178,18 @@ namespace Data_BestSale
 
 
         #region OtherMethods
+        public static bool CreateClientFromNameContact(string name, string contact, out Client newClient)
+        {
+            try
+            {
+                newClient = new Client(name, contact);
+                return true;
+            }
+            catch (Exception excep)
+            {
+                throw (excep);
+            }
+        }
         #endregion
 
         #region Destructor

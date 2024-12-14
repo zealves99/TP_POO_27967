@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Layer\Business_Layer.csproj">
+      <Project>{aa1c97bc-4777-42b0-a03c-aea33be3adbd}</Project>
+      <Name>Business_Layer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Business_Object\Business_Object.csproj">
+      <Project>{5b92d0e5-bc9e-4abe-b03c-4545fa28219f}</Project>
+      <Name>Business_Object</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

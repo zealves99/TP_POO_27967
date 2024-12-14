@@ -35,7 +35,7 @@
       <HintPath>..\Business_Object\bin\Debug\Business_Object.dll</HintPath>
     </Reference>
     <Reference Include="Data_BestSale">
-      <HintPath>..\Data_BestSale\obj\Debug\Data_BestSale.dll</HintPath>
+      <HintPath>..\Data_BestSale\bin\Debug\Data_BestSale.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,12 +50,7 @@
     <Compile Include="FileManagement.cs" />
     <Compile Include="ManageClients.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BestSale\BestSale.csproj">
-      <Project>{e2c10845-2973-4a05-9fdb-fcd73e9c1fc9}</Project>
-      <Name>BestSale</Name>
-    </ProjectReference>
+    <Compile Include="Visualization.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,6 +11,7 @@ using System.Collections.Generic;
 
 namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Class with the definition and methods to manage a list of clients.
     /// Created by: Jose Alves a27967
@@ -58,17 +59,22 @@ namespace Data_BestSale
 
         #region OtherMethods
         /// <summary>
-        /// Method to add a client to the store's client list.
+        /// Method to add a client to a clients' list.
         /// </summary>
         /// <param name="cli"></param>
-        /// <returns></returns>
+        /// <returns>True - Client has been successfully added to the list.</returns>
+        /// <returns>False - The list already contains the client or an error occurred.<returns>
         public bool Add(object obj)
         {
             if (obj == null) return false;
             if (obj is Client)
             {
-                this.ClientList.Add((Client)obj);
-                return true;
+                if (this.ClientList.Contains((Client)obj)) return false;
+                else
+                {
+                    this.ClientList.Add((Client)obj);
+                    return true;
+                }
             }
             return false;
         }

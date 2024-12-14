@@ -52,10 +52,21 @@ namespace Business_Layer
 
         public static bool LoadStore(string fileName)
         {
+            try
+            {
+                Store.LoadStoreBin(fileName);
+                return true;
 
+            }
+            catch (IOException e)
+            {
+                throw e;
 
-
-
+            }
+            catch (Exception excep)
+            {
+                throw excep;
+            }
         }
 
         public static void ClearStoreMemory()

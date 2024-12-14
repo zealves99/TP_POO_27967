@@ -9,6 +9,7 @@
 using System;
 using System.Xml.Schema;
 using Business_Object;
+using Data_BestSale;
 
 namespace Business_Layer
 {
@@ -46,11 +47,25 @@ namespace Business_Layer
         #endregion
 
         #region OtherMethods
-        //public bool InsertContact(string contact) {
-
-        //} 
-        public bool CreateClient(SimpleClient sc) {
-            
+        /// <summary>
+        /// Create a Client and add it to the store's list of clients.
+        /// </summary>
+        /// <param name="name">Client's Name</param>
+        /// <param name="contact">Client's Contact</param>
+        /// <returns>True - Client Successfully created and added to the list.</returns>
+        /// <returns>Exception - An error occurred in the process.
+        public static bool CreateClientInStore(string name, string contact) {
+            Client client;
+            try
+            {
+                Client.CreateClientFromNameContact(name, contact, out client);
+                Store.InsertClientInStore(client);
+                return true;
+            }
+            catch (Exception excep)
+            {
+                throw (excep);
+            }
         }
         #endregion
 

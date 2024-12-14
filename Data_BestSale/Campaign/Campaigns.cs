@@ -12,6 +12,7 @@ using System.Xml.Linq;
 
 namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose:This file has the definition and methods to work with the plurality of Campaign.
     /// Created by: Jose Alves a27967

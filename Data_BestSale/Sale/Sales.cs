@@ -11,6 +11,7 @@ using System.Collections.Generic;
 
 namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: Class with the agregation of sales of a store.
     /// Created by: Jose Alves a27967

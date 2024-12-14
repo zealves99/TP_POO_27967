@@ -7,6 +7,7 @@
 *	<description></description>
 **/
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -135,6 +136,17 @@ namespace Data_BestSale
             return ("Not Found");
         }
 
+        /// <summary>
+        /// Inserts a client in the store's list of clients, if it's not already there.
+        /// </summary>
+        /// <param name="client"></param>
+        /// <returns>True - Client has been successfully added to the list.</returns>
+        /// <returns>False - Client already exists or an error occurred.<returns>
+        public static bool InsertClientInStore(Client client)
+        {
+            return _clientList.Add(client);
+        }
+
         #region Files
         /// <summary>
         /// Save a Store to a file.
@@ -176,6 +188,41 @@ namespace Data_BestSale
             _makeList.ClearMakes();
             _prodList.ClearProducts();
             _saleList.ClearSales();
+        }
+
+        /// <summary>
+        /// Load a Stor from a binary file.
+        /// </summary>
+        /// <param name="fileName">Name of file where the data is stored.</param>
+        /// <returns></returns>
+        public static bool LoadStoreBin(string fileName)
+        {
+            ///Verify if a file with that name exists and has content in it.
+            if (File.Exists(fileName) && (new FileInfo(fileName).Length > 0))
+            {
+                try
+                {
+                    Stream stream = File.Open(fileName, FileMode.Open);
+                    BinaryFormatter bin = new BinaryFormatter();
+                    _clientList=(Clients)bin.Deserialize(stream);
+                    _prodList=(Products)bin.Deserialize(stream);
+                    _saleList=(Sales)bin.Deserialize(stream);
+                    _makeList = (Makes)bin.Deserialize(stream);
+                    _catList=(Categories)bin.Deserialize(stream);
+                    stream.Close();
+                    return true;
+                }
+                catch (IOException ioExcep)
+                {
+
+                    throw ioExcep;
+                }
+                catch (Exception excep)
+                {
+                    throw excep;
+                }
+            }
+            return false;
         }
         #endregion
         #endregion
