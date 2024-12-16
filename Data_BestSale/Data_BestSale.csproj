@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Business_Object">
-      <HintPath>..\Business_Object\bin\Debug\Business_Object.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -61,6 +58,12 @@
     <Compile Include="Store\Store.cs" />
     <Compile Include="Warranty\Warranties.cs" />
     <Compile Include="Warranty\Warranty.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Object\Business_Object.csproj">
+      <Project>{5b92d0e5-bc9e-4abe-b03c-4545fa28219f}</Project>
+      <Name>Business_Object</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

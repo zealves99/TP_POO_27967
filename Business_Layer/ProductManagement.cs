@@ -18,7 +18,7 @@ namespace Business_Layer
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public static class Visualization
+    public static class ProductManagement
     {
         
 
@@ -28,6 +28,7 @@ namespace Business_Layer
         #endregion
 
         #region OtherMethods
+        public bool CreateProductInStore(string reff, )
 
         #endregion
 

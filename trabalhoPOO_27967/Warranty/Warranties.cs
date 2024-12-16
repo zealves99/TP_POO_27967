@@ -91,7 +91,7 @@ namespace trabalhoPOO_27967
         public bool Remove(object obj)
         {
             if (obj == null) return false;
-            Warranty aux;
+            Warranty aux=null;
 
             //ACRESCENTAR NAS OUTRAS CLASSES DE AGREGACAO!!!!
             if (obj is Warranty){

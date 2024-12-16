@@ -20,7 +20,7 @@ namespace Business_Layer
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class ManageClients
+    public class ClientManagement
     {
         #region Attributes
         #endregion
@@ -32,7 +32,7 @@ namespace Business_Layer
         /// <summary>
         /// The default Constructor.
         /// </summary>
-        public ManageClients()
+        public ClientManagement()
         {
         }
 
@@ -54,13 +54,13 @@ namespace Business_Layer
         /// <param name="contact">Client's Contact</param>
         /// <returns>True - Client Successfully created and added to the list.</returns>
         /// <returns>Exception - An error occurred in the process.
-        public static bool CreateClientInStore(string name, string contact) {
-            Client client;
+        public static bool CreateClientInStore(string name, string contact)
+        {
             try
             {
-                Client.CreateClientFromNameContact(name, contact, out client);
-                Store.InsertClientInStore(client);
-                return true;
+                bool aux = Client.CreateClientFromNameContact(name, contact, out Client newClient);
+                aux = Store.InsertClientInStore(newClient);
+                return aux;
             }
             catch (Exception excep)
             {
@@ -73,7 +73,7 @@ namespace Business_Layer
         /// <summary>
         /// The destructor.
         /// </summary>
-        ~ManageClients()
+        ~ClientManagement()
         {
         }
         #endregion

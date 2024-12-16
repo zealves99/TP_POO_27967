@@ -40,7 +40,7 @@ namespace BestSale
             //    Console.WriteLine(client.ToString());
             //}
 
-            bool a = ManageClients.CreateClientInStore("Jose Alves", "962310421");
+            bool a = ClientManagement.CreateClientInStore("Jose Alves", "962310421");
 
 
 

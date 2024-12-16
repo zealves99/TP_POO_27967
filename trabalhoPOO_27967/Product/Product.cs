@@ -29,7 +29,7 @@ namespace trabalhoPOO_27967
         decimal _price;
         int _makeID;
         int _categoryID;
-        int _warrantyID; //in Years
+        Warranty _warranty; //in Years
         int _stock;
         #endregion
 
@@ -54,13 +54,13 @@ namespace trabalhoPOO_27967
         /// </summary>
         /// <param name="reff"></param>
         /// <param name="pri"></param>
-        public Product(string reff, decimal price, int warranty, int make, int category)
+        public Product(string reff, decimal price, Warranty warranty, int make, int category)
         {
             _reference = reff;
             _price = price;
             _makeID = make;
             _categoryID = category;
-            _warrantyID = warranty;
+            _warranty = warranty;
 
         }
 
@@ -115,10 +115,10 @@ namespace trabalhoPOO_27967
             set { _stock = value; }
         }
 
-        public int Warranty
+        public Warranty Warranty
         {
-            get { return _warrantyID; }
-            set { _warrantyID = value; }
+            get { return _warranty; }
+            set { _warranty = value; }
         }
         #endregion
 
@@ -169,7 +169,7 @@ namespace trabalhoPOO_27967
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Product ID: {_reference}");
             sb.AppendLine($"Price: {_price}€");
-            sb.AppendLine(_make.ToString());
+            sb.AppendLine(_makeID.ToString());
             sb.AppendLine(_warranty.ToString());
 
             return sb.ToString();

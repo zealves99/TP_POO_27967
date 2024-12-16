@@ -31,12 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Business_Object">
-      <HintPath>..\Business_Object\bin\Debug\Business_Object.dll</HintPath>
-    </Reference>
-    <Reference Include="Data_BestSale">
-      <HintPath>..\Data_BestSale\bin\Debug\Data_BestSale.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,9 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FileManagement.cs" />
-    <Compile Include="ManageClients.cs" />
+    <Compile Include="ClientManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Visualization.cs" />
+    <Compile Include="ProductManagement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business_Object\Business_Object.csproj">
+      <Project>{5b92d0e5-bc9e-4abe-b03c-4545fa28219f}</Project>
+      <Name>Business_Object</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data_BestSale\Data_BestSale.csproj">
+      <Project>{93769237-722c-4488-8157-9b0f2f568bab}</Project>
+      <Name>Data_BestSale</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

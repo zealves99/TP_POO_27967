@@ -188,6 +188,7 @@ namespace Data_BestSale
             catch (Exception excep)
             {
                 throw (excep);
+                
             }
         }
         #endregion
