@@ -141,9 +141,17 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to Clear a list of Sales.
         /// </summary>
-        public void ClearSales()
+        public bool ClearSales()
         {
-            _salesStored.Clear();
+            try
+            {
+                _salesStored.Clear();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         #endregion
 

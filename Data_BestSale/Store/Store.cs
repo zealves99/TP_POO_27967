@@ -11,9 +11,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using Business_Object;
 
 namespace Data_BestSale
 {
+    [Serializable]
     /// <summary>
     /// Purpose: This class has the definition and properties to manage a store.
     /// Created by: Jose Alves a27967
@@ -21,7 +23,7 @@ namespace Data_BestSale
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public static class Store
+    public class Store
     {
         #region Attributes
         static Clients _clientList;
@@ -149,21 +151,17 @@ namespace Data_BestSale
 
         #region Files
         /// <summary>
-        /// Save a Store to a file.
+        /// Save a Store to a binary file.
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
-        public static bool SaveStoreBin(string fileName)
+        public bool SaveStoreBin(string fileName)
         {
             try
             {
                 FileStream stream = File.Open(fileName, FileMode.OpenOrCreate);
                 BinaryFormatter bin = new BinaryFormatter();
-                bin.Serialize(stream, _clientList);
-                bin.Serialize(stream, _prodList);
-                bin.Serialize(stream, _saleList);
-                bin.Serialize(stream, _makeList);
-                bin.Serialize(stream, _catList);
+                bin.Serialize(stream, this);
                 stream.Close();
                 return true;
             }
@@ -181,13 +179,21 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to clear the data of a store from memory.
         /// </summary>
-        public static void ClearStore()
+        public static bool ClearStore()
         {
-            _clientList.ClearClients();
-            _catList.ClearCategories();
-            _makeList.ClearMakes();
-            _prodList.ClearProducts();
-            _saleList.ClearSales();
+            try
+            {
+                _clientList.ClearClients();
+                _catList.ClearCategories();
+                _makeList.ClearMakes();
+                _prodList.ClearProducts();
+                _saleList.ClearSales();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         /// <summary>
@@ -202,13 +208,10 @@ namespace Data_BestSale
             {
                 try
                 {
+                    Store store = new Store();
                     Stream stream = File.Open(fileName, FileMode.Open);
                     BinaryFormatter bin = new BinaryFormatter();
-                    _clientList=(Clients)bin.Deserialize(stream);
-                    _prodList=(Products)bin.Deserialize(stream);
-                    _saleList=(Sales)bin.Deserialize(stream);
-                    _makeList = (Makes)bin.Deserialize(stream);
-                    _catList=(Categories)bin.Deserialize(stream);
+                    store = (Store)bin.Deserialize(stream);
                     stream.Close();
                     return true;
                 }
@@ -240,6 +243,17 @@ namespace Data_BestSale
                 _prodList.Add(prod);
                 return true;
             }
+        }
+
+        /// <summary>
+        /// Method that returns a product price from the list of products in a store, given its reference.
+        /// </summary>
+        /// <param name="reference">The reference wanted.</param>
+        /// <returns>The product that matches that reference.</returns>
+        public static decimal GetProductPriceInStoreFromReference(string reference)
+        {
+            Product prod = _prodList.SearchProduct(reference);
+            return prod.Price;
         }
         #endregion
 

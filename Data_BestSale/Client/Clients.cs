@@ -136,9 +136,17 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to Clear a list of Clients.
         /// </summary>
-        public void ClearClients()
+        public bool ClearClients()
         {
-            _clientList.Clear();
+            try
+            {
+                _clientList.Clear();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         #endregion
 

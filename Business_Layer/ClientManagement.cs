@@ -27,9 +27,6 @@ namespace Business_Layer
 
         #region Methods
 
-        #region Properties
-        #endregion
-
         #region Overrides
         #endregion
 

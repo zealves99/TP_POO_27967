@@ -60,6 +60,10 @@
     <Compile Include="Warranty\Warranty.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BestSale_Validations\BestSale_Validations.csproj">
+      <Project>{bd0cbcce-6f1b-4250-868d-a9a63c08bf64}</Project>
+      <Name>BestSale_Validations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Business_Object\Business_Object.csproj">
       <Project>{5b92d0e5-bc9e-4abe-b03c-4545fa28219f}</Project>
       <Name>Business_Object</Name>

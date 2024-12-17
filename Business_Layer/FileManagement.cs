@@ -31,12 +31,11 @@ namespace Business_Layer
         /// <returns>True - Saved Successfully</returns>
         /// <returns>IOException - There was a problem with the input you were trying to save.</returns>
         /// <returns>Exception - There was a problem saving the store. Data not stored.</returns>
-        public static bool SaveStore(string fileName) {
+        public static bool SaveStore(Store store, string fileName) {
             try
             {
-                Store.SaveStoreBin(fileName);
-                return true;
-            
+                bool a= store.SaveStoreBin(fileName);
+                return a;
             }
             catch (IOException e)
             {

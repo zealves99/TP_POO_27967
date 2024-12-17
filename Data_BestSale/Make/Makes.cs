@@ -132,9 +132,16 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to Clear a list of Makes.
         /// </summary>
-        public void ClearMakes()
+        public bool ClearMakes()
         {
+            try{
             _makeList.Clear();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         #endregion

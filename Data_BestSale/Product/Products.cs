@@ -192,9 +192,16 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to Clear a list of Products.
         /// </summary>
-        public void ClearProducts()
+        public bool ClearProducts()
         {
-            _prods.Clear();
+            try{
+                _prods.Clear();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         #endregion
 

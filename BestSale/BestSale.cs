@@ -58,7 +58,7 @@ namespace BestSale
 
             try
             {
-                
+                a=ProductManagement.CreateNewProductInStore("1A34", 23.9m, 3, "Nao gostar de batatas."), benfica, futebol
             }
 
 

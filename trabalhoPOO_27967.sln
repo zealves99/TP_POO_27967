@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business_Layer", "Business_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSale", "BestSale\BestSale.csproj", "{E2C10845-2973-4A05-9FDB-FCD73E9C1FC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSale_Validations", "BestSale_Validations\BestSale_Validations.csproj", "{BD0CBCCE-6F1B-4250-868D-A9A63C08BF64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E2C10845-2973-4A05-9FDB-FCD73E9C1FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2C10845-2973-4A05-9FDB-FCD73E9C1FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2C10845-2973-4A05-9FDB-FCD73E9C1FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD0CBCCE-6F1B-4250-868D-A9A63C08BF64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD0CBCCE-6F1B-4250-868D-A9A63C08BF64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD0CBCCE-6F1B-4250-868D-A9A63C08BF64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD0CBCCE-6F1B-4250-868D-A9A63C08BF64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

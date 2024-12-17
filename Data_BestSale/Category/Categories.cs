@@ -140,9 +140,17 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to Clear a list of Categories.
         /// </summary>
-        public void ClearCategories()
+        public bool ClearCategories()
         {
-            _cats.Clear();
+            try
+            {
+                _cats.Clear();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         #endregion

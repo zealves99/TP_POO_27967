@@ -11,6 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
 using Business_Object;
+using BestSale_Validations;
 
 namespace Data_BestSale
 {
@@ -58,16 +59,6 @@ namespace Data_BestSale
             //COMO POSSO FAZER PARA TESTAR SE A STRING PODE SER CONTATCO? DEVO FAZE-LO NO CONSTRUTOR OU FORA?
         }
 
-        /// <summary>
-        /// The constructor to use when a SimpleClient object is given.
-        /// </summary>
-        /// <param name="sc"></param>
-        public Client(SimpleClient sc) {
-            this.ClientID += ClientCount;
-            this.Name = sc.Name;
-            this.Contact = "999999999";
-        }
-
         #endregion
 
         #region Properties
@@ -97,10 +88,8 @@ namespace Data_BestSale
             get { return _contact; }
             set
             {
-                string pattern = @"^(2|9)\d{8}$"; //Defines the pattern to be a number starting by 9 or 2 with 8 more numbers after (as a portuguese mobile or landline number).
-                bool isGood = Regex.IsMatch(value, pattern); //Verifies if the value meets the criteria.
-
-                if (isGood) _contact = value;
+                if (BestSale_Validations.BestSale_Validations.ValidatePhoneNumber(value)) _contact = value;
+                else throw new Exception("Invalid Phone Number");
 
                 //COMO POSSO RETORNAR UM ERRO CASO A STRING NAO CORRESPONDA?
             }

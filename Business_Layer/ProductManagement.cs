@@ -28,6 +28,7 @@ namespace Business_Layer
         #endregion
 
         #region OtherMethods
+        #region Products
         /// <summary>
         /// Method used to create and add a product to a store.
         /// </summary>
@@ -53,9 +54,25 @@ namespace Business_Layer
             }
         }
 
+        /// <summary>
+        /// Mtehod that returns the price of a certain product, given its reference.
+        /// </summary>
+        /// <param name="reference">The reference of the product</param>
+        /// <returns>The price of the product</returns>
+        public static decimal GetProductPriceFromReference(string reference)
+        {
+            return Store.GetProductPriceInStoreFromReference(reference);
+        }
         #endregion
 
-        
+        #region Make
+        public static bool CreateMake()
+
+        #endregion
+
+        #endregion
+
+
 
         #endregion
     }
