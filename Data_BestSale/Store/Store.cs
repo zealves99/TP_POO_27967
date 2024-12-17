@@ -225,6 +225,22 @@ namespace Data_BestSale
             return false;
         }
         #endregion
+
+        /// <summary>
+        /// Method used to add a product to the list of products of a store.
+        /// </summary>
+        /// <param name="prod">The product to add.</param>
+        /// <returns>True - Product added to the list.</returns>
+        /// <returns>False - The product already exists on the list.<returns>
+        public static bool InsertProductInStore(Product prod)
+        {
+            if (_prodList.Exist(prod)) return false;
+            else
+            {
+                _prodList.Add(prod);
+                return true;
+            }
+        }
         #endregion
 
         #region Destructor

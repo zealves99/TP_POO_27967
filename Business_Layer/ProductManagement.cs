@@ -20,7 +20,7 @@ namespace Business_Layer
     /// <example></example>
     public static class ProductManagement
     {
-        
+
 
         #region Methods
 
@@ -28,7 +28,30 @@ namespace Business_Layer
         #endregion
 
         #region OtherMethods
-        public bool CreateProductInStore(string reff, )
+        /// <summary>
+        /// Method used to create and add a product to a store.
+        /// </summary>
+        /// <param name="reff">The reference of the product</param>
+        /// <param name="price">The price of the product</param>
+        /// <param name="makeID">The ID of the make of the product</param>
+        /// <param name="categoryID">The ID of the category of the product</param>
+        /// <param name="warrantyDuration">The warranty duration in years</param>
+        /// <param name="warrantyConditions">The terms of the warranty</param>
+        /// <returns>True - Product successfully created and added to the store's list.</returns>
+        /// <returns>Throws an exception - An error occurred in the process.<returns>
+        public static bool CreateNewProductInStore(string reff, decimal price, int makeID, int categoryID, int warrantyDuration, string warrantyConditions)
+        {
+            try
+            {
+                Product prod = Product.CreateProductWithWarranty(reff, price, makeID, categoryID, warrantyDuration, warrantyConditions);
+                Store.InsertProductInStore(prod);
+                return true;
+            }
+            catch(Exception excep)
+            {
+                throw excep;
+            }
+        }
 
         #endregion
 

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions; //Used to verify if a string meets certain criteria.
 using Business_Layer;
+using System.IO;
 
 namespace BestSale
 {
@@ -40,7 +41,26 @@ namespace BestSale
             //    Console.WriteLine(client.ToString());
             //}
 
-            bool a = ClientManagement.CreateClientInStore("Jose Alves", "962310421");
+            bool a;
+
+            try
+            {
+                a = ClientManagement.CreateClientInStore("Jose Alves", "962310421");
+            }
+            catch (IOException ioExcep)
+            {
+                Console.WriteLine(ioExcep.Message);                
+            }
+            catch (Exception excep)
+            {
+                Console.WriteLine(excep.Message);
+            }
+
+            try
+            {
+                
+            }
+
 
 
 

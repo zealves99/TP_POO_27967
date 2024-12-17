@@ -20,28 +20,15 @@ namespace Business_Layer
     /// </summary>
     /// <remarks></remarks>
     /// <example></example>
-    public class ClientManagement
+    public static class ClientManagement
     {
         #region Attributes
         #endregion
 
         #region Methods
 
-        #region Constructors
-
-        /// <summary>
-        /// The default Constructor.
-        /// </summary>
-        public ClientManagement()
-        {
-        }
-
-        #endregion
-
         #region Properties
         #endregion
-
-
 
         #region Overrides
         #endregion
@@ -66,15 +53,6 @@ namespace Business_Layer
             {
                 throw (excep);
             }
-        }
-        #endregion
-
-        #region Destructor
-        /// <summary>
-        /// The destructor.
-        /// </summary>
-        ~ClientManagement()
-        {
         }
         #endregion
 

@@ -161,6 +161,17 @@ namespace Data_BestSale
             return (s.SaleDate.AddYears(_durationInYears));
         }
 
+        /// <summary>
+        /// Method that creates a warranty instance, given the reference of the product, warranty duration and its terms.
+        /// </summary>
+        /// <param name="reff"></param>
+        /// <param name="warrantyDuration"></param>
+        /// <param name="warrantyConditions"></param>
+        /// <returns></returns>
+        public static Warranty CreateWarranty(string reff, int warrantyDuration, string warrantyConditions)
+        {
+            return new Warranty(reff, warrantyDuration, warrantyConditions);
+        }
 
         #endregion
 

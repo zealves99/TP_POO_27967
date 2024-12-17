@@ -53,6 +53,22 @@ namespace Data_BestSale
         }
 
         /// <summary>
+        /// The constructor to use when reference, price, makeID and categoryID are given.
+        /// </summary>
+        /// <param name="reff"></param>
+        /// <param name="price"></param>
+        /// <param name="makeID"></param>
+        /// <param name="categoryID"></param>
+        public Product(string reff, decimal price, int makeID, int categoryID)
+        {
+            _reference = reff;
+            _price = price;
+            _makeID = makeID;
+            _categoryID = categoryID;
+            _warranty = null;
+        }
+
+        /// <summary>
         /// Constructor for when the reference, price and warranty duration are given.
         /// </summary>
         /// <param name="reff"></param>
@@ -181,7 +197,22 @@ namespace Data_BestSale
         #endregion
 
         #region OtherMethods
-
+        /// <summary>
+        /// Method that creates a product and its warranty.
+        /// </summary>
+        /// <param name="reff">The reference of the product</param>
+        /// <param name="price">The price of the product</param>
+        /// <param name="makeID">The ID of the make of the product</param>
+        /// <param name="categoryID">The ID of the category of the product</param>
+        /// <param name="warrantyDuration">The duration, in years, of the warranty</param>
+        /// <param name="warrantyConditions">The terms of the warranty</param>
+        /// <returns>The instance of product created.</returns>
+        public static Product CreateProductWithWarranty(string reff, decimal price, int makeID, int categoryID,int warrantyDuration, string warrantyConditions)
+        {
+            Warranty warranty = Warranty.CreateWarranty(reff, warrantyDuration, warrantyConditions);
+            Product product = new Product(reff, price, warranty, makeID, categoryID);
+            return product;
+        }
 
         #endregion
 
