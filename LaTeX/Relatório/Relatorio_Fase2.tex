@@ -1,0 +1,618 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+
+\usepackage[portuguese]{babel} % Configura o idioma para português europeu
+\usepackage[utf8]{inputenc}    % Permite acentuação direta (caso o sistema use UTF-8)
+\usepackage[T1]{fontenc}       % Usa uma codificação de fonte adequada ao português
+\usepackage{titling}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\usepackage[normalem]{ulem}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{\textbf{\Huge Licenciatura em Engenharia de Sistemas Informáticos}}
+\author{Aluno: José António da Cunha Alves}
+\preauthor{\vspace{2cm}} % Espaço antes dos autores
+\predate{\vspace{1cm}}   % Espaço antes da data
+\date{\today}
+
+\begin{document}
+
+
+\pagestyle{empty} % Remove o cabeçalho, rodapé e número da página
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=2.125in,height=0.82333in]{media/image1.jpg}
+\end{figure}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=1.63333in,height=0.85667in]{media/image2.jpg}
+\end{figure}
+
+\centering
+\maketitle
+
+
+
+\vspace{4cm}
+\begin{quote}
+	\centering
+	U.C. Programação Orientada a Objetos (POO)
+	Docente: Luís Ferreira
+	2024/2025
+	FASE 2
+	Nº 27967
+
+\end{quote}
+
+\hypertarget{section}{%
+\section{}\label{section}}
+
+\hypertarget{conteuxfado}{%
+\section{Conteúdo}\label{conteuxfado}}
+
+\protect\hyperlink{enunciado}{Enunciado
+\protect\hyperlink{enunciado}{2}}
+
+\protect\hyperlink{motivauxe7uxe3o}{1 Motivação
+\protect\hyperlink{motivauxe7uxe3o}{2}}
+
+\protect\hyperlink{_Toc182595576}{2 Objetivos
+\protect\hyperlink{_Toc182595576}{2}}
+
+\protect\hyperlink{_Toc182595577}{3 Problema a Explorar
+\protect\hyperlink{_Toc182595577}{2}}
+
+\protect\hyperlink{introduuxe7uxe3o}{Introdução
+\protect\hyperlink{introduuxe7uxe3o}{3}}
+
+\protect\hyperlink{revisuxe3o-de-literatura}{Revisão de Literatura
+\protect\hyperlink{revisuxe3o-de-literatura}{3}}
+
+\protect\hyperlink{convenuxe7uxf5es-de-nomenclatura-utilizadas-microsoft-.net-coding-conventions}{Convenções
+de Nomenclatura Utilizadas (\emph{Microsoft .NET Coding Conventions})
+\protect\hyperlink{convenuxe7uxf5es-de-nomenclatura-utilizadas-microsoft-.net-coding-conventions}{4}}
+
+\protect\hyperlink{classes-e-interfaces}{Classes e Interfaces:
+\protect\hyperlink{classes-e-interfaces}{4}}
+
+\protect\hyperlink{muxe9todos}{Métodos:
+\protect\hyperlink{muxe9todos}{4}}
+
+\protect\hyperlink{propriedades-e-campos}{Propriedades e Campos:
+\protect\hyperlink{propriedades-e-campos}{4}}
+
+\protect\hyperlink{variuxe1veis-locais-e-paruxe2metros}{Variáveis Locais
+e Parâmetros:
+\protect\hyperlink{variuxe1veis-locais-e-paruxe2metros}{4}}
+
+\protect\hyperlink{padruxf5es-e-convenuxe7uxf5es-de-estilo-microsoft-.net-coding-conventions}{Padrões
+e Convenções de Estilo (\emph{Microsoft .NET Coding Conventions})
+\protect\hyperlink{padruxf5es-e-convenuxe7uxf5es-de-estilo-microsoft-.net-coding-conventions}{5}}
+
+\protect\hyperlink{espauxe7amento-e-identauxe7uxe3o}{Espaçamento e
+Identação: \protect\hyperlink{espauxe7amento-e-identauxe7uxe3o}{5}}
+
+\protect\hyperlink{colocauxe7uxe3o-de-chaves}{Colocação de Chaves:
+\protect\hyperlink{colocauxe7uxe3o-de-chaves}{5}}
+
+\protect\hyperlink{comentuxe1rios-e-xml-documentation}{Comentários e
+\emph{XML} \emph{Documentation}:
+\protect\hyperlink{comentuxe1rios-e-xml-documentation}{5}}
+
+\protect\hyperlink{nomes-de-ficheiros}{Nomes de Ficheiros:
+\protect\hyperlink{nomes-de-ficheiros}{5}}
+
+\protect\hyperlink{tratamento-de-exceuxe7uxf5es}{Tratamento de Exceções:
+\protect\hyperlink{tratamento-de-exceuxe7uxf5es}{5}}
+
+\protect\hyperlink{utilizauxe7uxe3o-de-linq}{Utilização de LINQ
+\protect\hyperlink{utilizauxe7uxe3o-de-linq}{6}}
+
+\protect\hyperlink{principais-caracteruxedsticas-de-linq}{Principais
+Características de LINQ:
+\protect\hyperlink{principais-caracteruxedsticas-de-linq}{6}}
+
+\protect\hyperlink{integrauxe7uxe3o-com-a-linguagem}{Integração com a
+Linguagem: \protect\hyperlink{integrauxe7uxe3o-com-a-linguagem}{6}}
+
+\protect\hyperlink{suporte-a-diversas-fontes-de-dados}{Suporte a
+Diversas Fontes de Dados:
+\protect\hyperlink{suporte-a-diversas-fontes-de-dados}{6}}
+
+\protect\hyperlink{sintaxe-declarativa}{Sintaxe Declarativa:
+\protect\hyperlink{sintaxe-declarativa}{6}}
+
+\protect\hyperlink{strongly-typed}{\emph{Strongly Typed}:
+\protect\hyperlink{strongly-typed}{6}}
+
+\protect\hyperlink{benefuxedcios-do-linq}{Benefícios do LINQ
+\protect\hyperlink{benefuxedcios-do-linq}{6}}
+
+\protect\hyperlink{limitauxe7uxf5es}{Limitações
+\protect\hyperlink{limitauxe7uxf5es}{6}}
+
+\protect\hyperlink{exemplo-de-utilizauxe7uxe3o-do-linq-no-projeto}{Exemplo
+de utilização do LINQ no projeto:
+\protect\hyperlink{exemplo-de-utilizauxe7uxe3o-do-linq-no-projeto}{7}}
+
+\protect\hyperlink{trabalho-desenvolvido}{Trabalho Desenvolvido
+\protect\hyperlink{trabalho-desenvolvido}{8}}
+
+\protect\hyperlink{diagrama-de-classes}{Diagrama de Classes:
+\protect\hyperlink{diagrama-de-classes}{8}}
+
+\protect\hyperlink{estrutura-de-classes}{Estrutura de Classes:
+\protect\hyperlink{estrutura-de-classes}{9}}
+
+\protect\hyperlink{interfaces}{Interfaces:
+\protect\hyperlink{interfaces}{9}}
+
+\protect\hyperlink{ponto-de-situauxe7uxe3o-e-trabalho-futuro}{Ponto de
+Situação e Trabalho Futuro
+\protect\hyperlink{ponto-de-situauxe7uxe3o-e-trabalho-futuro}{10}}
+
+\hypertarget{enunciado}{%
+\section{\texorpdfstring{Enunciado }{Enunciado }}\label{enunciado}}
+
+\hypertarget{motivauxe7uxe3o}{%
+\subsection{\texorpdfstring{1 Motivação
+}{1 Motivação }}\label{motivauxe7uxe3o}}
+
+Pretende-se que sejam desenvolvidas soluções em C\# para problemas reais
+de complexidade moderada. Serão identificadas classes, definidas
+estruturas de dados e implementados os principais processos que permitam
+suportar essas soluções. Pretende-se ainda contribuir para a boa redação
+de relatórios.
+
+\protect\hypertarget{_Toc182595576}{}{}2 Objetivos
+
+• Consolidar conceitos basilares do Paradigma Orientado a Objetos;
+
+• Analisar problemas reais;
+
+• Desenvolver capacidades de programação em C\#;
+
+• Potenciar a experiência no desenvolvimento de software;
+
+• Assimilar o conteúdo da Unidade Curricular.
+
+\protect\hypertarget{_Toc182595577}{}{}3 Problema a Explorar
+
+(vii) Comércio eletrónico: sistema que permita a gestão de uma loja
+online. \emph{keywords}: produtos, categorias, garantias, stocks,
+clientes, campanhas, vendas, marcas.
+
+\hypertarget{introduuxe7uxe3o}{%
+\section{\texorpdfstring{Introdução
+}{Introdução }}\label{introduuxe7uxe3o}}
+
+Este documento é uma descrição do trabalho realizado na primeira fase do
+trabalho prático da unidade curricular de Programação Orientada a
+Objetos.
+
+Neste trabalho, é proposto desenvolver um programa que torne possível a
+gestão de uma loja online, tendo como termos indispensáveis
+\emph{produtos, garantias, vendas, clientes, categorias, stocks,
+campanhas} e \emph{marcas}. Assim sendo, é necessário que o programa
+contemple funções que permitam todo o tipo de operações de gestão, desde
+criação de ficha de produto/cliente, bem como a gestão dos stocks dos
+respetivos produtos, datas de fim de garantias, datas de venda, entre
+outros. Esta primeira fase contempla apenas a definição de classes
+indispensáveis ao projeto, bem como as funcionalidades básicas de gestão
+das mesmas.
+
+Este trabalho tem como objetivos: a consolidação de conceitos basilares
+do Paradigma Orientado a Objetos; a análise de problemas reais, neste
+caso, de gestão de uma loja; o desenvolvimento de capacidades de
+programação em \emph{C\#}; o potenciamento da experiência no
+desenvolvimento de \emph{software} e a assimilação do conteúdo lecionado
+na Unidade Curricular em questão.
+
+Todo o código fonte e respetiva documentação podem ser encontrados no
+seguinte repositório
+\href{https://github.com/zealves99/TP_POO_27967}{\uline{GitHub}}.
+
+\hypertarget{revisuxe3o-de-literatura}{%
+\section{\texorpdfstring{Revisão de Literatura
+}{Revisão de Literatura }}\label{revisuxe3o-de-literatura}}
+
+\begin{itemize}
+\item
+  Programação Orientada a Objetos -- Material das aulas;
+\item
+  Documentação -- Doxygen Quick Reference;
+\item
+  Qualidade do Código -- \emph{Clean Code -- A Handbook of Agile
+  Software Craftsmanship}; de Robert C. Martin.
+\item
+  .NET Coding Conventions -- Microsoft.
+\end{itemize}
+
+\hypertarget{convenuxe7uxf5es-de-nomenclatura-utilizadas-microsoft-.net-coding-conventions}{%
+\section{\texorpdfstring{Convenções de Nomenclatura Utilizadas
+(\emph{Microsoft .NET Coding
+Conventions})}{Convenções de Nomenclatura Utilizadas (Microsoft .NET Coding Conventions)}}\label{convenuxe7uxf5es-de-nomenclatura-utilizadas-microsoft-.net-coding-conventions}}
+
+\hypertarget{classes-e-interfaces}{%
+\subsection{Classes e Interfaces:}\label{classes-e-interfaces}}
+
+\begin{itemize}
+\item
+  Classes e tipos públicos devem ter nomes em \textbf{PascalCase}.
+\item
+  Interfaces devem começar com a letra "I", seguida de um nome em
+  PascalCase (ex: \emph{IListManagement}, \emph{IClient}).
+\end{itemize}
+
+\hypertarget{muxe9todos}{%
+\subsection{Métodos:}\label{muxe9todos}}
+
+\begin{itemize}
+\item
+  Deve utilizar-se \textbf{PascalCase} para métodos públicos e internos
+  (ex: \emph{AddClient}, \emph{RemoveProductFromSale}).
+\item
+  Métodos devem ter nomes que descrevam claramente a ação ou propósito
+  (ex: \emph{AddClientToSale}).
+\end{itemize}
+
+\hypertarget{propriedades-e-campos}{%
+\subsection{Propriedades e Campos:}\label{propriedades-e-campos}}
+
+\begin{itemize}
+\item
+  Propriedades públicas e internas em \textbf{PascalCase} (ex:
+  \emph{MakeList}, \emph{ClientList}).
+\item
+  Atributos privados e variáveis de instância usam \textbf{camelCase} e
+  um prefixo `\_' (ex: \_\emph{id}, \_\emph{durantionInYears}).
+\item
+  Constantes e campos \emph{readonly} podem ser nomeados em
+  \textbf{PascalCase} (\emph{MaxProducts}).
+\end{itemize}
+
+\includegraphics[width=2.52119in,height=1.42728in]{media/image5.png}
+
+\hypertarget{variuxe1veis-locais-e-paruxe2metros}{%
+\subsection{Variáveis Locais e
+Parâmetros:}\label{variuxe1veis-locais-e-paruxe2metros}}
+
+\begin{itemize}
+\item
+  Deve utilizar-se \textbf{camelCase} para variáveis locais e parâmetros
+  (ex: \emph{campList}).
+\item
+  Devem escolher-se nomes descritivos para melhorar a clareza, evitando
+  abreviações excessivas.
+\end{itemize}
+
+\hypertarget{padruxf5es-e-convenuxe7uxf5es-de-estilo-microsoft-.net-coding-conventions}{%
+\section{\texorpdfstring{Padrões e Convenções de Estilo (\emph{Microsoft
+.NET Coding
+Conventions})}{Padrões e Convenções de Estilo (Microsoft .NET Coding Conventions)}}\label{padruxf5es-e-convenuxe7uxf5es-de-estilo-microsoft-.net-coding-conventions}}
+
+\hypertarget{espauxe7amento-e-identauxe7uxe3o}{%
+\subsection{Espaçamento e
+Identação:}\label{espauxe7amento-e-identauxe7uxe3o}}
+
+\begin{itemize}
+\item
+  Identação com 4 espaços (não usar tabulações), para manter o padrão da
+  maioria dos editores de C\#.
+\end{itemize}
+
+\hypertarget{colocauxe7uxe3o-de-chaves}{%
+\subsection{Colocação de Chaves:}\label{colocauxe7uxe3o-de-chaves}}
+
+\begin{itemize}
+\item
+  Devem usar-se chavetas de abertura `\{` na mesma linha da declaração
+  (\emph{if}, \emph{for}, \emph{while}), e chavetas de fecho numa linha
+  nova.
+\end{itemize}
+
+\hypertarget{section-1}{%
+\subsection{}\label{section-1}}
+
+\hypertarget{comentuxe1rios-e-xml-documentation}{%
+\subsection{\texorpdfstring{Comentários e \emph{XML}
+\emph{Documentation}:}{Comentários e XML Documentation:}}\label{comentuxe1rios-e-xml-documentation}}
+
+\begin{itemize}
+\item
+  Devem comentar-se métodos e classes utilizando \textbf{comentários
+  XML} (///). Descreva parâmetros e valor de retorno, incluindo exceções
+  lançadas.
+\item
+  Deve utilizar-se \emph{tags} XML como
+  \emph{\textless summary\textgreater, \textless param\textgreater,
+  \textless returns\textgreater, \textless exception\textgreater{}},
+  para fornecer documentação completa.
+\end{itemize}
+
+\hypertarget{nomes-de-ficheiros}{%
+\subsection{Nomes de Ficheiros:}\label{nomes-de-ficheiros}}
+
+\begin{itemize}
+\item
+  Ficheiros de código devem ser nomeados de acordo com a classe pública
+  principal que ele contém. Por exemplo, a classe \emph{Client} deve
+  estar no arquivo \emph{Client.cs}.
+\end{itemize}
+
+\hypertarget{tratamento-de-exceuxe7uxf5es}{%
+\subsection{Tratamento de
+Exceções:}\label{tratamento-de-exceuxe7uxf5es}}
+
+\begin{itemize}
+\item
+  Deve utilizar exceções claras e específicas.
+\item
+  Deve evitar capturar exceções genéricas sem tratamento adequado.
+\end{itemize}
+
+\includegraphics[width=5.20833in,height=2.1375in]{media/image6.png}
+
+\hypertarget{utilizauxe7uxe3o-de-linq}{%
+\section{Utilização de LINQ}\label{utilizauxe7uxe3o-de-linq}}
+
+LINQ (\emph{Language Integrated Query}) é um recurso da linguagem
+\emph{C\#} que permite a consulta e manipulação de coleções de dados de
+forma consistente e expressiva. Este recurso unifica a forma de
+consultar diferentes estruturas de dados, sejam \emph{arrays}, listas,
+bases de dados, entre outros, utilizando sintaxe similar à de consultas
+SQL.
+
+\hypertarget{principais-caracteruxedsticas-de-linq}{%
+\subsection{Principais Características de
+LINQ:}\label{principais-caracteruxedsticas-de-linq}}
+
+\hypertarget{integrauxe7uxe3o-com-a-linguagem}{%
+\subsubsection{Integração com a
+Linguagem:}\label{integrauxe7uxe3o-com-a-linguagem}}
+
+LINQ é integrado diretamente na linguagem \emph{C\#}, permitindo a
+execução de consultas diretamente no código, sem necessidade de
+\emph{strings} SQL separadas ou outras linguagens externas.
+
+\hypertarget{suporte-a-diversas-fontes-de-dados}{%
+\subsubsection{Suporte a Diversas Fontes de
+Dados:}\label{suporte-a-diversas-fontes-de-dados}}
+
+\begin{itemize}
+\item
+  O LINQ pode ser utilizado para trabalhar com:
+
+  \begin{itemize}
+  \item
+    \textbf{Coleções em memória}: como
+    \emph{List\textless T\textgreater{}}, \emph{Array},
+    \emph{Dictionary\textless TKey, TValue\textgreater{}} (via
+    \emph{LINQ to} \emph{Objects}).
+  \item
+    \textbf{Bases de dados}: como o SQL Server (via \emph{LINQ to SQL}
+    ou \emph{Entity Framework}).
+  \item
+    \textbf{XML}: consulta e manipulação de dados em formato XML (via
+    \emph{LINQ to XML}).
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{sintaxe-declarativa}{%
+\subsubsection{Sintaxe Declarativa:}\label{sintaxe-declarativa}}
+
+\begin{itemize}
+\item
+  Permite descrever \textbf{o que} se quer fazer (o resultado desejado)
+  em vez de \textbf{como} fazer (detalhes de implementação).
+\item
+  Exemplos de operadores: \emph{where}, \emph{select}, \emph{order by},
+  \emph{group by}.
+\end{itemize}
+
+\hypertarget{strongly-typed}{%
+\subsubsection{\texorpdfstring{\emph{Strongly
+Typed}:}{Strongly Typed:}}\label{strongly-typed}}
+
+\begin{itemize}
+\item
+  O compilador verifica a consulta LINQ no momento da compilação,
+  ajudando a evitar erros, identificando-os antes da execução do
+  programa.
+\end{itemize}
+
+\hypertarget{benefuxedcios-do-linq}{%
+\subsection{Benefícios do LINQ}\label{benefuxedcios-do-linq}}
+
+\begin{itemize}
+\item
+  \textbf{Consistência}: Uma única abordagem para consultar diferentes
+  estruturas de dados.
+\item
+  \textbf{Legibilidade}: A sintaxe declarativa facilita a compreensão do
+  código.
+\item
+  \textbf{Segurança de Tipos}: Deteção de erros aquando da compilação.
+\item
+  \textbf{Redução de Código}: Evita códigos complexos e repetitivos.
+\end{itemize}
+
+\hypertarget{limitauxe7uxf5es}{%
+\subsection{Limitações}\label{limitauxe7uxf5es}}
+
+\begin{itemize}
+\item
+  Pode ser menos eficiente em alguns casos específicos, dependendo do
+  contexto e da estrutura de dados.
+\item
+  Em bases de dados, a tradução para SQL pode gerar consultas menos
+  otimizadas se não for bem configurada.
+\end{itemize}
+
+O LINQ é amplamente usado em C\# devido à sua simplicidade e
+flexibilidade na manipulação de dados.
+
+\hypertarget{exemplo-de-utilizauxe7uxe3o-do-linq-no-projeto}{%
+\subsection{Exemplo de utilização do LINQ no
+projeto:}\label{exemplo-de-utilizauxe7uxe3o-do-linq-no-projeto}}
+
+\includegraphics[width=5.94306in,height=1.64653in]{media/image7.png}
+
+\hypertarget{trabalho-desenvolvido}{%
+\section{\texorpdfstring{Trabalho Desenvolvido
+}{Trabalho Desenvolvido }}\label{trabalho-desenvolvido}}
+
+\hypertarget{diagrama-de-classes}{%
+\subsection{Diagrama de Classes:}\label{diagrama-de-classes}}
+
+\includegraphics[width=4.875in,height=8.82917in]{media/image8.png}Figura
+1 - Diagrama de Classes. Segue original em anexo, para melhor resolução.
+
+\hypertarget{estrutura-de-classes}{%
+\section{Estrutura de Classes:}\label{estrutura-de-classes}}
+
+\begin{itemize}
+\item
+  \emph{\textbf{BestSale}} -- Classe Principal.
+\item
+  \emph{\textbf{Campaign}} -- Definição de atributos de campanha,
+  propriedades e métodos para gestão das mesmas.
+\item
+  \emph{\textbf{Campaigns}} -- Classe de agregação de
+  \emph{\textbf{Campaign}}, que contém os métodos para gestão da
+  pluralidade.
+\item
+  \emph{\textbf{Category}} -- Definição de atributos de categoria,
+  propriedades e métodos para gestão das mesmas.
+\item
+  \emph{\textbf{Categories}} -- Classe de agregação de
+  \emph{\textbf{Category}} que contém os métodos para gestão da
+  pluralidade.
+\item
+  \emph{\textbf{Client}} -- Definição de atributos de cliente,
+  propriedades e métodos para gestão dos mesmos.
+\item
+  \emph{\textbf{Clients}} -- Classe de agregação de
+  \emph{\textbf{Client}}, que contém os métodos para a gestão da
+  pluralidade.
+\item
+  \emph{\textbf{Make}} -- Definição de atributos de marca, propriedades
+  e métodos para gestão das mesmas.
+\item
+  \emph{\textbf{Makes}} -- Classe de agregação de \emph{\textbf{Make}},
+  que contém os métodos para gestão da pluralidade.
+\item
+  \emph{\textbf{Product}} -- Definição de atributos de produto,
+  propriedades e métodos para gestão dos mesmos.
+\item
+  \emph{\textbf{Products}} -- Classe de agregação de
+  \emph{\textbf{Product}}, que contém os métodos para gestão da
+  pluralidade.
+\item
+  \emph{\textbf{Sale}} -- Definição de atributos de venda e propriedades
+  e métodos para gestão das mesmas.
+\item
+  \emph{\textbf{Sales}} -- Classe de agregação de \emph{\textbf{Sales}},
+  que contém métodos para a gestão da pluralidade.
+\item
+  \emph{\textbf{Store}} -- Definição de atributos de loja, propriedades
+  e métodos para gestão da mesma.
+\item
+  \emph{\textbf{Warranty}} -- Definição de atributos de garantia,
+  propriedades e métodos para gestão das mesmas.
+\item
+  \emph{\textbf{Warranties}} - Classe de agregação de
+  \emph{\textbf{Warranty}}, que contém métodos para a gestão da
+  pluralidade.
+\end{itemize}
+
+\hypertarget{interfaces}{%
+\subsection{Interfaces:}\label{interfaces}}
+
+\begin{itemize}
+\item
+  \emph{\textbf{IListManagement}} -- Interface que mostra como
+  implementar as funções de gestão de listas. (Adicionar, Remover,
+  Existe).
+\end{itemize}
+
+\hypertarget{ponto-de-situauxe7uxe3o-e-trabalho-futuro}{%
+\section{\texorpdfstring{Ponto de Situação e Trabalho Futuro
+}{Ponto de Situação e Trabalho Futuro }}\label{ponto-de-situauxe7uxe3o-e-trabalho-futuro}}
+
+O programa resultante é ainda bastante embrionário, visto que há ainda
+alterações que devem ser feitas. Estas alterações visam a otimização do
+programa, bem como a tentativa de melhoria da própria implementação, no
+que à qualidade do código diz respeito.
+
+Neste momento, foram apenas definidas as classes que deverão ser
+utilizadas ao longo do processo, não considerando necessariamente
+estruturas de dados adequadas ao melhor desempenho, sendo essa uma das
+possíveis alterações futuras. Mais ainda, deve também ser implementado
+todo o procedimento de tratamento de exceções, visto ser também um tema
+a ser ainda abordado em aula.
+
+A constante revisão e limpeza do código é também um fator a ter em
+conta.
+
+\end{document}
