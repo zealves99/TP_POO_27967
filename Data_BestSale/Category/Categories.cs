@@ -153,6 +153,43 @@ namespace Data_BestSale
             }
         }
 
+        /// <summary>
+        /// This method returns a category, given its name or id.
+        /// </summary>
+        /// <param name="obj">The ID or Name of the Category.</param>
+        /// <returns>The category</returns>
+        public Category GetCategory(object obj)
+        {
+            if (obj == null) return null;
+            if (obj is int)
+            {
+                if (this.Exist((int)obj))
+                {
+                    foreach (Category cat in _cats)
+                    {
+                        if (cat.Id == (int)obj)
+                        {
+                            return cat;
+                        }
+                    }
+                }
+            }
+            if (obj is string)
+            {
+                if (this.Exist((string)obj))
+                {
+                    foreach (Category cat in _cats)
+                    {
+                        if (cat.Name == (string)obj)
+                        {
+                            return cat;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
         #endregion
 
         #region Destructor

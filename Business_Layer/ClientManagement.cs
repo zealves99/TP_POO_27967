@@ -10,6 +10,7 @@ using System;
 using System.Xml.Schema;
 using Business_Object;
 using Data_BestSale;
+using BestSale_Validations;
 
 namespace Business_Layer
 {
@@ -22,8 +23,6 @@ namespace Business_Layer
     /// <example></example>
     public static class ClientManagement
     {
-        #region Attributes
-        #endregion
 
         #region Methods
 
@@ -42,9 +41,17 @@ namespace Business_Layer
         {
             try
             {
-                bool aux = Client.CreateClientFromNameContact(name, contact, out Client newClient);
-                aux = Store.InsertClientInStore(newClient);
-                return aux;
+                if (BestSale_Validations.BestSale_Validations.ValidatePhoneNumber(contact))
+                {
+                    bool aux = Client.CreateClientFromNameContact(name, contact, out Client newClient);
+                    aux = Store.InsertClientInStore(newClient);
+                    return aux;
+                }
+                return false;
+            }
+            catch(Exceptions.InvalidPhoneNumberException invalidPhoneNumber)
+            {
+                throw invalidPhoneNumber;
             }
             catch (Exception excep)
             {

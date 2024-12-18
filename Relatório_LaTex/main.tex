@@ -1,0 +1,709 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Assignment
+% LaTeX Template
+% Version 2.0 (12/1/2019)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Frits Wenneker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{scrartcl} % Font size
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{	
+	\normalfont\normalsize
+	\textsc{Instituto Politécnico do Cávado e do Ave, Escola Superior de Tecnologia}\\ % Your university, school and/or department name(s)
+	\vspace{25pt} % Whitespace
+	\rule{\linewidth}{0.5pt}\\ % Thin top horizontal rule
+	\vspace{20pt} % Whitespace
+	{\huge Licenciatura em Engenharia de Sistemas Informáticos }\\ % The assignment title
+	\vspace{12pt} % Whitespace
+	\rule{\linewidth}{2pt}\\ % Thick bottom horizontal rule
+	\vspace{12pt} % Whitespace
+}
+
+\author{\LARGE José António da Cunha Alves \\ nº27967} % Your name
+
+\date{\normalsize 17 de Novembro de 2024} % Today's date (\today) or a custom date
+
+\usepackage{listings}
+\usepackage{color}
+\lstloadlanguages{C,C++,csh,Java}
+
+\definecolor{red}{rgb}{0,0,0} 
+\definecolor{blue}{rgb}{0.3,0.3,0.3}
+\definecolor{green}{rgb}{0,0.4,0}
+\definecolor{cyan}{rgb}{0.0,0,0.8}
+\definecolor{cloudwhite}{rgb}{1.0,0.9,0.95}
+
+\lstset{
+	language=csh,
+	basicstyle=\footnotesize\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	numbersep=5pt,
+	tabsize=2,
+	extendedchars=true,
+	breaklines=true,
+	frame=b,
+	stringstyle=\color{blue}\ttfamily,
+	showspaces=false,
+	showtabs=false,
+	xleftmargin=17pt,
+	framexleftmargin=17pt,
+	framexrightmargin=5pt,
+	framexbottommargin=4pt,
+	commentstyle=\color{green},
+	morecomment=[l]{///}, %use comment-line-style!
+	morecomment=[s]{/*}{*/}, %for multiline comments
+	showstringspaces=false,
+	morekeywords={ abstract, event, new, struct,
+		as, explicit, null, switch,
+		base, extern, object, this,
+		bool, false, operator, throw,
+		break, finally, out, true,
+		byte, fixed, override, try,
+		case, float, params, typeof,
+		catch, for, private, uint,
+		char, foreach, protected, ulong,
+		checked, goto, public, unchecked,
+		class, if, readonly, unsafe,
+		const, implicit, ref, ushort,
+		continue, in, return, using,
+		decimal, int, sbyte, virtual,
+		default, interface, sealed, volatile,
+		delegate, internal, short, void,
+		do, is, sizeof, while,
+		double, lock, stackalloc,
+		else, long, static,
+		enum, namespace, string},
+	keywordstyle=\color{cyan},
+	identifierstyle=\color{red},
+	backgroundcolor=\color{cloudwhite},
+}
+
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{blue}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	FIGURE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+\begin{figure}[h] % [h] forces the figure to be output where it is defined in the code (it suppresses floating)
+	\centering
+	\includegraphics[width=0.5\columnwidth]{image1.jpg} % Example image
+\end{figure}
+
+\begin{quote}
+	\begin{center}
+		Fase 2\\
+		\vspace{12pt}
+		Trabalho Prático UC Programação Orientada a Objetos\\
+		\vspace{12pt}
+		Docente: Luís Ferreira
+	\end{center}	
+\end{quote}
+%------------------------------------------------
+\newpage
+
+\renewcommand{\contentsname}{Conteúdos}
+\tableofcontents
+
+\section{Enunciado}
+\subsection{Motivação}
+
+Pretende-se que sejam desenvolvidas soluções em C\# para problemas reais de complexidade moderada. Serão identificadas classes, definidas estruturas de dados e implementados os principais processos que permitam suportar essas soluções. Pretende-se ainda contribuir para a boa redação de relatórios.
+
+\subsection{Objetivos}
+\begin{itemize}
+	\item Consolidar conceitos basilares do Paradigma Orientado a Objetos; 
+	\item Analisar problemas reais;
+	\item Desenvolver capacidades de programação em C\#;
+	\item Potenciar a experiência no desenvolvimento de software;
+	\item Assimilar o conteúdo da Unidade Curricular.
+\end{itemize}
+
+\subsection{Problema a Explorar}
+(vii) Comércio eletrónico: sistema que permita a gestão de uma loja online. \textit{keywords} : \textbf{produtos, categorias, garantias, stocks, clientes, campanhas, vendas, marcas.}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	TEXT EXAMPLE
+%----------------------------------------------------------------------------------------
+
+\section{Introdução}
+
+Este documento é uma descrição do trabalho realizado na primeira fase do trabalho prático da unidade curricular de Programação Orientada a Objetos. 
+Neste trabalho, é proposto desenvolver um programa que torne possível a gestão de uma loja online, tendo como termos indispensáveis produtos, garantias, vendas, clientes, categorias, stocks, campanhas e marcas. Assim sendo, é necessário que o programa contemple funções que permitam todo o tipo de operações de gestão, desde criação de ficha de produto/cliente, bem como a gestão dos stocks dos respetivos produtos, datas de fim de garantias, datas de venda, entre outros. Esta primeira fase contempla apenas a definição de classes indispensáveis ao projeto, bem como as funcionalidades básicas de gestão das mesmas.
+
+Este trabalho tem como objetivos: a consolidação de conceitos basilares do Paradigma Orientado a Objetos; a análise de problemas reais, neste caso, de gestão de uma loja; o desenvolvimento de capacidades de programação em C\#; o potenciamento da experiência no desenvolvimento de software e a assimilação do conteúdo lecionado na Unidade Curricular em questão.\\
+
+Todo o código fonte e respetiva documentação podem ser encontrados no seguinte repositório \href{https://github.com/zealves99/TP_POO_27967.git}{\textbf{GitHub}}. 
+%------------------------------------------------
+
+
+\section{Revisão de Leitura}
+\begin{itemize}
+	\item Programação Orientada a Objetos – Material das aulas;  
+	\item Documentação – \textit{Doxygen Quick Reference}; 
+	\item Qualidade do Código – \textit{Clean Code – A Handbook of Agile Software Craftsmanship}; de Robert C. Martin.
+	\item \textit{.NET Coding Conventions} – Microsoft.
+\end{itemize}
+
+
+%------------------------------------------------
+\newpage
+
+\section{Convenções de Nomenclatura Utilizadas (\textit{Microsoft .NET Coding Conventions})}
+
+\subsection{Classes e Interfaces:}
+\begin{itemize}
+	\item Classes e tipos públicos devem ter nomes em \textbf{\textit{PascalCase}}.
+	\item Interfaces devem começar com a letra "I", seguida de um nome em \textbf{\textit{PascalCase}} (ex: \textit{IListManagement}, \textit{IClient}).
+\end{itemize}
+
+\subsection{Métodos:}
+\begin{itemize}
+	\item Deve utilizar-se \textbf{\textit{PascalCase}} para métodos públicos e internos (ex: \textit{AddClient}, \textit{RemoveProductFromSale}).
+\end{itemize}
+
+\subsection{Propriedades e Campos:}
+\begin{itemize}
+	\item Propriedades públicas e internas em \textbf{\textit{PascalCase}} (ex: \textit{MakeList}, \textit{ClientList}).
+	\item Atributos privados e variáveis de instância usam \textbf{\textit{camelCase}} e um prefixo ‘\_’ (ex: \textit{\_id}, \textit{\_durantionInYears} ).
+	\item Constantes e campos \textit{readonly} podem ser nomeados em \textbf{\textit{PascalCase}} (ex: \textit{MaxProducts}).
+\end{itemize}
+
+\begin{lstlisting}[language={[Sharp]C}, caption={A Classe Cliente}, label={Classe Cliente}]
+	
+		public class Client
+	{
+		#region Attributes
+		int _clientID;
+		string _name;
+		string _contact;
+		static int _clientCount=0;
+		#endregion
+	}
+	
+\end{lstlisting}
+
+\subsection{Variáveis Locais e Parâmetros:}
+\begin{itemize}
+	\item Deve utilizar-se \textbf{\textit{camelCase}} para variáveis locais e parâmetros (ex: \textit{campList}).
+	\item Devem escolher-se nomes descritivos para melhorar a clareza, evitando abreviações excessivas.
+\end{itemize}
+
+
+%------------------------------------------------
+\newpage
+
+\section{Padrões e Convenções de Estilo (\textit{Microsoft .NET Coding Conventions})}
+
+\subsection{Espaçamento e Identação:}
+\begin{itemize}
+	\item Identação com 4 espaços (não usar tabulações), para manter o padrão da maioria dos editores de C\#.
+\end{itemize}
+
+\subsection{Colocação de Chavetas:}
+\begin{itemize}
+	\item Devem usar-se chavetas de abertura ‘\{‘ na linha seguinte à declaração (\textit{if}, \textit{for}, \textit{while}), assim como as chavetas de fecho.
+\end{itemize}
+
+\subsection{Comentários e XML Documentation:}
+\begin{itemize}
+	\item Devem comentar-se métodos e classes utilizando \textbf{comentários XML (\textit{///})}. Descreva parâmetros e valor de retorno, incluindo exceções lançadas.
+	\item Devem utilizar-se tags XML como \textit{<summary>}, \textit{<param>}, \textit{<returns>}, \textit{<exception>}, para fornecer documentação completa.
+	
+\end{itemize}
+
+\subsection{Nomes de Ficheiros:}
+\begin{itemize}
+	\item Ficheiros de código devem ser nomeados de acordo com a classe pública principal que ele contém. Por exemplo, a classe \textit{Client} deve estar no ficheiro \textit{Client.cs}.
+\end{itemize}
+
+\subsection{Tratamento de Excecões:}
+\begin{itemize}
+	\item Devem utilizar-se exceções claras e específicas.
+	\item Deve evitar-se capturar exceções genéricas sem tratamento adequado.
+\end{itemize}
+
+\newpage
+
+\begin{lstlisting}[language={[Sharp]C}, caption={Exemplo de Utilização destes padrões}, label={Utilização Padrões Microsoft .NET Coding Conventions}]
+	
+ /// <summary>
+/// Create a Client and add it to the store's list of clients.
+/// </summary>
+/// <param name="name">Client's Name</param>
+/// <param name="contact">Client's Contact</param>
+/// <returns>True - Client Successfully created and added to the list.</returns>
+/// <returns>Exception - An error occurred in the process.
+public static bool CreateClientInStore(string name, string contact)
+{
+	try
+	{
+		if (BestSale_Validations.BestSale_Validations.ValidatePhoneNumber(contact))
+		{
+			bool aux = Client.CreateClientFromNameContact(name, contact, out Client newClient);
+			aux = Store.InsertClientInStore(newClient);
+			return aux;
+		}
+		return false;
+	}
+	catch(Exceptions.InvalidPhoneNumberException invalidPhoneNumber)
+	{
+		throw invalidPhoneNumber;
+	}
+	catch (Exception excep)
+	{
+		throw (excep);
+	}
+}
+\end{lstlisting}
+
+\newpage
+
+
+\section{Utilização de \textit{LINQ}}
+\textit{LINQ} (\textit{Language Integrated Query}) é um recurso da linguagem C\# que permite a consulta e manipulação de coleções de dados de forma consistente e expressiva. Este recurso unifica a forma de consultar diferentes estruturas de dados, sejam \textit{arrays}, \textit{listas}, bases de dados, entre outros, utilizando sintaxe similar à de consultas SQL.
+
+\subsection{Principais Características do \textit{LINQ} :}
+
+\subsubsection{Integração com a Linguagem:}
+
+LINQ é integrado diretamente na linguagem C\#, permitindo a execução de consultas diretamente no código, sem necessidade de \textit{strings} SQL separadas ou outras linguagens externas.
+
+\subsubsection{Suporte a Diversas Fontes de Dados:}
+\begin{itemize}
+	\item O LINQ pode ser utilizado para trabalhar com:
+		\begin{itemize}
+			\item \textbf{Coleções em memória}: como \textit{List<T>}, \textit{Array}, \textit{Dictionary<TKey, TValue>} (via \textit{LINQ to Objects}).
+			\item \textbf{Bases de Dados}: como o SQL Server (via \textit{LINQ to SQL} ou \textit{Entity Framework}).
+			\item \textbf{XML}: consulta e manipulação de dados em formato XML (via \textit{LINQ to XML}).	
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{Sintaxe Declarativa:}
+\begin{itemize}
+	\item Permite descrever \textbf{o que} se quer fazer (o resultado desejado) em vez de \textbf{como} fazer (detalhes de implementação).
+	\item Exemplos de operadores: \textit{where}, \textit{select}, \textit{order by}, \textit{group by}.
+\end{itemize}
+
+\subsubsection{Strongly Typed}
+\begin{itemize}
+	\item O compilador verifica a consulta \textit{LINQ} no momento da compilação, ajudando a evitar erros, identificando-os antes da execução do programa.
+\end{itemize}
+
+\subsection{\textit{Benefícios do \textit{LINQ}} :}
+\begin{itemize}
+	\item \textbf{Consistência}: Uma única abordagem para consultar diferentes estruturas de dados.
+	\item \textbf{Legibilidade}: A sintaxe declarativa facilita a compreensão do código.
+	\item \textbf{Segurança de Tipos}: Deteção de erros aquando da compilação.
+	\item \textbf{Redução de Código}: Evita códigos complexos e repetitivos.	
+\end{itemize}
+
+\subsection{Limitações:}
+\begin{itemize}
+	\item Pode ser menos eficiente em alguns casos específicos, dependendo do contexto e da estrutura de dados.
+	\item Em bases de dados, a tradução para SQL pode gerar consultas menos otimizadas se não for bem configurada.	
+\end{itemize}
+
+O \textit{LINQ} é amplamente usado em C\# devido à sua simplicidade e flexibilidade na manipulação de dados.
+
+\newpage
+
+\begin{lstlisting}[language={[Sharp]C}, caption={A Classe Cliente}, label={Classe Cliente}]
+	
+public decimal TotalPrice()
+{
+	return _prods.Sum(p => p.Price);
+	
+}
+\end{lstlisting}
+
+A utilização desta \textit{lambda function} (utilizando o operador '=>'), indica à função \textit{Sum()} que, para cada Produto \textit{p} em \textit{\_prods}, deve utilizar o valor da propriedade \textit{Price}.
+
+\newpage
+
+\section{Trabalho Desenvolvido:}
+\subsection{Diagrama de Classes}
+\begin{figure}[h] % [h] forces the figure to be output where it is defined in the code (it suppresses floating)
+	\centering
+	\includegraphics[width=0.9\columnwidth]{DiagramaClasses.png} % Example image
+	\caption{Diagrama de Classes}
+\end{figure}
+
+\newpage
+%------------------------------------------------
+
+\subsection{Estrutura de Projetos:}
+\subsubsection{Bibliotecas (.dll)}
+\begin{itemize}
+	\item \textit{Data\_BestSale.dll}
+		\begin{itemize}
+			\item
+			\emph{\textbf{Campaign.cs}} -- Definição de atributos de campanha,
+			propriedades e métodos para gestão das mesmas.
+			\item
+			\emph{\textbf{Campaigns.cs}} -- Classe de agregação de
+			\emph{\textbf{Campaign.cs}}, que contém os métodos para gestão da
+			pluralidade.
+			\item
+			\emph{\textbf{Category.cs}} -- Definição de atributos de categoria,
+			propriedades e métodos para gestão das mesmas.
+			\item
+			\emph{\textbf{Categories.cs}} -- Classe de agregação de
+			\emph{\textbf{Category.cs}} que contém os métodos para gestão da
+			pluralidade.
+			\item
+			\emph{\textbf{Client.cs}} -- Definição de atributos de cliente,
+			propriedades e métodos para gestão dos mesmos.
+			\item
+			\emph{\textbf{Clients.cs}} -- Classe de agregação de
+			\emph{\textbf{Client.cs}}, que contém os métodos para a gestão da
+			pluralidade.
+			\item
+			\emph{\textbf{Make.cs}} -- Definição de atributos de marca, propriedades
+			e métodos para gestão das mesmas.
+			\item
+			\emph{\textbf{Makes.cs}} -- Classe de agregação de \emph{\textbf{Make}},
+			que contém os métodos para gestão da pluralidade.
+			\item
+			\emph{\textbf{Product.cs}} -- Definição de atributos de produto,
+			propriedades e métodos para gestão dos mesmos.
+			\item
+			\emph{\textbf{Products.cs}} -- Classe de agregação de
+			\emph{\textbf{Product.cs}}, que contém os métodos para gestão da
+			pluralidade.
+			\item
+			\emph{\textbf{Sale.cs}} -- Definição de atributos de venda e propriedades
+			e métodos para gestão das mesmas.
+			\item
+			\emph{\textbf{Sales.cs}} -- Classe de agregação de \emph{\textbf{Sales}},
+			que contém métodos para a gestão da pluralidade.
+			\item
+			\emph{\textbf{Store.cs}} -- Definição de atributos de loja, propriedades
+			e métodos para gestão da mesma.
+			\item
+			\emph{\textbf{Warranty.cs}} -- Definição de atributos de garantia,
+			propriedades e métodos para gestão das mesmas.
+			\item
+			\emph{\textbf{Warranties.cs}} - Classe de agregação de
+			\emph{\textbf{Warranty.cs}}, que contém métodos para a gestão da
+			pluralidade.
+			\item
+			\emph{\textbf{\textit{IListManagement.cs}}} -- Interface que mostra como implementar as funções de gestão de listas. (\textit{Adicionar}, \textit{Remover}, \textit{Existe}).
+		\end{itemize}
+		\item \textit{Business\_Object.dll}
+		\begin{itemize}
+			\item \emph{\textbf{SimpleProduct.cs}} -- Definição de atributos de um cliente simples e propriedades. Serve para agilizar a circulação de dados entre o \textit{back end} e a \textit{business layer}.
+		\end{itemize}
+		
+		\item \textit{BestSale\_Validations.dll}
+		\begin{itemize}
+			\item \emph{\textbf{BestSale\_Validations.cs}} -- Definição dos métodos que permitem fazer validações de dados inseridos.
+		\end{itemize}
+		\item \textit{Exceptions.dll}
+		\begin{itemize}
+			\item \emph{\textbf{InvalidPhoneNumberException.cs}} -- Definição da exceção apresentada quando um contacto telefónico inserido não respeita o padrão definido.
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{\textit{Business Layer}}
+
+\begin{itemize}
+	\item \textit{Business\_Layer.dll}
+	\begin{itemize}
+		\item \emph{\textbf{ClientManagement.cs}} -- Contém os métodos intermediários de gestão de clientes, que permitem a comunicação entre o \textit{back end} e a \textit{front end}.
+		\item \emph{\textbf{ProductManagement.cs}} -- Contém os métodos intermediários de gestão de produtos, que permitem a comunicação entre o \textit{back end} e a \textit{front end}. Contém também os métodos intermediários que dizem respeito a marcas e categorias.
+		\item \emph{\textbf{FileManagement.cs}} -- Contém os métodos intermediários de gestão de ficheiros, que permitem a comunicação entre o \textit{back end} e a \textit{front end}.
+	\end{itemize}
+\end{itemize}
+
+
+\subsubsection{\textit{Front End:}}
+\begin{itemize}
+	\item 
+	\emph{\textbf{BestSale.cs}} -- Classe Principal.
+\end{itemize}
+
+
+\subsection{Observações:}
+
+No interface desenvolvido, visto que a versão de .NET que estava a utilizar era ligeiramente mais antiga, não me foi possível utilizar generalizações do tipo \textit{List<T>}. Assim sendo, tive de recorrer a outro método, o que tornou o código mais repetitivo e, de certa forma, inutilizou a utilização do interface, pois envolve fazer vários testes em todas as implementações do interface. Seguem dois exemplos:
+
+\begin{lstlisting}[language={[Sharp]C}, caption={Implementação do Interface}, label={Implementação do Interface}]
+	
+	public class Products : IListManagement
+	{
+		/// This method inserts a product in a list of products.
+		public bool Add(object obj)
+		{
+			if (obj == null) return false;
+			var aux=obj as Product;
+			if (Exist(aux.Reference))
+			{
+				if (obj is Product)
+				{
+					_prods.Add((Product)obj);
+					return true;
+				}
+			}
+			return false;
+		}
+		
+		/// Method used to verify if a product is on a products' list, given its Refference.
+		public bool Exist(object obj)
+		{
+			if (obj == null) return false;
+			if (obj is string)
+			{
+				foreach (Product p in _prods)
+				{
+					if (p.Reference == (string)obj) return true;
+				}
+			}
+			return false;
+		}
+		
+		/// Method used to remove a product from a Products' list.
+		public bool Remove(object obj)
+		{
+			if (obj == null) return false;
+			Product p = (Product)obj;
+			if (Exist(p.Reference))
+			{
+				_prods.Remove(p);
+				return true; ///Product removed successfully
+			}
+			return false; ///Product was not removed.
+		}
+	}
+\end{lstlisting}
+
+\begin{lstlisting}[language={[Sharp]C}, caption={Outra Implementação do Interface}, label={Outra Implementação do Interface}]
+	
+	public class Makes : IListManagement
+	{
+		///Method used to add a make to a list of makes. 
+		public bool Add(object obj)
+		{
+			if (obj == null) return false;
+			if (obj is Make) {
+				_makeList.Add((Make)obj);
+				return true;
+			}
+			return false;
+		}
+
+		/// Method used to remove a make from a list of makes.
+		public bool Remove(object obj)
+		{
+			if (obj == null) return false;
+			var aux = obj as Make;
+			if (Exist(aux.ID))
+			{
+				_makeList.Remove((Make)obj);
+				return true;
+			}
+			return false;
+		}
+		
+		/// Method used to verify if a make exists on a list of makes, given its ID or name.
+		public bool Exist(object obj)
+		{
+			if (obj == null) return false;
+			if (obj is int)
+			{
+				foreach (Make make in _makeList)
+				{
+					if (make.ID == (int)obj)
+					{
+						return true;
+					}
+				}
+			}
+			if(obj is string)
+			{
+				foreach (Make make in _makeList)
+				{
+					if (make.Name == (string)obj)
+					{
+						return true;
+					}
+				}
+			}
+			return false;
+		}
+	}
+\end{lstlisting}
+
+\vspace{20px}
+Mais ainda, apesar de, para tornar o código mais modular e melhor organizado (e indo um pouco contra os princípios do \textit{SOLID}), se deva separar as classes o mais modularmente possível, optei por colocar dentro da classe \textit{ProductManagement} também as funções que permitam a interação entre \textit{front end} e \textit{back end} no que toca à criação e pesquisa de marcas, categorias e garantias. Esta opção foi tomada, visto que, num programa com esta pequena dimensão, a classe em questão não se torna caótica e, ao mesmo tempo, evita-se criar classes com apenas dois ou três métodos. Mais ainda, tendo em conta que, para criar um produto, é necessário ter também os registos destas restantes vertentes, faz sentido que estas possam também ser manipuladas nesta classe. Ainda assim, todas as partes estão distinguidas com a sua devida \textit{\#region}, como se vê no exemplo seguinte:
+
+\vspace{15px}
+\begin{lstlisting}[language={[Sharp]C}, caption={Classe ProductManagement.cs}, label={Classe ProductManagement.cs}]
+	
+	public class ProductManagement
+	{
+		 #region Products
+		 
+		/// Method used to create and add a product to a store.
+		public static bool CreateNewProductInStore(string reff, decimal price, int makeID, int categoryID, int warrantyDuration, string warrantyConditions)
+		{
+			try
+			{
+				Product prod = Product.CreateProductWithWarranty(reff, price, makeID, categoryID, warrantyDuration, warrantyConditions);
+				Store.InsertProductInStore(prod);
+				return true;
+			}
+			catch(Exception excep)
+			{
+				throw excep;
+			}
+		}
+		
+		/// Mtehod that returns the price of a certain product, given its reference.
+		public static decimal GetProductPriceFromReference(string reference)
+		{
+			return Store.GetProductPriceInStoreFromReference(reference);
+		}
+		#endregion
+		
+		#region Make
+
+		/// This method creates a new make and inserts it on the store's list of makes.
+		public static bool CreateMakeInStore(string name)
+		{
+			Make.CreateMake(name, out Make newMake);
+			return Store.InsertMakeInStore(newMake);
+		}
+		
+		/// This method returns the ID of a make in the store's list, given its name.
+		public static int GetMakeIdFromName(string name)
+		{
+			return Store.GetMakeIdFromNameInStore(name);
+		}
+		
+		#endregion
+		
+		#region Category
+
+		/// This method creates and inserts a Category in a store's list.
+		public static bool CreateCategoryInStore(string name)
+		{
+			Category.CreateCategory(name, out Category newCategory);
+			return Store.InsertCategoryInStore(newCategory);
+		}
+		
+		/// This method returns the ID of a Category in the store's list, given its name.
+		public static int GetCategoryIdFromName(string name)
+		{
+			return Store.GetCategoryIdFromNameInStore(name);
+		}
+		#endregion
+	}
+\end{lstlisting}
+
+\subsection{Bullet Point List}
+
+\begin{itemize}
+	\item First item in a list 
+		\begin{itemize}
+		\item First item in a list 
+			\begin{itemize}
+			\item First item in a list 
+			\item Second item in a list 
+			\end{itemize}
+		\item Second item in a list 
+		\end{itemize}
+	\item Second item in a list 
+\end{itemize}
+
+%------------------------------------------------
+
+\subsection{Numbered List}
+
+\begin{enumerate}
+	\item First item in a list 
+	\item Second item in a list 
+	\item Third item in a list
+\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+%	TABLE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+\section{Interpreting a Table}
+
+\begin{table}[h] % [h] forces the table to be output where it is defined in the code (it suppresses floating)
+	\centering % Centre the table
+	\begin{tabular}{l l l}
+		\toprule
+		\textit{Per 50g} & \textbf{Pork} & \textbf{Soy} \\
+		\midrule
+		Energy & 760kJ & 538kJ\\
+		Protein & 7.0g & 9.3g\\
+		Carbohydrate & 0.0g & 4.9g\\
+		Fat & 16.8g & 9.1g\\
+		Sodium & 0.4g & 0.4g\\
+		Fibre & 0.0g & 1.4g\\
+		\bottomrule
+	\end{tabular}
+	\caption{Sausage nutrition.}
+\end{table}
+
+%------------------------------------------------
+
+\subsection{The table above shows the nutritional consistencies of two sausage types. Explain their relative differences given what you know about daily adult nutritional recommendations.}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor. Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit. Nulla mattis nisl eu malesuada suscipit.
+
+%----------------------------------------------------------------------------------------
+%	CODE LISTING EXAMPLE
+%----------------------------------------------------------------------------------------
+
+\section{Reading a Code Listing}
+
+
+
+%------------------------------------------------
+
+\subsection{How many luftballons will be output by the Listing \ref{lst:luftballons} above?}
+
+Aliquam arcu turpis, ultrices sed luctus ac, vehicula id metus. Morbi eu feugiat velit, et tempus augue. Proin ac mattis tortor. Donec tincidunt, ante rhoncus luctus semper, arcu lorem lobortis justo, nec convallis ante quam quis lectus. Aenean tincidunt sodales massa, et hendrerit tellus mattis ac. Sed non pretium nibh. Donec cursus maximus luctus. Vivamus lobortis eros et massa porta porttitor.
+
+%------------------------------------------------
+
+\subsection{Identify the regular expression in Listing \ref{lst:luftballons} and explain how it relates to the anti-war sentiments found in the rest of the script.}
+
+Fusce varius orci ac magna dapibus porttitor. In tempor leo a neque bibendum sollicitudin. Nulla pretium fermentum nisi, eget sodales magna facilisis eu. Praesent aliquet nulla ut bibendum lacinia. Donec vel mauris vulputate, commodo ligula ut, egestas orci. Suspendisse commodo odio sed hendrerit lobortis. Donec finibus eros erat, vel ornare enim mattis et.
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

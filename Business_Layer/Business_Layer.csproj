@@ -47,6 +47,10 @@
     <Compile Include="ProductManagement.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BestSale_Validations\BestSale_Validations.csproj">
+      <Project>{bd0cbcce-6f1b-4250-868d-a9a63c08bf64}</Project>
+      <Name>BestSale_Validations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Business_Object\Business_Object.csproj">
       <Project>{5b92d0e5-bc9e-4abe-b03c-4545fa28219f}</Project>
       <Name>Business_Object</Name>
@@ -54,6 +58,10 @@
     <ProjectReference Include="..\Data_BestSale\Data_BestSale.csproj">
       <Project>{93769237-722c-4488-8157-9b0f2f568bab}</Project>
       <Name>Data_BestSale</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Exceptions\Exceptions.csproj">
+      <Project>{fabe7b09-51fd-47b8-89e3-d85b3554d76b}</Project>
+      <Name>Exceptions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

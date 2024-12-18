@@ -229,6 +229,7 @@ namespace Data_BestSale
         }
         #endregion
 
+        #region Products 
         /// <summary>
         /// Method used to add a product to the list of products of a store.
         /// </summary>
@@ -255,6 +256,66 @@ namespace Data_BestSale
             Product prod = _prodList.SearchProduct(reference);
             return prod.Price;
         }
+
+        #endregion
+
+        #region Makes
+        /// <summary>
+        /// Method to get the ID of a make in a store's list, given its name.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>The ID of the make</returns>
+        /// <returns>-50 if the make does not exist on the list.<returns>
+        public static int GetMakeIdFromNameInStore(string name)
+        {
+            if (_makeList.Exist(name))
+            {
+                Make aux = _makeList.GetMake(name);
+                return (aux.GetMakeID());
+            }
+            else return -50;
+        }
+
+        /// <summary>
+        /// Method to insert a make on a store's list of makes.
+        /// </summary>
+        /// <param name="make">The make to insert on the list</param>
+        /// <returns>True or false, wheter it was added or not.</returns>
+        public static bool InsertMakeInStore(Make make)
+        {
+            return _makeList.Add(make);     
+        }
+        #endregion
+
+        #region Category
+
+        /// <summary>
+        /// This method finds the ID of a Category, given its name.
+        /// </summary>
+        /// <param name="name">The name of the Make</param>
+        /// <returns>The ID of the Category</returns>
+        /// <returns>-100 - There's no category with that name on the list.<returns>
+        public static int GetCategoryIdFromNameInStore(string name)
+        {
+            if(_catList.Exist(name))
+            {
+                Category aux= _catList.GetCategory(name);
+                return aux.Id;
+            }
+            return -100;
+        }
+
+        /// <summary>
+        ///This method adds a Category to a store's list of categories. 
+        /// </summary>
+        /// <param name="cat"></param>
+        /// <returns>True or false, wheter it succeeded or not.</returns>
+        public static bool InsertCategoryInStore(Category cat)
+        {
+            return _catList.Add(cat);
+        }
+        #endregion
+
         #endregion
 
         #region Destructor

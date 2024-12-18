@@ -171,6 +171,7 @@ namespace Data_BestSale
         /// <returns></returns>
         public decimal TotalPrice()
         {
+            ///lambda funtion tells the Sum() function that, for each Product p in _prods, it should use the price value.
             return _prods.Sum(p => p.Price);
 
         }

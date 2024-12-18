@@ -116,6 +116,25 @@ namespace Data_BestSale
         #endregion
 
         #region OtherMethods
+        /// <summary>
+        /// This method creates a new category instance.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="category"></param>
+        /// <returns>True - if succeeded</returns>
+        /// <returns>Exception - An error occurred.<returns>
+        public static bool CreateCategory(string name, out Category category)
+        {
+            try
+            {
+                category = new Category(name);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
         #endregion
 
         #region Destructor

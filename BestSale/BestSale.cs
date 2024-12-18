@@ -15,32 +15,6 @@ namespace BestSale
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            //Client clientTest = new Client("Jose Alves","962310421");
-            //Client clientTest2 = new Client("Rui Jordao", "931250420");
-            //Client clientTest1 = new Client();
-
-            //Make benfica = new Make("Benfica");
-            //Category futebol = new Category("Futebol");
-            //Product product1 = new Product("1A34", 23.9m, new Warranty("1A34",3, "Nao gostar de batatas."), benfica, futebol );
-
-            //Make braga = new Make("Braga");
-            //Product product2 = new Product("2V45", 15.9m, new Warranty("2V45", 3, "Nao gostar de peixe."), braga, futebol);
-
-            //Sale sale = new Sale();
-            //sale.InsertProductOnSale(product1);
-            //sale.InsertProductOnSale(product2);
-
-            //Console.WriteLine(sale.ToString());
-
-            //Clients clientes = new Clients();
-            //clientes.AddClient(clientTest);
-            //clientes.AddClient(clientTest2);
-
-            //foreach (Client client in clientes.ClientList)
-            //{
-            //    Console.WriteLine(client.ToString());
-            //}
-
             bool a;
 
             try
@@ -49,7 +23,7 @@ namespace BestSale
             }
             catch (IOException ioExcep)
             {
-                Console.WriteLine(ioExcep.Message);                
+                Console.WriteLine(ioExcep.Message);
             }
             catch (Exception excep)
             {
@@ -58,7 +32,15 @@ namespace BestSale
 
             try
             {
-                a=ProductManagement.CreateNewProductInStore("1A34", 23.9m, 3, "Nao gostar de batatas."), benfica, futebol
+                a = ProductManagement.CreateMakeInStore("Benfica");
+                int id = ProductManagement.GetMakeIdFromName("Benfica");
+                a = ProductManagement.CreateCategoryInStore("Melhor do Mundo");
+                int cat = ProductManagement.GetCategoryIdFromName("Melhor do Mundo");
+                a = ProductManagement.CreateNewProductInStore("1A34", 23.9m, id, cat , 3, "Nao gostar de batatas.");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
 
 

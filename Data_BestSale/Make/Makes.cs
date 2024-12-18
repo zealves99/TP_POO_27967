@@ -144,6 +144,43 @@ namespace Data_BestSale
             }
         }
 
+        /// <summary>
+        /// This method finds a make instance, given its ID or Name.
+        /// </summary>
+        /// <param name="id">The Make ID</param>
+        /// <returns>The make instance</returns>
+        public Make GetMake(object obj )
+        {
+            if (obj == null) return null;
+            if (obj is int)
+            {
+                if (this.Exist((int)obj))
+                {
+                    foreach (Make make in _makeList)
+                    {
+                        if (make.ID == (int)obj)
+                        {
+                            return make;
+                        }
+                    }
+                }
+            }
+            if (obj is string)
+            {
+                if (this.Exist((string)obj))
+                {
+                    foreach (Make make in _makeList)
+                    {
+                        if (make.Name == (string)obj)
+                        {
+                            return make;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
         #endregion
 
         #region Destructor

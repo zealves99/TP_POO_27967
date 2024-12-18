@@ -133,6 +133,33 @@ namespace Data_BestSale
         #endregion
 
         #region OtherMethods
+        /// <summary>
+        /// Method to create a new make, given its name.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="make"></param>
+        /// <returns></returns>
+        public static bool CreateMake(string name, out Make make)
+        {
+            try
+            {
+                make = new Make(name);
+                return true;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        /// <summary>
+        /// Method used to get the ID of a make.
+        /// </summary>
+        /// <returns>The ID of the make.</returns>
+        public int GetMakeID()
+        {
+            return this.ID;
+        }
         #endregion
 
         #region Destructor

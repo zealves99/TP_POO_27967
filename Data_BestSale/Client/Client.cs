@@ -12,6 +12,7 @@ using System.Text.RegularExpressions;
 using static System.Net.Mime.MediaTypeNames;
 using Business_Object;
 using BestSale_Validations;
+using Exceptions;
 
 namespace Data_BestSale
 {
@@ -88,10 +89,18 @@ namespace Data_BestSale
             get { return _contact; }
             set
             {
+                try 
+                {
                 if (BestSale_Validations.BestSale_Validations.ValidatePhoneNumber(value)) _contact = value;
-                else throw new Exception("Invalid Phone Number");
-
-                //COMO POSSO RETORNAR UM ERRO CASO A STRING NAO CORRESPONDA?
+                }
+                catch(InvalidPhoneNumberException excep)
+                {
+                    throw excep;
+                }
+                catch(Exception)
+                {
+                    throw new Exception("Invalid Phone Number");
+                }
             }
         }
 

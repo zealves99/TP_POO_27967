@@ -66,9 +66,53 @@ namespace Business_Layer
         #endregion
 
         #region Make
-        public static bool CreateMake()
+        /// <summary>
+        /// This method creates a new make and inserts it on the store's list of makes.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>True or false, wether it added the make to the list or not.</returns>
+        public static bool CreateMakeInStore(string name)
+        {
+            Make.CreateMake(name, out Make newMake);
+            return Store.InsertMakeInStore(newMake);
+        }
+
+        /// <summary>
+        /// This method returns the ID of a make in the store's list, given its name.
+        /// </summary>
+        /// <param name="name">The name of the make</param>
+        /// <returns>The ID of the make.</returns>
+        public static int GetMakeIdFromName(string name)
+        {
+            return Store.GetMakeIdFromNameInStore(name);
+        }
 
         #endregion
+
+        #region Category
+        /// <summary>
+        /// This method creates and inserts a Category in a store's list.
+        /// </summary>
+        /// <param name="name">The Category's name.</param>
+        /// <returns>True - Category created and added successfully.</returns>
+        /// <returns>False - The Category couldn't be added to the list.<returns>
+        public static bool CreateCategoryInStore(string name)
+        {
+            Category.CreateCategory(name, out Category newCategory);
+            return Store.InsertCategoryInStore(newCategory);
+        }
+
+        /// <summary>
+        /// This method returns the ID of a Category in the store's list, given its name.
+        /// </summary>
+        /// <param name="name">The name of the category</param>
+        /// <returns>The ID of the category</returns>
+        public static int GetCategoryIdFromName(string name)
+        {
+            return Store.GetCategoryIdFromNameInStore(name);
+        }
+        #endregion
+
 
         #endregion
 
