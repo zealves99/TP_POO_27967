@@ -28,7 +28,7 @@ namespace Data_BestSale
         #region Attributes
         int _id;
         Client _client;
-        Products _products;
+        ProductsSale _products;
         decimal _totPrice;
         DateTime _saleDate;
         static int _numSales;
@@ -45,7 +45,7 @@ namespace Data_BestSale
         /// </summary>
         public Sale()
         {
-            _products= new Products();
+            _products= new ProductsSale();
             _client= new Client();
             _campaigns= new Campaign();
         }
@@ -56,7 +56,7 @@ namespace Data_BestSale
         /// <param name="client"></param>
         /// <param name="products"></param>
         /// <param name="camp"></param>
-        public Sale(Client client, Products products, Campaign camp)
+        public Sale(Client client, ProductsSale products, Campaign camp)
         {
             _id = ++_numSales;
             _client = client;
@@ -91,7 +91,7 @@ namespace Data_BestSale
         /// <summary>
         /// Property used to get and set the list of products in a Sale.
         /// </summary>
-        public Products Products
+        public ProductsSale Products
         {
             get { return _products; }
             set { _products = value; }
@@ -180,8 +180,9 @@ namespace Data_BestSale
         public decimal TotalPrice()
         {
             decimal total = 0;
+            Products aux = Store.GetStoreProdList();
 
-            total=_products.TotalPrice();
+            total=aux.TotalPrice();
 
             if (Campaign.VerifyApplicability(this.Campaigns))
             {
@@ -196,9 +197,9 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
-        public bool InsertProductOnSale(Product p)
+        public bool InsertProductOnSale(string reff, int amount)
         {
-            return _products.Add(p);
+            return _products.AddProductSale(reff, amount);
         }
 
         /// <summary>
@@ -206,9 +207,9 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
-        public bool RemoveProductFromSale(Product p)
+        public bool RemoveProductFromSale(string reff)
         {
-            return _products.Remove(p);
+            return _products.RemoveProductSale(reff);
         }
 
         /// <summary>
@@ -216,9 +217,9 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
-        public bool ExistProductOnSale(Product p)
+        public bool ExistProductOnSale(string reff)
         {
-            return _products.Exist(p.Reference);
+            return _products.ExistProductSale(reff);
         }
 
         /// <summary>
@@ -229,7 +230,8 @@ namespace Data_BestSale
         /// <returns></returns>
         public DateTime WarrantyExpirationDate(string reff)
         {
-            return (_products.WarratyExpirationDateForProduct(this.SaleDate, reff));
+            Products prod = Store.GetStoreProdList();
+            return (prod.WarratyExpirationDateForProduct(this.SaleDate, reff));
         }
         #endregion
 

@@ -113,6 +113,13 @@ namespace Business_Layer
         }
         #endregion
 
+        #region Sale
+        public static bool CreateSaleInStore()
+        {
+            return false;
+        }
+        #endregion
+
 
         #endregion
 

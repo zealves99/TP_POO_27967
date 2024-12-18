@@ -1,39 +1,41 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Enunciado}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Motivação}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Objetivos}{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Problema a Explorar}{3}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Introdução}{4}{section.2}%
-\contentsline {section}{\numberline {3}Revisão de Leitura}{4}{section.3}%
-\contentsline {section}{\numberline {4}Convenções de Nomenclatura Utilizadas (\textit {Microsoft .NET Coding Conventions})}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Classes e Interfaces}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Métodos}{5}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Propriedades e Campos}{5}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Variáveis Locais e Parâmetros}{5}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Padrões e Convenções de Estilo (\textit {Microsoft .NET Coding Conventions})}{6}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Espaçamento e Identação}{6}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Colocação de Chavetas}{6}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Comentários e XML Documentation}{6}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Nomes de Ficheiros}{6}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Tratamento de Excecões}{6}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Utilização de \textit {LINQ}}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Principais Características do \textit {LINQ}}{8}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Integração com a Linguagem}{8}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Suporte a Diversas Fontes de Dados}{8}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Sintaxe Declarativa}{8}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.4}Strongly Typed}{8}{subsubsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.2}\textit {Benefícios do \textit {LINQ}}}{8}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Limitações}{8}{subsection.6.3}%
-\contentsline {section}{\numberline {7}O Padrão N-Tier}{9}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Vantagens da Arquitetura N-Tier}{9}{subsection.7.1}%
-\contentsline {section}{\numberline {8}Utilização de \textbf {\textit {SOLID}}}{10}{section.8}%
-\contentsline {section}{\numberline {9}Respeitar a \textbf {\textit {.NET CLS}}}{10}{section.9}%
-\contentsline {section}{\numberline {10}Trabalho Desenvolvido}{11}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Diagrama de Classes}{11}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Estrutura de Projetos}{12}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Bibliotecas (.dll)}{12}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}\textit {Business Layer}}{12}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}\textit {Front End}}{13}{subsubsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.3}Observações}{13}{subsection.10.3}%
-\contentsline {section}{\numberline {11}Conclusão}{16}{section.11}%
+\contentsline {section}{\numberline {1}Enunciado}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Motivação}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Objetivos}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Problema a Explorar}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Introdução}{5}{section.2}%
+\contentsline {section}{\numberline {3}Revisão de Leitura}{5}{section.3}%
+\contentsline {section}{\numberline {4}Convenções de Nomenclatura Utilizadas (\textit {Microsoft .NET Coding Conventions})}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Classes e Interfaces}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Métodos}{6}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Propriedades e Campos}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Variáveis Locais e Parâmetros}{6}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Padrões e Convenções de Estilo (\textit {Microsoft .NET Coding Conventions})}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Espaçamento e Identação}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Colocação de Chavetas}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Comentários e XML Documentation}{7}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Nomes de Ficheiros}{7}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Tratamento de Excecões}{7}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Utilização de \textit {LINQ}}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Principais Características do \textit {LINQ}}{9}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Integração com a Linguagem}{9}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Suporte a Diversas Fontes de Dados}{9}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Sintaxe Declarativa}{9}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}Strongly Typed}{9}{subsubsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.2}\textit {Benefícios do \textit {LINQ}}}{9}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Limitações}{9}{subsection.6.3}%
+\contentsline {section}{\numberline {7}O Padrão N-Tier}{10}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Vantagens da Arquitetura N-Tier}{10}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Utilização de \textbf {\textit {SOLID}}}{11}{section.8}%
+\contentsline {section}{\numberline {9}Respeitar a \textbf {\textit {.NET CLS}}}{11}{section.9}%
+\contentsline {section}{\numberline {10}Trabalho Desenvolvido}{12}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Diagrama de Classes}{12}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Estrutura de Projetos}{13}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Bibliotecas (.dll)}{13}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}\textit {Business Layer}}{13}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}\textit {Front End}}{14}{subsubsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.3}Observações}{14}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Estruturas de Dados}{17}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Vantagens de \textit {Dictionary(TKey, TValue)}}{17}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Conclusão}{18}{section.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

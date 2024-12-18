@@ -49,12 +49,20 @@ namespace Business_Layer
             
         }
 
+        /// <summary>
+        /// Method used to load a Store from a binary file.
+        /// </summary>
+        /// <param name="fileName">The name of the file</param>
+        /// <returns>True - Store loaded successfully</returns>
+        /// <returns>False - There's no file with that name.<returns>
+        /// <returns>IO exception - There was an error with the I/O<returns>
+        /// <returns>Exception - An error occurred.<returns>
         public static bool LoadStore(string fileName)
         {
             try
             {
-                Store.LoadStoreBin(fileName);
-                return true;
+                bool aux = Store.LoadStoreBin(fileName);
+                return aux;
 
             }
             catch (IOException e)

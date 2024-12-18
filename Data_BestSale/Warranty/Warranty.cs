@@ -157,7 +157,8 @@ namespace Data_BestSale
         /// <returns></returns>
         public DateTime ExpirationDate(Sale s, string reff)
         {
-            Product p = s.Products.SearchProduct(reff);
+            Products aux = Store.GetStoreProdList();
+            Product p = aux.SearchProduct(reff);
             return (s.SaleDate.AddYears(_durationInYears));
         }
 

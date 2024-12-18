@@ -133,6 +133,12 @@
 \renewcommand{\contentsname}{Conteúdos}
 \tableofcontents
 
+\renewcommand\lstlistingname{Amostra de Código}
+\renewcommand\lstlistlistingname{Amostras de Código}
+\lstlistoflistings
+
+\newpage
+
 \section{Enunciado}
 \subsection{Motivação}
 
@@ -254,7 +260,7 @@ Todo o código fonte e respetiva documentação podem ser encontrados no seguint
 
 \newpage
 
-\begin{lstlisting}[language={[Sharp]C}, caption={Exemplo de Utilização destes padrões}, label={Utilização Padrões Microsoft .NET Coding Conventions}]
+\begin{lstlisting}[language={[Sharp]C}, caption={Exemplo de Utilização de Padrões e Convenções de Estilo}, label={Utilização Padrões Microsoft .NET Coding Conventions}]
 	
  /// <summary>
 /// Create a Client and add it to the store's list of clients.
@@ -337,7 +343,7 @@ O \textit{LINQ} é amplamente usado em C\# devido à sua simplicidade e flexibil
 
 \newpage
 
-\begin{lstlisting}[language={[Sharp]C}, caption={A Classe Cliente}, label={Classe Cliente}]
+\begin{lstlisting}[language={[Sharp]C}, caption={Utilização de Função Lambda}, label={Utilização de Função Lambda}]
 	
 public decimal TotalPrice()
 {
@@ -661,6 +667,28 @@ Mais ainda, apesar de, para tornar o código mais modular e melhor organizado , 
 		#endregion
 	}
 \end{lstlisting}
+
+\section{Estruturas de Dados}
+As estruturas de dados são fundamentais na programação, responsáveis por organizar, armazenar e manipular informaçâo de forma eficiente. Estas permitem que os dados sejam acedidos e processados com rapidez, o que é essencial para a execução de algoritmos e resolução de problemas complexos.
+
+Neste sentido, ao longo do projeto, houve uma evolução nas estruturas de dados escolhidas para cada situação. Numa abordagem inicial, de experimentação, foram implementadas estruturas básicas, como \textit{arrays}. Posteriormente, optei por implementar listas \textit{List<T>}, o que tornou o programa mais eficiente. Ainda assim, o acesso aos dados nesta lista, apesar de eficiente no sentido do espaço de armazenamento utilizado, não era o mais rápido. 
+
+Assim sendo, nesta abordagem final, algumas dessas listas mais críticas foram substituidas por \textit{Dictionary(TKey, TValue)}. Estas estruturas permitem um acesso muito mais rápido aos dados visto que, dada a chave, o acesso ao valor é praticamente imediato.
+
+\subsection{Vantagens de \textit{Dictionary(TKey, TValue)}}
+\begin{itemize}
+	\item\textbf{Acesso rápido e eficiente}  a valores associados a \textbf{chaves únicas}.
+	\item \textbf{Flexibilidade na escolha das chaves}.
+	\item \textbf{Facilidade de atualização}. Alterar ou adicionar valores num Dictionary é muito simples. Se a chave já existir, o valor é reescrito; caso contrário, a entrada é adicionada.
+	\item \textbf{Verificação eficiente de existência}. Métodos como \textit{ContainsKey} e \textit{TryGetValue} permitem verificar de forma eficiente se uma chave existe no dicionário, evitando exceções ou operações desnecessárias.
+	\item \textbf{Iteração conveniente}.É possível iterar sobre todas as chaves, todos os valores ou os pares chave-valor do dicionário de forma conveniente.
+	\item \textbf{Ideal para mapeamentos e associações}. Excelente em casos onde é necessário relacionar identificadores \textit{keys} e informações detalhadas \textit{values}. 
+	
+	Um exemplo disso é \begin{math}
+		Referência \rightarrow Produto
+	\end{math} 
+\end{itemize}
+
 
 \section{Conclusão}
 O trabalho em questão foi desenvolvido com sucesso, respeitando a maioria dos requisitos estabelecidos. Apesar de, num modo geral, o programa se encontrar num estado embrionário, sem aplicação real imediata, é um bom exercício de aplicação de princípios e padrões que visam a melhoria da qualidade do código e da aplicação em geral, nomeadamente no que toca a manutenção e escalabilidade do projeto.

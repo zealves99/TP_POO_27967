@@ -200,7 +200,10 @@ namespace Data_BestSale
         /// Load a Stor from a binary file.
         /// </summary>
         /// <param name="fileName">Name of file where the data is stored.</param>
-        /// <returns></returns>
+        /// <returns>True - Store loaded successfully.</returns>
+        /// <returns>False - The file does not exist.<returns>
+        /// <returns>IO exception - There was an error with the I/O<returns>
+        /// <returns>Exception - An error occurred.<returns>
         public static bool LoadStoreBin(string fileName)
         {
             ///Verify if a file with that name exists and has content in it.
@@ -255,6 +258,15 @@ namespace Data_BestSale
         {
             Product prod = _prodList.SearchProduct(reference);
             return prod.Price;
+        }
+
+        /// <summary>
+        /// Method used to get the store's product list
+        /// </summary>
+        /// <returns>The product list.</returns>
+        public static Products GetStoreProdList()
+        {
+            return _prodList;
         }
 
         #endregion

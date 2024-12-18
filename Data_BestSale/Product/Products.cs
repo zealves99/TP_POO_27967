@@ -26,7 +26,7 @@ namespace Data_BestSale
     public class Products : IListManagement
     {
         #region Attributes
-        List<Product> _prods; //como faço uma propriedade para isto? Não consigo dar return do array, certo?
+        Dictionary<string, Product> _prods;
         #endregion
 
         #region Methods
@@ -38,14 +38,14 @@ namespace Data_BestSale
         /// </summary>
         public Products()
         {
-            _prods = new List<Product>();
+            _prods = new Dictionary<string, Product>();
         }
 
         /// <summary>
         /// The constructor to use when list of Product is given.
         /// </summary>
         /// <param name="products"></param>
-        public Products(List<Product> products)
+        public Products(Dictionary<string, Product> products)
         {
             _prods = products;
         }
@@ -58,7 +58,7 @@ namespace Data_BestSale
         /// <summary>
         /// Property used to get and set the list of products.
         /// </summary>
-        public List<Product> Prods
+        public Dictionary<string, Product> Prods
         {
             get { return _prods; }
             set { _prods = value; }
@@ -87,13 +87,14 @@ namespace Data_BestSale
         #region OtherMethods
 
         /// <summary>
-        /// This method returns the price of a product, given a certain array position.
+        /// This method returns the price of a product, given its reference.
         /// </summary>
         /// <param name="p">Position in array.</param>
-        /// <returns></returns>
-        public decimal ValueInPosition(int p)
+        /// <returns>The price of the product</returns>
+        public decimal PriceByReference(string reff)
         {
-            return this.Prods[p].Price;
+            _prods.TryGetValue(reff, out Product prod);
+            return prod.Price;
         }
 
         /// <summary>
@@ -104,12 +105,13 @@ namespace Data_BestSale
         public bool Add(object obj)
         {
             if (obj == null) return false;
+            ///The type of var is defined by the compiler in the compiling process.
             var aux=obj as Product;
             if (Exist(aux.Reference))
             {
                 if (obj is Product)
                 {
-                    _prods.Add((Product)obj);
+                    _prods.Add(aux.Reference, (Product)obj);
                     return true;
                 }
             }
@@ -126,10 +128,7 @@ namespace Data_BestSale
             if (obj == null) return false;
             if (obj is string)
             {
-                foreach (Product p in _prods)
-                {
-                    if (p.Reference == (string)obj) return true;
-                }
+                if (_prods.TryGetValue((string)obj, out Product p)) return true;
             }
             return false;
         }
@@ -145,23 +144,21 @@ namespace Data_BestSale
             Product p = (Product)obj;
             if (Exist(p.Reference))
             {
-                _prods.Remove(p);
+                _prods.Remove(p.Reference);
                 return true; ///Product removed successfully
             }
             return false; ///Product was not removed.
         }
 
         /// <summary>
-        /// This method searches for a product in an array, given its refference.
+        /// This method searches for a product in the list of products, given its refference.
         /// </summary>
         /// <param name="reff"></param>
         /// <returns>Returns the product if found</returns>
         public Product SearchProduct(string reff)
         {
-            foreach (Product p in _prods)
-            {
-                if(p.Reference==reff) return p;
-            }
+            ///Verifies if the refference is registered in the dictionary.
+            if(_prods.TryGetValue(reff, out Product p)) return p;
             return null;
         }
 
@@ -172,7 +169,7 @@ namespace Data_BestSale
         public decimal TotalPrice()
         {
             ///lambda funtion tells the Sum() function that, for each Product p in _prods, it should use the price value.
-            return _prods.Sum(p => p.Price);
+            return _prods.Values.Sum(p => p.Price);
 
         }
 

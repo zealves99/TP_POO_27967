@@ -53,6 +53,7 @@
     <Compile Include="Product\Product.cs" />
     <Compile Include="Product\Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sale\ProductsSale.cs" />
     <Compile Include="Sale\Sale.cs" />
     <Compile Include="Sale\Sales.cs" />
     <Compile Include="Store\Store.cs" />
