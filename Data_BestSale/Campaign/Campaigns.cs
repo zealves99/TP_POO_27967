@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/14/2024 3:57:04 PM</date>
-*	<description></description>
+*	<description>This file has the definition and methods to work with the plurality of Campaign.</description>
 **/
 using System;
 using System.Collections.Generic;

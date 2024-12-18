@@ -1,0 +1,115 @@
+\doxysection{Makes.\+cs}
+\hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source}{}\label{trabalho_p_o_o__27967_2_make_2_makes_8cs_source}\index{trabalhoPOO\_27967/Make/Makes.cs@{trabalhoPOO\_27967/Make/Makes.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}trabalhoPOO\_27967.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/14/2024\ 4:33:51\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description></description>}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }System.Xml.Linq;}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00012}00012\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967_1_1_interface}{trabalhoPOO\_27967.Interface}};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00014}00014\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacetrabalho_p_o_o__27967}{trabalhoPOO\_27967}}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00015}00015\ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00023}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{Makes}}\ :\ \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{IListManagement}}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ List<Make>\ \_makeList;}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00027}00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00036}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a3f752f4bb2dc296a0f812f0af56372d2}{00036}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a3f752f4bb2dc296a0f812f0af56372d2}{Makes}}()}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \_makeList\ =\ \textcolor{keyword}{new}\ List<Make>();}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00045}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a888e48d8d8ad063c73e005b432c41ac4}{00045}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a888e48d8d8ad063c73e005b432c41ac4}{Makes}}(List<Make>\ m)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \_makeList\ =\ m;}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00049}00049\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00051}00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00055}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_acc0f7b7c0492933448d7c132fce595fe}{00055}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<Make>\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_acc0f7b7c0492933448d7c132fce595fe}{MakeList}}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_makeList;\ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_makeList\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00060}00060\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00064}00064\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00065}00065\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00067}00067\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00073}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a96174f7b4cbb878d9b7b5ef6d6d0104e}{00073}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a96174f7b4cbb878d9b7b5ef6d6d0104e}{Add}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}})\ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_makeList.Add((\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}})obj);}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00088}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_af54f015d0a80277ec3e24d14212a8d5c}{00088}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_af54f015d0a80277ec3e24d14212a8d5c}{Remove}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ var\ aux\ =\ obj\ as\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a57e8e4b157d4b5178d1da4bf4e8793c4}{Exist}}(aux.ID))}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_makeList.Remove((\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}})obj);}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00105}\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a57e8e4b157d4b5178d1da4bf4e8793c4}{00105}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes_a57e8e4b157d4b5178d1da4bf4e8793c4}{Exist}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \textcolor{keywordtype}{int})}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}}\ make\ \textcolor{keywordflow}{in}\ \_makeList)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (make.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make_a9ce429555f1a6a81614cd19e7c6a8ec2}{ID}}\ ==\ (\textcolor{keywordtype}{int})obj)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(obj\ is\ \textcolor{keywordtype}{string})}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make}{Make}}\ make\ \textcolor{keywordflow}{in}\ \_makeList)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (make.\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_make_ad7d156e2c12f954ef255ca904ef1f168}{Name}}\ ==\ (\textcolor{keywordtype}{string})obj)}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00131}00131\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00133}00133\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_makes}{\string~Makes}}()}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00140}00140\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00142}00142\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00143}00143\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{trabalho_p_o_o__27967_2_make_2_makes_8cs_source_l00144}00144\ \}}
+
+\end{DoxyCode}

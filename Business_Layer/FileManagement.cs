@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>zecun</author>
 *   <date>12/11/2024 12:04:37 PM</date>
-*	<description></description>
+*	<description>This File contains the calls to the methods to save data to a file.</description>
 **/
 using Data_BestSale;
 using System;
@@ -13,7 +13,7 @@ using System.IO;
 namespace Business_Layer
 {
     /// <summary>
-    /// Purpose:
+    /// Purpose:This File contains the calls to the methods to save data to a file.
     /// Created by: zecun
     /// Created on: 12/11/2024 12:04:37 PM
     /// </summary>

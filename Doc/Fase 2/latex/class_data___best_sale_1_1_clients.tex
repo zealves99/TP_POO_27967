@@ -1,0 +1,206 @@
+\doxysection{Data\+\_\+\+Best\+Sale.\+Clients Class Reference}
+\hypertarget{class_data___best_sale_1_1_clients}{}\label{class_data___best_sale_1_1_clients}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+
+
+Purpose\+: Class with the definition and methods to manage a list of clients. Created by\+: Jose Alves a27967 Created on\+: 11/12/2024 9\+:25\+:28 PM.  
+
+
+
+
+Inheritance diagram for Data\+\_\+\+Best\+Sale.\+Clients\+:
+% FIG 0
+
+
+Collaboration diagram for Data\+\_\+\+Best\+Sale.\+Clients\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_clients_aea05fc2109584d8c0b8ba93a4879582d}{Clients}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_clients_ab8bf62c601ba0fd694919890bcafbbd5}{Add}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method to add a client to a clients\textquotesingle{} list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_clients_ad889f71e23bbe679bdda697c137198f2}{Remove}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method to remove a client from the store\textquotesingle{}s client list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_clients_a5ffd784d33a82d2b34650d5386b0a8d9}{Exist}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method to check if a client is listed on a clients\textquotesingle{} list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} \mbox{\hyperlink{class_data___best_sale_1_1_clients_a1834f8e37a1302fd32b3f3b0436afd99}{Get\+Client}} (int id)
+\begin{DoxyCompactList}\small\item\em Method used to get a client from a clients\textquotesingle{} list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_clients_a05e244352538a1f1b69fbe3b48d88a33}{Clear\+Clients}} ()
+\begin{DoxyCompactList}\small\item\em Method used to Clear a list of \doxylink{class_data___best_sale_1_1_clients}{Clients}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} $>$ \mbox{\hyperlink{class_data___best_sale_1_1_clients_a6bbc54c8ce1a3a77e3a0ef4d47e78577}{Client\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property used to get and set the client list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Class with the definition and methods to manage a list of clients. Created by\+: Jose Alves a27967 Created on\+: 11/12/2024 9\+:25\+:28 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00022}{22}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___best_sale_1_1_clients_aea05fc2109584d8c0b8ba93a4879582d}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!Clients@{Clients}}
+\index{Clients@{Clients}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{Clients()}{Clients()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_aea05fc2109584d8c0b8ba93a4879582d} 
+Data\+\_\+\+Best\+Sale.\+Clients.\+Clients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00035}{35}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___best_sale_1_1_clients_ab8bf62c601ba0fd694919890bcafbbd5}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!Add@{Add}}
+\index{Add@{Add}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_ab8bf62c601ba0fd694919890bcafbbd5} 
+bool Data\+\_\+\+Best\+Sale.\+Clients.\+Add (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method to add a client to a clients\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cli} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ \doxylink{class_data___best_sale_1_1_client}{Client} has been successfully added to the list.
+
+False -\/ The list already contains the client or an error occurred.\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00067}{67}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_clients_a05e244352538a1f1b69fbe3b48d88a33}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!ClearClients@{ClearClients}}
+\index{ClearClients@{ClearClients}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{ClearClients()}{ClearClients()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_a05e244352538a1f1b69fbe3b48d88a33} 
+bool Data\+\_\+\+Best\+Sale.\+Clients.\+Clear\+Clients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method used to Clear a list of \doxylink{class_data___best_sale_1_1_clients}{Clients}. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00139}{139}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_clients_a5ffd784d33a82d2b34650d5386b0a8d9}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!Exist@{Exist}}
+\index{Exist@{Exist}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_a5ffd784d33a82d2b34650d5386b0a8d9} 
+bool Data\+\_\+\+Best\+Sale.\+Clients.\+Exist (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method to check if a client is listed on a clients\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00104}{104}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_clients_a1834f8e37a1302fd32b3f3b0436afd99}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_a1834f8e37a1302fd32b3f3b0436afd99} 
+\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} Data\+\_\+\+Best\+Sale.\+Clients.\+Get\+Client (\begin{DoxyParamCaption}\item[{int}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Method used to get a client from a clients\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00124}{124}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_clients_ad889f71e23bbe679bdda697c137198f2}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!Remove@{Remove}}
+\index{Remove@{Remove}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_ad889f71e23bbe679bdda697c137198f2} 
+bool Data\+\_\+\+Best\+Sale.\+Clients.\+Remove (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method to remove a client from the store\textquotesingle{}s client list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cli} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00087}{87}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___best_sale_1_1_clients_a6bbc54c8ce1a3a77e3a0ef4d47e78577}\index{Data\_BestSale.Clients@{Data\_BestSale.Clients}!ClientList@{ClientList}}
+\index{ClientList@{ClientList}!Data\_BestSale.Clients@{Data\_BestSale.Clients}}
+\doxysubsubsection{\texorpdfstring{ClientList}{ClientList}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_clients_a6bbc54c8ce1a3a77e3a0ef4d47e78577} 
+List$<$\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}$>$ Data\+\_\+\+Best\+Sale.\+Clients.\+Client\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property used to get and set the client list. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source_l00048}{48}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_clients_8cs_source}{Clients.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data\+\_\+\+Best\+Sale/\+Client/Clients.\+cs\end{DoxyCompactItemize}

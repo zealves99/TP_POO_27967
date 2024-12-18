@@ -1,0 +1,85 @@
+\doxysection{Product\+Management.\+cs}
+\hypertarget{_product_management_8cs_source}{}\label{_product_management_8cs_source}\index{Business\_Layer/ProductManagement.cs@{Business\_Layer/ProductManagement.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}Business\_Layer.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>zecun</author>}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>12/14/2024\ 4:28:51\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>This\ file\ has\ all\ the\ necessary\ calls\ to\ the\ back\ end\ to\ manage\ products,\ categories,\ makes\ and\ warranties.</description>}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}};}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00012}00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_business___layer}{Business\_Layer}}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00021}00021\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }ProductManagement}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00027}00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00028}00028\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00030}00030\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Products}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ CreateNewProductInStore(\textcolor{keywordtype}{string}\ reff,\ decimal\ price,\ \textcolor{keywordtype}{int}\ makeID,\ \textcolor{keywordtype}{int}\ categoryID,\ \textcolor{keywordtype}{int}\ warrantyDuration,\ \textcolor{keywordtype}{string}\ warrantyConditions)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}\ prod\ =\ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}.\mbox{\hyperlink{class_data___best_sale_1_1_product_a8ce943f8b7d857c8233c97cb82f8b35b}{CreateProductWithWarranty}}(reff,\ price,\ makeID,\ categoryID,\ warrantyDuration,\ warrantyConditions);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_a99daade6cb5fe62dbc895c4fb8c7e05c}{InsertProductInStore}}(prod);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}(Exception\ excep)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ excep;}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ decimal\ GetProductPriceFromReference(\textcolor{keywordtype}{string}\ reference)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_abd556041d1813d6cb589c4a372c0abf2}{GetProductPriceInStoreFromReference}}(reference);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00066}00066\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00068}00068\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Make}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ CreateMakeInStore(\textcolor{keywordtype}{string}\ name)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_make}{Make}}.\mbox{\hyperlink{class_data___best_sale_1_1_make_a07c7bd2b13b65aea7c94cdefb4504d55}{CreateMake}}(name,\ out\ \mbox{\hyperlink{class_data___best_sale_1_1_make}{Make}}\ newMake);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_aa7dba3fecd7fd199ecd9ba6c0359f65a}{InsertMakeInStore}}(newMake);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ GetMakeIdFromName(\textcolor{keywordtype}{string}\ name)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_aa82bb1f91d1e22643f8e0766aa69493a}{GetMakeIdFromNameInStore}}(name);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00090}00090\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00092}00092\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Category}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ CreateCategoryInStore(\textcolor{keywordtype}{string}\ name)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}.\mbox{\hyperlink{class_data___best_sale_1_1_category_a99c8581f0ecdd5adaed7125652862b2d}{CreateCategory}}(name,\ out\ \mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ newCategory);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_ae99b7c45a4c506c42af258e0138e3a18}{InsertCategoryInStore}}(newCategory);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ GetCategoryIdFromName(\textcolor{keywordtype}{string}\ name)}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_aa8ab32816fb78a5ad2fd46718d383494}{GetCategoryIdFromNameInStore}}(name);}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00114}00114\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00117}00117\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00121}00121\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00122}00122\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_product_management_8cs_source_l00123}00123\ \}}
+
+\end{DoxyCode}

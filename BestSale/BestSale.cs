@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+*	<copyright file="BestSale.cs" company="IPCA">
+*		Copyright (c) 2024 All Rights Reserved
+*	</copyright>
+* 	<author>Jose Alves a27967</author>
+*   <date>12/17/2024 6:23:56 PM</date>
+*	<description>This file contains the frond end of the app..</description>
+**/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

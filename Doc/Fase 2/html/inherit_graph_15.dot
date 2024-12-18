@@ -1,0 +1,23 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="trabalhoPOO_27967.Interface.\lIListManagement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management.html",tooltip=" "];
+  Node0 -> Node1 [id="edge9_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="trabalhoPOO_27967.Campaigns",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_campaigns.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Campaign...."];
+  Node0 -> Node2 [id="edge10_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="trabalhoPOO_27967.Categories",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_categories.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Category...."];
+  Node0 -> Node3 [id="edge11_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="trabalhoPOO_27967.Clients",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_clients.html",tooltip="Purpose: Class with the definition and methods to manage a list of clients. Created by: Jose Alves a2..."];
+  Node0 -> Node4 [id="edge12_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="trabalhoPOO_27967.Makes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_makes.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Make...."];
+  Node0 -> Node5 [id="edge13_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="trabalhoPOO_27967.Products",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_products.html",tooltip="Purpose: Class to manage a group of more than one product. Created by: Jose Alves a27967 Created on: ..."];
+  Node0 -> Node6 [id="edge14_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="trabalhoPOO_27967.Sales",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_sales.html",tooltip="Purpose: Class with the agregation of sales of a store. Created by: Jose Alves a27967 Created on: 11/..."];
+  Node0 -> Node7 [id="edge15_Node000000_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="trabalhoPOO_27967.Warranties",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_warranties.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Warranty...."];
+}

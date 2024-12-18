@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/10/2024 7:42:03 PM</date>
-*	<description></description>
+*	<description>File with the agregation of sales of a store.</description>
 **/
 using System;
 using System.Collections.Generic;

@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>zecun</author>
 *   <date>12/14/2024 4:28:51 PM</date>
-*	<description></description>
+*	<description>This file has all the necessary calls to the back end to manage products, categories, makes and warranties.</description>
 **/
 using Data_BestSale;
 using System;
@@ -12,7 +12,7 @@ using System;
 namespace Business_Layer
 {
     /// <summary>
-    /// Purpose:
+    /// Purpose: This namespace has all the necessary calls to the back end to manage products, categories, makes and warranties.
     /// Created by: zecun
     /// Created on: 12/14/2024 4:28:51 PM
     /// </summary>

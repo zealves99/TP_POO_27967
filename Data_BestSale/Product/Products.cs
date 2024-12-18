@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/9/2024 6:34:19 PM</date>
-*	<description></description>
+*	<description>Class to manage a group of more than one product.</description>
 **/
 using System;
 using System.Collections;

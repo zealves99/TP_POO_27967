@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 namespace Exceptions
 {
     /// <summary>
-    /// This exception to be throws when a string doesn't match the phone number pattern.
+    /// The exception to be throws when a string doesn't match the phone number pattern.
     /// </summary>
     public class InvalidPhoneNumberException : ApplicationException
     {

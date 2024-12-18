@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/6/2024 11:21:53 AM</date>
-*	<description></description>
+*	<description>Definition of Sale and methods to deal with Sale operations.</description>
 **/
 using System;
 using System.CodeDom;

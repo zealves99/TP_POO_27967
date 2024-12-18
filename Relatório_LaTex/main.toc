@@ -6,36 +6,34 @@
 \contentsline {section}{\numberline {2}Introdução}{4}{section.2}%
 \contentsline {section}{\numberline {3}Revisão de Leitura}{4}{section.3}%
 \contentsline {section}{\numberline {4}Convenções de Nomenclatura Utilizadas (\textit {Microsoft .NET Coding Conventions})}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Classes e Interfaces:}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Métodos:}{5}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Propriedades e Campos:}{5}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Variáveis Locais e Parâmetros:}{5}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.1}Classes e Interfaces}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Métodos}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Propriedades e Campos}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Variáveis Locais e Parâmetros}{5}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Padrões e Convenções de Estilo (\textit {Microsoft .NET Coding Conventions})}{6}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Espaçamento e Identação:}{6}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Colocação de Chavetas:}{6}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Comentários e XML Documentation:}{6}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Nomes de Ficheiros:}{6}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Tratamento de Excecões:}{6}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.1}Espaçamento e Identação}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Colocação de Chavetas}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Comentários e XML Documentation}{6}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Nomes de Ficheiros}{6}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Tratamento de Excecões}{6}{subsection.5.5}%
 \contentsline {section}{\numberline {6}Utilização de \textit {LINQ}}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Principais Características do \textit {LINQ} :}{8}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Integração com a Linguagem:}{8}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}Suporte a Diversas Fontes de Dados:}{8}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.3}Sintaxe Declarativa:}{8}{subsubsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1}Principais Características do \textit {LINQ}}{8}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Integração com a Linguagem}{8}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Suporte a Diversas Fontes de Dados}{8}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}Sintaxe Declarativa}{8}{subsubsection.6.1.3}%
 \contentsline {subsubsection}{\numberline {6.1.4}Strongly Typed}{8}{subsubsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.2}\textit {Benefícios do \textit {LINQ}} :}{8}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Limitações:}{8}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Trabalho Desenvolvido:}{10}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Diagrama de Classes}{10}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Estrutura de Projetos:}{11}{subsection.7.2}%
-\contentsline {subsubsection}{\numberline {7.2.1}Bibliotecas (.dll)}{11}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}\textit {Business Layer}}{11}{subsubsection.7.2.2}%
-\contentsline {subsubsection}{\numberline {7.2.3}\textit {Front End:}}{12}{subsubsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.3}Observações:}{12}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Bullet Point List}{15}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Numbered List}{15}{subsection.7.5}%
-\contentsline {section}{\numberline {8}Interpreting a Table}{15}{section.8}%
-\contentsline {subsection}{\numberline {8.1}The table above shows the nutritional consistencies of two sausage types. Explain their relative differences given what you know about daily adult nutritional recommendations.}{15}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Reading a Code Listing}{16}{section.9}%
-\contentsline {subsection}{\numberline {9.1}How many luftballons will be output by the Listing \ref {lst:luftballons} above?}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Identify the regular expression in Listing \ref {lst:luftballons} and explain how it relates to the anti-war sentiments found in the rest of the script.}{16}{subsection.9.2}%
+\contentsline {subsection}{\numberline {6.2}\textit {Benefícios do \textit {LINQ}}}{8}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Limitações}{8}{subsection.6.3}%
+\contentsline {section}{\numberline {7}O Padrão N-Tier}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Vantagens da Arquitetura N-Tier}{9}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Utilização de \textbf {\textit {SOLID}}}{10}{section.8}%
+\contentsline {section}{\numberline {9}Respeitar a \textbf {\textit {.NET CLS}}}{10}{section.9}%
+\contentsline {section}{\numberline {10}Trabalho Desenvolvido}{11}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Diagrama de Classes}{11}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Estrutura de Projetos}{12}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Bibliotecas (.dll)}{12}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}\textit {Business Layer}}{12}{subsubsection.10.2.2}%
+\contentsline {subsubsection}{\numberline {10.2.3}\textit {Front End}}{13}{subsubsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.3}Observações}{13}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Conclusão}{16}{section.11}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

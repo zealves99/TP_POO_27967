@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/2/2024 4:40:12 PM</date>
-*	<description></description>
+*	<description> Definition of product and methods to deal with product operations.</description>
 **/
 using System;
 using System.Collections;

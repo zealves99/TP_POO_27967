@@ -1,0 +1,9 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node0 [id="Node000000",label="trabalhoPOO_27967.Make",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_make.html",tooltip="Purpose: Definition of Make and methods to deal with Make operations. Created by: Jose Alves a27967 C..."];
+}

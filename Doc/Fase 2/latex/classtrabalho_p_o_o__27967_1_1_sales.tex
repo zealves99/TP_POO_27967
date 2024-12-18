@@ -1,0 +1,206 @@
+\doxysection{trabalho\+POO\+\_\+27967.\+Sales Class Reference}
+\hypertarget{classtrabalho_p_o_o__27967_1_1_sales}{}\label{classtrabalho_p_o_o__27967_1_1_sales}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+
+
+Purpose\+: Class with the agregation of sales of a store. Created by\+: Jose Alves a27967 Created on\+: 11/10/2024 7\+:42\+:03 PM.  
+
+
+
+
+Inheritance diagram for trabalho\+POO\+\_\+27967.\+Sales\+:
+% FIG 0
+
+
+Collaboration diagram for trabalho\+POO\+\_\+27967.\+Sales\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_a4d69d5be085f7c544c1954cc5e0484ec}{Sales}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_a1542e8167350e438a94051e79705a770}{Sales}} (List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}} $>$ sales)
+\begin{DoxyCompactList}\small\item\em The constructor to use when the sales\textquotesingle{} List is given. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}} \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_a07c8656840c891411c07d7f27537b966}{Get\+Sale}} (int id\+Sale)
+\begin{DoxyCompactList}\small\item\em Method to find a sale in a list of sales, given its ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_a472d8cb3f41ed335eb2d47e76b2924d5}{Add}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to add a sale to a sales\textquotesingle{} list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_afb4a44c00fee7e8b0412b87f4dda4e22}{Remove}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to remove a sale from a list of sales. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_aa73c7a13ac6e3ffe286d1b4017817551}{Exist}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to check if a sale exists in a list of sales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}} $>$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sales_a5b2b0af9081d6b50d6a1027a7226376c}{Sales\+Stored}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property used to get and set a list of sales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Class with the agregation of sales of a store. Created by\+: Jose Alves a27967 Created on\+: 11/10/2024 7\+:42\+:03 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00022}{22}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_a4d69d5be085f7c544c1954cc5e0484ec}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!Sales@{Sales}}
+\index{Sales@{Sales}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{Sales()}{Sales()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_a4d69d5be085f7c544c1954cc5e0484ec} 
+trabalho\+POO\+\_\+27967.\+Sales.\+Sales (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00035}{35}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_a1542e8167350e438a94051e79705a770}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!Sales@{Sales}}
+\index{Sales@{Sales}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{Sales()}{Sales()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_a1542e8167350e438a94051e79705a770} 
+trabalho\+POO\+\_\+27967.\+Sales.\+Sales (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}} $>$}]{sales}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to use when the sales\textquotesingle{} List is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sales} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00044}{44}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_a472d8cb3f41ed335eb2d47e76b2924d5}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!Add@{Add}}
+\index{Add@{Add}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_a472d8cb3f41ed335eb2d47e76b2924d5} 
+bool trabalho\+POO\+\_\+27967.\+Sales.\+Add (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to add a sale to a sales\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00089}{89}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_aa73c7a13ac6e3ffe286d1b4017817551}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!Exist@{Exist}}
+\index{Exist@{Exist}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_aa73c7a13ac6e3ffe286d1b4017817551} 
+bool trabalho\+POO\+\_\+27967.\+Sales.\+Exist (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to check if a sale exists in a list of sales. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00125}{125}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_a07c8656840c891411c07d7f27537b966}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!GetSale@{GetSale}}
+\index{GetSale@{GetSale}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{GetSale()}{GetSale()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_a07c8656840c891411c07d7f27537b966} 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}} trabalho\+POO\+\_\+27967.\+Sales.\+Get\+Sale (\begin{DoxyParamCaption}\item[{int}]{id\+Sale}{}\end{DoxyParamCaption})}
+
+
+
+Method to find a sale in a list of sales, given its ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Sale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00075}{75}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_afb4a44c00fee7e8b0412b87f4dda4e22}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!Remove@{Remove}}
+\index{Remove@{Remove}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_afb4a44c00fee7e8b0412b87f4dda4e22} 
+bool trabalho\+POO\+\_\+27967.\+Sales.\+Remove (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to remove a sale from a list of sales. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00105}{105}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_sales_a5b2b0af9081d6b50d6a1027a7226376c}\index{trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}!SalesStored@{SalesStored}}
+\index{SalesStored@{SalesStored}!trabalhoPOO\_27967.Sales@{trabalhoPOO\_27967.Sales}}
+\doxysubsubsection{\texorpdfstring{SalesStored}{SalesStored}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_sales_a5b2b0af9081d6b50d6a1027a7226376c} 
+List$<$\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_sale}{Sale}}$>$ trabalho\+POO\+\_\+27967.\+Sales.\+Sales\+Stored\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property used to get and set a list of sales. 
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source_l00056}{56}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_sale_2_sales_8cs_source}{Sales.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+trabalho\+POO\+\_\+27967/\+Sale/Sales.\+cs\end{DoxyCompactItemize}

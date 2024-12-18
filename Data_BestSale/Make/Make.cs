@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/6/2024 11:22:09 AM</date>
-*	<description></description>
+*	<description>Definition of Make and methods to deal with Make operations.</description>
 **/
 using System;
 using System.Diagnostics.Contracts;

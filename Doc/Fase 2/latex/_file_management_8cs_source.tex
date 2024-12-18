@@ -1,0 +1,71 @@
+\doxysection{File\+Management.\+cs}
+\hypertarget{_file_management_8cs_source}{}\label{_file_management_8cs_source}\index{Business\_Layer/FileManagement.cs@{Business\_Layer/FileManagement.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}Business\_Layer.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>zecun</author>}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>12/11/2024\ 12:04:37\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>This\ File\ contains\ the\ calls\ to\ the\ methods\ to\ save\ data\ to\ a\ file.</description>}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}};}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }System.IO;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_business___layer}{Business\_Layer}}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00022}00022\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }FileManagement}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00023}00023\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ SaveStore(\mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}\ store,\ \textcolor{keywordtype}{string}\ fileName)\ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ a=\ store.\mbox{\hyperlink{class_data___best_sale_1_1_store_a33d2b173d77319d5c1937e0395c5bbb1}{SaveStoreBin}}(fileName);}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ a;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (IOException\ e)}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ excep)}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ excep;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ LoadStore(\textcolor{keywordtype}{string}\ fileName)}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_a27d96ac6f89f43b5440524d937d45167}{LoadStoreBin}}(fileName);}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (IOException\ e)}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ excep)}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ excep;}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ ClearStoreMemory()}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_a9b8139d9153606f21a641c25c866a051}{ClearStore}}();}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00077}00077\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_file_management_8cs_source_l00079}00079\ \}}
+
+\end{DoxyCode}

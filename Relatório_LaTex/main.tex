@@ -168,10 +168,10 @@ Todo o código fonte e respetiva documentação podem ser encontrados no seguint
 
 \section{Revisão de Leitura}
 \begin{itemize}
-	\item Programação Orientada a Objetos – Material das aulas;  
-	\item Documentação – \textit{Doxygen Quick Reference}; 
+	\item Programação Orientada a Objetos – \href{https://github.com/luferIPCA/LESI-POO-2023-2024.git}{Material das aulas};  
+	\item Documentação – \href{https://www.mitk.org/images/1/1c/BugSquashingSeminars%242013-07-17-DoxyReference.pdf}{\textit{Doxygen Quick Reference}}; 
 	\item Qualidade do Código – \textit{Clean Code – A Handbook of Agile Software Craftsmanship}; de Robert C. Martin.
-	\item \textit{.NET Coding Conventions} – Microsoft.
+	\item \href{https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions}{\textit{.NET Coding Conventions}} – Microsoft.
 \end{itemize}
 
 
@@ -180,18 +180,18 @@ Todo o código fonte e respetiva documentação podem ser encontrados no seguint
 
 \section{Convenções de Nomenclatura Utilizadas (\textit{Microsoft .NET Coding Conventions})}
 
-\subsection{Classes e Interfaces:}
+\subsection{Classes e Interfaces}
 \begin{itemize}
 	\item Classes e tipos públicos devem ter nomes em \textbf{\textit{PascalCase}}.
 	\item Interfaces devem começar com a letra "I", seguida de um nome em \textbf{\textit{PascalCase}} (ex: \textit{IListManagement}, \textit{IClient}).
 \end{itemize}
 
-\subsection{Métodos:}
+\subsection{Métodos}
 \begin{itemize}
 	\item Deve utilizar-se \textbf{\textit{PascalCase}} para métodos públicos e internos (ex: \textit{AddClient}, \textit{RemoveProductFromSale}).
 \end{itemize}
 
-\subsection{Propriedades e Campos:}
+\subsection{Propriedades e Campos}
 \begin{itemize}
 	\item Propriedades públicas e internas em \textbf{\textit{PascalCase}} (ex: \textit{MakeList}, \textit{ClientList}).
 	\item Atributos privados e variáveis de instância usam \textbf{\textit{camelCase}} e um prefixo ‘\_’ (ex: \textit{\_id}, \textit{\_durantionInYears} ).
@@ -212,7 +212,7 @@ Todo o código fonte e respetiva documentação podem ser encontrados no seguint
 	
 \end{lstlisting}
 
-\subsection{Variáveis Locais e Parâmetros:}
+\subsection{Variáveis Locais e Parâmetros}
 \begin{itemize}
 	\item Deve utilizar-se \textbf{\textit{camelCase}} para variáveis locais e parâmetros (ex: \textit{campList}).
 	\item Devem escolher-se nomes descritivos para melhorar a clareza, evitando abreviações excessivas.
@@ -224,29 +224,29 @@ Todo o código fonte e respetiva documentação podem ser encontrados no seguint
 
 \section{Padrões e Convenções de Estilo (\textit{Microsoft .NET Coding Conventions})}
 
-\subsection{Espaçamento e Identação:}
+\subsection{Espaçamento e Identação}
 \begin{itemize}
 	\item Identação com 4 espaços (não usar tabulações), para manter o padrão da maioria dos editores de C\#.
 \end{itemize}
 
-\subsection{Colocação de Chavetas:}
+\subsection{Colocação de Chavetas}
 \begin{itemize}
 	\item Devem usar-se chavetas de abertura ‘\{‘ na linha seguinte à declaração (\textit{if}, \textit{for}, \textit{while}), assim como as chavetas de fecho.
 \end{itemize}
 
-\subsection{Comentários e XML Documentation:}
+\subsection{Comentários e XML Documentation}
 \begin{itemize}
 	\item Devem comentar-se métodos e classes utilizando \textbf{comentários XML (\textit{///})}. Descreva parâmetros e valor de retorno, incluindo exceções lançadas.
 	\item Devem utilizar-se tags XML como \textit{<summary>}, \textit{<param>}, \textit{<returns>}, \textit{<exception>}, para fornecer documentação completa.
 	
 \end{itemize}
 
-\subsection{Nomes de Ficheiros:}
+\subsection{Nomes de Ficheiros}
 \begin{itemize}
 	\item Ficheiros de código devem ser nomeados de acordo com a classe pública principal que ele contém. Por exemplo, a classe \textit{Client} deve estar no ficheiro \textit{Client.cs}.
 \end{itemize}
 
-\subsection{Tratamento de Excecões:}
+\subsection{Tratamento de Excecões}
 \begin{itemize}
 	\item Devem utilizar-se exceções claras e específicas.
 	\item Deve evitar-se capturar exceções genéricas sem tratamento adequado.
@@ -292,13 +292,13 @@ public static bool CreateClientInStore(string name, string contact)
 \section{Utilização de \textit{LINQ}}
 \textit{LINQ} (\textit{Language Integrated Query}) é um recurso da linguagem C\# que permite a consulta e manipulação de coleções de dados de forma consistente e expressiva. Este recurso unifica a forma de consultar diferentes estruturas de dados, sejam \textit{arrays}, \textit{listas}, bases de dados, entre outros, utilizando sintaxe similar à de consultas SQL.
 
-\subsection{Principais Características do \textit{LINQ} :}
+\subsection{Principais Características do \textit{LINQ}}
 
-\subsubsection{Integração com a Linguagem:}
+\subsubsection{Integração com a Linguagem}
 
 LINQ é integrado diretamente na linguagem C\#, permitindo a execução de consultas diretamente no código, sem necessidade de \textit{strings} SQL separadas ou outras linguagens externas.
 
-\subsubsection{Suporte a Diversas Fontes de Dados:}
+\subsubsection{Suporte a Diversas Fontes de Dados}
 \begin{itemize}
 	\item O LINQ pode ser utilizado para trabalhar com:
 		\begin{itemize}
@@ -308,7 +308,7 @@ LINQ é integrado diretamente na linguagem C\#, permitindo a execução de consu
 		\end{itemize}
 \end{itemize}
 
-\subsubsection{Sintaxe Declarativa:}
+\subsubsection{Sintaxe Declarativa}
 \begin{itemize}
 	\item Permite descrever \textbf{o que} se quer fazer (o resultado desejado) em vez de \textbf{como} fazer (detalhes de implementação).
 	\item Exemplos de operadores: \textit{where}, \textit{select}, \textit{order by}, \textit{group by}.
@@ -319,7 +319,7 @@ LINQ é integrado diretamente na linguagem C\#, permitindo a execução de consu
 	\item O compilador verifica a consulta \textit{LINQ} no momento da compilação, ajudando a evitar erros, identificando-os antes da execução do programa.
 \end{itemize}
 
-\subsection{\textit{Benefícios do \textit{LINQ}} :}
+\subsection{\textit{Benefícios do \textit{LINQ}}}
 \begin{itemize}
 	\item \textbf{Consistência}: Uma única abordagem para consultar diferentes estruturas de dados.
 	\item \textbf{Legibilidade}: A sintaxe declarativa facilita a compreensão do código.
@@ -327,7 +327,7 @@ LINQ é integrado diretamente na linguagem C\#, permitindo a execução de consu
 	\item \textbf{Redução de Código}: Evita códigos complexos e repetitivos.	
 \end{itemize}
 
-\subsection{Limitações:}
+\subsection{Limitações}
 \begin{itemize}
 	\item Pode ser menos eficiente em alguns casos específicos, dependendo do contexto e da estrutura de dados.
 	\item Em bases de dados, a tradução para SQL pode gerar consultas menos otimizadas se não for bem configurada.	
@@ -348,9 +348,41 @@ public decimal TotalPrice()
 
 A utilização desta \textit{lambda function} (utilizando o operador '=>'), indica à função \textit{Sum()} que, para cada Produto \textit{p} em \textit{\_prods}, deve utilizar o valor da propriedade \textit{Price}.
 
+\section{O Padrão N-Tier}
+O padrão \textbf{N-Tier} (ou arquitetura por camadas) é uma abordagem arquitetural para a construção de sistemas de software que organiza a aplicação em várias camadas lógicas, cada uma com responsabilidades distintas. Este padrão promove a separação de preocupações, facilitando a manutenção, escalabilidade e reutilização do código.
+
+O "N" no nome refere-se ao número de camadas, que pode variar conforme a complexidade do sistema. Contudo, os sistemas mais comuns baseiam-se em 3 camadas principais.
+No caso deste programa, \textbf{temos as seguintes camadas}:
+\begin{itemize}
+	\item \textbf{Camada de Apresentação} \textit{Front End} - BestSale
+	\item \textbf{Camada de Regras de Negócio} \textit{Business Layer} - Business\_Layer
+	\item \textbf{Camada de Dados} \textit{Back End} - Data\_BestSale
+\end{itemize}
+
+
+Temos ainda algumas \textbf{camadas secundárias}, que atravessam as restantes. São elas:
+\begin{itemize}
+	\item \textbf{Camada de Exceções} \textit{Exceptions Layer} - Exceptions
+	\item \textbf{Camada de Objetos de Negócio} \textit{Business Objects} - Business\_Object
+	\item \textbf{Camada de Validações} \textit{Validations} - BestSale\_Validations. Esta não é visível no \textit{Front End}, mas apenas nas duas restantes camadas.
+\end{itemize}
+
+\subsection{Vantagens da Arquitetura N-Tier}
+A arquitetura N-Tier apresenta diversas vantagens que a tornam uma escolha popular no desenvolvimento de sistemas. Em primeiro lugar, promove a \textbf{separação de responsabilidades}, pois cada camada assume uma função bem definida, reduzindo o acoplamento entre diferentes partes do sistema. Além disso, oferece \textbf{escalabilidade}, uma vez que permite escalar camadas individuais conforme necessário, como adicionar servidores específicos apenas para a camada de dados. Outra vantagem significativa é a \textbf{facilidade de manutenção}, pois alterações realizadas numa camada, como a substituição da base de dados, não afetam diretamente as demais camadas. Por fim, a arquitetura N-Tier \textbf{facilita os testes}, já que cada camada pode ser testada de forma isolada, permitindo identificar e corrigir problemas com maior eficiência.
+
+\newpage
+\section{Utilização de \textbf{\textit{SOLID}}}
+\textbf{\textit{SOLID}} é um conjunto de cinco \textbf{princípios de design} de software orientado a objetos que ajudam a criar sistemas mais robustos, flexíveis e fáceis de manter. O primeiro princípio, \textbf{\textit{Single Responsibility Principle}}, estabelece que uma classe deve ter apenas uma responsabilidade, ou seja, deve haver apenas uma razão para ela sofrer alterações. O segundo, \textbf{\textit{Open/Closed Principle}}, afirma que o software deve ser aberto para extensão, mas fechado para modificação, permitindo adicionar funcionalidades sem alterar o código existente. O terceiro, \textbf{\textit{Liskov Substitution Principle}} , sugere que os subtipos devem ser substituíveis pelos seus tipos base sem alterar o comportamento do sistema. O quarto princípio, \textbf{\textit{Interface Segregation Principle}} , diz que uma classe não deve ser obrigada a implementar interfaces que não utiliza, promovendo interfaces mais específicas e menores. Por fim, o \textbf{\textit{Dependency Inversion Principle}} defende que módulos de alto nível não devem depender de módulos de baixo nível; ambos devem depender de abstrações, reduzindo o acoplamento e melhorando a flexibilidade do sistema. Esses princípios, juntos, promovem um design de software mais organizado e sustentável.
+	
+Neste projeto, tentou-se ao máximo seguir estes princípios. Os que têm presença mais notória são o \textbf{\textit{Single Responsibility Principle}} e o \textbf{\textit{Open/Closed Principle}}.
+
+\section{Respeitar a \textbf{\textit{.NET CLS}}}
+A \textit{Common Language Specification (CLS)} é uma componente fundamental da plataforma .NET que define regras e convenções destinadas a garantir a \textbf{interoperabilidade entre linguagens de programação diferentes} dentro do ecossistema .NET. A CLS define uma base comum de funcionalidades que todas as linguagens compatíveis com .NET devem suportar, permitindo que código escrito numa linguagem seja usado noutra sem problemas de compatibilidade. Por exemplo, linguagens como C\#, VB.NET e F\# podem interagir e partilhar bibliotecas graças à conformidade com a CLS. Algumas destas regras incluem a utilização de tipos de dados padrão e a proibição de recursos específicos de linguagem que possam não ser suportados por outras. Assim, a CLS desempenha um papel crucial na criação de bibliotecas reutilizáveis e na garantia de que componentes escritos em linguagens diferentes possam ser integrados de forma fluída dentro de uma mesma aplicação.
+Neste projeto, por exemplo, foi utilizado o tipo \textit{decimal} para definir os preços dos produtos (valores financeiros) devido à sua maior precisão e respeitando a CLS. 
+
 \newpage
 
-\section{Trabalho Desenvolvido:}
+\section{Trabalho Desenvolvido}
 \subsection{Diagrama de Classes}
 \begin{figure}[h] % [h] forces the figure to be output where it is defined in the code (it suppresses floating)
 	\centering
@@ -361,7 +393,7 @@ A utilização desta \textit{lambda function} (utilizando o operador '=>'), indi
 \newpage
 %------------------------------------------------
 
-\subsection{Estrutura de Projetos:}
+\subsection{Estrutura de Projetos}
 \subsubsection{Bibliotecas (.dll)}
 \begin{itemize}
 	\item \textit{Data\_BestSale.dll}
@@ -446,14 +478,14 @@ A utilização desta \textit{lambda function} (utilizando o operador '=>'), indi
 \end{itemize}
 
 
-\subsubsection{\textit{Front End:}}
+\subsubsection{\textit{Front End}}
 \begin{itemize}
 	\item 
 	\emph{\textbf{BestSale.cs}} -- Classe Principal.
 \end{itemize}
 
 
-\subsection{Observações:}
+\subsection{Observações}
 
 No interface desenvolvido, visto que a versão de .NET que estava a utilizar era ligeiramente mais antiga, não me foi possível utilizar generalizações do tipo \textit{List<T>}. Assim sendo, tive de recorrer a outro método, o que tornou o código mais repetitivo e, de certa forma, inutilizou a utilização do interface, pois envolve fazer vários testes em todas as implementações do interface. Seguem dois exemplos:
 
@@ -564,7 +596,7 @@ No interface desenvolvido, visto que a versão de .NET que estava a utilizar era
 \end{lstlisting}
 
 \vspace{20px}
-Mais ainda, apesar de, para tornar o código mais modular e melhor organizado (e indo um pouco contra os princípios do \textit{SOLID}), se deva separar as classes o mais modularmente possível, optei por colocar dentro da classe \textit{ProductManagement} também as funções que permitam a interação entre \textit{front end} e \textit{back end} no que toca à criação e pesquisa de marcas, categorias e garantias. Esta opção foi tomada, visto que, num programa com esta pequena dimensão, a classe em questão não se torna caótica e, ao mesmo tempo, evita-se criar classes com apenas dois ou três métodos. Mais ainda, tendo em conta que, para criar um produto, é necessário ter também os registos destas restantes vertentes, faz sentido que estas possam também ser manipuladas nesta classe. Ainda assim, todas as partes estão distinguidas com a sua devida \textit{\#region}, como se vê no exemplo seguinte:
+Mais ainda, apesar de, para tornar o código mais modular e melhor organizado , se deva separar as classes o mais modularmente possível, optei por colocar dentro da classe \textit{ProductManagement} também as funções que permitam a interação entre \textit{front end} e \textit{back end} no que toca à criação e pesquisa de marcas, categorias e garantias (indo um pouco contra os princípios do \textit{SOLID}). Esta opção foi tomada, visto que, num programa com esta pequena dimensão, a classe em questão não se torna caótica e, ao mesmo tempo, evita-se criar classes com apenas dois ou três métodos. Mais ainda, tendo em conta que, para criar um produto, é necessário ter também os registos destas restantes vertentes, faz sentido que estas possam também ser manipuladas nesta classe. Ainda assim, todas as partes estão distinguidas com a sua devida \textit{\#region}, como se vê no exemplo seguinte:
 
 \vspace{15px}
 \begin{lstlisting}[language={[Sharp]C}, caption={Classe ProductManagement.cs}, label={Classe ProductManagement.cs}]
@@ -630,80 +662,12 @@ Mais ainda, apesar de, para tornar o código mais modular e melhor organizado (e
 	}
 \end{lstlisting}
 
-\subsection{Bullet Point List}
+\section{Conclusão}
+O trabalho em questão foi desenvolvido com sucesso, respeitando a maioria dos requisitos estabelecidos. Apesar de, num modo geral, o programa se encontrar num estado embrionário, sem aplicação real imediata, é um bom exercício de aplicação de princípios e padrões que visam a melhoria da qualidade do código e da aplicação em geral, nomeadamente no que toca a manutenção e escalabilidade do projeto.
 
-\begin{itemize}
-	\item First item in a list 
-		\begin{itemize}
-		\item First item in a list 
-			\begin{itemize}
-			\item First item in a list 
-			\item Second item in a list 
-			\end{itemize}
-		\item Second item in a list 
-		\end{itemize}
-	\item Second item in a list 
-\end{itemize}
+ Neste projeto, pude aproximar-me de vários dos padrões vigentes na área, bem como aplicar a maioria dos conceitos aprendidos em sala de aula e fora dela, pelo que penso que os objetivos foram cumpridos, apesar de ter ainda um longo caminho de aprendizagem e melhoria pela frente.
+ 
+ Devo realçar que este projeto foi também bom a nível pessoal, visto que acho que finalmente consegui encontrar vontade e prazer na programação e desenvolvimento de soluções de \textit{software}, o que espero vir a tornar-se uma mais-valia nos projetos seguintes, permitindo-me crescer enquanto programador. 
 
-%------------------------------------------------
-
-\subsection{Numbered List}
-
-\begin{enumerate}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{enumerate}
-
-%----------------------------------------------------------------------------------------
-%	TABLE EXAMPLE
-%----------------------------------------------------------------------------------------
-
-\section{Interpreting a Table}
-
-\begin{table}[h] % [h] forces the table to be output where it is defined in the code (it suppresses floating)
-	\centering % Centre the table
-	\begin{tabular}{l l l}
-		\toprule
-		\textit{Per 50g} & \textbf{Pork} & \textbf{Soy} \\
-		\midrule
-		Energy & 760kJ & 538kJ\\
-		Protein & 7.0g & 9.3g\\
-		Carbohydrate & 0.0g & 4.9g\\
-		Fat & 16.8g & 9.1g\\
-		Sodium & 0.4g & 0.4g\\
-		Fibre & 0.0g & 1.4g\\
-		\bottomrule
-	\end{tabular}
-	\caption{Sausage nutrition.}
-\end{table}
-
-%------------------------------------------------
-
-\subsection{The table above shows the nutritional consistencies of two sausage types. Explain their relative differences given what you know about daily adult nutritional recommendations.}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor. Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit. Nulla mattis nisl eu malesuada suscipit.
-
-%----------------------------------------------------------------------------------------
-%	CODE LISTING EXAMPLE
-%----------------------------------------------------------------------------------------
-
-\section{Reading a Code Listing}
-
-
-
-%------------------------------------------------
-
-\subsection{How many luftballons will be output by the Listing \ref{lst:luftballons} above?}
-
-Aliquam arcu turpis, ultrices sed luctus ac, vehicula id metus. Morbi eu feugiat velit, et tempus augue. Proin ac mattis tortor. Donec tincidunt, ante rhoncus luctus semper, arcu lorem lobortis justo, nec convallis ante quam quis lectus. Aenean tincidunt sodales massa, et hendrerit tellus mattis ac. Sed non pretium nibh. Donec cursus maximus luctus. Vivamus lobortis eros et massa porta porttitor.
-
-%------------------------------------------------
-
-\subsection{Identify the regular expression in Listing \ref{lst:luftballons} and explain how it relates to the anti-war sentiments found in the rest of the script.}
-
-Fusce varius orci ac magna dapibus porttitor. In tempor leo a neque bibendum sollicitudin. Nulla pretium fermentum nisi, eget sodales magna facilisis eu. Praesent aliquet nulla ut bibendum lacinia. Donec vel mauris vulputate, commodo ligula ut, egestas orci. Suspendisse commodo odio sed hendrerit lobortis. Donec finibus eros erat, vel ornare enim mattis et.
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

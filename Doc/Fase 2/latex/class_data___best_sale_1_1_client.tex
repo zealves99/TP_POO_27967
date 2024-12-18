@@ -1,0 +1,251 @@
+\doxysection{Data\+\_\+\+Best\+Sale.\+Client Class Reference}
+\hypertarget{class_data___best_sale_1_1_client}{}\label{class_data___best_sale_1_1_client}\index{Data\_BestSale.Client@{Data\_BestSale.Client}}
+
+
+Purpose\+: Definition of \doxylink{class_data___best_sale_1_1_client}{Client} and methods to deal with \doxylink{class_data___best_sale_1_1_client}{Client} operations. Created by\+: Jose Alves a27967 Created on\+: 10/29/2024 4\+:23\+:56 PM.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_client_a9ac69eae064087542d2eef85d2b689fb}{Client}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_client_a9f0bbe2170abe4855c0f6618539a9567}{Client}} (string n, string c)
+\begin{DoxyCompactList}\small\item\em Constructor to use when a name and a contact are given. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_data___best_sale_1_1_client_af62ed8b2a1842a407966d8d63d315925}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Redefine the To\+String Function to show a client\textquotesingle{}s info. \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_data___best_sale_1_1_client_a1586cebb51d381d846d8daf53b358789}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Redefine the Equals operator to verify if a client matches the other. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_data___best_sale_1_1_client_ac2b5b7a98ae7a997d0f1b30bb8588eca}{operator==}} (\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} cli1, \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} cli2)
+\begin{DoxyCompactList}\small\item\em Redefinition of the == operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_data___best_sale_1_1_client_ac75f618bee414e6c74860384a9a0012d}{operator!=}} (\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} cli1, \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} cli2)
+\begin{DoxyCompactList}\small\item\em Redefinition of the != operator. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_data___best_sale_1_1_client_ad9ca076447f4e33ce4958201e8df9d34}{Create\+Client\+From\+Name\+Contact}} (string name, string contact, out \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}} new\+Client)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_data___best_sale_1_1_client_ac7a7c987ab95617571a072ce4adbb678}{Client\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that sets or returns the ID of a client. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_data___best_sale_1_1_client_ac5c5a1ce9bd19bfa386995c0b1daa9b8}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that sets or returns the Name of a client. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_data___best_sale_1_1_client_ab1bf5567ba47936e194817961a574b14}{Contact}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that sets or returns the Contact of a client. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_data___best_sale_1_1_client_ad700480a477dcb832c0e5083efe159bb}{Client\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property that sets or returns the amount of clients. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Definition of \doxylink{class_data___best_sale_1_1_client}{Client} and methods to deal with \doxylink{class_data___best_sale_1_1_client}{Client} operations. Created by\+: Jose Alves a27967 Created on\+: 10/29/2024 4\+:23\+:56 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00028}{28}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___best_sale_1_1_client_a9ac69eae064087542d2eef85d2b689fb}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!Client@{Client}}
+\index{Client@{Client}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_a9ac69eae064087542d2eef85d2b689fb} 
+Data\+\_\+\+Best\+Sale.\+Client.\+Client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00044}{44}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_a9f0bbe2170abe4855c0f6618539a9567}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!Client@{Client}}
+\index{Client@{Client}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{Client()}{Client()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_a9f0bbe2170abe4855c0f6618539a9567} 
+Data\+\_\+\+Best\+Sale.\+Client.\+Client (\begin{DoxyParamCaption}\item[{string}]{n}{, }\item[{string}]{c}{}\end{DoxyParamCaption})}
+
+
+
+Constructor to use when a name and a contact are given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00056}{56}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___best_sale_1_1_client_ad9ca076447f4e33ce4958201e8df9d34}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!CreateClientFromNameContact@{CreateClientFromNameContact}}
+\index{CreateClientFromNameContact@{CreateClientFromNameContact}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{CreateClientFromNameContact()}{CreateClientFromNameContact()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ad9ca076447f4e33ce4958201e8df9d34} 
+static bool Data\+\_\+\+Best\+Sale.\+Client.\+Create\+Client\+From\+Name\+Contact (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{contact}{, }\item[{out \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{new\+Client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00180}{180}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_a1586cebb51d381d846d8daf53b358789}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!Equals@{Equals}}
+\index{Equals@{Equals}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_a1586cebb51d381d846d8daf53b358789} 
+override bool Data\+\_\+\+Best\+Sale.\+Client.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Redefine the Equals operator to verify if a client matches the other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Veriffies if the object given is null.
+
+Casts the object to be \doxylink{class_data___best_sale_1_1_client}{Client}.
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00142}{142}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_ac75f618bee414e6c74860384a9a0012d}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ac75f618bee414e6c74860384a9a0012d} 
+static bool Data\+\_\+\+Best\+Sale.\+Client.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{cli1}{, }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{cli2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Redefinition of the != operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cli1} & \\
+\hline
+{\em cli2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00172}{172}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_ac2b5b7a98ae7a997d0f1b30bb8588eca}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!operator==@{operator==}}
+\index{operator==@{operator==}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ac2b5b7a98ae7a997d0f1b30bb8588eca} 
+static bool Data\+\_\+\+Best\+Sale.\+Client.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{cli1}{, }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{cli2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Redefinition of the == operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cli1} & \\
+\hline
+{\em cli2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00161}{161}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_af62ed8b2a1842a407966d8d63d315925}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!ToString@{ToString}}
+\index{ToString@{ToString}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_af62ed8b2a1842a407966d8d63d315925} 
+override string Data\+\_\+\+Best\+Sale.\+Client.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Redefine the To\+String Function to show a client\textquotesingle{}s info. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00127}{127}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___best_sale_1_1_client_ad700480a477dcb832c0e5083efe159bb}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!ClientCount@{ClientCount}}
+\index{ClientCount@{ClientCount}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{ClientCount}{ClientCount}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ad700480a477dcb832c0e5083efe159bb} 
+int Data\+\_\+\+Best\+Sale.\+Client.\+Client\+Count\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that sets or returns the amount of clients. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00111}{111}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_ac7a7c987ab95617571a072ce4adbb678}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!ClientID@{ClientID}}
+\index{ClientID@{ClientID}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{ClientID}{ClientID}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ac7a7c987ab95617571a072ce4adbb678} 
+int Data\+\_\+\+Best\+Sale.\+Client.\+Client\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that sets or returns the ID of a client. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00070}{70}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_ab1bf5567ba47936e194817961a574b14}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!Contact@{Contact}}
+\index{Contact@{Contact}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{Contact}{Contact}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ab1bf5567ba47936e194817961a574b14} 
+string Data\+\_\+\+Best\+Sale.\+Client.\+Contact\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that sets or returns the Contact of a client. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00088}{88}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_client_ac5c5a1ce9bd19bfa386995c0b1daa9b8}\index{Data\_BestSale.Client@{Data\_BestSale.Client}!Name@{Name}}
+\index{Name@{Name}!Data\_BestSale.Client@{Data\_BestSale.Client}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_client_ac5c5a1ce9bd19bfa386995c0b1daa9b8} 
+string Data\+\_\+\+Best\+Sale.\+Client.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property that sets or returns the Name of a client. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source_l00079}{79}} of file \mbox{\hyperlink{_data___best_sale_2_client_2_client_8cs_source}{Client.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data\+\_\+\+Best\+Sale/\+Client/Client.\+cs\end{DoxyCompactItemize}

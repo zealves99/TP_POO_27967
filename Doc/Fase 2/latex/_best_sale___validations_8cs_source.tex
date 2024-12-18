@@ -1,0 +1,36 @@
+\doxysection{Best\+Sale\+\_\+\+Validations.\+cs}
+\hypertarget{_best_sale___validations_8cs_source}{}\label{_best_sale___validations_8cs_source}\index{BestSale\_Validations/BestSale\_Validations.cs@{BestSale\_Validations/BestSale\_Validations.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}BestSale\_Validations.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>12/17/2024\ 6:23:56\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>This\ file\ contains\ the\ validations\ to\ be\ made\ by\ the\ app.</description>}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00012}00012\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00013}00013\ \textcolor{keyword}{using\ }System.Text.RegularExpressions;}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00014}00014\ \textcolor{keyword}{using\ }System.Threading.Tasks;}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00015}00015\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_exceptions}{Exceptions}};}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00017}\mbox{\hyperlink{namespace_best_sale___validations}{00017}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_best_sale___validations}{BestSale\_Validations}}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00018}00018\ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00019}00019\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{namespace_best_sale___validations}{BestSale\_Validations}}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00020}00020\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ ValidatePhoneNumber(\textcolor{keywordtype}{string}\ phoneNumber)}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ pattern\ =\ \textcolor{stringliteral}{@"{}\string^(2|9)\(\backslash\)d\{8\}\$"{}};\ \textcolor{comment}{//Defines\ the\ pattern\ to\ be\ a\ number\ starting\ by\ 9\ or\ 2\ with\ 8\ more\ numbers\ after\ (as\ a\ portuguese\ mobile\ or\ landline\ number).}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Regex.IsMatch(phoneNumber,\ pattern))\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//Verifies\ if\ the\ value\ meets\ the\ criteria.}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_exceptions_1_1_invalid_phone_number_exception}{InvalidPhoneNumberException}}();}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00029}00029\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_best_sale___validations_8cs_source_l00030}00030\ \}}
+
+\end{DoxyCode}

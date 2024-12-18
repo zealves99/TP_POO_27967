@@ -4,14 +4,14 @@
 *	</copyright>
 * 	<author>zecun</author>
 *   <date>12/11/2024 11:18:40 AM</date>
-*	<description></description>
+*	<description>This File contains the definition and methods to manage a SimpleClient</description>
 **/
 using System;
 
 namespace Business_Object
 {
     /// <summary>
-    /// Purpose:
+    /// Purpose:This File contains the definition and methods to manage a SimpleClient
     /// Created by: zecun
     /// Created on: 12/11/2024 11:18:40 AM
     /// </summary>

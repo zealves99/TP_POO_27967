@@ -1,0 +1,108 @@
+\doxysection{Category.\+cs}
+\hypertarget{_data___best_sale_2_category_2_category_8cs_source}{}\label{_data___best_sale_2_category_2_category_8cs_source}\index{Data\_BestSale/Category/Category.cs@{Data\_BestSale/Category/Category.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}Data\_BestSale.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/6/2024\ 11:20:47\ AM</date>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>Definition\ of\ Category\ and\ methods\ to\ deal\ with\ Category\ operations.</description>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00011}00011\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00013}00013\ \ \ \ \ [Serializable]}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00021}\mbox{\hyperlink{class_data___best_sale_1_1_category}{00021}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00023}00023\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_id;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \_name;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \_catCount=0;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00027}00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00036}\mbox{\hyperlink{class_data___best_sale_1_1_category_ae71b21e696ea687d2c5fff09a7f135c8}{00036}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_ae71b21e696ea687d2c5fff09a7f135c8}{Category}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \_id\ =\ ++\_catCount;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \_name\ =\ \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00046}\mbox{\hyperlink{class_data___best_sale_1_1_category_a9322df54acbbd06f90e99d4b78359750}{00046}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_a9322df54acbbd06f90e99d4b78359750}{Category}}(\textcolor{keywordtype}{string}\ name)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \_id\ =\ ++\_catCount;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \_name\ =\ name;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00051}00051\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00053}00053\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00058}\mbox{\hyperlink{class_data___best_sale_1_1_category_abd44973b47f2b4b2c1e1ae7980032fa1}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_abd44973b47f2b4b2c1e1ae7980032fa1}{Id}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_id;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_id\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00067}\mbox{\hyperlink{class_data___best_sale_1_1_category_af072f4d32f3832819ddaa657cb4c882a}{00067}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_af072f4d32f3832819ddaa657cb4c882a}{Name}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_name;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_name\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00072}00072\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00076}00076\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00082}\mbox{\hyperlink{class_data___best_sale_1_1_category_aa49b1a315fe088a7b629acf002694822}{00082}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_aa49b1a315fe088a7b629acf002694822}{Equals}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ cat\ =\ obj\ as\ \mbox{\hyperlink{class_data___best_sale_1_1_category_ae71b21e696ea687d2c5fff09a7f135c8}{Category}};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (this.\mbox{\hyperlink{class_data___best_sale_1_1_category_abd44973b47f2b4b2c1e1ae7980032fa1}{Id}}\ ==\ cat.\mbox{\hyperlink{class_data___best_sale_1_1_category_abd44973b47f2b4b2c1e1ae7980032fa1}{Id}}\ ||\ \_name\ ==\ cat.\mbox{\hyperlink{class_data___best_sale_1_1_category_af072f4d32f3832819ddaa657cb4c882a}{Name}});}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00101}\mbox{\hyperlink{class_data___best_sale_1_1_category_a5278d3871bd2cfe634e42f9b26c3354b}{00101}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_a5278d3871bd2cfe634e42f9b26c3354b}{operator\ ==}}(\mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ cat1,\ \mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ cat2)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (cat1.\mbox{\hyperlink{class_data___best_sale_1_1_category_aa49b1a315fe088a7b629acf002694822}{Equals}}(cat2));}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00112}\mbox{\hyperlink{class_data___best_sale_1_1_category_a2dbd2df0f5835fce7d86d5d2211e0cae}{00112}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_a2dbd2df0f5835fce7d86d5d2211e0cae}{operator\ !=}}(\mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ cat1,\ \mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ cat2)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !(cat1.\mbox{\hyperlink{class_data___best_sale_1_1_category_aa49b1a315fe088a7b629acf002694822}{Equals}}(cat2));}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00116}00116\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00117}00117\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00118}00118\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00126}\mbox{\hyperlink{class_data___best_sale_1_1_category_a99c8581f0ecdd5adaed7125652862b2d}{00126}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_a99c8581f0ecdd5adaed7125652862b2d}{CreateCategory}}(\textcolor{keywordtype}{string}\ name,\ out\ \mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}\ category)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ category\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___best_sale_1_1_category_ae71b21e696ea687d2c5fff09a7f135c8}{Category}}(name);}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ e)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ e;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00138}00138\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00140}00140\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_category}{\string~Category}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00147}00147\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00148}00148\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00149}00149\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00150}00150\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_category_2_category_8cs_source_l00151}00151\ \}}
+
+\end{DoxyCode}

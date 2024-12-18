@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/12/2024 9:25:28 PM</date>
-*	<description></description>
+*	<description>Class with the definition and methods to manage a list of clients.</description>
 **/
 using System;
 using System.Collections.Generic;
@@ -119,8 +119,8 @@ namespace Data_BestSale
         /// <summary>
         /// Method used to get a client from a clients' list.
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The Id of the client you want to find. n</param>
+        /// <returns>The instance of client.</returns>
         public Client GetClient(int id)
         {
             foreach (Client client in _clientList)

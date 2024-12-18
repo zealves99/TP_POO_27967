@@ -1,0 +1,123 @@
+\doxysection{Warranties.\+cs}
+\hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source}{}\label{_data___best_sale_2_warranty_2_warranties_8cs_source}\index{Data\_BestSale/Warranty/Warranties.cs@{Data\_BestSale/Warranty/Warranties.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}Data\_BestSale.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/14/2024\ 4:20:11\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>This\ file\ has\ the\ definition\ and\ methods\ to\ work\ with\ the\ plurality\ of\ Warranty.</description>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00013}00013\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00015}00015\ \ \ \ \ [Serializable]}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00023}\mbox{\hyperlink{class_data___best_sale_1_1_warranties}{00023}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data___best_sale_1_1_warranties}{Warranties}}:\ \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{IListManagement}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00025}00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ List<Warranty>\ \_warrants;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00027}00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00036}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_aa4929894ddbe1aebde14d6ca48547e9e}{00036}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_aa4929894ddbe1aebde14d6ca48547e9e}{Warranties}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \_warrants\ =\ \textcolor{keyword}{new}\ List<Warranty>();}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00045}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_a3e5c08b874a22cb76011e305fa730a45}{00045}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_a3e5c08b874a22cb76011e305fa730a45}{Warranties}}(List<Warranty>\ warrants)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \_warrants\ =\ warrants;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00052}00052\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00054}00054\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00058}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_a145099df8b2ddff91fafc4d2c14394b6}{00058}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<Warranty>\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_a145099df8b2ddff91fafc4d2c14394b6}{Warrants}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_warrants;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_warrants\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00063}00063\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00067}00067\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00068}00068\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00070}00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ <summary>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00076}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_a74d94d30301d416157c1ed9b977faccc}{00076}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_a74d94d30301d416157c1ed9b977faccc}{Add}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(obj\ is\ \mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}})}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_warrants.Add((\mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}})obj);}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00092}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_aeaeca5d284ea925fc6042d519581a1ff}{00092}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_aeaeca5d284ea925fc6042d519581a1ff}{Remove}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}}\ aux;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00096}00096\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//ACRESCENTAR\ NAS\ OUTRAS\ CLASSES\ DE\ AGREGACAO!!!!}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}})\{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ aux\ =\ obj\ as\ \mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___best_sale_1_1_warranties_ac643d2c7e6a4aa62b8d5f46731f2da9c}{Exist}}(aux.\mbox{\hyperlink{class_data___best_sale_1_1_warranty_a46f293d79dddb691771c1ac6c475f355}{ProdID}}))}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}})}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_warrants.Remove((\mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}})obj);}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00119}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_ac643d2c7e6a4aa62b8d5f46731f2da9c}{00119}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_ac643d2c7e6a4aa62b8d5f46731f2da9c}{Exist}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \textcolor{keywordtype}{string})}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_data___best_sale_1_1_warranty}{Warranty}}\ w\ \textcolor{keywordflow}{in}\ \_warrants)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (w.\mbox{\hyperlink{class_data___best_sale_1_1_warranty_a46f293d79dddb691771c1ac6c475f355}{ProdID}}\ ==\ (\textcolor{keywordtype}{string})obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00138}\mbox{\hyperlink{class_data___best_sale_1_1_warranties_a50146bd2c9bea2aaaf4d97b1052a5671}{00138}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_data___best_sale_1_1_warranties_a50146bd2c9bea2aaaf4d97b1052a5671}{ClearWarranties}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \_warrants.Clear();}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00142}00142\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00144}00144\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_warranties}{\string~Warranties}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00149}00149\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00151}00151\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00153}00153\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00154}00154\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_warranty_2_warranties_8cs_source_l00155}00155\ \}}
+
+\end{DoxyCode}

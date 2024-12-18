@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/6/2024 11:20:47 AM</date>
-*	<description></description>
+*	<description>Definition of Category and methods to deal with Category operations.</description>
 **/
 using System;
 

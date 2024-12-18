@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/14/2024 4:33:51 PM</date>
-*	<description></description>
+*	<description>This file has the definition and methods to work with the plurality of Make.</description>
 **/
 using System;
 using System.Collections.Generic;

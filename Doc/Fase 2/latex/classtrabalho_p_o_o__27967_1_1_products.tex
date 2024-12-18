@@ -1,0 +1,296 @@
+\doxysection{trabalho\+POO\+\_\+27967.\+Products Class Reference}
+\hypertarget{classtrabalho_p_o_o__27967_1_1_products}{}\label{classtrabalho_p_o_o__27967_1_1_products}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+
+
+Purpose\+: Class to manage a group of more than one product. Created by\+: Jose Alves a27967 Created on\+: 11/9/2024 6\+:34\+:19 PM.  
+
+
+
+
+Inheritance diagram for trabalho\+POO\+\_\+27967.\+Products\+:
+% FIG 0
+
+
+Collaboration diagram for trabalho\+POO\+\_\+27967.\+Products\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a1fffd88356d5d671738b9360d066bcba}{Products}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a474679b02593808209ecd7bd827f2259}{Products}} (List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}} $>$ products)
+\begin{DoxyCompactList}\small\item\em The constructor to use when list of \doxylink{classtrabalho_p_o_o__27967_1_1_product}{Product} is given. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a1d5ad4db24efaa06591ca5f348945396}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Override of the \doxylink{classtrabalho_p_o_o__27967_1_1_products_a1d5ad4db24efaa06591ca5f348945396}{To\+String()} Method to convert the data of a list fo products to a string. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_aaecad6a42d48c6a76d32fda436a2cc12}{Value\+In\+Position}} (int p)
+\begin{DoxyCompactList}\small\item\em This method returns the price of a product, given a certain array position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_aa88f9e573377d1d38646662e632d4a4f}{Add}} (object obj)
+\begin{DoxyCompactList}\small\item\em This method inserts a product in a list of products. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a04a80cffcff1220ff623fa142d7696dd}{Exist}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to verify if a product is on a products\textquotesingle{} list, given its Refference. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a70cc373ea371ce5338c6f2b8034040ee}{Remove}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to remove a product from a \doxylink{classtrabalho_p_o_o__27967_1_1_products}{Products}\textquotesingle{} list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}} \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a6c4b0721b9ee7386ecf2f3ca7816d299}{Search\+Product}} (string reff)
+\begin{DoxyCompactList}\small\item\em This method searches for a product in an array, given its refference. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_ad24e9aee05588a3dfca00c0cf7cf78cc}{Total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Method used to calculate the total price of products in a list of products. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_a7ec91ea123a0aecc75e0bde122d4901a}{Warraty\+Expiration\+Date\+For\+Product}} (Date\+Time date, string reff)
+\begin{DoxyCompactList}\small\item\em Method used to calculate the warranty\textquotesingle{}s expiration date of a product on a list of products. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}} $>$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_products_ab3b97b22d2afc9f517939c55ee7da816}{Prods}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property used to get and set the list of products. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Class to manage a group of more than one product. Created by\+: Jose Alves a27967 Created on\+: 11/9/2024 6\+:34\+:19 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00027}{27}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a1fffd88356d5d671738b9360d066bcba}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!Products@{Products}}
+\index{Products@{Products}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{Products()}{Products()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a1fffd88356d5d671738b9360d066bcba} 
+trabalho\+POO\+\_\+27967.\+Products.\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00040}{40}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a474679b02593808209ecd7bd827f2259}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!Products@{Products}}
+\index{Products@{Products}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{Products()}{Products()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a474679b02593808209ecd7bd827f2259} 
+trabalho\+POO\+\_\+27967.\+Products.\+Products (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}} $>$}]{products}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to use when list of \doxylink{classtrabalho_p_o_o__27967_1_1_product}{Product} is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em products} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00049}{49}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_aa88f9e573377d1d38646662e632d4a4f}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!Add@{Add}}
+\index{Add@{Add}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_aa88f9e573377d1d38646662e632d4a4f} 
+bool trabalho\+POO\+\_\+27967.\+Products.\+Add (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+This method inserts a product in a list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true or False, depending on whether or not it succeeded in inserting the product into the list. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00105}{105}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a04a80cffcff1220ff623fa142d7696dd}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!Exist@{Exist}}
+\index{Exist@{Exist}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a04a80cffcff1220ff623fa142d7696dd} 
+bool trabalho\+POO\+\_\+27967.\+Products.\+Exist (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to verify if a product is on a products\textquotesingle{} list, given its Refference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00125}{125}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a70cc373ea371ce5338c6f2b8034040ee}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!Remove@{Remove}}
+\index{Remove@{Remove}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a70cc373ea371ce5338c6f2b8034040ee} 
+bool trabalho\+POO\+\_\+27967.\+Products.\+Remove (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to remove a product from a \doxylink{classtrabalho_p_o_o__27967_1_1_products}{Products}\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\doxylink{classtrabalho_p_o_o__27967_1_1_product}{Product} removed successfully
+
+\doxylink{classtrabalho_p_o_o__27967_1_1_product}{Product} was not removed.
+
+Implements \mbox{\hyperlink{interfacetrabalho_p_o_o__27967_1_1_interface_1_1_i_list_management}{trabalho\+POO\+\_\+27967.\+Interface.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00143}{143}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a6c4b0721b9ee7386ecf2f3ca7816d299}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!SearchProduct@{SearchProduct}}
+\index{SearchProduct@{SearchProduct}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{SearchProduct()}{SearchProduct()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a6c4b0721b9ee7386ecf2f3ca7816d299} 
+\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}} trabalho\+POO\+\_\+27967.\+Products.\+Search\+Product (\begin{DoxyParamCaption}\item[{string}]{reff}{}\end{DoxyParamCaption})}
+
+
+
+This method searches for a product in an array, given its refference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the product if found
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00160}{160}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a1d5ad4db24efaa06591ca5f348945396}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!ToString@{ToString}}
+\index{ToString@{ToString}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a1d5ad4db24efaa06591ca5f348945396} 
+override string trabalho\+POO\+\_\+27967.\+Products.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Override of the \doxylink{classtrabalho_p_o_o__27967_1_1_products_a1d5ad4db24efaa06591ca5f348945396}{To\+String()} Method to convert the data of a list fo products to a string. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00077}{77}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_ad24e9aee05588a3dfca00c0cf7cf78cc}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!TotalPrice@{TotalPrice}}
+\index{TotalPrice@{TotalPrice}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{TotalPrice()}{TotalPrice()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_ad24e9aee05588a3dfca00c0cf7cf78cc} 
+decimal trabalho\+POO\+\_\+27967.\+Products.\+Total\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method used to calculate the total price of products in a list of products. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00173}{173}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_aaecad6a42d48c6a76d32fda436a2cc12}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!ValueInPosition@{ValueInPosition}}
+\index{ValueInPosition@{ValueInPosition}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{ValueInPosition()}{ValueInPosition()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_aaecad6a42d48c6a76d32fda436a2cc12} 
+decimal trabalho\+POO\+\_\+27967.\+Products.\+Value\+In\+Position (\begin{DoxyParamCaption}\item[{int}]{p}{}\end{DoxyParamCaption})}
+
+
+
+This method returns the price of a product, given a certain array position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Position in array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00095}{95}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_a7ec91ea123a0aecc75e0bde122d4901a}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!WarratyExpirationDateForProduct@{WarratyExpirationDateForProduct}}
+\index{WarratyExpirationDateForProduct@{WarratyExpirationDateForProduct}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{WarratyExpirationDateForProduct()}{WarratyExpirationDateForProduct()}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_a7ec91ea123a0aecc75e0bde122d4901a} 
+Date\+Time trabalho\+POO\+\_\+27967.\+Products.\+Warraty\+Expiration\+Date\+For\+Product (\begin{DoxyParamCaption}\item[{Date\+Time}]{date}{, }\item[{string}]{reff}{}\end{DoxyParamCaption})}
+
+
+
+Method used to calculate the warranty\textquotesingle{}s expiration date of a product on a list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00185}{185}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{classtrabalho_p_o_o__27967_1_1_products_ab3b97b22d2afc9f517939c55ee7da816}\index{trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}!Prods@{Prods}}
+\index{Prods@{Prods}!trabalhoPOO\_27967.Products@{trabalhoPOO\_27967.Products}}
+\doxysubsubsection{\texorpdfstring{Prods}{Prods}}
+{\footnotesize\ttfamily \label{classtrabalho_p_o_o__27967_1_1_products_ab3b97b22d2afc9f517939c55ee7da816} 
+List$<$\mbox{\hyperlink{classtrabalho_p_o_o__27967_1_1_product}{Product}}$>$ trabalho\+POO\+\_\+27967.\+Products.\+Prods\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property used to get and set the list of products. 
+
+
+
+Definition at line \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source_l00062}{62}} of file \mbox{\hyperlink{trabalho_p_o_o__27967_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+trabalho\+POO\+\_\+27967/\+Product/Products.\+cs\end{DoxyCompactItemize}

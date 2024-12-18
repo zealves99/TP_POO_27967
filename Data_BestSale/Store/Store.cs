@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/14/2024 5:01:23 PM</date>
-*	<description></description>
+*	<description>This class has the definition and properties to manage a store.</description>
 **/
 using System;
 using System.Collections.Generic;
@@ -37,82 +37,82 @@ namespace Data_BestSale
 
         #region Constructors
 
-        ///// <summary>
-        ///// The default Constructor.
-        ///// </summary>
-        //public Store()
-        //{
-        //    _clientList = new Clients();
-        //    _prodList = new Products();
-        //    _saleList = new Sales();
-        //    _makeList = new Makes();
-        //    _catList = new Categories();
-        //}
+        /// <summary>
+        /// The default Constructor.
+        /// </summary>
+        public Store()
+        {
+            _clientList = new Clients();
+            _prodList = new Products();
+            _saleList = new Sales();
+            _makeList = new Makes();
+            _catList = new Categories();
+        }
 
-        ///// <summary>
-        ///// The constructor to use when all the lists are given.
-        ///// </summary>
-        ///// <param name="cl"></param>
-        ///// <param name="p"></param>
-        ///// <param name="s"></param>
-        ///// <param name="m"></param>
-        ///// <param name="c"></param>
-        //public Store(Clients cl, Products p, Sales s, Makes m, Categories c)
-        //{
-        //    _clientList=cl;
-        //    _prodList=p;
-        //    _saleList=s;
-        //    _makeList=m;
-        //    _catList=c;
-        //}
+        /// <summary>
+        /// The constructor to use when all the lists are given.
+        /// </summary>
+        /// <param name="cl"></param>
+        /// <param name="p"></param>
+        /// <param name="s"></param>
+        /// <param name="m"></param>
+        /// <param name="c"></param>
+        public Store(Clients cl, Products p, Sales s, Makes m, Categories c)
+        {
+            _clientList = cl;
+            _prodList = p;
+            _saleList = s;
+            _makeList = m;
+            _catList = c;
+        }
 
         #endregion
 
         #region Properties
-        ///// <summary>
-        ///// The property used to get and set the clients' list.
-        ///// </summary>
-        //public Clients ClientLIst
-        //{
-        //    get { return _clientList; }
-        //    set { _clientList = value; }
-        //}
+        /// <summary>
+        /// The property used to get and set the clients' list.
+        /// </summary>
+        public Clients ClientLIst
+        {
+            get { return _clientList; }
+            set { _clientList = value; }
+        }
 
-        ///// <summary>
-        ///// The property to get and set de products' list.
-        ///// </summary>
-        //public Products ProdList
-        //{
-        //    get { return _prodList; }
-        //    set { _prodList = value; }
-        //}
+        /// <summary>
+        /// The property to get and set de products' list.
+        /// </summary>
+        public Products ProdList
+        {
+            get { return _prodList; }
+            set { _prodList = value; }
+        }
 
-        ///// <summary>
-        ///// The property to get and set de sales' list.
-        ///// </summary>
-        //public Sales SaleList
-        //{
-        //    get { return _saleList; }
-        //    set { _saleList = value; }
-        //}
+        /// <summary>
+        /// The property to get and set de sales' list.
+        /// </summary>
+        public Sales SaleList
+        {
+            get { return _saleList; }
+            set { _saleList = value; }
+        }
 
-        ///// <summary>
-        ///// The property to get and set de makes' list.
-        ///// </summary>
-        //public Makes MakeList
-        //{
-        //    get { return _makeList; }
-        //    set { _makeList = value; }
-        //}
+        /// <summary>
+        /// The property to get and set de makes' list.
+        /// </summary>
+        public Makes MakeList
+        {
+            get { return _makeList; }
+            set { _makeList = value; }
+        }
 
-        ///// <summary>
-        ///// The property to get and set de categories' list.
-        ///// </summary>
-        //public Categories CatList
-        //{
-        //    get { return _catList; }
-        //    set { _catList = value; }
-        //}
+        /// <summary>
+        /// The property to get and set de categories' list.
+        /// </summary>
+        public Categories CatList
+        {
+            get { return _catList; }
+            set { _catList = value; }
+        }
 
 
         #endregion

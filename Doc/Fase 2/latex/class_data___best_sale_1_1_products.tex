@@ -1,0 +1,312 @@
+\doxysection{Data\+\_\+\+Best\+Sale.\+Products Class Reference}
+\hypertarget{class_data___best_sale_1_1_products}{}\label{class_data___best_sale_1_1_products}\index{Data\_BestSale.Products@{Data\_BestSale.Products}}
+
+
+Purpose\+: Class to manage a group of more than one product. Created by\+: Jose Alves a27967 Created on\+: 11/9/2024 6\+:34\+:19 PM.  
+
+
+
+
+Inheritance diagram for Data\+\_\+\+Best\+Sale.\+Products\+:
+% FIG 0
+
+
+Collaboration diagram for Data\+\_\+\+Best\+Sale.\+Products\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_products_aaeb7b77f59f0df2a60ac61e241d3000d}{Products}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_products_a2f80325cf69bcee6ffbc233a499aa414}{Products}} (List$<$ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}} $>$ products)
+\begin{DoxyCompactList}\small\item\em The constructor to use when list of \doxylink{class_data___best_sale_1_1_product}{Product} is given. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Override of the \doxylink{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768}{To\+String()} Method to convert the data of a list fo products to a string. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_data___best_sale_1_1_products_a776beca905c3fd71c10f9dfbd6dfaa54}{Value\+In\+Position}} (int p)
+\begin{DoxyCompactList}\small\item\em This method returns the price of a product, given a certain array position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_a4b72a16f4cfd0bd9df5e36bdfcb7b631}{Add}} (object obj)
+\begin{DoxyCompactList}\small\item\em This method inserts a product in a list of products. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811}{Exist}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to verify if a product is on a products\textquotesingle{} list, given its Refference. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_a0d7b5ef571b9a8682a8d694066ded6e8}{Remove}} (object obj)
+\begin{DoxyCompactList}\small\item\em Method used to remove a product from a \doxylink{class_data___best_sale_1_1_products}{Products}\textquotesingle{} list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}} \mbox{\hyperlink{class_data___best_sale_1_1_products_a224f52d093e231ffe6f9480031ee5fd9}{Search\+Product}} (string reff)
+\begin{DoxyCompactList}\small\item\em This method searches for a product in an array, given its refference. \end{DoxyCompactList}\item 
+decimal \mbox{\hyperlink{class_data___best_sale_1_1_products_a3d75e036499a7a987a52212771fbec2b}{Total\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Method used to calculate the total price of products in a list of products. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_data___best_sale_1_1_products_a4234f35c6b3d46948b847c3186d35202}{Warraty\+Expiration\+Date\+For\+Product}} (Date\+Time date, string reff)
+\begin{DoxyCompactList}\small\item\em Method used to calculate the warranty\textquotesingle{}s expiration date of a product on a list of products. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_aed19e027a1d82081cfad3c9b5edddac5}{Clear\+Products}} ()
+\begin{DoxyCompactList}\small\item\em Method used to Clear a list of \doxylink{class_data___best_sale_1_1_products}{Products}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}} $>$ \mbox{\hyperlink{class_data___best_sale_1_1_products_a91b5eeb86311371024db68c1a6214d33}{Prods}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Property used to get and set the list of products. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Class to manage a group of more than one product. Created by\+: Jose Alves a27967 Created on\+: 11/9/2024 6\+:34\+:19 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00026}{26}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___best_sale_1_1_products_aaeb7b77f59f0df2a60ac61e241d3000d}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!Products@{Products}}
+\index{Products@{Products}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{Products()}{Products()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_aaeb7b77f59f0df2a60ac61e241d3000d} 
+Data\+\_\+\+Best\+Sale.\+Products.\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00039}{39}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a2f80325cf69bcee6ffbc233a499aa414}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!Products@{Products}}
+\index{Products@{Products}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{Products()}{Products()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a2f80325cf69bcee6ffbc233a499aa414} 
+Data\+\_\+\+Best\+Sale.\+Products.\+Products (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}} $>$}]{products}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to use when list of \doxylink{class_data___best_sale_1_1_product}{Product} is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em products} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00048}{48}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___best_sale_1_1_products_a4b72a16f4cfd0bd9df5e36bdfcb7b631}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!Add@{Add}}
+\index{Add@{Add}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a4b72a16f4cfd0bd9df5e36bdfcb7b631} 
+bool Data\+\_\+\+Best\+Sale.\+Products.\+Add (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+This method inserts a product in a list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true or False, depending on whether or not it succeeded in inserting the product into the list. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00104}{104}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_aed19e027a1d82081cfad3c9b5edddac5}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!ClearProducts@{ClearProducts}}
+\index{ClearProducts@{ClearProducts}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{ClearProducts()}{ClearProducts()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_aed19e027a1d82081cfad3c9b5edddac5} 
+bool Data\+\_\+\+Best\+Sale.\+Products.\+Clear\+Products (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method used to Clear a list of \doxylink{class_data___best_sale_1_1_products}{Products}. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00196}{196}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!Exist@{Exist}}
+\index{Exist@{Exist}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{Exist()}{Exist()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811} 
+bool Data\+\_\+\+Best\+Sale.\+Products.\+Exist (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to verify if a product is on a products\textquotesingle{} list, given its Refference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00124}{124}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a0d7b5ef571b9a8682a8d694066ded6e8}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!Remove@{Remove}}
+\index{Remove@{Remove}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a0d7b5ef571b9a8682a8d694066ded6e8} 
+bool Data\+\_\+\+Best\+Sale.\+Products.\+Remove (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+
+
+Method used to remove a product from a \doxylink{class_data___best_sale_1_1_products}{Products}\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\doxylink{class_data___best_sale_1_1_product}{Product} removed successfully
+
+\doxylink{class_data___best_sale_1_1_product}{Product} was not removed.
+
+Implements \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{Data\+\_\+\+Best\+Sale.\+IList\+Management}}.
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00142}{142}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a224f52d093e231ffe6f9480031ee5fd9}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!SearchProduct@{SearchProduct}}
+\index{SearchProduct@{SearchProduct}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{SearchProduct()}{SearchProduct()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a224f52d093e231ffe6f9480031ee5fd9} 
+\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}} Data\+\_\+\+Best\+Sale.\+Products.\+Search\+Product (\begin{DoxyParamCaption}\item[{string}]{reff}{}\end{DoxyParamCaption})}
+
+
+
+This method searches for a product in an array, given its refference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the product if found
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00159}{159}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!ToString@{ToString}}
+\index{ToString@{ToString}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768} 
+override string Data\+\_\+\+Best\+Sale.\+Products.\+To\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Override of the \doxylink{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768}{To\+String()} Method to convert the data of a list fo products to a string. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00076}{76}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a3d75e036499a7a987a52212771fbec2b}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!TotalPrice@{TotalPrice}}
+\index{TotalPrice@{TotalPrice}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{TotalPrice()}{TotalPrice()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a3d75e036499a7a987a52212771fbec2b} 
+decimal Data\+\_\+\+Best\+Sale.\+Products.\+Total\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method used to calculate the total price of products in a list of products. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+lambda funtion tells the Sum() function that, for each \doxylink{class_data___best_sale_1_1_product}{Product} p in \+\_\+prods, it should use the price value.
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00172}{172}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a776beca905c3fd71c10f9dfbd6dfaa54}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!ValueInPosition@{ValueInPosition}}
+\index{ValueInPosition@{ValueInPosition}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{ValueInPosition()}{ValueInPosition()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a776beca905c3fd71c10f9dfbd6dfaa54} 
+decimal Data\+\_\+\+Best\+Sale.\+Products.\+Value\+In\+Position (\begin{DoxyParamCaption}\item[{int}]{p}{}\end{DoxyParamCaption})}
+
+
+
+This method returns the price of a product, given a certain array position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Position in array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00094}{94}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_a4234f35c6b3d46948b847c3186d35202}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!WarratyExpirationDateForProduct@{WarratyExpirationDateForProduct}}
+\index{WarratyExpirationDateForProduct@{WarratyExpirationDateForProduct}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{WarratyExpirationDateForProduct()}{WarratyExpirationDateForProduct()}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a4234f35c6b3d46948b847c3186d35202} 
+Date\+Time Data\+\_\+\+Best\+Sale.\+Products.\+Warraty\+Expiration\+Date\+For\+Product (\begin{DoxyParamCaption}\item[{Date\+Time}]{date}{, }\item[{string}]{reff}{}\end{DoxyParamCaption})}
+
+
+
+Method used to calculate the warranty\textquotesingle{}s expiration date of a product on a list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00185}{185}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___best_sale_1_1_products_a91b5eeb86311371024db68c1a6214d33}\index{Data\_BestSale.Products@{Data\_BestSale.Products}!Prods@{Prods}}
+\index{Prods@{Prods}!Data\_BestSale.Products@{Data\_BestSale.Products}}
+\doxysubsubsection{\texorpdfstring{Prods}{Prods}}
+{\footnotesize\ttfamily \label{class_data___best_sale_1_1_products_a91b5eeb86311371024db68c1a6214d33} 
+List$<$\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}$>$ Data\+\_\+\+Best\+Sale.\+Products.\+Prods\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Property used to get and set the list of products. 
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source_l00061}{61}} of file \mbox{\hyperlink{_data___best_sale_2_product_2_products_8cs_source}{Products.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data\+\_\+\+Best\+Sale/\+Product/Products.\+cs\end{DoxyCompactItemize}

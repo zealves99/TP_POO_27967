@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/13/2024 4:17:18 PM</date>
-*	<description></description>
+*	<description>This class contains the definition and methods to manage warranties.</description>
 **/
 using System;
 using System.Diagnostics.Contracts;

@@ -1,0 +1,163 @@
+\doxysection{Products.\+cs}
+\hypertarget{_data___best_sale_2_product_2_products_8cs_source}{}\label{_data___best_sale_2_product_2_products_8cs_source}\index{Data\_BestSale/Product/Products.cs@{Data\_BestSale/Product/Products.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}Data\_BestSale.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>11/9/2024\ 6:34:19\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>Class\ to\ manage\ a\ group\ of\ more\ than\ one\ product.</description>}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }System.Collections;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00012}00012\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00013}00013\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00014}00014\ \textcolor{keyword}{using\ }static\ System.Net.Mime.MediaTypeNames;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00016}00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00018}00018\ \ \ \ \ [Serializable]}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00026}\mbox{\hyperlink{class_data___best_sale_1_1_products}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}}\ :\ \mbox{\hyperlink{interface_data___best_sale_1_1_i_list_management}{IListManagement}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00027}00027\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00028}00028\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Attributes}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ List<Product>\ \_prods;\ \textcolor{comment}{//como\ faço\ uma\ propriedade\ para\ isto?\ Não\ consigo\ dar\ return\ do\ array,\ certo?}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00030}00030\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00032}00032\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00034}00034\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Constructors}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00039}\mbox{\hyperlink{class_data___best_sale_1_1_products_aaeb7b77f59f0df2a60ac61e241d3000d}{00039}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_aaeb7b77f59f0df2a60ac61e241d3000d}{Products}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \_prods\ =\ \textcolor{keyword}{new}\ List<Product>();}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00048}\mbox{\hyperlink{class_data___best_sale_1_1_products_a2f80325cf69bcee6ffbc233a499aa414}{00048}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a2f80325cf69bcee6ffbc233a499aa414}{Products}}(List<Product>\ products)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \_prods\ =\ products;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00055}00055\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00057}00057\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Properties}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00061}\mbox{\hyperlink{class_data___best_sale_1_1_products_a91b5eeb86311371024db68c1a6214d33}{00061}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ List<Product>\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a91b5eeb86311371024db68c1a6214d33}{Prods}}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{get}\ \{\ \textcolor{keywordflow}{return}\ \_prods;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{set}\ \{\ \_prods\ =\ value;\ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00066}00066\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00070}00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00076}\mbox{\hyperlink{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768}{00076}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a5063e9cf49e4b225b735027e6a017768}{ToString}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ StringBuilder\ sb\ =\ \textcolor{keyword}{new}\ StringBuilder();}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (var\ product\ \textcolor{keywordflow}{in}\ \_prods)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sb.AppendLine(product.ToString());}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ sb.ToString();}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00085}00085\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00087}00087\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00094}\mbox{\hyperlink{class_data___best_sale_1_1_products_a776beca905c3fd71c10f9dfbd6dfaa54}{00094}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ decimal\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a776beca905c3fd71c10f9dfbd6dfaa54}{ValueInPosition}}(\textcolor{keywordtype}{int}\ p)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ this.\mbox{\hyperlink{class_data___best_sale_1_1_products_a91b5eeb86311371024db68c1a6214d33}{Prods}}[p].Price;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00104}\mbox{\hyperlink{class_data___best_sale_1_1_products_a4b72a16f4cfd0bd9df5e36bdfcb7b631}{00104}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a4b72a16f4cfd0bd9df5e36bdfcb7b631}{Add}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ var\ aux=obj\ as\ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811}{Exist}}(aux.Reference))}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}})}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_prods.Add((\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}})obj);}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00124}\mbox{\hyperlink{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811}{00124}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811}{Exist}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ is\ \textcolor{keywordtype}{string})}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}\ p\ \textcolor{keywordflow}{in}\ \_prods)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (p.\mbox{\hyperlink{class_data___best_sale_1_1_product_a01d48e0d8f24f6d5bb29ea7fd09f5285}{Reference}}\ ==\ (\textcolor{keywordtype}{string})obj)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00136}00136\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00142}\mbox{\hyperlink{class_data___best_sale_1_1_products_a0d7b5ef571b9a8682a8d694066ded6e8}{00142}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a0d7b5ef571b9a8682a8d694066ded6e8}{Remove}}(\textcolor{keywordtype}{object}\ obj)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00143}00143\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (obj\ ==\ \textcolor{keyword}{null})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}\ p\ =\ (\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}})obj;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_data___best_sale_1_1_products_a3c7dd63f30a69ce168a0320520161811}{Exist}}(p.\mbox{\hyperlink{class_data___best_sale_1_1_product_a01d48e0d8f24f6d5bb29ea7fd09f5285}{Reference}}))}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_prods.Remove(p);}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00152}00152\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00159}\mbox{\hyperlink{class_data___best_sale_1_1_products_a224f52d093e231ffe6f9480031ee5fd9}{00159}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a224f52d093e231ffe6f9480031ee5fd9}{SearchProduct}}(\textcolor{keywordtype}{string}\ reff)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00160}00160\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}\ p\ \textcolor{keywordflow}{in}\ \_prods)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(p.\mbox{\hyperlink{class_data___best_sale_1_1_product_a01d48e0d8f24f6d5bb29ea7fd09f5285}{Reference}}==reff)\ \textcolor{keywordflow}{return}\ p;}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00172}\mbox{\hyperlink{class_data___best_sale_1_1_products_a3d75e036499a7a987a52212771fbec2b}{00172}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ decimal\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a3d75e036499a7a987a52212771fbec2b}{TotalPrice}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00173}00173\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00175}00175\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_prods.Sum(p\ =>\ p.\mbox{\hyperlink{class_data___best_sale_1_1_product_a472c1e61ca2793cf5685dbfd2db839b8}{Price}});}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00176}00176\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00177}00177\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00178}00178\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00185}\mbox{\hyperlink{class_data___best_sale_1_1_products_a4234f35c6b3d46948b847c3186d35202}{00185}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ DateTime\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a4234f35c6b3d46948b847c3186d35202}{WarratyExpirationDateForProduct}}(DateTime\ date,\ \textcolor{keywordtype}{string}\ reff)}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00186}00186\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}\ p\ =\ \mbox{\hyperlink{class_data___best_sale_1_1_products_a224f52d093e231ffe6f9480031ee5fd9}{SearchProduct}}(reff);}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (date.AddYears(p.Warranty.\mbox{\hyperlink{class_data___best_sale_1_1_warranty_ad36d6e43cc0878dda757982f7a0b890c}{DurationInYears}}));}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00191}00191\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00192}00192\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00196}\mbox{\hyperlink{class_data___best_sale_1_1_products_aed19e027a1d82081cfad3c9b5edddac5}{00196}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_data___best_sale_1_1_products_aed19e027a1d82081cfad3c9b5edddac5}{ClearProducts}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00197}00197\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00198}00198\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00199}00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_prods.Clear();}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00200}00200\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00201}00201\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00202}00202\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00203}00203\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00204}00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00205}00205\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00206}00206\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00207}00207\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00208}00208\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00209}00209\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Destructor}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00213}00213\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_products}{\string~Products}}()}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00214}00214\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00215}00215\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00216}00216\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00218}00218\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00219}00219\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_data___best_sale_2_product_2_products_8cs_source_l00220}00220\ \}}
+
+\end{DoxyCode}

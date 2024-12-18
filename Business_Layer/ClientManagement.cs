@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>zecun</author>
 *   <date>12/10/2024 10:57:31 PM</date>
-*	<description></description>
+*	<description>This file has all the necessary calls to the back end to manage clients.</description>
 **/
 using System;
 using System.Xml.Schema;
@@ -15,7 +15,7 @@ using BestSale_Validations;
 namespace Business_Layer
 {
     /// <summary>
-    /// Purpose:
+    /// Purpose:This namespace has all the necessary calls to the back end to manage clients.
     /// Created by: zecun
     /// Created on: 12/10/2024 10:57:31 PM
     /// </summary>

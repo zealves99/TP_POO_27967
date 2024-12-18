@@ -4,7 +4,7 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>11/6/2024 11:21:43 AM</date>
-*	<description></description>
+*	<description>Definition of Campaign and methods to deal with Campaign operations.</description>
 **/
 using System;
 

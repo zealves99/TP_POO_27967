@@ -4,7 +4,8 @@
 *	</copyright>
 * 	<author>Jose Alves a27967</author>
 *   <date>10/29/2024 4:23:56 PM</date>
-*	<description></description>
+*	<description>Definition of Client and methods to deal with Client operations.
+    /// Created by: Jose Alves a27967</description>
 **/
 using System;
 using System.Text;
