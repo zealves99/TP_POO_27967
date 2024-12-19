@@ -27,7 +27,7 @@ namespace Data_BestSale
     {
         #region Attributes
         int _id;
-        Client _client;
+        int _clientId;
         ProductsSale _products;
         decimal _totPrice;
         DateTime _saleDate;
@@ -46,7 +46,7 @@ namespace Data_BestSale
         public Sale()
         {
             _products= new ProductsSale();
-            _client= new Client();
+            _clientId = -1;
             _campaigns= new Campaign();
         }
 
@@ -56,11 +56,24 @@ namespace Data_BestSale
         /// <param name="client"></param>
         /// <param name="products"></param>
         /// <param name="camp"></param>
-        public Sale(Client client, ProductsSale products, Campaign camp)
+        public Sale(int client, ProductsSale products, Campaign camp)
         {
             _id = ++_numSales;
-            _client = client;
+            _clientId = client;
             _products = products;
+            _totPrice = TotalPrice();
+            _saleDate = DateTime.Now;
+        }
+
+        /// <summary>
+        /// The constructor to use when only the client ID is given.
+        /// </summary>
+        /// <param name="clientId"></param>
+        public Sale(int clientId)
+        {
+            _id = ++_numSales;
+            _clientId = clientId;
+            _products= new ProductsSale();
             _totPrice = TotalPrice();
             _saleDate = DateTime.Now;
         }
@@ -82,10 +95,10 @@ namespace Data_BestSale
         /// <summary>
         /// Property used to get and set the information of the Client who made the purchase.
         /// </summary>
-        public Client Client
+        public int Client
         {
-            get { return (_client); }
-            set { _client = value; }
+            get { return (_clientId); }
+            set { _clientId = value; }
         }
 
         /// <summary>
@@ -197,9 +210,20 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
-        public bool InsertProductOnSale(string reff, int amount)
+        public bool InsertProductOnSale(params string[] reff)
         {
-            return _products.AddProductSale(reff, amount);
+            foreach(string str in reff)
+            {
+                if (Store.StoreContainsProduct(str))
+                {
+                    _products.AddProductSale(str);
+                }
+                else
+                {
+                    return false;
+                }        
+            }
+            return true;
         }
 
         /// <summary>
@@ -233,6 +257,17 @@ namespace Data_BestSale
             Products prod = Store.GetStoreProdList();
             return (prod.WarratyExpirationDateForProduct(this.SaleDate, reff));
         }
+
+        /// <summary>
+        /// Method that creates a new sale instance.
+        /// </summary>
+        /// <param name="clientId"></param>
+        /// <returns></returns>
+        public static Sale CreateSale(int clientId)
+        {
+            return new Sale(clientId);
+        }
+
         #endregion
 
         #region Destructor

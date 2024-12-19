@@ -26,11 +26,11 @@ namespace Data_BestSale
     public class Store
     {
         #region Attributes
-        static Clients _clientList;
-        static Products _prodList;
-        static Sales _saleList;
-        static Makes _makeList;
-        static Categories _catList;
+        static Clients _clientList = new Clients();
+        static Products _prodList = new Products();
+        static Sales _saleList = new Sales();
+        static Makes _makeList = new Makes();
+        static Categories _catList = new Categories();
         #endregion
 
         #region Methods
@@ -143,7 +143,7 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="client"></param>
         /// <returns>True - Client has been successfully added to the list.</returns>
-        /// <returns>False - Client already exists or an error occurred.<returns>
+        /// <returns>False - Client already exists or an error occurred.</returns>
         public static bool InsertClientInStore(Client client)
         {
             return _clientList.Add(client);
@@ -201,9 +201,9 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="fileName">Name of file where the data is stored.</param>
         /// <returns>True - Store loaded successfully.</returns>
-        /// <returns>False - The file does not exist.<returns>
-        /// <returns>IO exception - There was an error with the I/O<returns>
-        /// <returns>Exception - An error occurred.<returns>
+        /// <returns>False - The file does not exist.</returns>
+        /// <returns>IO exception - There was an error with the I/O</returns>
+        /// <returns>Exception - An error occurred.</returns>
         public static bool LoadStoreBin(string fileName)
         {
             ///Verify if a file with that name exists and has content in it.
@@ -238,7 +238,7 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="prod">The product to add.</param>
         /// <returns>True - Product added to the list.</returns>
-        /// <returns>False - The product already exists on the list.<returns>
+        /// <returns>False - The product already exists on the list.</returns>
         public static bool InsertProductInStore(Product prod)
         {
             if (_prodList.Exist(prod)) return false;
@@ -269,6 +269,11 @@ namespace Data_BestSale
             return _prodList;
         }
 
+        public static bool StoreContainsProduct(string reff)
+        {
+            return _prodList.Exist(reff);
+        }
+
         #endregion
 
         #region Makes
@@ -277,7 +282,7 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="name"></param>
         /// <returns>The ID of the make</returns>
-        /// <returns>-50 if the make does not exist on the list.<returns>
+        /// <returns>-50 if the make does not exist on the list.</returns>
         public static int GetMakeIdFromNameInStore(string name)
         {
             if (_makeList.Exist(name))
@@ -306,7 +311,7 @@ namespace Data_BestSale
         /// </summary>
         /// <param name="name">The name of the Make</param>
         /// <returns>The ID of the Category</returns>
-        /// <returns>-100 - There's no category with that name on the list.<returns>
+        /// <returns>-100 - There's no category with that name on the list.</returns>
         public static int GetCategoryIdFromNameInStore(string name)
         {
             if(_catList.Exist(name))
@@ -325,6 +330,19 @@ namespace Data_BestSale
         public static bool InsertCategoryInStore(Category cat)
         {
             return _catList.Add(cat);
+        }
+        #endregion
+
+        #region Sales
+        /// <summary>
+        /// Method that inserts a sale on a store's sales' list.
+        /// </summary>
+        /// <param name="sale">The object to insert.</param>
+        /// <returns>True - Sale added successfully.</returns>
+        /// <returns>False - Sale not added to the list.</returns>
+        public static bool InsertSaleInStore(Sale sale)
+        {
+            return _saleList.Add(sale);
         }
         #endregion
 

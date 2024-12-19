@@ -54,9 +54,9 @@ namespace Business_Layer
         /// </summary>
         /// <param name="fileName">The name of the file</param>
         /// <returns>True - Store loaded successfully</returns>
-        /// <returns>False - There's no file with that name.<returns>
-        /// <returns>IO exception - There was an error with the I/O<returns>
-        /// <returns>Exception - An error occurred.<returns>
+        /// <returns>False - There's no file with that name./returns>
+        /// <returns>IO exception - There was an error with the I/O</returns>
+        /// <returns>Exception - An error occurred.</returns>
         public static bool LoadStore(string fileName)
         {
             try

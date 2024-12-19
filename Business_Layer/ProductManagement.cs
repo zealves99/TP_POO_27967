@@ -39,7 +39,7 @@ namespace Business_Layer
         /// <param name="warrantyDuration">The warranty duration in years</param>
         /// <param name="warrantyConditions">The terms of the warranty</param>
         /// <returns>True - Product successfully created and added to the store's list.</returns>
-        /// <returns>Throws an exception - An error occurred in the process.<returns>
+        /// <returns>Throws an exception - An error occurred in the process.</returns>
         public static bool CreateNewProductInStore(string reff, decimal price, int makeID, int categoryID, int warrantyDuration, string warrantyConditions)
         {
             try
@@ -95,7 +95,7 @@ namespace Business_Layer
         /// </summary>
         /// <param name="name">The Category's name.</param>
         /// <returns>True - Category created and added successfully.</returns>
-        /// <returns>False - The Category couldn't be added to the list.<returns>
+        /// <returns>False - The Category couldn't be added to the list.</returns>
         public static bool CreateCategoryInStore(string name)
         {
             Category.CreateCategory(name, out Category newCategory);
@@ -114,9 +114,21 @@ namespace Business_Layer
         #endregion
 
         #region Sale
-        public static bool CreateSaleInStore()
+        /// <summary>
+        /// Method used to create a new sale in a store, given the client ID and the product's sold references.
+        /// </summary>
+        /// <param name="clientID">The ID of the client who made the purchase.</param>
+        /// <param name="products">The references of the products sold.</param>
+        /// <returns>True - Sale created and added successfully.</returns>
+        /// <returns>False - Sale not added to the store's list.</returns>
+        public static bool CreateSaleInStore(int clientID, params string[] products)
         {
-            return false;
+            bool aux;
+            Sale newSale = Sale.CreateSale(clientID);
+            aux = newSale.InsertProductOnSale(products);
+            aux = Store.InsertSaleInStore(newSale);
+
+            return aux;
         }
         #endregion
 

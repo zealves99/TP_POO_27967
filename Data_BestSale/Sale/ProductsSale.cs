@@ -62,22 +62,21 @@ namespace Data_BestSale
         /// This method adds a reference and amount of a product to the list of products.
         /// </summary>
         /// <param name="reff">The reference of the product to add</param>
-        /// <param name="amount"></param>
         /// <returns>True - Product added successfully.</returns>
         /// <returns>ArgumentNullException - The reference is not valid</returns>
-        public bool AddProductSale(string reff, int amount)
+        public bool AddProductSale(string reff)
         {
 
             try
             {
                 if (_prodsInSale.ContainsKey(reff))
                 {
-                    _prodsInSale[reff] += amount;
+                    _prodsInSale[reff] ++;
                     return true;
                 }
                 else
                 {
-                    _prodsInSale.Add(reff, amount);
+                    _prodsInSale.Add(reff,1);
                     return true;
                 }
             }
@@ -85,8 +84,6 @@ namespace Data_BestSale
             {
                 throw argNullExcep;
             }
-           
-            
         }
 
         /// <summary>

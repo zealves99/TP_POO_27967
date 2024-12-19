@@ -122,7 +122,7 @@ namespace Data_BestSale
         /// <param name="name"></param>
         /// <param name="category"></param>
         /// <returns>True - if succeeded</returns>
-        /// <returns>Exception - An error occurred.<returns>
+        /// <returns>Exception - An error occurred.</returns>
         public static bool CreateCategory(string name, out Category category)
         {
             try

@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSale_Validations", "Bes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{FABE7B09-51FD-47B8-89E3-D85B3554D76B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestSale.DataLayer.Tests", "BestSake.DataLayer.Tests\BestSale.DataLayer.Tests.csproj", "{5F12F82C-AB82-4B31-B92E-209E2EE39A45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{FABE7B09-51FD-47B8-89E3-D85B3554D76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FABE7B09-51FD-47B8-89E3-D85B3554D76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FABE7B09-51FD-47B8-89E3-D85B3554D76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F12F82C-AB82-4B31-B92E-209E2EE39A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F12F82C-AB82-4B31-B92E-209E2EE39A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F12F82C-AB82-4B31-B92E-209E2EE39A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F12F82C-AB82-4B31-B92E-209E2EE39A45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

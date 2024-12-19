@@ -177,6 +177,14 @@ namespace Data_BestSale
 
 
         #region OtherMethods
+        /// <summary>
+        /// Method used to create a new Client, given a name and contact.
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="contact"></param>
+        /// <param name="newClient"></param>
+        /// <returns>True - Client successfully created.</returns>
+        /// <returns>Exception - an error occurred.</returns>
         public static bool CreateClientFromNameContact(string name, string contact, out Client newClient)
         {
             try

@@ -47,6 +47,7 @@
     <Compile Include="Category\Category.cs" />
     <Compile Include="Client\Client.cs" />
     <Compile Include="Client\Clients.cs" />
+    <Compile Include="Interface\IListManagementItem.cs" />
     <Compile Include="Interface\IListManagement.cs" />
     <Compile Include="Make\Make.cs" />
     <Compile Include="Make\Makes.cs" />

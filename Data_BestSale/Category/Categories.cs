@@ -109,14 +109,15 @@ namespace Data_BestSale
         public bool Exist(object obj)
         {
             if (obj == null) return false;
-            var aux=obj as Category;
+            
             
             ///If the ID is given
             if (obj is int)
             {
+                int aux = (int)obj;
                 foreach (Category cate in _cats)
                 {
-                    if (cate.Id == aux.Id)
+                    if (cate.Id == aux)
                     {
                         return true;
                     }
@@ -126,9 +127,10 @@ namespace Data_BestSale
             ///The Name is given
             if(obj is string)
             {
+                string aux = (string)obj;
                 foreach (Category cate in _cats)
                 {
-                    if (cate.Name == aux.Name)
+                    if (cate.Name == aux)
                     {
                         return true;
                     }

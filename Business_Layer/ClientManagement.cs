@@ -11,6 +11,7 @@ using System.Xml.Schema;
 using Business_Object;
 using Data_BestSale;
 using BestSale_Validations;
+using System.Web;
 
 namespace Business_Layer
 {
@@ -57,6 +58,13 @@ namespace Business_Layer
             {
                 throw (excep);
             }
+        }
+
+        public static bool Teste(string n, string c)
+        {
+            Client test = new Client(n, c);
+            bool aux=Store.InsertClientInStore(test);
+            return aux;
         }
         #endregion
 
