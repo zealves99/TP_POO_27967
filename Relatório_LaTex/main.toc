@@ -28,14 +28,15 @@
 \contentsline {subsection}{\numberline {7.1}Vantagens da Arquitetura N-Tier}{10}{subsection.7.1}%
 \contentsline {section}{\numberline {8}Utilização de \textbf {\textit {SOLID}}}{11}{section.8}%
 \contentsline {section}{\numberline {9}Respeitar a \textbf {\textit {.NET CLS}}}{11}{section.9}%
-\contentsline {section}{\numberline {10}Trabalho Desenvolvido}{12}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Diagrama de Classes}{12}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Estrutura de Projetos}{13}{subsection.10.2}%
-\contentsline {subsubsection}{\numberline {10.2.1}Bibliotecas (.dll)}{13}{subsubsection.10.2.1}%
-\contentsline {subsubsection}{\numberline {10.2.2}\textit {Business Layer}}{13}{subsubsection.10.2.2}%
-\contentsline {subsubsection}{\numberline {10.2.3}\textit {Front End}}{14}{subsubsection.10.2.3}%
-\contentsline {subsection}{\numberline {10.3}Observações}{14}{subsection.10.3}%
-\contentsline {section}{\numberline {11}Estruturas de Dados}{17}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Vantagens de \textit {Dictionary(TKey, TValue)}}{17}{subsection.11.1}%
-\contentsline {section}{\numberline {12}Conclusão}{18}{section.12}%
+\contentsline {section}{\numberline {10}Testes Unitários}{12}{section.10}%
+\contentsline {section}{\numberline {11}Trabalho Desenvolvido}{13}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Diagrama de Classes}{13}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Estrutura de Projetos}{14}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Bibliotecas (.dll)}{14}{subsubsection.11.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2}\textit {Business Layer}}{14}{subsubsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.3}\textit {Front End}}{15}{subsubsection.11.2.3}%
+\contentsline {subsection}{\numberline {11.3}Observações}{15}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Estruturas de Dados}{18}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Vantagens de \textit {Dictionary(TKey, TValue)}}{18}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Conclusão}{19}{section.13}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

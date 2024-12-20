@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions; //Used to verify if a string meets certain criteria.
 using Business_Layer;
 using System.IO;
+using Exceptions;
 
 namespace BestSale
 {
@@ -27,7 +28,11 @@ namespace BestSale
 
             try
             {
-                a = ClientManagement.CreateClientInStore("Jose Alves", "962310421");
+                a = ClientManagement.CreateClientInStore("Jose Alves", "123456789");
+            }
+            catch (InvalidPhoneNumberException invalidPhoneNumberException)
+            {
+                Console.WriteLine(invalidPhoneNumberException.Message);
             }
             catch (IOException ioExcep)
             {

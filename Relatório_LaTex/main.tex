@@ -388,11 +388,37 @@ Neste projeto, por exemplo, foi utilizado o tipo \textit{decimal} para definir o
 
 \newpage
 
+\section{Testes Unitários}
+Os testes unitários em .NET são uma prática essencial para garantir a qualidade e fiabilidade do código. Estes verificam o comportamento de pequenas unidades de código, como métodos ou classes, de forma isolada. Neste projeto, utilizei o \textbf{MSTest} para fazer alguns testes da classe \textit{Client}.
+
+\begin{lstlisting}[language={[Sharp]C}, caption={Teste Unitário do construtor de Client, quando é indicado um contacto inválido}, label={Teste Client com contacto errado}]
+	
+ [TestMethod]
+public void Constructor_InvalidContact_ThrowsInvalidPhoneNumberException()
+{
+	//Arrange
+	var name = "Jose Alves";
+	var invalidContact = "123456789";
+	
+	//Act & Assert
+	try
+	{
+		var client = new Client(name, invalidContact);
+		Assert.Fail("Expected InvalidPhoneNumberException not thrown");
+	}
+	catch (InvalidPhoneNumberException exception)
+	{
+		Assert.AreEqual("Invalid Phone Number", exception.Message);
+	}
+\end{lstlisting}
+
+\newpage
+
 \section{Trabalho Desenvolvido}
 \subsection{Diagrama de Classes}
 \begin{figure}[h] % [h] forces the figure to be output where it is defined in the code (it suppresses floating)
 	\centering
-	\includegraphics[width=0.9\columnwidth]{DiagramaClasses.png} % Example image
+	\includegraphics[width=0.7\textwidth]{DiagramaClasses.png} % Example image
 	\caption{Diagrama de Classes}
 \end{figure}
 
@@ -493,7 +519,7 @@ Neste projeto, por exemplo, foi utilizado o tipo \textit{decimal} para definir o
 
 \subsection{Observações}
 
-No interface desenvolvido, visto que a versão de .NET que estava a utilizar era ligeiramente mais antiga, não me foi possível utilizar generalizações do tipo \textit{List<T>}. Assim sendo, tive de recorrer a outro método, o que tornou o código mais repetitivo e, de certa forma, inutilizou a utilização do interface, pois envolve fazer vários testes em todas as implementações do interface. Seguem dois exemplos:
+No interface desenvolvido, visto que a versão de .NET que estava a utilizar era ligeiramente mais antiga, não me foi possível utilizar generalizações do tipo \textit{T<Item>}. Assim sendo, tive de recorrer a outro método, o que tornou o código mais repetitivo e, de certa forma, inutilizou a utilização do interface, pois envolve fazer vários testes em todas as implementações do interface. Seguem dois exemplos:
 
 \begin{lstlisting}[language={[Sharp]C}, caption={Implementação do Interface}, label={Implementação do Interface}]
 	
@@ -514,8 +540,7 @@ No interface desenvolvido, visto que a versão de .NET que estava a utilizar era
 			}
 			return false;
 		}
-		
-		/// Method used to verify if a product is on a products' list, given its Refference.
+		/// Method used to verify if a product is on a products' list, given its Reference.
 		public bool Exist(object obj)
 		{
 			if (obj == null) return false;
@@ -528,7 +553,6 @@ No interface desenvolvido, visto que a versão de .NET que estava a utilizar era
 			}
 			return false;
 		}
-		
 		/// Method used to remove a product from a Products' list.
 		public bool Remove(object obj)
 		{
@@ -544,56 +568,47 @@ No interface desenvolvido, visto que a versão de .NET que estava a utilizar era
 	}
 \end{lstlisting}
 
-\begin{lstlisting}[language={[Sharp]C}, caption={Outra Implementação do Interface}, label={Outra Implementação do Interface}]
-	
-	public class Makes : IListManagement
-	{
-		///Method used to add a make to a list of makes. 
-		public bool Add(object obj)
-		{
-			if (obj == null) return false;
-			if (obj is Make) {
-				_makeList.Add((Make)obj);
-				return true;
-			}
-			return false;
-		}
+Aquando da passagem de um projeto único para a implementação do \textit{design pattern N-Tier}, tentei fazer pelo menos um exemplo de um interface utilizando \textit{T<Item>}. Surgiu assim o interface \textit{IListManagementItem}.
 
-		/// Method used to remove a make from a list of makes.
-		public bool Remove(object obj)
+\begin{lstlisting}[language={[Sharp]C}, caption={Implementação do Interface "T<Item>"}, label={Implementação do Interface "T<Item>"}]
+	
+	public class Clients : IListManagementItem<Client>
+	{
+		static List<Client> _clientList;
+		/// <summary>
+		/// Method to add a client to a clients' list.
+		/// </summary>
+		public bool Add(Client client)
 		{
-			if (obj == null) return false;
-			var aux = obj as Make;
-			if (Exist(aux.ID))
+			if(client==null || Exist(client))
 			{
-				_makeList.Remove((Make)obj);
-				return true;
+				return false;
 			}
-			return false;
+			_clientList.Add(client);
+			return true;
 		}
-		
-		/// Method used to verify if a make exists on a list of makes, given its ID or name.
-		public bool Exist(object obj)
+		/// <summary>
+		/// Method to remove a client from the store's client list.
+		/// </summary>
+		public bool Remove(Client client)
 		{
-			if (obj == null) return false;
-			if (obj is int)
+			if (client == null || !(Exist(client)))
 			{
-				foreach (Make make in _makeList)
-				{
-					if (make.ID == (int)obj)
-					{
-						return true;
-					}
-				}
+				return false;
 			}
-			if(obj is string)
+			_clientList.Remove(client);
+			return true;
+		}
+		/// <summary>
+		/// Method to check if a client is listed on a clients' list
+		/// </summary>
+		public bool Exist(Client client)
+		{
+			foreach(Client _client in _clientList)
 			{
-				foreach (Make make in _makeList)
+				if(_client.ClientID==client.ClientID)
 				{
-					if (make.Name == (string)obj)
-					{
-						return true;
-					}
+					return true;
 				}
 			}
 			return false;
@@ -601,7 +616,7 @@ No interface desenvolvido, visto que a versão de .NET que estava a utilizar era
 	}
 \end{lstlisting}
 
-\vspace{20px}
+\vspace{30px}
 Mais ainda, apesar de, para tornar o código mais modular e melhor organizado , se deva separar as classes o mais modularmente possível, optei por colocar dentro da classe \textit{ProductManagement} também as funções que permitam a interação entre \textit{front end} e \textit{back end} no que toca à criação e pesquisa de marcas, categorias e garantias (indo um pouco contra os princípios do \textit{SOLID}). Esta opção foi tomada, visto que, num programa com esta pequena dimensão, a classe em questão não se torna caótica e, ao mesmo tempo, evita-se criar classes com apenas dois ou três métodos. Mais ainda, tendo em conta que, para criar um produto, é necessário ter também os registos destas restantes vertentes, faz sentido que estas possam também ser manipuladas nesta classe. Ainda assim, todas as partes estão distinguidas com a sua devida \textit{\#region}, como se vê no exemplo seguinte:
 
 \vspace{15px}

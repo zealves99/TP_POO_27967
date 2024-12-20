@@ -57,7 +57,11 @@ namespace Data_BestSale
         {
             _clientID = ++_clientCount;
             _name = n;
-            _contact = c;
+            if(BestSale_Validations.BestSale_Validations.ValidatePhoneNumber(c))
+            {
+                _contact = c;
+            }
+            
             //COMO POSSO FAZER PARA TESTAR SE A STRING PODE SER CONTATCO? DEVO FAZE-LO NO CONSTRUTOR OU FORA?
         }
 
@@ -191,6 +195,10 @@ namespace Data_BestSale
             {
                 newClient = new Client(name, contact);
                 return true;
+            }
+            catch(InvalidPhoneNumberException invalidPhoneNumber)
+            {
+                throw invalidPhoneNumber;
             }
             catch (Exception excep)
             {

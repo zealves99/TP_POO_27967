@@ -66,26 +66,12 @@ namespace Data_BestSale
         /// <returns>False - The list already contains the client or an error occurred.</returns>
         public bool Add(Client client)
         {
-            //if (obj == null) return false;
-            //if (obj is Client)
-            //{
-            //    if (this.ClientList.Contains((Client)obj)) return false;
-            //    else
-            //    {
-            //        this.ClientList.Add((Client)obj);
-            //        return true;
-            //    }
-            //}
-            //return false;
-
             if(client==null || Exist(client))
             {
                 return false;
             }
             _clientList.Add(client);
             return true;
-
-
         }
 
         /// <summary>
@@ -96,14 +82,6 @@ namespace Data_BestSale
         /// <returns>False - Client was NOT removed.</returns>
         public bool Remove(Client client)
         {
-            //if (obj == null) return false;
-            //var aux = (Client) obj;
-            //if (Exist(aux.ClientID))
-            //{
-            //    _clientList.Remove((Client)obj);
-            //    return true;
-            //}
-            //return false;
             if (client == null || !(Exist(client)))
             {
                 return false;
@@ -119,17 +97,6 @@ namespace Data_BestSale
         /// <returns></returns>
         public bool Exist(Client client)
         {
-            //if (obj is int)
-            //{
-            //    foreach (Client client in _clientList)
-            //    {
-            //        if (client.ClientID == (int)obj)
-            //        {
-            //            return true;
-            //        }
-            //    }
-            //}
-            //return false;
             foreach(Client _client in _clientList)
             {
                 if(_client.ClientID==client.ClientID)

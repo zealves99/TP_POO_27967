@@ -119,7 +119,7 @@ namespace Data_BestSale
         }
 
         /// <summary>
-        /// Method used to verify if a product is on a products' list, given its Refference.
+        /// Method used to verify if a product is on a products' list, given its Reference.
         /// </summary>
         /// <param name="reff"></param>
         /// <returns></returns>
