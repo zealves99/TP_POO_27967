@@ -15,43 +15,51 @@
 \DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_business___object}{Business\_Object}};}
 \DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00012}00012\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}};}
 \DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00013}00013\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_best_sale___validations}{BestSale\_Validations}};}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00015}\mbox{\hyperlink{namespace_business___layer}{00015}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_business___layer}{Business\_Layer}}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00016}00016\ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00024}00024\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }ClientManagement}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00025}00025\ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00026}00026\ }
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00027}00027\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00028}00028\ }
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00029}00029\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00030}00030\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00031}00031\ }
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00032}00032\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ CreateClientInStore(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ contact)}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespace_best_sale___validations}{BestSale\_Validations}}.\mbox{\hyperlink{class_best_sale___validations_1_1_best_sale___validations}{BestSale\_Validations}}.ValidatePhoneNumber(contact))}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ aux\ =\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}.CreateClientFromNameContact(name,\ contact,\ out\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}\ newClient);}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ aux\ =\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c}{InsertClientInStore}}(newClient);}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}(\mbox{\hyperlink{namespace_exceptions}{Exceptions}}.\mbox{\hyperlink{class_exceptions_1_1_invalid_phone_number_exception}{InvalidPhoneNumberException}}\ invalidPhoneNumber)}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ invalidPhoneNumber;}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ excep)}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ (excep);}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00061}00061\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00062}00062\ }
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00063}00063\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00064}00064\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00014}00014\ \textcolor{keyword}{using\ }System.Web;}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00016}\mbox{\hyperlink{namespace_business___layer}{00016}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_business___layer}{Business\_Layer}}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00017}00017\ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00025}00025\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{class\ }ClientManagement}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00026}00026\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00028}00028\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Methods}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00030}00030\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ Overrides}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00031}00031\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00033}00033\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#region\ OtherMethods}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ CreateClientInStore(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{string}\ contact)}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{namespace_best_sale___validations}{BestSale\_Validations}}.\mbox{\hyperlink{class_best_sale___validations_1_1_best_sale___validations}{BestSale\_Validations}}.ValidatePhoneNumber(contact))}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ aux\ =\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}.\mbox{\hyperlink{class_data___best_sale_1_1_client_ad9ca076447f4e33ce4958201e8df9d34}{CreateClientFromNameContact}}(name,\ contact,\ out\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}\ newClient);}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ aux\ =\ \mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c}{InsertClientInStore}}(newClient);}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}(\mbox{\hyperlink{namespace_exceptions}{Exceptions}}.\mbox{\hyperlink{class_exceptions_1_1_invalid_phone_number_exception}{InvalidPhoneNumberException}})}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception)}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ Teste(\textcolor{keywordtype}{string}\ n,\ \textcolor{keywordtype}{string}\ c)}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}\ test\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}(n,\ c);}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ aux=\mbox{\hyperlink{class_data___best_sale_1_1_store}{Store}}.\mbox{\hyperlink{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c}{InsertClientInStore}}(test);}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ aux;}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00070}00070\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00072}00072\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endregion}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_management_8cs_source_l00074}00074\ \}}
 
 \end{DoxyCode}

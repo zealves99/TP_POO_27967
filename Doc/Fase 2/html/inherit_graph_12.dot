@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="trabalhoPOO_27967.Campaign",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_campaign.html",tooltip="Purpose: Definition of Campaign and methods to deal with Campaign operations. Created by: Jose Alves ..."];
+  Node0 [id="Node000000",label="Data_BestSale.ProductsSale",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_products_sale.html",tooltip="Purpose: Created by: zecun Created on: 12/18/2024 4:29:26 PM."];
 }

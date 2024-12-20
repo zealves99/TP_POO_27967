@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="trabalhoPOO_27967.Client",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_client.html",tooltip="Purpose: Definition of Client and methods to deal with Client operations. Created by: Jose Alves a279..."];
+  Node0 [id="Node000000",label="Data_BestSale.Store",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_store.html",tooltip="Purpose: This class has the definition and properties to manage a store. Created by: Jose Alves a2796..."];
 }

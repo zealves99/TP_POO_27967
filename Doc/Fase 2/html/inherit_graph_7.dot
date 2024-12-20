@@ -5,5 +5,17 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="Data_BestSale.Make",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_make.html",tooltip="Purpose: Definition of Make and methods to deal with Make operations. Created by: Jose Alves a27967 C..."];
+  Node0 [id="Node000000",label="Data_BestSale.IListManagement",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$interface_data___best_sale_1_1_i_list_management.html",tooltip=" "];
+  Node0 -> Node1 [id="edge2_Node000000_Node000001",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 [id="Node000001",label="Data_BestSale.Campaigns",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_campaigns.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Campaign...."];
+  Node0 -> Node2 [id="edge3_Node000000_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Data_BestSale.Categories",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_categories.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Category...."];
+  Node0 -> Node3 [id="edge4_Node000000_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Data_BestSale.Makes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_makes.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Make...."];
+  Node0 -> Node4 [id="edge5_Node000000_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Data_BestSale.Products",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_products.html",tooltip="Purpose: Class to manage a group of more than one product. Created by: Jose Alves a27967 Created on: ..."];
+  Node0 -> Node5 [id="edge6_Node000000_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Data_BestSale.Sales",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_sales.html",tooltip="Purpose: Class with the agregation of sales of a store. Created by: Jose Alves a27967 Created on: 11/..."];
+  Node0 -> Node6 [id="edge7_Node000000_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Data_BestSale.Warranties",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_warranties.html",tooltip="Purpose:This file has the definition and methods to work with the plurality of Warranty...."];
 }

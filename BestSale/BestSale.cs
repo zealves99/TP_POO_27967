@@ -25,40 +25,21 @@ namespace BestSale
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             bool a;
+            a = FileManagement.LoadStore("LojaTeste");
 
-            try
-            {
-                a = ClientManagement.CreateClientInStore("Jose Alves", "123456789");
-            }
-            catch (InvalidPhoneNumberException invalidPhoneNumberException)
-            {
-                Console.WriteLine(invalidPhoneNumberException.Message);
-            }
-            catch (IOException ioExcep)
-            {
-                Console.WriteLine(ioExcep.Message);
-            }
-            catch (Exception excep)
-            {
-                Console.WriteLine(excep.Message);
-            }
+            ///Creating a Client
+            a = ClientManagement.CreateClientInStore("Jose Alves", "969696969");
+            a = ClientManagement.CreateClientInStore("Jose Alves", "123456789");
 
-            try
-            {
-                a = ProductManagement.CreateMakeInStore("Benfica");
-                int id = ProductManagement.GetMakeIdFromName("Benfica");
-                a = ProductManagement.CreateCategoryInStore("Melhor do Mundo");
-                int cat = ProductManagement.GetCategoryIdFromName("Melhor do Mundo");
-                a = ProductManagement.CreateNewProductInStore("1A34", 23.9m, id, cat , 3, "Nao gostar de batatas.");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            ///Creating a Product
+            a = ProductManagement.CreateMakeInStore("Benfica");
+            int id = ProductManagement.GetMakeIdFromName("Benfica");
+            a = ProductManagement.CreateCategoryInStore("Melhor do Mundo");
+            int cat = ProductManagement.GetCategoryIdFromName("Melhor do Mundo");
+            a = ProductManagement.CreateNewProductInStore("1A34", 23.9m, id, cat, 3, "Nao gostar de batatas.");
 
 
-
-
+            a = FileManagement.SaveStore("LojaTeste");
         }
     }
 }

@@ -1,0 +1,78 @@
+\doxysection{Client\+Tests.\+cs}
+\hypertarget{_client_tests_8cs_source}{}\label{_client_tests_8cs_source}\index{BestSake.DataLayer.Tests/ClientTests.cs@{BestSake.DataLayer.Tests/ClientTests.cs}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00002}00002\ \textcolor{comment}{*\ \ \ <copyright\ file="{}Data\_BestSale.cs"{}\ company="{}IPCA"{}>}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00003}00003\ \textcolor{comment}{*\ \ \ \ \ \ \ Copyright\ (c)\ 2024\ All\ Rights\ Reserved}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00004}00004\ \textcolor{comment}{*\ \ \ </copyright>}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00005}00005\ \textcolor{comment}{*\ \ \ <author>Jose\ Alves\ a27967</author>}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00006}00006\ \textcolor{comment}{*\ \ \ <date>19/12/2024\ 9:25:28\ PM</date>}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00007}00007\ \textcolor{comment}{*\ \ \ <description>Class\ with\ tests\ to\ the\ methods\ of\ the\ Client\ Class.</description>}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00008}00008\ \textcolor{comment}{**/}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_data___best_sale}{Data\_BestSale}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00011}00011\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_exceptions}{Exceptions}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00013}\mbox{\hyperlink{namespace_best_sale}{00013}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_best_sale_1_1_data_layer_1_1_tests}{BestSale.DataLayer.Tests}}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00015}00015\ \ \ \ \ [TestClass]}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00016}\mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests}{00016}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{sealed}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests}{ClientTests}}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00017}00017\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ [TestMethod]}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00022}\mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests_a8d91346d60219e53b51f3d6be858c230}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests_a8d91346d60219e53b51f3d6be858c230}{Constructor\_ValidParameters\_ClientCreationMobile}}()}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Arrange}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ var\ name\ =\ \textcolor{stringliteral}{"{}Jose\ Alves"{}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ var\ contact\ =\ \textcolor{stringliteral}{"{}969696969"{}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Act}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ var\ client\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}(name,\ contact);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Assert}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreEqual(name,\ client.Name);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreEqual(contact,\ client.Contact);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreNotEqual(0,\ client.ClientID);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ [TestMethod]}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00041}\mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests_aa09b8b81874ea24ae9ecfac6f50762cf}{00041}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests_aa09b8b81874ea24ae9ecfac6f50762cf}{Constructor\_ValidParameters\_ClientCreationLandLine}}()}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Arrange}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ var\ name\ =\ \textcolor{stringliteral}{"{}Jose\ Alves"{}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ var\ contact\ =\ \textcolor{stringliteral}{"{}253253253"{}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Act}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ var\ client\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}(name,\ contact);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Assert}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreEqual(name,\ client.Name);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreEqual(contact,\ client.Contact);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreNotEqual(0,\ client.ClientID);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ [TestMethod]}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00060}\mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests_af5790cd36bed42312f3c1c9b9040bae1}{00060}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_best_sale_1_1_data_layer_1_1_tests_1_1_client_tests_af5790cd36bed42312f3c1c9b9040bae1}{Constructor\_InvalidContact\_ThrowsInvalidPhoneNumberException}}()}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Arrange}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ var\ name\ =\ \textcolor{stringliteral}{"{}Jose\ Alves"{}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ var\ invalidContact\ =\ \textcolor{stringliteral}{"{}123456789"{}};}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//Act\ \&\ Assert}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ var\ client\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}(name,\ invalidContact);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Assert.Fail(\textcolor{stringliteral}{"{}Expected\ InvalidPhoneNumberException\ not\ thrown"{}});}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (\mbox{\hyperlink{class_exceptions_1_1_invalid_phone_number_exception}{InvalidPhoneNumberException}}\ exception)}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Assert.AreEqual(\textcolor{stringliteral}{"{}Invalid\ Phone\ Number"{}},\ exception.Message);}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_client_tests_8cs_source_l00081}00081\ \}}
+
+\end{DoxyCode}

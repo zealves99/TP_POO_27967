@@ -1,0 +1,146 @@
+\doxysection{Data\+\_\+\+Best\+Sale.\+Products\+Sale Class Reference}
+\hypertarget{class_data___best_sale_1_1_products_sale}{}\label{class_data___best_sale_1_1_products_sale}\index{Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}}
+
+
+Purpose\+: Created by\+: zecun Created on\+: 12/18/2024 4\+:29\+:26 PM.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data___best_sale_1_1_products_sale_a91842843cc13399dbf5a339f52ffd1d3}{Products\+Sale}} ()
+\begin{DoxyCompactList}\small\item\em The default Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_sale_ab1862050696815dcbd65794a453d116a}{Add\+Product\+Sale}} (string reff)
+\begin{DoxyCompactList}\small\item\em This method adds a reference and amount of a product to the list of products. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_sale_ab9f93330e2d6bf0e9483b0325d2faa8e}{Remove\+Product\+Sale}} (string reff)
+\begin{DoxyCompactList}\small\item\em This method removes the reference of a product in the list of products. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data___best_sale_1_1_products_sale_a05edac3e628fdd520500dc28a3d721e0}{Exist\+Product\+Sale}} (string reff)
+\begin{DoxyCompactList}\small\item\em This method verifies if a product with a given reference is in a list of products. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, int $>$ \mbox{\hyperlink{class_data___best_sale_1_1_products_sale_aee40e59ba45487b409ad2940de820adb}{Prods\+In\+Sale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The property to get and set the list of products in a sale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Purpose\+: Created by\+: zecun Created on\+: 12/18/2024 4\+:29\+:26 PM. 
+
+
+
+Definition at line \mbox{\hyperlink{_products_sale_8cs_source_l00021}{21}} of file \mbox{\hyperlink{_products_sale_8cs_source}{Products\+Sale.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_data___best_sale_1_1_products_sale_a91842843cc13399dbf5a339f52ffd1d3}\label{class_data___best_sale_1_1_products_sale_a91842843cc13399dbf5a339f52ffd1d3} 
+\index{Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}!ProductsSale@{ProductsSale}}
+\index{ProductsSale@{ProductsSale}!Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}}
+\doxysubsubsection{\texorpdfstring{ProductsSale()}{ProductsSale()}}
+{\footnotesize\ttfamily Data\+\_\+\+Best\+Sale.\+Products\+Sale.\+Products\+Sale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The default Constructor. 
+
+
+
+Definition at line \mbox{\hyperlink{_products_sale_8cs_source_l00038}{38}} of file \mbox{\hyperlink{_products_sale_8cs_source}{Products\+Sale.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_data___best_sale_1_1_products_sale_ab1862050696815dcbd65794a453d116a}\label{class_data___best_sale_1_1_products_sale_ab1862050696815dcbd65794a453d116a} 
+\index{Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}!AddProductSale@{AddProductSale}}
+\index{AddProductSale@{AddProductSale}!Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}}
+\doxysubsubsection{\texorpdfstring{AddProductSale()}{AddProductSale()}}
+{\footnotesize\ttfamily bool Data\+\_\+\+Best\+Sale.\+Products\+Sale.\+Add\+Product\+Sale (\begin{DoxyParamCaption}\item[{string}]{reff }\end{DoxyParamCaption})}
+
+
+
+This method adds a reference and amount of a product to the list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & The reference of the product to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ Product added successfully.
+
+Argument\+Null\+Exception -\/ The reference is not valid
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_products_sale_8cs_source_l00067}{67}} of file \mbox{\hyperlink{_products_sale_8cs_source}{Products\+Sale.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_sale_a05edac3e628fdd520500dc28a3d721e0}\label{class_data___best_sale_1_1_products_sale_a05edac3e628fdd520500dc28a3d721e0} 
+\index{Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}!ExistProductSale@{ExistProductSale}}
+\index{ExistProductSale@{ExistProductSale}!Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}}
+\doxysubsubsection{\texorpdfstring{ExistProductSale()}{ExistProductSale()}}
+{\footnotesize\ttfamily bool Data\+\_\+\+Best\+Sale.\+Products\+Sale.\+Exist\+Product\+Sale (\begin{DoxyParamCaption}\item[{string}]{reff }\end{DoxyParamCaption})}
+
+
+
+This method verifies if a product with a given reference is in a list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ The product is on the list.
+
+False -\/ The product is not on the list.
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_products_sale_8cs_source_l00114}{114}} of file \mbox{\hyperlink{_products_sale_8cs_source}{Products\+Sale.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_products_sale_ab9f93330e2d6bf0e9483b0325d2faa8e}\label{class_data___best_sale_1_1_products_sale_ab9f93330e2d6bf0e9483b0325d2faa8e} 
+\index{Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}!RemoveProductSale@{RemoveProductSale}}
+\index{RemoveProductSale@{RemoveProductSale}!Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}}
+\doxysubsubsection{\texorpdfstring{RemoveProductSale()}{RemoveProductSale()}}
+{\footnotesize\ttfamily bool Data\+\_\+\+Best\+Sale.\+Products\+Sale.\+Remove\+Product\+Sale (\begin{DoxyParamCaption}\item[{string}]{reff }\end{DoxyParamCaption})}
+
+
+
+This method removes the reference of a product in the list of products. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reff} & The reference of the product to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ Product removed successfully.
+
+Argument\+Null\+Exception -\/ The reference is not valid
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_products_sale_8cs_source_l00095}{95}} of file \mbox{\hyperlink{_products_sale_8cs_source}{Products\+Sale.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_data___best_sale_1_1_products_sale_aee40e59ba45487b409ad2940de820adb}\label{class_data___best_sale_1_1_products_sale_aee40e59ba45487b409ad2940de820adb} 
+\index{Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}!ProdsInSale@{ProdsInSale}}
+\index{ProdsInSale@{ProdsInSale}!Data\_BestSale.ProductsSale@{Data\_BestSale.ProductsSale}}
+\doxysubsubsection{\texorpdfstring{ProdsInSale}{ProdsInSale}}
+{\footnotesize\ttfamily Dictionary$<$string, int$>$ Data\+\_\+\+Best\+Sale.\+Products\+Sale.\+Prods\+In\+Sale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The property to get and set the list of products in a sale. 
+
+
+
+Definition at line \mbox{\hyperlink{_products_sale_8cs_source_l00048}{48}} of file \mbox{\hyperlink{_products_sale_8cs_source}{Products\+Sale.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Data\+\_\+\+Best\+Sale/\+Sale/Products\+Sale.\+cs\end{DoxyCompactItemize}

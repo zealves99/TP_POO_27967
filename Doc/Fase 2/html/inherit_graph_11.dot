@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="Data_BestSale.Warranty",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_warranty.html",tooltip="Purpose: This class contains the definition and methods to manage warranties. Created by: Jose Alves ..."];
+  Node0 [id="Node000000",label="Data_BestSale.Product",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_data___best_sale_1_1_product.html",tooltip="Purpose: Definition of product and methods to deal with product operations. Created by: Jose Alves a2..."];
 }

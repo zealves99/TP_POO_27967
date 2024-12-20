@@ -48,9 +48,10 @@ namespace Business_Layer
                 Store.InsertProductInStore(prod);
                 return true;
             }
-            catch(Exception excep)
+            catch(Exception)
             {
-                throw excep;
+                ///The method returns false, so that the front end does not depend on C#. Returns a primitive data type.
+                return false;
             }
         }
 

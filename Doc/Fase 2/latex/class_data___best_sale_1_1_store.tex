@@ -13,7 +13,7 @@ Purpose\+: This class has the definition and properties to manage a store. Creat
 \mbox{\hyperlink{class_data___best_sale_1_1_store_a561169b2a5f7b5f3eefa6b2bd6259cb2}{Store}} (\mbox{\hyperlink{class_data___best_sale_1_1_clients}{Clients}} cl, \mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}} p, \mbox{\hyperlink{class_data___best_sale_1_1_sales}{Sales}} s, \mbox{\hyperlink{class_data___best_sale_1_1_makes}{Makes}} m, \mbox{\hyperlink{class_data___best_sale_1_1_categories}{Categories}} c)
 \begin{DoxyCompactList}\small\item\em The constructor to use when all the lists are given. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_data___best_sale_1_1_store_a33d2b173d77319d5c1937e0395c5bbb1}{Save\+Store\+Bin}} (string file\+Name)
-\begin{DoxyCompactList}\small\item\em Save a \doxylink{class_data___best_sale_1_1_store}{Store} to a binary file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Save a Store to a binary file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -29,14 +29,20 @@ static bool \mbox{\hyperlink{class_data___best_sale_1_1_store_a99daade6cb5fe62db
 \begin{DoxyCompactList}\small\item\em Method used to add a product to the list of products of a store. \end{DoxyCompactList}\item 
 static decimal \mbox{\hyperlink{class_data___best_sale_1_1_store_abd556041d1813d6cb589c4a372c0abf2}{Get\+Product\+Price\+In\+Store\+From\+Reference}} (string reference)
 \begin{DoxyCompactList}\small\item\em Method that returns a product price from the list of products in a store, given its reference. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}} \mbox{\hyperlink{class_data___best_sale_1_1_store_ab468038e27267552f74309172da9bcf7}{Get\+Store\+Prod\+List}} ()
+\begin{DoxyCompactList}\small\item\em Method used to get the store\textquotesingle{}s product list. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_data___best_sale_1_1_store_af671e826f593c4408b43e8bd72785035}{Store\+Contains\+Product}} (string reff)
+\item 
 static int \mbox{\hyperlink{class_data___best_sale_1_1_store_aa82bb1f91d1e22643f8e0766aa69493a}{Get\+Make\+Id\+From\+Name\+In\+Store}} (string name)
 \begin{DoxyCompactList}\small\item\em Method to get the ID of a make in a store\textquotesingle{}s list, given its name. \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{class_data___best_sale_1_1_store_aa7dba3fecd7fd199ecd9ba6c0359f65a}{Insert\+Make\+In\+Store}} (\mbox{\hyperlink{class_data___best_sale_1_1_make}{Make}} make)
 \begin{DoxyCompactList}\small\item\em Method to insert a make on a store\textquotesingle{}s list of makes. \end{DoxyCompactList}\item 
 static int \mbox{\hyperlink{class_data___best_sale_1_1_store_aa8ab32816fb78a5ad2fd46718d383494}{Get\+Category\+Id\+From\+Name\+In\+Store}} (string name)
-\begin{DoxyCompactList}\small\item\em This method finds the ID of a \doxylink{class_data___best_sale_1_1_category}{Category}, given its name. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em This method finds the ID of a Category, given its name. \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{class_data___best_sale_1_1_store_ae99b7c45a4c506c42af258e0138e3a18}{Insert\+Category\+In\+Store}} (\mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}} cat)
-\begin{DoxyCompactList}\small\item\em This method adds a \doxylink{class_data___best_sale_1_1_category}{Category} to a store\textquotesingle{}s list of categories. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This method adds a Category to a store\textquotesingle{}s list of categories. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_data___best_sale_1_1_store_abb7ff77391e27517402e41b19f37f47f}{Insert\+Sale\+In\+Store}} (\mbox{\hyperlink{class_data___best_sale_1_1_sale}{Sale}} sale)
+\begin{DoxyCompactList}\small\item\em Method that inserts a sale on a store\textquotesingle{}s sales\textquotesingle{} list. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -62,11 +68,11 @@ Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_data___best_sale_1_1_store_a139c4b8b4b775f586feaad94a5eb4591}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!Store@{Store}}
+\Hypertarget{class_data___best_sale_1_1_store_a139c4b8b4b775f586feaad94a5eb4591}\label{class_data___best_sale_1_1_store_a139c4b8b4b775f586feaad94a5eb4591} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!Store@{Store}}
 \index{Store@{Store}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{Store()}{Store()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a139c4b8b4b775f586feaad94a5eb4591} 
-Data\+\_\+\+Best\+Sale.\+Store.\+Store (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Data\+\_\+\+Best\+Sale.\+Store.\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -76,11 +82,11 @@ The default Constructor.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00043}{43}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a561169b2a5f7b5f3eefa6b2bd6259cb2}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!Store@{Store}}
+\Hypertarget{class_data___best_sale_1_1_store_a561169b2a5f7b5f3eefa6b2bd6259cb2}\label{class_data___best_sale_1_1_store_a561169b2a5f7b5f3eefa6b2bd6259cb2} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!Store@{Store}}
 \index{Store@{Store}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{Store()}{Store()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a561169b2a5f7b5f3eefa6b2bd6259cb2} 
-Data\+\_\+\+Best\+Sale.\+Store.\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_clients}{Clients}}}]{cl}{, }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}}}]{p}{, }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_sales}{Sales}}}]{s}{, }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_makes}{Makes}}}]{m}{, }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_categories}{Categories}}}]{c}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Data\+\_\+\+Best\+Sale.\+Store.\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_clients}{Clients}}}]{cl,  }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}}}]{p,  }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_sales}{Sales}}}]{s,  }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_makes}{Makes}}}]{m,  }\item[{\mbox{\hyperlink{class_data___best_sale_1_1_categories}{Categories}}}]{c }\end{DoxyParamCaption})}
 
 
 
@@ -106,11 +112,11 @@ Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source
 
 
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_data___best_sale_1_1_store_a9b8139d9153606f21a641c25c866a051}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!ClearStore@{ClearStore}}
+\Hypertarget{class_data___best_sale_1_1_store_a9b8139d9153606f21a641c25c866a051}\label{class_data___best_sale_1_1_store_a9b8139d9153606f21a641c25c866a051} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!ClearStore@{ClearStore}}
 \index{ClearStore@{ClearStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{ClearStore()}{ClearStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a9b8139d9153606f21a641c25c866a051} 
-static bool Data\+\_\+\+Best\+Sale.\+Store.\+Clear\+Store (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Clear\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -120,38 +126,35 @@ Method used to clear the data of a store from memory.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00182}{182}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_aa8ab32816fb78a5ad2fd46718d383494}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetCategoryIdFromNameInStore@{GetCategoryIdFromNameInStore}}
+\Hypertarget{class_data___best_sale_1_1_store_aa8ab32816fb78a5ad2fd46718d383494}\label{class_data___best_sale_1_1_store_aa8ab32816fb78a5ad2fd46718d383494} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetCategoryIdFromNameInStore@{GetCategoryIdFromNameInStore}}
 \index{GetCategoryIdFromNameInStore@{GetCategoryIdFromNameInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{GetCategoryIdFromNameInStore()}{GetCategoryIdFromNameInStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_aa8ab32816fb78a5ad2fd46718d383494} 
-static int Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Category\+Id\+From\+Name\+In\+Store (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static int Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Category\+Id\+From\+Name\+In\+Store (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-This method finds the ID of a \doxylink{class_data___best_sale_1_1_category}{Category}, given its name. 
+This method finds the ID of a Category, given its name. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & The name of the \doxylink{class_data___best_sale_1_1_make}{Make}\\
+{\em name} & The name of the Make\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The ID of the \doxylink{class_data___best_sale_1_1_category}{Category}
+The ID of the Category
 
--\/100 -\/ There\textquotesingle{}s no category with that name on the list.\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
+-\/100 -\/ There\textquotesingle{}s no category with that name on the list.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00298}{298}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00315}{315}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_aa82bb1f91d1e22643f8e0766aa69493a}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetMakeIdFromNameInStore@{GetMakeIdFromNameInStore}}
+\Hypertarget{class_data___best_sale_1_1_store_aa82bb1f91d1e22643f8e0766aa69493a}\label{class_data___best_sale_1_1_store_aa82bb1f91d1e22643f8e0766aa69493a} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetMakeIdFromNameInStore@{GetMakeIdFromNameInStore}}
 \index{GetMakeIdFromNameInStore@{GetMakeIdFromNameInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{GetMakeIdFromNameInStore()}{GetMakeIdFromNameInStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_aa82bb1f91d1e22643f8e0766aa69493a} 
-static int Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Make\+Id\+From\+Name\+In\+Store (\begin{DoxyParamCaption}\item[{string}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static int Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Make\+Id\+From\+Name\+In\+Store (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -165,20 +168,17 @@ Method to get the ID of a make in a store\textquotesingle{}s list, given its nam
 \begin{DoxyReturn}{Returns}
 The ID of the make
 
--\/50 if the make does not exist on the list.\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
+-\/50 if the make does not exist on the list.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00269}{269}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00286}{286}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a456c11520b10b95147ec927bb3f1b46c}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetMakeNameFromID@{GetMakeNameFromID}}
+\Hypertarget{class_data___best_sale_1_1_store_a456c11520b10b95147ec927bb3f1b46c}\label{class_data___best_sale_1_1_store_a456c11520b10b95147ec927bb3f1b46c} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetMakeNameFromID@{GetMakeNameFromID}}
 \index{GetMakeNameFromID@{GetMakeNameFromID}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{GetMakeNameFromID()}{GetMakeNameFromID()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a456c11520b10b95147ec927bb3f1b46c} 
-static string Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Make\+Name\+From\+ID (\begin{DoxyParamCaption}\item[{int}]{make\+ID}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static string Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Make\+Name\+From\+ID (\begin{DoxyParamCaption}\item[{int}]{make\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -196,11 +196,11 @@ The name of the make, if found. Otherwise, returns \textquotesingle{}Not Found\t
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00131}{131}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_abd556041d1813d6cb589c4a372c0abf2}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetProductPriceInStoreFromReference@{GetProductPriceInStoreFromReference}}
+\Hypertarget{class_data___best_sale_1_1_store_abd556041d1813d6cb589c4a372c0abf2}\label{class_data___best_sale_1_1_store_abd556041d1813d6cb589c4a372c0abf2} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetProductPriceInStoreFromReference@{GetProductPriceInStoreFromReference}}
 \index{GetProductPriceInStoreFromReference@{GetProductPriceInStoreFromReference}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{GetProductPriceInStoreFromReference()}{GetProductPriceInStoreFromReference()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_abd556041d1813d6cb589c4a372c0abf2} 
-static decimal Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Product\+Price\+In\+Store\+From\+Reference (\begin{DoxyParamCaption}\item[{string}]{reference}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static decimal Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Product\+Price\+In\+Store\+From\+Reference (\begin{DoxyParamCaption}\item[{string}]{reference }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -216,17 +216,34 @@ The product that matches that reference.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00254}{254}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00257}{257}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_ae99b7c45a4c506c42af258e0138e3a18}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertCategoryInStore@{InsertCategoryInStore}}
+\Hypertarget{class_data___best_sale_1_1_store_ab468038e27267552f74309172da9bcf7}\label{class_data___best_sale_1_1_store_ab468038e27267552f74309172da9bcf7} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!GetStoreProdList@{GetStoreProdList}}
+\index{GetStoreProdList@{GetStoreProdList}!Data\_BestSale.Store@{Data\_BestSale.Store}}
+\doxysubsubsection{\texorpdfstring{GetStoreProdList()}{GetStoreProdList()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}} Data\+\_\+\+Best\+Sale.\+Store.\+Get\+Store\+Prod\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method used to get the store\textquotesingle{}s product list. 
+
+\begin{DoxyReturn}{Returns}
+The product list.
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00267}{267}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_store_ae99b7c45a4c506c42af258e0138e3a18}\label{class_data___best_sale_1_1_store_ae99b7c45a4c506c42af258e0138e3a18} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertCategoryInStore@{InsertCategoryInStore}}
 \index{InsertCategoryInStore@{InsertCategoryInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{InsertCategoryInStore()}{InsertCategoryInStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_ae99b7c45a4c506c42af258e0138e3a18} 
-static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Category\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}}]{cat}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Category\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_category}{Category}}}]{cat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-This method adds a \doxylink{class_data___best_sale_1_1_category}{Category} to a store\textquotesingle{}s list of categories. 
+This method adds a Category to a store\textquotesingle{}s list of categories. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -238,13 +255,13 @@ True or false, wheter it succeeded or not.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00313}{313}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00330}{330}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertClientInStore@{InsertClientInStore}}
+\Hypertarget{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c}\label{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertClientInStore@{InsertClientInStore}}
 \index{InsertClientInStore@{InsertClientInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{InsertClientInStore()}{InsertClientInStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a677e194a00329dbbf8307bbc6a96618c} 
-static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Client\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Client\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_client}{Client}}}]{client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -256,22 +273,19 @@ Inserts a client in the store\textquotesingle{}s list of clients, if it\textquot
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True -\/ \doxylink{class_data___best_sale_1_1_client}{Client} has been successfully added to the list.
+True -\/ Client has been successfully added to the list.
 
-False -\/ \doxylink{class_data___best_sale_1_1_client}{Client} already exists or an error occurred.\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
+False -\/ Client already exists or an error occurred.
 \end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00147}{147}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_aa7dba3fecd7fd199ecd9ba6c0359f65a}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertMakeInStore@{InsertMakeInStore}}
+\Hypertarget{class_data___best_sale_1_1_store_aa7dba3fecd7fd199ecd9ba6c0359f65a}\label{class_data___best_sale_1_1_store_aa7dba3fecd7fd199ecd9ba6c0359f65a} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertMakeInStore@{InsertMakeInStore}}
 \index{InsertMakeInStore@{InsertMakeInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{InsertMakeInStore()}{InsertMakeInStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_aa7dba3fecd7fd199ecd9ba6c0359f65a} 
-static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Make\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_make}{Make}}}]{make}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Make\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_make}{Make}}}]{make }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -287,13 +301,13 @@ True or false, wheter it was added or not.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00284}{284}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00301}{301}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a99daade6cb5fe62dbc895c4fb8c7e05c}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertProductInStore@{InsertProductInStore}}
+\Hypertarget{class_data___best_sale_1_1_store_a99daade6cb5fe62dbc895c4fb8c7e05c}\label{class_data___best_sale_1_1_store_a99daade6cb5fe62dbc895c4fb8c7e05c} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertProductInStore@{InsertProductInStore}}
 \index{InsertProductInStore@{InsertProductInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{InsertProductInStore()}{InsertProductInStore()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a99daade6cb5fe62dbc895c4fb8c7e05c} 
-static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Product\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}}]{prod}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Product\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_product}{Product}}}]{prod }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -305,22 +319,43 @@ Method used to add a product to the list of products of a store.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-True -\/ \doxylink{class_data___best_sale_1_1_product}{Product} added to the list.
+True -\/ Product added to the list.
 
-False -\/ The product already exists on the list.\begin{DoxyReturn}{Returns}
-
-\end{DoxyReturn}
-
+False -\/ The product already exists on the list.
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00239}{239}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00242}{242}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a27d96ac6f89f43b5440524d937d45167}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!LoadStoreBin@{LoadStoreBin}}
+\Hypertarget{class_data___best_sale_1_1_store_abb7ff77391e27517402e41b19f37f47f}\label{class_data___best_sale_1_1_store_abb7ff77391e27517402e41b19f37f47f} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!InsertSaleInStore@{InsertSaleInStore}}
+\index{InsertSaleInStore@{InsertSaleInStore}!Data\_BestSale.Store@{Data\_BestSale.Store}}
+\doxysubsubsection{\texorpdfstring{InsertSaleInStore()}{InsertSaleInStore()}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Insert\+Sale\+In\+Store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data___best_sale_1_1_sale}{Sale}}}]{sale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method that inserts a sale on a store\textquotesingle{}s sales\textquotesingle{} list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sale} & The object to insert.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True -\/ Sale added successfully.
+
+False -\/ Sale not added to the list.
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00343}{343}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+
+\Hypertarget{class_data___best_sale_1_1_store_a27d96ac6f89f43b5440524d937d45167}\label{class_data___best_sale_1_1_store_a27d96ac6f89f43b5440524d937d45167} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!LoadStoreBin@{LoadStoreBin}}
 \index{LoadStoreBin@{LoadStoreBin}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{LoadStoreBin()}{LoadStoreBin()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a27d96ac6f89f43b5440524d937d45167} 
-static bool Data\+\_\+\+Best\+Sale.\+Store.\+Load\+Store\+Bin (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Load\+Store\+Bin (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -332,21 +367,27 @@ Load a Stor from a binary file.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
+True -\/ Store loaded successfully.
 
+False -\/ The file does not exist.
+
+IO exception -\/ There was an error with the I/O
+
+Exception -\/ An error occurred.
 \end{DoxyReturn}
 Verify if a file with that name exists and has content in it.
 
-Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00204}{204}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00207}{207}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a33d2b173d77319d5c1937e0395c5bbb1}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!SaveStoreBin@{SaveStoreBin}}
+\Hypertarget{class_data___best_sale_1_1_store_a33d2b173d77319d5c1937e0395c5bbb1}\label{class_data___best_sale_1_1_store_a33d2b173d77319d5c1937e0395c5bbb1} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!SaveStoreBin@{SaveStoreBin}}
 \index{SaveStoreBin@{SaveStoreBin}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{SaveStoreBin()}{SaveStoreBin()}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a33d2b173d77319d5c1937e0395c5bbb1} 
-bool Data\+\_\+\+Best\+Sale.\+Store.\+Save\+Store\+Bin (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Data\+\_\+\+Best\+Sale.\+Store.\+Save\+Store\+Bin (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
 
 
 
-Save a \doxylink{class_data___best_sale_1_1_store}{Store} to a binary file. 
+Save a Store to a binary file. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -360,14 +401,24 @@ Save a \doxylink{class_data___best_sale_1_1_store}{Store} to a binary file.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00158}{158}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
+\Hypertarget{class_data___best_sale_1_1_store_af671e826f593c4408b43e8bd72785035}\label{class_data___best_sale_1_1_store_af671e826f593c4408b43e8bd72785035} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!StoreContainsProduct@{StoreContainsProduct}}
+\index{StoreContainsProduct@{StoreContainsProduct}!Data\_BestSale.Store@{Data\_BestSale.Store}}
+\doxysubsubsection{\texorpdfstring{StoreContainsProduct()}{StoreContainsProduct()}}
+{\footnotesize\ttfamily static bool Data\+\_\+\+Best\+Sale.\+Store.\+Store\+Contains\+Product (\begin{DoxyParamCaption}\item[{string}]{reff }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00272}{272}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
+
 
 
 \doxysubsection{Property Documentation}
-\Hypertarget{class_data___best_sale_1_1_store_a0fa1729a35a0446c63daea333ecbbd08}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!CatList@{CatList}}
+\Hypertarget{class_data___best_sale_1_1_store_a0fa1729a35a0446c63daea333ecbbd08}\label{class_data___best_sale_1_1_store_a0fa1729a35a0446c63daea333ecbbd08} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!CatList@{CatList}}
 \index{CatList@{CatList}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{CatList}{CatList}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a0fa1729a35a0446c63daea333ecbbd08} 
-\mbox{\hyperlink{class_data___best_sale_1_1_categories}{Categories}} Data\+\_\+\+Best\+Sale.\+Store.\+Cat\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data___best_sale_1_1_categories}{Categories}} Data\+\_\+\+Best\+Sale.\+Store.\+Cat\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 
@@ -377,11 +428,11 @@ The property to get and set de categories\textquotesingle{} list.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00111}{111}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a4b093f9721063c39d67fbd23df750861}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!ClientLIst@{ClientLIst}}
+\Hypertarget{class_data___best_sale_1_1_store_a4b093f9721063c39d67fbd23df750861}\label{class_data___best_sale_1_1_store_a4b093f9721063c39d67fbd23df750861} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!ClientLIst@{ClientLIst}}
 \index{ClientLIst@{ClientLIst}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{ClientLIst}{ClientLIst}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a4b093f9721063c39d67fbd23df750861} 
-\mbox{\hyperlink{class_data___best_sale_1_1_clients}{Clients}} Data\+\_\+\+Best\+Sale.\+Store.\+Client\+LIst\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data___best_sale_1_1_clients}{Clients}} Data\+\_\+\+Best\+Sale.\+Store.\+Client\+LIst\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 
@@ -391,11 +442,11 @@ The property used to get and set the clients\textquotesingle{} list.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00075}{75}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_af84515969f540ed50a9ea770cd870265}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!MakeList@{MakeList}}
+\Hypertarget{class_data___best_sale_1_1_store_af84515969f540ed50a9ea770cd870265}\label{class_data___best_sale_1_1_store_af84515969f540ed50a9ea770cd870265} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!MakeList@{MakeList}}
 \index{MakeList@{MakeList}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{MakeList}{MakeList}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_af84515969f540ed50a9ea770cd870265} 
-\mbox{\hyperlink{class_data___best_sale_1_1_makes}{Makes}} Data\+\_\+\+Best\+Sale.\+Store.\+Make\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data___best_sale_1_1_makes}{Makes}} Data\+\_\+\+Best\+Sale.\+Store.\+Make\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 
@@ -405,11 +456,11 @@ The property to get and set de makes\textquotesingle{} list.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00102}{102}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_abb16ec632a9e11d24ef3804dc56be51d}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!ProdList@{ProdList}}
+\Hypertarget{class_data___best_sale_1_1_store_abb16ec632a9e11d24ef3804dc56be51d}\label{class_data___best_sale_1_1_store_abb16ec632a9e11d24ef3804dc56be51d} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!ProdList@{ProdList}}
 \index{ProdList@{ProdList}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{ProdList}{ProdList}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_abb16ec632a9e11d24ef3804dc56be51d} 
-\mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}} Data\+\_\+\+Best\+Sale.\+Store.\+Prod\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data___best_sale_1_1_products}{Products}} Data\+\_\+\+Best\+Sale.\+Store.\+Prod\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 
@@ -419,11 +470,11 @@ The property to get and set de products\textquotesingle{} list.
 
 Definition at line \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source_l00084}{84}} of file \mbox{\hyperlink{_data___best_sale_2_store_2_store_8cs_source}{Store.\+cs}}.
 
-\Hypertarget{class_data___best_sale_1_1_store_a0a762756ba9a36b99a1649206dc2a520}\index{Data\_BestSale.Store@{Data\_BestSale.Store}!SaleList@{SaleList}}
+\Hypertarget{class_data___best_sale_1_1_store_a0a762756ba9a36b99a1649206dc2a520}\label{class_data___best_sale_1_1_store_a0a762756ba9a36b99a1649206dc2a520} 
+\index{Data\_BestSale.Store@{Data\_BestSale.Store}!SaleList@{SaleList}}
 \index{SaleList@{SaleList}!Data\_BestSale.Store@{Data\_BestSale.Store}}
 \doxysubsubsection{\texorpdfstring{SaleList}{SaleList}}
-{\footnotesize\ttfamily \label{class_data___best_sale_1_1_store_a0a762756ba9a36b99a1649206dc2a520} 
-\mbox{\hyperlink{class_data___best_sale_1_1_sales}{Sales}} Data\+\_\+\+Best\+Sale.\+Store.\+Sale\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data___best_sale_1_1_sales}{Sales}} Data\+\_\+\+Best\+Sale.\+Store.\+Sale\+List\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
 
 
 

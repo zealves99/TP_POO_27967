@@ -1,0 +1,25 @@
+digraph "Trash/trabalhoPOO_27967"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_5fe9019c382cdf3964dadfaced167fe5 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="Trash", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_5fe9019c382cdf3964dadfaced167fe5.html",tooltip=""]
+  subgraph clusterdir_91feb56f7bdbb9631ac6182d0a128a03 {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_91feb56f7bdbb9631ac6182d0a128a03.html",tooltip=""]
+    dir_91feb56f7bdbb9631ac6182d0a128a03 [shape=plaintext, label="trabalhoPOO_27967"];
+  dir_19ce0514f70666c09da1fd5ad893cb0f [label="Campaign", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_19ce0514f70666c09da1fd5ad893cb0f.html",tooltip=""];
+  dir_30b41d5a4d29d89af835fc78ac388513 [label="Category", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_30b41d5a4d29d89af835fc78ac388513.html",tooltip=""];
+  dir_1f265190986b24b9bf89ed10673bbaa9 [label="Client", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_1f265190986b24b9bf89ed10673bbaa9.html",tooltip=""];
+  dir_78d8b087dc142d80c8b059fded6fbf35 [label="Interface", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_78d8b087dc142d80c8b059fded6fbf35.html",tooltip=""];
+  dir_b687dd6896946b3d82f86b72fab1f609 [label="Make", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_b687dd6896946b3d82f86b72fab1f609.html",tooltip=""];
+  dir_c3946064c0a6649056d9ce1cc0662034 [label="Product", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_c3946064c0a6649056d9ce1cc0662034.html",tooltip=""];
+  dir_d487a14a20747a122bbb0f1ad9ab7868 [label="Properties", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_d487a14a20747a122bbb0f1ad9ab7868.html",tooltip=""];
+  dir_634d09fa66f31f2d2976ea3a3eb5cc7d [label="Sale", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_634d09fa66f31f2d2976ea3a3eb5cc7d.html",tooltip=""];
+  dir_593143d18efda203e81e6ce32216cde3 [label="Store", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_593143d18efda203e81e6ce32216cde3.html",tooltip=""];
+  dir_ed5c9b7958825315153282ec5b7598ee [label="Warranty", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_ed5c9b7958825315153282ec5b7598ee.html",tooltip=""];
+  }
+  }
+}

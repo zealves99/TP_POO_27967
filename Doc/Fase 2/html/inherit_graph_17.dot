@@ -5,5 +5,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
   node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
   rankdir="LR";
-  Node0 [id="Node000000",label="trabalhoPOO_27967.Product",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_product.html",tooltip="Purpose: Definition of product and methods to deal with product operations. Created by: Jose Alves a2..."];
+  Node0 [id="Node000000",label="trabalhoPOO_27967.Category",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classtrabalho_p_o_o__27967_1_1_category.html",tooltip="Purpose: Definition of Category and methods to deal with Category operations. Created by: Jose Alves ..."];
 }

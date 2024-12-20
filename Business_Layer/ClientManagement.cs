@@ -37,7 +37,7 @@ namespace Business_Layer
         /// <param name="name">Client's Name</param>
         /// <param name="contact">Client's Contact</param>
         /// <returns>True - Client Successfully created and added to the list.</returns>
-        /// <returns>Exception - An error occurred in the process.
+        /// <returns>False - An error occurred.</returns>
         public static bool CreateClientInStore(string name, string contact)
         {
             try
@@ -50,13 +50,14 @@ namespace Business_Layer
                 }
                 return false;
             }
-            catch(Exceptions.InvalidPhoneNumberException invalidPhoneNumber)
+            catch(Exceptions.InvalidPhoneNumberException)
             {
-                throw invalidPhoneNumber;
+                ///The method returns false, so that the front end does not depend on C#. Returns a primitive data type.
+                return false;
             }
-            catch (Exception excep)
+            catch (Exception)
             {
-                throw (excep);
+                return false;
             }
         }
 
